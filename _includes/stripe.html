@@ -1,0 +1,81 @@
+
+<script src="https://js.stripe.com/v3"></script>
+
+<table class="stripe">
+
+  <tr>
+    <th align="center">Level</th>
+    <th align="center">Experience</th>
+    <th align="center">Monthly</th>
+    <th align="center">Annual<br />(20% off)</th>
+  </tr>
+  <tr>
+    <th>Expert</th>
+    <td>9+ Years</td>
+    <td>
+      <button class="btn-stripe-pay" data-plan="plan_FlqLWY3BLNUVHR" data-name="MONTHLY200" role="link">$200</button>
+    </td>
+    <td>
+      <button class="btn-stripe-pay" data-plan="plan_FlqNTWy6an9B9L" data-name="ANNUAL1920" role="link">$1,920</button> (save $480)
+    </td>
+  </tr>
+  <tr>
+    <th>Experienced</th>
+    <td>5-8 Years</td>
+    <td>
+      <button class="btn-stripe-pay" data-plan="plan_FlqKX8x4Bw4qPP" data-name="MONTHLY150" role="link">$150</button>
+    </td>
+    <td>
+      <button class="btn-stripe-pay" data-plan="plan_FlqMCK8F5ouEwv" data-name="ANNUAL1440" role="link">$1,440</button> (save $360)
+    </td>
+  </tr>
+  <tr>
+    <th>Established</th>
+    <td>1-4 Years</td>
+    <td>
+      <button class="btn-stripe-pay" data-plan="plan_FlqKzOfh13N6Pa" data-name="MONTHLY100" role="link">$100</button>
+    </td>
+    <td>
+      <button class="btn-stripe-pay" data-plan="plan_FlqMLmastLwQvg" data-name="ANNUAL960" role="link">$960</button> (save $240)
+    </td>
+  </tr>
+  <tr>
+    <th>Early Career</th>
+    <td>1 or fewer Years</td>
+    <td>
+      <button class="btn-stripe-pay" data-plan="plan_FlqKwkuQejcVrW" data-name="MONTHLY50" role="link">$50</button>
+    </td>
+    <td>
+      <button class="btn-stripe-pay" data-plan="plan_FlqL6CyDRuccCh" data-name="ANNUAL480" role="link">$480</button> (save $120)
+    </td>
+  </tr>
+
+
+</table>
+
+<div id="error-message"></div>
+
+<script>
+  var stripe = Stripe('pk_live_lmTZ1zDD75DrdLLpCPLstbmY00xyU8eqYg');
+
+  var buttons = document.getElementsByClassName("btn-stripe-pay");
+
+  var i;
+  for (i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function(button){
+      console.log(button.srcElement.dataset.name);
+      console.log(button.srcElement.dataset.plan);
+      stripe.redirectToCheckout({
+        items: [{plan: button.srcElement.dataset.plan, quantity: 1}],
+        successUrl: 'https://jeffdoolittle.com/success',
+        cancelUrl: 'https://jeffdoolittle.com/canceled',
+      })
+      .then(function (result) {
+        if (result.error) {
+          var displayError = document.getElementById('error-message');
+          displayError.textContent = result.error.message;
+        }
+      });
+    });
+  }
+</script>

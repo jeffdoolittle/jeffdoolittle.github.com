@@ -1,0 +1,31 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col footer-col-3">
+
+        {%- include social.html -%}
+
+        {%- if site.email -%}
+        <h2 class="footer-heading"><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></h2>
+        {%- endif -%}
+
+        <h2 class="footer-heading"><a class="u-email" href="https://keybase.io/jeffdoolittle/pgp_keys.asc">4B1B B252 C58A 118C</a></h2>
+
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
+        <p>{{- site.contact | escape -}}</p>
+        <p>Last updated: {{ site.time | date: '%A, %B %e, %Y at %l:%M:%S %p %Z' }}</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>

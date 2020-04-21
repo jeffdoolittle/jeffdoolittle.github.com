@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{%- include banner.html -%}
+
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <h3>Continue reading (latest post):</h3>
+  
+  <div class="blog-index">  
+    {% assign post = site.posts.first %}
+    <a href="{{ post.url | absolute_url }}">
+      {{ post.title }}
+    </a>
+  </div>
+
+</article>

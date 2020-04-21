@@ -1,0 +1,198 @@
+---
+---
+
+@import "minima";
+
+body {
+  background-color: #202025;
+  color: #DDDDDD;
+}
+
+p {
+  margin-block-end: 1.5em;
+}
+
+blockquote {
+  margin-block-end: 1.5em;
+}
+
+table {
+  border-collapse: unset;
+  border: 0px;
+  tr, th, td {
+    background-color: transparent;
+    color: #DDDDDD;
+    border: 0px;
+  }  
+}
+
+a {
+  color: rgb(192, 111, 57);
+}
+
+a:visited {
+  color: rgb(192, 111, 57);
+}
+
+.advertisement {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.site-title, .site-title:visited {
+  color: #F7F7F7;
+}
+
+.site-nav .page-link {
+  color: #F7F7F7;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+.stripe {
+  font-size:1em;
+  background-color: transparent;
+}
+
+.stripe td {
+  text-align: center;
+}
+
+.stripe .btn-stripe-pay {
+  display: block; 
+  margin: auto; 
+  background-color:rgb(34, 117, 31);
+  color:#FFF;
+  padding:4px 8px;
+  border:0;
+  border-radius:4px;
+  font-size:1em;
+}
+
+#intro-desktop {display: block;}
+#intro-mobile {display: none;}
+
+#banner-desktop {display: block;}
+#banner-mobile {display: none;}
+
+@media screen and (max-width: 600px) {
+  .site-nav {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    background-color: #202025;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-align: right;
+  }
+
+  #intro-desktop {display: none;}
+  #intro-mobile {display: block;}
+
+  #banner-desktop {display: none;}
+  #banner-mobile {display: block;}
+
+  #banner-mobile {
+    h1, h2 {
+      font-size: 1.3em;
+    }
+  }
+
+  .stripe {
+    font-size:.7em;
+  }
+  
+  .stripe .btn-stripe-pay {
+    font-size:.7em;
+  }
+}
+
+/**
+ * Icons
+ */
+ .svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: #828282;
+  padding-right: 5px;
+  vertical-align: text-top;
+}
+
+/**
+ * Icons
+ */
+ .svg-icon-large {
+  display: inline;
+  fill: #828282;
+  margin: auto;
+}
+
+#contact-table {
+  border: 0px;
+  border-collapse: collapse;
+  width: 280px; 
+  margin: auto; 
+}
+
+#contact-table tr {
+  background-color: transparent;
+}
+
+#contact-table td {
+  color: #DDDDDD;
+  font-size: .8em;
+  background-color: transparent;
+  text-align: left;
+  white-space: nowrap;
+  padding: 0;
+  a div {
+    width: 280px;
+    height: 74px;
+  }
+  svg {
+    float: left;
+    margin-right: 20px;
+    width: 4em;
+    height: 4em;
+  }
+  a {
+    text-decoration: none !important;
+    display: block;
+    height:100%; 
+    width:100%; 
+    color: #DDDDDD;
+  }
+  a:hover {
+    color: #c06f39;
+    background-color: #ffffff11;
+    display: block;
+    height:100%; 
+    width:100%; 
+    position:relative;
+  }
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.social {
+  a {
+    color: #828282;
+    &:hover {
+      color: #c06f39;
+    }
+    i {
+      font-size: 1.5em;
+      margin-right: 0.1em;
+      margin-bottom: 0.3em;
+    }
+  }
+  margin-bottom: 1em;
+}

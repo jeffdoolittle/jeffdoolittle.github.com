@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- include banner.html -%}
+
+  <div style="column-count: 2" id="intro-desktop">
+
+  <p>&nbsp;</p>
+
+  <a href="/assets/full_head_shot.jpg">
+    <img src="/assets/circle_fall_2018.png" style="break-after: column; display: block; margin-left: auto; margin-right: auto; vertical-align: middle;"/>
+  </a>
+
+  <div style="break-inside: avoid">
+
+  {%- include personal-description.md -%}
+
+  </div>
+
+</div>
+
+<div id="intro-mobile">
+
+  <a href="/assets/full_head_shot.jpg">
+    <img src="/assets/circle_fall_2018.png" style="display: block; margin-left: auto; margin-right: auto; vertical-align: middle;"/>
+  </a>
+
+  <div style="margin-top: 20px; margin-bottom: 20px;">
+
+  {%- include personal-description.md -%}
+
+  </div>
+
+</div>
+
+{%- if site.posts.size > 0 -%}
+  <h2 class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
+  <!-- <div>
+      {%- include google-ads-main.html -%}
+  </div>     -->
+  <ul class="post-list">
+    {%- for post in site.posts limit: 8 -%}
+    <li>
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <hr />
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {%- if site.show_excerpts -%}
+        <p><em>{{ post.excerpt }}</em></p>
+        <a href="{{ post.url | relative_url }}">
+          <p><img src="/assets/{{ post.img.file }}" alt="{{ post.img.alt }}" /></p>
+          <p>Continue reading...</p>
+        </a>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  <p class="rss-subscribe">
+    Subscribe <a target="_blank" href="https://feeds.feedburner.com/jeffdoolittle">via RSS</a> 
+    or view the <a href="/archive">Archive</a> of all posts
+  </p>
+
+  {%- endif -%}
+
+  <div>
+      {%- include google-ads-main.html -%}
+  </div>    
+
+</div>
