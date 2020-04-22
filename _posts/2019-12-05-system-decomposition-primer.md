@@ -7,7 +7,8 @@ excerpt: Learning from the humble power outlet
 img:
   file: 2019-12-05-system-decomposition-primer.jpg
   alt: Hawthorne Bridge, Portland, OR
-published: true
+draft: true
+published: false
 ---
 
 Most software systems are decomposed by first identifying features and requirements. Then components are created that directly attempt to implement these features and requirements. Designing a system in this manner is like shipping a “cooking” MVP with a gas line, a Bunsen burner, and a match when what you wanted was a house with a kitchen. Even building just a kitchen in order to ship cooking fails because the kitchen can’t exist divorced from the house or building it is a part of. Imagine building a house one room at a time. Not with prefabricated components that are made to be put together simply, but with traditional construction techniques. The futility of such an approach is obvious. And yet the vast majority of software systems are designed this way.
