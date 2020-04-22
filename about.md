@@ -35,19 +35,7 @@ images:
 
 <h2 id="resume">Resume <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
-My [resume](/assets/resume.pdf){: target="_blank"} contains an extensive description of my career.
-
-<h2 id="work-experience">Work Experience <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
-
-* I am currently a Senior Software Architect at [Viewpoint](https://viewpoint.com){:target="_blank"}, a company providing best-in-class software for the construction industry.
-
-* I am a host on Software Engineering Radio [Software Engineering Radio](https://www.se-radio.net/team/jeff-doolittle/){:target="_blank"} ([SE Radio](https://www.se-radio.net/team/jeff-doolittle/){:target="_blank"}).
-
-* I previously worked as a Senior Software Engineer at <a href="https://aplos.com" target="_blank">Aplos</a> from September 2018 to October 2019, helping to build the <a href="https://www.aplos.com/demo-request/general" target="_blank">Complete Nonprofit Platform</a>.
-
-* I co-founded agricultural software firm <a href="https://lotpath.com" target="_blank">Lotpath</a> where I served as CTO from 2007 through August 2018.
-
-* I began my career as a Software Development Consultant. I had the opportunity to develop applications for dozens of clients using a variety of tools and technologies.
+See [resume](/assets/resume.pdf){: target="_blank"} for an extensive description of my career.
 
 <h2 id="personal-bio">Personal Bio <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
