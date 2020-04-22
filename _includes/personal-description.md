@@ -8,5 +8,5 @@
   </p>
 
   <p>
-  <em><strong>Working with me has made them better oftware professionals.</strong></em>  
+  <em><strong>Working with me has made them better software engineers, architects and leaders.</strong></em>  
   </p>
