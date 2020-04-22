@@ -8,6 +8,11 @@ body {
   color: #DDDDDD;
 }
 
+.wrapper {
+  max-width: -webkit-calc(1000px - (30px * 2));
+  max-width: calc(1000px - (30px * 2));  
+}
+
 p {
   margin-block-end: 1.5em;
 }
