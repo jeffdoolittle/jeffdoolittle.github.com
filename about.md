@@ -216,7 +216,7 @@ strategies such as pay-per-piece.
 
 ## Real-time On Demand Staffing SaaS System
 
-Advised GigRonin on architecting their cloud hosted web and mobile staffing system. Mentored
-senior management regarding System Design, Project Design, Process Design and Team
-Leadership.
+Advised a gig-economy staffing company on architecting their cloud hosted web and mobile staffing system. 
+Mentored senior management regarding System Design, Project Design, Process Design and Team Leadership 
+together with industry leaders from IDesign.
 
