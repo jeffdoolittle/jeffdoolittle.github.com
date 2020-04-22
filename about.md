@@ -16,8 +16,6 @@ images:
   <div style="float: left; margin-bottom: 1em; margin-left: .3em; margin-right: .3em">|</div>
   <div style="float: left; margin-bottom: 1em;"><a href="#resume">Resume</a></div>
   <div style="float: left; margin-bottom: 1em; margin-left: .3em; margin-right: .3em">|</div>
-  <div style="float: left; margin-bottom: 1em;"><a href="#work-experience">Work Experience</a></div>
-  <div style="float: left; margin-bottom: 1em; margin-left: .3em; margin-right: .3em">|</div>
   <div style="float: left; margin-bottom: 1em;"><a href="#personal-bio">Personal Bio</a></div>
   <div style="float: left; margin-bottom: 1em; margin-left: .3em; margin-right: .3em">|</div>
   <div style="float: left; margin-bottom: 1em;"><a href="#endorsements">Endorsements</a></div>
