@@ -11,15 +11,13 @@ layout: default
 
   {%- include banner.html -%}
 
-  <div style="column-count: 2" id="intro-desktop">
-
-  <p>&nbsp;</p>
+  <div style="column-count: 2;" id="intro-desktop">
 
   <a href="/assets/full_head_shot.jpg">
-    <img src="/assets/circle_fall_2018.png" style="break-after: column; display: block; margin-left: auto; margin-right: auto; vertical-align: middle;"/>
+    <img src="/assets/full_head_shot.jpg" style="width: 85%; display: block; align-content: center; "/>
   </a>
 
-  <div style="break-inside: avoid">
+  <div style="break-inside: avoid; padding: .5em;">
 
   {%- include personal-description.md -%}
 
@@ -30,7 +28,7 @@ layout: default
 <div id="intro-mobile">
 
   <a href="/assets/full_head_shot.jpg">
-    <img src="/assets/circle_fall_2018.png" style="display: block; margin-left: auto; margin-right: auto; vertical-align: middle;"/>
+    <img src="/assets/full_head_shot.jpg" style="width: 60%; display: block; margin-left: auto; margin-right: auto;"/>
   </a>
 
   <div style="margin-top: 20px; margin-bottom: 20px;">
@@ -40,7 +38,7 @@ layout: default
   </div>
 
 </div>
-
+<p></p>
 {%- if site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
   <!-- <div>
