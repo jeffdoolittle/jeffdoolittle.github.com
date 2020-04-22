@@ -1,13 +1,8 @@
 <div class="social">
 
-  <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><i class="fab fa-github"></i></a>
-  <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><i class="fab fa-linkedin"></i></a>
-  <a target="_blank" href="https://stackoverflow.com/users/{{ site.stackoverflow_user| cgi_escape | escape }}"><i class="fab fa-stack-overflow"></i></a>
-  <a target="_blank" href="https://orcid.org/0000-0001-9428-2333"><i class="fab fa-orcid"></i></a>
-  <a target="_blank" href="https://twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><i class="fab fa-twitter"></i></a>
-  <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><i class="fab fa-facebook"></i></a>
-  <a target="_blank" href="https://www.instagram.com/{{ site.instagram_username| cgi_escape | escape }}"><i class="fab fa-instagram"></i></a>
-  <a target="_blank" href="https://www.youtube.com/{{ site.youtube_username| cgi_escape | escape }}"><i class="fab fa-youtube"></i></a>
-  <a target="_blank" href="https://feeds.feedburner.com/jeffdoolittle"><i class="fas fa-rss"></i></a>
+  {%- assign links = site.data.social.links -%}
+  {%- for link in links -%}
+  <a target="_blank" title="{{ link.title }}" href="{{ link.url }}"><i style="margin-right: .3em;" class="{{ link.class }}"></i></a>  
+  {%- endfor -%}
 
 </div>
