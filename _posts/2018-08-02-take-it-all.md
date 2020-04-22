@@ -7,7 +7,7 @@ excerpt: "Jesus is Lord of the World and I want him to have it all."
 img:
   file: hands.jpg
   alt: Take it all
-published: true
+published: false
 ---
 
 # Jesus, Lord of the World

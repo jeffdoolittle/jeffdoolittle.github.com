@@ -7,7 +7,7 @@ excerpt: "What will happen if I let go, completely and totally?"
 img:
   file: 2018-08-01-i-surrender-all.jpg
   alt: I Surrender All
-published: true
+published: false
 ---
 
 > ***I surrender all, I surrender all  

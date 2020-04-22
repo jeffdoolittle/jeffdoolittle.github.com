@@ -7,7 +7,7 @@ excerpt: The writing stream ebbs and flows.
 img:
   file: 2018-08-17-nine-days-off.jpg
   alt: Too busy sharpening the pencil to write.
-published: true
+published: false
 ---
 
 Hello friends! It's been a few days since I've had time to sit and write about what God has taught me lately. I'm going through an employment transition that I'll write more about once it is completed. This has left me with less time to reflect, process and write.

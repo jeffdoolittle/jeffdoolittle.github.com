@@ -7,7 +7,7 @@ excerpt: The pursuit begins here.
 img:
   file: 2018-07-31-pursuing-peace.jpg
   alt: The pursuit begins here
-published: true
+published: false
 ---
 
 What does it mean to follow Jesus each day? To have fellowship with him in every moment? To experience his love in every circumstance? To put him and his desires first, above everything else? To passionately pursue his peace and his presence with everything I have and everything that I am?

@@ -7,7 +7,7 @@ excerpt: Accepting my limitations is an act of worship.
 img:
   file: 2018-08-06-sabbath-rest.jpg
   alt: Sabbath Rest
-published: true
+published: false
 ---
 
 While I don't like to admit it, I am finite. I can never work enough, worry enough, strive enough, or struggle enough to overcome my limited nature. But of course that doesn't mean I don't try to fight against this reality with all my might! A few more hours to finish that project, and I'll overcome my anxiety. Some more late nights will get me to a point where I can finally rest. And what happens? Anxiety skyrockets. Rest remains ever elusive&mdash;tantalizingly just out of reach. 
