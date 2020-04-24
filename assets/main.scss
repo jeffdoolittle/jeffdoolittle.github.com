@@ -8,6 +8,29 @@ body {
   color: #DDDDDD;
 }
 
+hr {
+  margin: 1em 0 1em 0;
+}
+
+.post-date-header {
+  font-size: 24px;
+}
+
+.post-date {
+  font-size: 20px;
+  margin-right: 1em;
+  display: inline-block;
+}
+
+a.post-link {
+  font-size: 24px;
+  display: inline-block;
+}
+
+.page-content {
+  padding-top: 0px;  
+}
+
 .wrapper {
   max-width: -webkit-calc(1000px - (30px * 2));
   max-width: calc(1000px - (30px * 2));  
@@ -77,31 +100,16 @@ a:visited {
   color: #a0a0a0;
 }
 
-.stripe {
-  font-size:1em;
-  background-color: transparent;
-}
-
-.stripe td {
+#banner {
+  font-size: 26px;
+  margin: 1em 0 1em 0;
   text-align: center;
-}
-
-.stripe .btn-stripe-pay {
-  display: block; 
-  margin: auto; 
-  background-color:rgb(34, 117, 31);
-  color:#FFF;
-  padding:4px 8px;
-  border:0;
-  border-radius:4px;
-  font-size:1em;
+  white-space: nowrap;
 }
 
 #intro-desktop {display: block;}
 #intro-mobile {display: none;}
 
-#banner-desktop {display: block;}
-#banner-mobile {display: none;}
 
 @media screen and (max-width: 600px) {
   .site-nav {
@@ -114,24 +122,11 @@ a:visited {
     text-align: right;
   }
 
-  #intro-desktop {display: none;}
-  #intro-mobile {display: block;}
+  #intro-desktop { display: none; }
+  #intro-mobile { display: block; }
 
-  #banner-desktop {display: none;}
-  #banner-mobile {display: block;}
-
-  #banner-mobile {
-    h1, h2 {
-      font-size: 1.3em;
-    }
-  }
-
-  .stripe {
-    font-size:.7em;
-  }
-  
-  .stripe .btn-stripe-pay {
-    font-size:.7em;
+  #banner {
+    font-size: 22px;
   }
 }
 

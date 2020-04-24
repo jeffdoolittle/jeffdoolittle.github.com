@@ -23,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jeffdoolittle.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:year/:month/:day/:title/
 header_pages:
+  - events.html
   - publications.html
   - mentoring.md
   - contact.md

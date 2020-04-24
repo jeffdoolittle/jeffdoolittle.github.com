@@ -14,17 +14,11 @@ pagenav:
 
 {%- include pagenav.html -%}
 
+[![Millerton Lake, California]({{ "/assets/mentoring-101.jpg" | absolute_url }})](/assets/mentoring-101.jpg)
+
 I regularly mentor Software Developers, Engineers, Architects and Executives at every stage of their career. I aim for wholistic growth of the entire person, rather than focusing solely on technological and career growth.
 
 Individuals I have mentored have gone on to work for companies of all sizes from startup ventures to Fortune 100 companies.
-
-I have a very limited number of available spots. If you are interested in being mentored by me, continue reading.
-
-[![Millerton Lake, California]({{ "/assets/mentoring-101.jpg" | absolute_url }})](/assets/mentoring-101.jpg)
-
-<p><hr /></p>
-
-<h2 id="mentoring-101">Mentoring 101 <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 **Start with yourself.** What aspiration can you pursue which rises above all others in importance and priority? This focus, this North Star, must drive every other decision you make.
 
@@ -40,14 +34,17 @@ Make your **personal brand appear as professional as possible**. Professional cl
 
 **Keep aiming higher.** Evaluate your North Star regularly and continue to raise the bar.
 
-<h2 id="reading-list">Reading List <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+<p><hr /></p>
 
+<h2 id="reading-list">Reading List <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 * [Righting Software](https://rightingsoftware.org){:target="_blank"} by Juval Löwy
 * [The Goal](https://www.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951){:target="_blank"} by Eli Goldratt
 * [Never Split the Difference](https://info.blackswanltd.com/library){:target="_blank"} by Chris Voss
 * [48 Laws of Power](https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197){:target="_blank"} by Robert Greene
 * [12 Rules for Life](https://www.amazon.com/12-Rules-Life-Antidote-Chaos/dp/0141988517){:target="_blank"} by Jordan Peterson
+
+<p><hr /></p>
 
 <h2 id="meet">Let's Meet! <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 

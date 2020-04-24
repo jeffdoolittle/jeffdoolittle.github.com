@@ -38,19 +38,20 @@ layout: default
   </div>
 
 </div>
-<p></p>
+
+<hr style="margin-top: 1em;" />
+
 {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Latest News" }}</h2>
+  <h2 id="recent" class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
   <!-- <div>
       {%- include google-ads-main.html -%}
   </div>     -->
   <ul class="post-list">
     {%- for post in site.posts limit: 10 -%}
     <li>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <hr />
+      {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
       <h3>
+        <span class="post-date">{{ post.date | date: date_format }}</span>
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
