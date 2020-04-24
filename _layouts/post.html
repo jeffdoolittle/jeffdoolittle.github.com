@@ -16,10 +16,6 @@ layout: default
       </time>
   </header>
 
-  <!-- <div>
-      {%- include google-ads-main.html -%}
-  </div>     -->
-
   <div class="post-content e-content" itemprop="articleBody">
     <p><em>{{ page.excerpt | escape }}</em></p>
     <p>
@@ -29,6 +25,10 @@ layout: default
     </p>
     {{ content }}
   </div>
+
+  <div>
+    {%- include google-ads-main.html -%}
+  </div>    
 
   <p><b>Looking for more?</b></p>
 
@@ -43,10 +43,6 @@ layout: default
       <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
     {% endif %}
   </div>
-
-  <div>
-      {%- include google-ads-post.html -%}
-  </div>    
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
