@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Righting Software with Juval Löwy"
-date:   2020-04-23 18:51:00 -7800
+date:   2020-04-23 22:40:00 -0700
 categories: podcast
 tags: [software, idesign, system design, project design, architecture, se radio, software engineering radio]
 excerpt: A Method for System and Project Design
@@ -11,16 +11,17 @@ img:
 published: true
 ---
 
-[Hosting Software Engineering Radio](https://www.se-radio.net/team/jeff-doolittle/) has given me incredible opportunities to speak with software industry veterans, influencers and leaders. I recently had the privilege to interview Software Legend [Juval Löwy](http://idesign.net/About) about his recently published book, _[Righting Software](https://rightingsoftware.org)_.
+[Hosting Software Engineering Radio](https://www.se-radio.net/team/jeff-doolittle/){:target="_blank"} has given me incredible opportunities to speak with software industry veterans, influencers and leaders. I recently had the privilege to interview Software Legend [Juval Löwy](http://idesign.net/About){:target="_blank"} about his recently published book, _[Righting Software](https://rightingsoftware.org){:target="_blank"}_.
 
-[Episode 407: Juval Löwy on Righting Software](https://www.se-radio.net/2020/04/episode-407-juval-lowy-on-righting-software/)
+[Episode 407: Juval Löwy on Righting Software](https://www.se-radio.net/2020/04/episode-407-juval-lowy-on-righting-software/){:target="_blank"}
 
-* Website: [idesign.net](https://idesign.net)
-* Twitter: [@idesign_inc](https://twitter.com/idesign_inc)
-* LinkedIn: [IDesign](https://www.linkedin.com/company/idesign/)
+Juval's Method for System and Project Design are summarized in the book. In the episode we discussed Juval's perspective on the state of the software industry and what can be done to make it right.
 
-In this episode, I spoke with 
+I encourage you to find out more about Juval, IDesign and _[Righting Software](https://rightingsoftware.org){:target="_blank"}_. Also, make sure you don't miss the challenging and insightful videos on the [IDesignIncTV](https://www.youtube.com/user/IDesignIncTV/videos){:target="_blank"} YouTube channel.
 
-To find out more about Jeremy, be sure to check out his website, his github repositories, and his twitter (he's one of the more active Tweeters I know).
+* Website: [idesign.net](https://idesign.net){:target="_blank"}
+* YouTube: [IDesignIncTV](https://www.youtube.com/user/IDesignIncTV/videos){:target="_blank"}
+* Twitter: [@idesign_inc](https://twitter.com/idesign_inc){:target="_blank"}
+* LinkedIn: [IDesign](https://www.linkedin.com/company/idesign/){:target="_blank"}
 
 {% include twitter_plug.html %}
