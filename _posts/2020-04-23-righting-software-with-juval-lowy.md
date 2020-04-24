@@ -11,7 +11,7 @@ img:
 published: true
 ---
 
-[Hosting Software Engineering Radio](https://www.se-radio.net/team/jeff-doolittle/){:target="_blank"} has given me incredible opportunities to speak with software industry veterans, influencers and leaders. I recently had the privilege to interview Software Legend [Juval Löwy](http://idesign.net/About){:target="_blank"} about his recently published book, _[Righting Software](https://rightingsoftware.org){:target="_blank"}_. Juval's Method for System and Project Design are summarized in his new book.
+[Hosting Software Engineering Radio](https://www.se-radio.net/team/jeff-doolittle/){:target="_blank"} has given me incredible opportunities to speak with software industry veterans, influencers and leaders. I recently had the privilege to interview Software Legend [Juval Löwy](http://idesign.net/About){:target="_blank"} about his recently published book, _[Righting Software](https://rightingsoftware.org){:target="_blank"}_. The book summarizes Juval's Method for System and Project Design for the first time in print.
 
 [Episode 407: Juval Löwy on Righting Software](https://www.se-radio.net/2020/04/episode-407-juval-lowy-on-righting-software/){:target="_blank"}
 
