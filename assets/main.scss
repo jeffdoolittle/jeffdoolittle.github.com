@@ -17,14 +17,14 @@ hr {
 }
 
 .post-date {
+  float: right;
   font-size: 20px;
-  margin-right: 1em;
-  display: inline-block;
 }
 
-a.post-link {
+h3.post-link {
   font-size: 24px;
   display: inline-block;
+  margin-right: 1em;
 }
 
 .page-content {
@@ -107,9 +107,13 @@ a:visited {
   white-space: nowrap;
 }
 
-#intro-desktop {display: block;}
-#intro-mobile {display: none;}
-
+#intro-desktop {
+  display: block;
+  margin: 2em 0 2em 0;
+}
+#intro-mobile {
+  display: none;
+}
 
 @media screen and (max-width: 600px) {
   .site-nav {
@@ -128,6 +132,14 @@ a:visited {
   #banner {
     font-size: 22px;
   }
+  
+  .post-date {  
+    font-size: 20px;
+    margin-right: 1em;
+    display: inline-block;
+    float: none;
+  }
+  
 }
 
 /**
