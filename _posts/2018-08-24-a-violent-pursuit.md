@@ -7,7 +7,7 @@ excerpt: Pursuing peace requires consistent, aggressive, violent action.
 img:
   file: 2018-08-24-a-violent-pursuit.jpg
   alt: Be killing sin, or it will be killing you.
-published: true
+published: false
 ---
 
 Like most kids, I used to love going up the down escalator, or down the up escalator. Moving sidewalks in airports also served to pique my curiousity. If at any point I ceased in my efforts, the inevitable outcome occurred. I would end up going with the flow of the moving floor until it, rather than I, determined my ultimate destination. 
