@@ -2,15 +2,16 @@
 layout: page
 title: Contact
 permalink: /contact/
+pagenav:
+  - title: Send me an email
+    href: mailto:jeff@jeffdoolittle.com
+  - title: Schedule a time to chat
+    href: "#calendar"
+  - title: Find me around the internet
+    href: "#footer"
 ---
 
-<div>
-    <ul style="list-style-type: none;">
-        <li style="margin-bottom: .5em;"><a target="_blank" href="mailto:jeff@jeffdoolittle.com" title="jeff@jeffdoolittle.com">Email me</a></li>
-        <li style="margin-bottom: .5em;"><a href="#calendar" title="Calendly - Jeff Doolittle">Schedule a time to chat</a></li>
-        <li style="margin-bottom: .5em;"><a href="#footer" title="social">Find me around the Internet</a></li>
-    </ul>
-</div>
+{%- include pagenav.html -%}
 
 <div id="calendar" class="calendly-inline-widget" data-url="https://calendly.com/jeff-doolittle" style="min-width:320px;height:630px; margin: 0"></div>
 

@@ -2,7 +2,17 @@
 layout: page
 title:  Mentoring
 permalink: /mentoring
+pagenav:
+  - title: Mentoring 101
+    href: "#mentoring-101"
+  - title: Reading List
+    href: "#reading-list"
+  - title: Let's Meet!
+    href: "#meet"
+
 ---
+
+{%- include pagenav.html -%}
 
 I regularly mentor Software Developers, Engineers, Architects and Executives at every stage of their career. I aim for wholistic growth of the entire person, rather than focusing solely on technological and career growth.
 
@@ -12,7 +22,9 @@ I have a very limited number of available spots. If you are interested in being 
 
 [![Millerton Lake, California]({{ "/assets/mentoring-101.jpg" | absolute_url }})](/assets/mentoring-101.jpg)
 
-## Mentoring 101
+<p><hr /></p>
+
+<h2 id="mentoring-101">Mentoring 101 <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 **Start with yourself.** What aspiration can you pursue which rises above all others in importance and priority? This focus, this North Star, must drive every other decision you make.
 
@@ -28,7 +40,8 @@ Make your **personal brand appear as professional as possible**. Professional cl
 
 **Keep aiming higher.** Evaluate your North Star regularly and continue to raise the bar.
 
-### Reading List
+<h2 id="reading-list">Reading List <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
 
 * [Righting Software](https://rightingsoftware.org){:target="_blank"} by Juval Löwy
 * [The Goal](https://www.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951){:target="_blank"} by Eli Goldratt
@@ -36,6 +49,6 @@ Make your **personal brand appear as professional as possible**. Professional cl
 * [48 Laws of Power](https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197){:target="_blank"} by Robert Greene
 * [12 Rules for Life](https://www.amazon.com/12-Rules-Life-Antidote-Chaos/dp/0141988517){:target="_blank"} by Jordan Peterson
 
-### Want to Meet?
+<h2 id="meet">Let's Meet! <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 I have regular time slots available for introductory phone calls, or even lunch if you're local. [Contact me](/contact)!

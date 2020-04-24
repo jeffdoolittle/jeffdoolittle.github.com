@@ -13,6 +13,26 @@ body {
   max-width: calc(1000px - (30px * 2));  
 }
 
+.pagenav {
+  div {
+    float: left;
+    margin-bottom: 1em;
+  }
+  .separator {
+    margin-left: .3em; margin-right: .3em;
+  }
+  @media screen and (max-width: 520px) {
+    div {
+      float: none;
+      margin: 0px;
+      padding: 0px;
+    }
+    .separator {
+      visibility: hidden;
+    }
+  }
+}
+
 p {
   margin-block-end: 1.5em;
 }

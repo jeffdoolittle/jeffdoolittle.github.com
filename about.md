@@ -9,19 +9,20 @@ images:
     download: head_shot_square_zoomed.jpg
   - url: /assets/full_head_shot.jpg
     download: jeff_doolittle_bio_full.jpg
+pagenav:
+  - title: Professional Bio
+    href: "#professional-bio"
+  - title: Resume
+    href: "#resume"
+  - title: Personal Bio
+    href: "#personal-bio"
+  - title: Endorsements
+    href: "#endorsements"
+  - title: Portfolio
+    href: "#portfolio"  
 ---
 
-<div>
-  <div style="float: left; margin-bottom: 1em;"><a href="#professional-bio">Professional Bio</a></div>
-  <div style="float: left; margin-bottom: 1em; margin-left: .3em; margin-right: .3em">|</div>
-  <div style="float: left; margin-bottom: 1em;"><a href="#resume">Resume</a></div>
-  <div style="float: left; margin-bottom: 1em; margin-left: .3em; margin-right: .3em">|</div>
-  <div style="float: left; margin-bottom: 1em;"><a href="#personal-bio">Personal Bio</a></div>
-  <div style="float: left; margin-bottom: 1em; margin-left: .3em; margin-right: .3em">|</div>
-  <div style="float: left; margin-bottom: 1em;"><a href="#endorsements">Endorsements</a></div>
-  <div style="float: left; margin-bottom: 1em; margin-left: .3em; margin-right: .3em">|</div>
-  <div style="float: left; margin-bottom: 1em;"><a href="#portfolio">Portfolio</a></div>
-</div>
+{%- include pagenav.html -%}
 
 [![Software Architect and Mentor]({{ "/assets/about.jpg" | absolute_url }})](/assets/about.jpg)
 
@@ -31,9 +32,13 @@ images:
 
 [Bio Pics](#bio-pics) for use in publications are [available further down on this page](#bio-pics).
 
+<p><hr /></p>
+
 <h2 id="resume">Resume <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 See my [resume](/assets/resume.pdf){: target="_blank"} for an extensive description of my career.
+
+<p><hr /></p>
 
 <h2 id="personal-bio">Personal Bio <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
@@ -51,6 +56,8 @@ See my [resume](/assets/resume.pdf){: target="_blank"} for an extensive descript
 
 * I believe life consists of three primary pursuits: Connecting with God, Connecting with People, and Connecting with Purpose.
 
+<p><hr /></p>
+
 <h2 id="bio-pics">Bio Pics <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 <div>
@@ -66,9 +73,13 @@ See my [resume](/assets/resume.pdf){: target="_blank"} for an extensive descript
   {% endfor %}
 </div>
 
+<p><hr /></p>
+
 <h2 id="endorsements">Endorsements <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 {%- include endorsements.md -%}
+
+<p><hr /></p>
 
 <h2 id="portfolio">Portfolio <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 

@@ -7,7 +7,7 @@ excerpt: Sometimes you see the change coming. Other times, it sneaks up on you.
 img:
   file: 2018-08-30-leaving-lotpath.jpg
   alt: Leaving Lotpath
-published: true
+published: false
 ---
 
 Today is my last day working at [Lotpath](http://lotpath.com){:target="blank"}, a company that I co-founded and where I have served as CTO since 2007. We've spent the past 11 years building software for the Agriculture industry. [Lotpath](http://lotpath.com){:target="blank"} has some exciting near-term prospects with new products coming out for Harvest Scheduling and Field Labor tracking and compliance.

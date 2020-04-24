@@ -1,0 +1,12 @@
+
+<div class="pagenav">
+  {% for entry in page.pagenav %}
+    {% if entry.href != page.pagenav.first.href %}
+    <div class="separator">|</div>
+    {% endif %}
+    <div class="entry"><a href="{{ entry.href }}">{{ entry.title }}</a></div>
+  {% endfor %}
+  <br style="clear:both" />
+</div>
+
+<p><hr /></p>

@@ -1,0 +1,76 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+pagenav:
+  - title: Software Engineering Radio
+    href: "#se-radio"
+  - title: Cutter Consortium
+    href: "#cutter"
+publications:
+  - title: Software Engineering Radio
+    subtitle: The Podcast for Professional Software Developers
+    bio: https://www.se-radio.net/team/jeff-doolittle/
+    bioTitle: "SE Radio Team  - Jeff Doolittle"
+    id: se-radio
+    entriesHeader: Episodes
+    entries:
+      - title: "388 - Bob Kepford on Decoupled CMS"
+        url: "https://www.se-radio.net/2019/11/episode-388-bob-kepford-on-decoupled-content-management-systems/"
+      - title: "396 - Barry O’Reilly on Antifragile Architecture"
+        url: "https://www.se-radio.net/2020/01/episode-396-barry-oreilly-on-antifragile-architecture/"
+      - title: "401 - Jeremy Miller on Waterfall Versus Agile"
+        url: "https://www.se-radio.net/2020/03/episode-401-jeremy-miller-on-waterfall-versus-agile/"
+      - title: "407 - Juval Löwy on Righting Software"
+        url: "https://www.se-radio.net/2020/04/episode-407-juval-lowy-on-righting-software/"
+  - title: Cutter Consortium
+    subtitle: Access to the Experts
+    bio: https://www.cutter.com/experts/jeffdoolittle
+    bioTitle: Cutter Consortium Experts - Jeff Doolittle
+    id: cutter
+    entriesHeader: Articles
+    entries: 
+      - title: "Don't Disrupt Agile. Drop It (Forthcoming)"
+        url: ""
+  - title: PADNUG (Portland Area Dot Net User Group)
+    subtitle: The developer user group in the Portland, Oregon metro area
+
+---
+
+{%- include pagenav.html -%}
+
+<div>
+
+  {% for publication in page.publications %}
+
+  <h2 id="{{publication.id}}" style="margin-bottom: .5em">{{publication.title}}</h2>
+
+  <p><em>{{publication.subtitle}}</em></p>
+
+  <div>
+    
+    <ul style="list-style: none;">
+      <li><a href="{{publication.bio}}" target="_blank">{{publication.bioTitle}}</a></li>
+    </ul>
+
+    {% if publication.entries%}
+
+    <h3>{{publication.entriesHeader}}</h3>
+
+    <ul style="list-style: none;">
+      {% for entry in publication.entries %}
+      <li><a href="{{entry.url}}" target="_blank">{{entry.title}}</a></li>
+      {% endfor %}
+    </ul>
+
+    {% endif %}
+
+  </div>
+
+    {% if publication.id != page.publications.last.id %}
+    <p><hr /></p>
+    {% endif %}
+
+  {% endfor %}
+
+</div>
