@@ -138,6 +138,12 @@ a:visited {
   display: none;
 }
 
+@media screen and (max-width: 900px) {
+  #intro-desktop {
+    font-size: .8em;
+  }
+}
+
 ul.entries {
   list-style: none;
   li {
