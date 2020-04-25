@@ -42,8 +42,8 @@ categories:
     <ul style="list-style: none;">
       {% for entry in category.entries %}
       <li style="margin-bottom: .5em;">
-        <div style="display: inline-block; word-wrap: none; width: 15em;">{{entry.date | date: date_format}}</div>
-        <div style="display: inline-block; width: 35em;">
+        <div style="display: inline-block; word-wrap: none; width: 12em;">{{entry.date | date: date_format}}</div>
+        <div style="display: inline-block; width: 25em;">
           {% if entry.url %}
             <a href="{{entry.url}}" target="_blank">
           {% endif %}

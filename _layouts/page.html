@@ -24,8 +24,8 @@ layout: default
 
         {%- for post in site.posts limit: 3 -%}
         <li style="margin-bottom: .5em;">
-          <div style="display: inline-block; word-wrap: none; width: 15em;">{{post.date | date: date_format}}</div>
-          <div style="display: inline-block; word-wrap: none; width: 35em;">
+          <div style="display: inline-block; word-wrap: none; width: 12em;">{{post.date | date: date_format}}</div>
+          <div style="display: inline-block; word-wrap: none; width: 25em;">
               <a href="{{ post.url | absolute_url }}" target="_blank">
               {{ post.title }}
               </a>
