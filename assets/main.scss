@@ -137,6 +137,21 @@ a:visited {
   display: none;
 }
 
+ul.entries {
+  list-style: none;
+  li {
+    margin-bottom: .5em;
+    div.entry-date {
+      display: inline-block; 
+      width: 12em;
+    }
+    div.entry-text {
+      display: inline-block; 
+      width: 25em;      
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .site-nav {
     position: absolute;
@@ -161,6 +176,19 @@ a:visited {
     display: inline-block;
     float: none;
   }  
+
+  ul.entries {
+    li {
+      div.entry-date {
+        display: block;
+        width: auto;
+      }
+      div.entry-text {
+        display: block;
+        width: auto;
+      }
+    }
+  }
 }
 
 /**

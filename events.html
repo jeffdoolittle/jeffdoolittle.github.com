@@ -39,11 +39,11 @@ categories:
 
     <h3>{{category.entriesHeader}}</h3>
 
-    <ul style="list-style: none;">
+    <ul class="entries">
       {% for entry in category.entries %}
-      <li style="margin-bottom: .5em;">
-        <div style="display: inline-block; word-wrap: none; width: 12em;">{{entry.date | date: date_format}}</div>
-        <div style="display: inline-block; width: 25em;">
+      <li>
+        <div class="entry-date">{{entry.date | date: date_format}}</div>
+        <div class="entry-text">
           {% if entry.url %}
             <a href="{{entry.url}}" target="_blank">
           {% endif %}

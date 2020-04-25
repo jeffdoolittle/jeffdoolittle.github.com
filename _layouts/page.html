@@ -20,12 +20,12 @@ layout: default
     {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
 
     <div class="blog-index">  
-      <ul style="list-style: none;">
+      <ul class="entries">
 
         {%- for post in site.posts limit: 3 -%}
-        <li style="margin-bottom: .5em;">
-          <div style="display: inline-block; word-wrap: none; width: 12em;">{{post.date | date: date_format}}</div>
-          <div style="display: inline-block; word-wrap: none; width: 25em;">
+        <li>
+          <div class="entry-date">{{post.date | date: date_format}}</div>
+          <div class="entry-text">
               <a href="{{ post.url | absolute_url }}" target="_blank">
               {{ post.title }}
               </a>
