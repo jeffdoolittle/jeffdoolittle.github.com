@@ -3,6 +3,11 @@
 
 @import "minima";
 
+
+//color: #c06f39; # orange
+// color: #5C7880; # medium blue
+// color: #819EA3; # light blue
+
 body {
   background-color: #202025;
   color: #DDDDDD;
@@ -115,9 +120,13 @@ a:visited {
 #banner {
   letter-spacing: 1px;
   font-size: 30px;
+  color: #DDDDDD;
   margin: 1em 0 1em 0;
   text-align: center;
-  white-space: nowrap;
+  div  {
+    display: inline-block;
+    white-space: nowrap;
+  }
 }
 
 #intro-desktop {
@@ -151,8 +160,7 @@ a:visited {
     margin-right: 1em;
     display: inline-block;
     float: none;
-  }
-  
+  }  
 }
 
 /**
