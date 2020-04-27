@@ -1,0 +1,37 @@
+categories:
+  - title: Software Engineering Radio
+    subtitle: The Podcast for Professional Software Developers
+    bio: https://www.se-radio.net/team/jeff-doolittle/
+    bioTitle: "SE Radio Team  - Jeff Doolittle"
+    id: se-radio
+    entriesHeader: Episodes
+    entries:
+      - title: "388 - Bob Kepford on Decoupled CMS"
+        url: "https://www.se-radio.net/2019/11/episode-388-bob-kepford-on-decoupled-content-management-systems/"
+        date: 2019-11-12
+      - title: "396 - Barry O’Reilly on Antifragile Architecture"
+        url: "https://www.se-radio.net/2020/01/episode-396-barry-oreilly-on-antifragile-architecture/"
+        date: 2020-01-24
+      - title: "401 - Jeremy Miller on Waterfall Versus Agile"
+        url: "https://www.se-radio.net/2020/03/episode-401-jeremy-miller-on-waterfall-versus-agile/"
+        date: 2020-03-03
+      - title: "407 - Juval Löwy on Righting Software"
+        url: "https://www.se-radio.net/2020/04/episode-407-juval-lowy-on-righting-software/"
+        date: 2020-04-24
+  - title: Cutter Consortium
+    subtitle: Access to the Experts
+    bio: https://www.cutter.com/experts/jeffdoolittle
+    bioTitle: Cutter Consortium Experts - Jeff Doolittle
+    id: cutter
+    entriesHeader: Articles
+    entries: 
+      - title: "Don't Disrupt Agile. Drop It."
+        date: "[Forthcoming]"
+  - title: PADNUG (Portland Area Dot Net User Group)
+    subtitle: The developer user group in the Portland, Oregon metro area
+    id: padnug
+    entriesHeader: Presentations
+    entries:
+      - title: "REST Wrecks Microservices!"
+        url: https://www.meetup.com/PADNUG/events/jscxtmybchbhb/
+        date: 2020-05-05

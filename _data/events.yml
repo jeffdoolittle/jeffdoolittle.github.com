@@ -1,0 +1,9 @@
+categories:
+  - title: PADNUG (Portland Area Dot Net User Group)
+    subtitle: The developer user group in the Portland, Oregon metro area
+    id: padnug
+    entriesHeader: Presentations
+    entries:
+      - title: "REST Wrecks Microservices!"
+        url: https://www.meetup.com/PADNUG/events/jscxtmybchbhb/
+        date: 2020-05-05

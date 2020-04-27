@@ -1,0 +1,10 @@
+{%- assign endorsements = site.data.endorsements.endorsements -%}
+{% for e in endorsements %}
+
+<h3>{{e.reference}}</h3>
+
+<blockquote><h4 style="color: #c06f39">{{e.tagLine}}</h4></blockquote>
+
+{{e.content}}
+
+{% endfor %} 

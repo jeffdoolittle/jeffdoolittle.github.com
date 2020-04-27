@@ -1,0 +1,13 @@
+{%- assign projects = site.data.portfolio.projects -%}
+
+{% for p in projects %}
+
+<h3>{{p.title}}</h3>
+
+<blockquote><h4 style="color: #c06f39">{{p.summary}}</h4></blockquote>
+
+{{p.content}}
+
+{{e.content}}
+
+{% endfor %} 

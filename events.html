@@ -5,16 +5,6 @@ permalink: /events/
 pagenav:
   - title: PADNUG
     href: "#padnug"
-categories:
-  - title: PADNUG (Portland Area Dot Net User Group)
-    subtitle: The developer user group in the Portland, Oregon metro area
-    id: padnug
-    entriesHeader: Presentations
-    entries:
-      - title: "REST Wrecks Microservices!"
-        url: https://www.meetup.com/PADNUG/events/jscxtmybchbhb/
-        date: 2020-05-05
-
 ---
 
 {%- include pagenav.html -%}
@@ -22,8 +12,9 @@ categories:
 <div>
 
   {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+  {%- assign categories = site.data.events.categories -%}
 
-  {% for category in page.categories %}
+  {% for category in categories %}
 
   <h2 id="{{category.id}}" style="margin-bottom: .5em">{{category.title}} <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
@@ -60,7 +51,7 @@ categories:
 
   </div>
 
-    {% if category.id != page.categories.last.id %}
+    {% if category.id != categories.last.id %}
     <p><hr /></p>
     {% endif %}
 

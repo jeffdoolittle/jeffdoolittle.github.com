@@ -19,7 +19,7 @@ pagenav:
   - title: Endorsements
     href: "#endorsements"
   - title: Portfolio
-    href: "#portfolio"  
+    href: "#portfolio"
 ---
 
 {%- include pagenav.html -%}
@@ -77,10 +77,10 @@ See my [resume](/assets/resume.pdf){: target="_blank"} for an extensive descript
 
 <h2 id="endorsements">Endorsements <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
-{%- include endorsements.md -%}
+{%- include endorsements.html -%}
 
 <p><hr /></p>
 
 <h2 id="portfolio">Portfolio <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
-{%- include portfolio.md -%}
+{%- include portfolio.html -%}
