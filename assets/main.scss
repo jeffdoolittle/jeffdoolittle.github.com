@@ -50,19 +50,21 @@ h3.post-link {
   max-width: calc(1000px - (30px * 2));  
 }
 
-.pagenav {
+div.pagenav {
+  margin: 0 auto 1em auto;
+  width: fit-content;
   div {
-    float: left;
-    margin-bottom: 1em;
+    display: inline-block;
   }
   .separator {
     margin-left: .3em; margin-right: .3em;
   }
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 600px) {
+    width: auto;
     div {
-      float: none;
       margin: 0px;
       padding: 0px;
+      display: block;
     }
     .separator {
       visibility: hidden;
