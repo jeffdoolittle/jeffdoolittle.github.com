@@ -61,13 +61,17 @@ div.pagenav {
   }
   @media screen and (max-width: 600px) {
     width: auto;
+    white-space: nowrap;
+    margin: 0;
     div {
-      margin: 0px;
+      margin: 0 0 .3em 0;
       padding: 0px;
       display: block;
     }
     .separator {
+      margin: 0px;
       visibility: hidden;
+      display: none;
     }    
   }
 }
