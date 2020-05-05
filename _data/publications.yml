@@ -26,7 +26,8 @@ categories:
     entriesHeader: Articles
     entries: 
       - title: "Don't Disrupt Agile. Drop It."
-        date: "[Forthcoming]"
+        url: "https://www.cutter.com/article/don’t-disrupt-agile-drop-it"
+        date: 2020-04-29
   - title: PADNUG (Portland Area Dot Net User Group)
     subtitle: The developer user group in the Portland, Oregon metro area
     id: padnug

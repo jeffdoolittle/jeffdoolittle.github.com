@@ -7,7 +7,7 @@ tags: [software, idesign, system design, project design, architecture, se radio,
 excerpt: A Method for System and Project Design
 img:
   file: 2020-04-23-righting-software-with-juval-lowy.jpg
-  alt: Orchard Lake, Damascus, Oregoon
+  alt: Orchard Lake, Damascus, Oregon
 published: true
 ---
 

@@ -1,8 +1,8 @@
 ---
-layout: page
-title: Don't Do Agile. Be Agile.
-date: '2020-02-28T12:00:00-08:00'
-published: true
+layout: redirect
+sitemap: false
+permalink: /papers/disrupting-agile/ # url to redirect from
+redirect_to: /2020/04/29/dont-disrupt-agile-drop-it/ # url to redirect to
 ---
 
 *Response to a [Call for Papers](https://www.cutter.com/call-papers#disruptagile){:target="_blank"} from the Cutter Business Technology Journal.*
