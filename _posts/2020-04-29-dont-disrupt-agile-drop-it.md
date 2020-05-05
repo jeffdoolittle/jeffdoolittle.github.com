@@ -11,7 +11,17 @@ img:
 published: true
 ---
 
-**TL;DR - Go download [Don't Disrupt Agile. Drop It](https://www.cutter.com/article/don%E2%80%99t-disrupt-agile-drop-it){:target="_blank"}.**
+## Limited Time Offer!
+
+**For a limited time you can [download the article for free!](https://www.cutter.com/offer/don%E2%80%99t-disrupt-agile-drop-it){:target="_blank"}**
+
+You only have to accept the privacy terms. No other information is required.
+
+## TL;DR
+
+**Go download [Don't Disrupt Agile. Drop It](https://www.cutter.com/article/don%E2%80%99t-disrupt-agile-drop-it){:target="_blank"}.**
+
+## About the Article
 
 A few weeks ago, the Cutter Business Technology Journal posted a [Call for Papers](https://www.cutter.com/call-papers#disruptagile){:target="_blank"} to address the following questions:
 
