@@ -3,7 +3,7 @@ layout: post
 title:  "Don't Disrupt Agile. Drop it!"
 date:   2020-04-29 08:00:00 -0700
 categories: publication
-tags: [software, idesign, system design, project design, architecture, se radio, software engineering radio]
+tags: [software, agile, disrupt, cutter, cutter business technology journal, cutter consortium, manifesto, drop]
 excerpt: It's time to leave "Agile" behind
 img:
   file: 2020-04-29-dont-disrupt-agile-drop-it.jpg
