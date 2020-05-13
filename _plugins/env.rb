@@ -5,7 +5,7 @@ module Jekyll
   class EnvironmentVariablesGenerator < Generator
 
     def generate(site)
-      site.config['jekyll_env'] = ENV['JEKYLL_ENV'] || 'local'
+      site.config['JEKYLL_ENV'] = ENV['JEKYLL_ENV'] || 'local'
     end
 
   end
