@@ -3,7 +3,6 @@
 
 @import "minima";
 
-
 //color: #c06f39; # orange
 // color: #5C7880; # medium blue
 // color: #819EA3; # light blue
@@ -326,4 +325,16 @@ a {
   }
 }
 
-
+div.env {
+  margin: 1em 0 1em 0;
+  div.env-entry {
+    font-family: monospace;
+  }
+  div.env-key {
+    display: inline-block;
+    font-style: italic;
+  }
+  div.env-value {
+    display: inline-block;
+  }
+}

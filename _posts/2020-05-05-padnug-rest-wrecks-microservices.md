@@ -11,6 +11,12 @@ img:
 published: true
 ---
 
+## TL;DR
+
+Download the [slide deck](/assets/REST Wrecks Microservices!.pdf){:target="_blank"} and [go watch the presentation](https://www.youtube-nocookie.com/embed/0hzMEjVfHhg?start=772){:target="_blank"}!
+
+## About the Presentation
+
 On May 5, 2020 I had the privilege to present at the [PADNUG](https://www.meetup.com/PADNUG/events/jscxtmybchbhb/){:target="_blank"} (formerly called the Portland Area Dot Net User Group).
 
 We explored various questions and topics together, including:

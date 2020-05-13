@@ -35,7 +35,7 @@ show_excerpts: true
 
 #social
 twitter_username: jeffdoolittle
-github_username:  jeffdoolittle
+github_username: jeffdoolittle
 linkedin_username: jeffdoolittle
 facebook_username: jeffdoolittle
 instagram_username: jeffdoolittle
@@ -53,19 +53,34 @@ plugins:
 
 defaults:
   - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      show_banner: true
+      show_recents: true
+  - scope:
       path: "assets"
     values:
       image: true
+
+# defaults:
+
+#   - scope:
+#       path: "projects"
+#       type: "pages" # previously `page` in Jekyll 2.2.
+#     values:
+#       layout: "project" # overrides previous default layout
+#       author: "Mr. Hyde"
 
 # Google Analytics
 google_analytics: UA-85204-1
 
 # Disqus Comments
 disqus:
-    # Leave shortname blank to disable comments site-wide.
-    # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-    shortname: jeffdoolittle
-
+  # Leave shortname blank to disable comments site-wide.
+  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+  shortname: jeffdoolittle
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

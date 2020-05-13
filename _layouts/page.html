@@ -2,7 +2,11 @@
 layout: default
 ---
 
+{% if page.show_banner %}
 {%- include banner.html -%}
+{% else %}
+<div id="banner"></div>
+{% endif %}
 
 <article class="post">
 
@@ -11,30 +15,33 @@ layout: default
   </header>
 
   <div class="post-content">
+
     {{ content }}
 
-    <p><hr /></p>
-    
+    {% if page.show_recents %}
+    <hr />
+
     <h2>Recent Posts</h2>
-    
     {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
 
-    <div class="blog-index">  
+    <div class="blog-index">
       <ul class="entries">
 
         {%- for post in site.posts limit: 3 -%}
         <li>
           <div class="entry-date">{{post.date | date: date_format}}</div>
           <div class="entry-text">
-              <a href="{{ post.url | absolute_url }}" target="_blank">
+            <a href="{{ post.url | absolute_url }}" target="_blank">
               {{ post.title }}
-              </a>
+            </a>
           </div>
-        </li>      
+        </li>
         {%- endfor -%}
       </ul>
-  </div>
+    </div>
 
-</div>
+    {% endif %}
+
+  </div>
 
 </article>

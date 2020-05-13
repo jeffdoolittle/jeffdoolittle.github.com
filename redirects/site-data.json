@@ -1,5 +1,0 @@
----
-permalink: /site-data/
----
-
-{% include /site-data.json %}
