@@ -1,0 +1,53 @@
+<div>
+
+  {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+  {%- assign categories = site.data.publications.categories -%}
+
+
+  {% for category in categories %}
+
+  <h2 id="{{category.id}}" style="margin-bottom: .5em">{{category.title}} <span
+      style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <p><em>{{category.subtitle}}</em></p>
+
+  <div>
+
+    {% if category.bio %}
+    <p><a href="{{category.bio}}" target="_blank">{{category.bioTitle}}</a></p>
+    {% endif %}
+
+    {% if category.entries%}
+
+    <h3>{{category.entriesHeader}}</h3>
+
+    <ul class="entries">
+      {% for entry in category.entries %}
+      <li>
+        <div class="entry-date">{{entry.date | date: date_format}}</div>
+        <div class="entry-text">
+          {% if entry.url %}
+          <a href="{{entry.url}}" target="_blank">
+            {% endif %}
+            {{entry.title}}
+            {% if entry.url%}
+          </a>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% endif %}
+
+  </div>
+
+  {% if category.id != categories.last.id %}
+  <p>
+    <hr />
+  </p>
+  {% endif %}
+
+  {% endfor %}
+
+</div>
