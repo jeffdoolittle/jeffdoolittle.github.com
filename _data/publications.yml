@@ -10,15 +10,19 @@ categories:
       - title: "388 - Bob Kepford on Decoupled CMS"
         url: "/2019/11/12/hosting-software-engineering-radio/"
         date: 2019-11-12
+        local: true
       - title: "396 - Barry O’Reilly on Antifragile Architecture"
         url: "/2020/01/24/antifragile-architecture-barry-oreilly/"
         date: 2020-01-24
+        local: true
       - title: "401 - Jeremy Miller on Waterfall Versus Agile"
         url: "/2020/03/03/waterfall-vs-agile-se-radio-jeremy-miller/"
         date: 2020-03-03
+        local: true
       - title: "407 - Juval Löwy on Righting Software"
         url: "/2020/04/24/righting-software-with-juval-lowy/"
         date: 2020-04-24
+        local: true
   - title: Cutter Consortium
     subtitle: Access to the Experts
     bio: /cutter
@@ -30,6 +34,7 @@ categories:
       - title: "Don't Disrupt Agile. Drop It."
         url: "/2020/04/29/dont-disrupt-agile-drop-it/"
         date: 2020-04-29
+        local: true
   - title: PADNUG (Portland Area Dot Net User Group)
     subtitle: The developer user group in the Portland, Oregon metro area
     id: padnug
@@ -39,3 +44,4 @@ categories:
       - title: "REST Wrecks Microservices!"
         url: "/2020/05/05/padnug-rest-wrecks-microservices/"
         date: 2020-05-05
+        local: true
