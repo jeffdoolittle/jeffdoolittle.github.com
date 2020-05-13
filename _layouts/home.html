@@ -4,52 +4,51 @@ layout: default
 
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
 
   {%- include banner.html -%}
 
-  {%- include highlight.md -%}
+  {%- include highlights.html -%}
 
   <hr />
 
   <div style="column-count: 2;" id="intro-desktop">
 
-  <a href="/assets/full_head_shot.jpg">
-    <img src="/assets/full_head_shot.jpg" style="width: 85%; display: block; margin: auto; align-content: center; "/>
-  </a>
+    <a href="/assets/full_head_shot.jpg">
+      <img src="/assets/full_head_shot.jpg" style="width: 85%; display: block; margin: auto; align-content: center; " />
+    </a>
 
-  <div style="break-inside: avoid; padding: .5em;">
+    <div style="break-inside: avoid; padding: .5em;">
 
-  {%- include personal-description.md -%}
+      {%- include personal-description.md -%}
 
-  </div>
-
-</div>
-
-<div id="intro-mobile">
-
-  <a href="/assets/full_head_shot.jpg">
-    <img src="/assets/full_head_shot.jpg" style="width: 60%; display: block; margin-left: auto; margin-right: auto;"/>
-  </a>
-
-  <div style="margin-top: 20px; margin-bottom: 20px;">
-
-  {%- include personal-description.md -%}
+    </div>
 
   </div>
 
-</div>
+  <div id="intro-mobile">
 
-<hr />
+    <a href="/assets/full_head_shot.jpg">
+      <img src="/assets/full_head_shot.jpg"
+        style="width: 60%; display: block; margin-left: auto; margin-right: auto;" />
+    </a>
 
-{%- if site.posts.size > 0 -%}
+    <div style="margin-top: 20px; margin-bottom: 20px;">
+
+      {%- include personal-description.md -%}
+
+    </div>
+
+  </div>
+
+  <hr />
+
+  {%- if site.posts.size > 0 -%}
   <h2 id="recent" class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
-  <!-- <div>
-      {%- include google-ads-main.html -%}
-  </div>     -->
+  {%- include google-ads-main.html -%}
   <ul class="post-list">
     {%- for post in site.posts limit: 10 -%}
     <li>
@@ -61,25 +60,23 @@ layout: default
       </h3>
       <h3 class="post-date">{{ post.date | date: date_format }}</h3>
       {%- if site.show_excerpts -%}
-        <p><em>{{ post.excerpt }}</em></p>
-        <a href="{{ post.url | relative_url }}">
-          <p><img src="/assets/{{ post.img.file }}" alt="{{ post.img.alt }}" /></p>
-          <p>Continue reading...</p>
-        </a>
+      <p><em>{{ post.excerpt }}</em></p>
+      <a href="{{ post.url | relative_url }}">
+        <p><img src="/assets/{{ post.img.file }}" alt="{{ post.img.alt }}" /></p>
+        <p>Continue reading...</p>
+      </a>
       {%- endif -%}
     </li>
     {%- endfor -%}
   </ul>
 
   <p class="rss-subscribe">
-    Subscribe <a target="_blank" href="/rss">via RSS</a> 
+    Subscribe <a target="_blank" href="/rss">via RSS</a>
     or view the <a href="/archive">Archive</a> of all posts
   </p>
 
   {%- endif -%}
 
-  <div>
-      {%- include google-ads-main.html -%}
-  </div>    
+  {%- include google-ads-main.html -%}
 
 </div>

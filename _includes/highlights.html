@@ -1,0 +1,9 @@
+{% for highlight in site.data.highlights %}
+<h2 class="post-list-heading">{{ highlight.title }}</h2>
+
+<div style="margin: 0 2em 0 2em;">
+
+    <p class="highlight-description">{{ highlight.summary }}</p>
+
+</div>
+{% endfor %}
