@@ -13,4 +13,6 @@ pagenav:
 
 {%- include pagenav.html -%}
 
-{% include content-entries.html categories=site.data.publications.categories %}
+{% assign categories = site.data.publications.categories %}
+
+{% include content-entries.html categories=categories %}

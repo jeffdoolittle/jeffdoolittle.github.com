@@ -1,8 +1,7 @@
 <div>
 
   {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
-  {%- assign categories = site.data.publications.categories -%}
-
+  {%- assign categories = include.categories -%}
 
   {% for category in categories %}
 
