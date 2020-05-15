@@ -43,6 +43,8 @@ defaults:
       show_banner: true
       show_recents: true
       show_title: true
+      img: 
+        file: full_head_shot.jpg
   - scope:
       path: "assets"
     values:
