@@ -45,6 +45,8 @@ defaults:
       show_title: true
       img: 
         file: full_head_shot.jpg
+      social:
+        img: circle_fall_2018.png
   - scope:
       path: "assets"
     values:
