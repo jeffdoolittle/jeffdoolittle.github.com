@@ -4,7 +4,13 @@
     {% if entry.href != page.pagenav.first.href %}
     <div class="separator"> | </div>
     {% endif %}
-    <div class="entry"><a href="{{ entry.href }}">{{ entry.title }}</a></div>
+    <div class="entry">
+      {% if entry.external %}
+      <a href="{{ entry.href }}" target="_blank">{{ entry.title }}</a>
+      {% else %}
+      <a href="{{ entry.href }}">{{ entry.title }}</a>
+      {% endif %}
+    </div>
   {% endfor %}
   <i style="clear:both"></i>
 </div>
