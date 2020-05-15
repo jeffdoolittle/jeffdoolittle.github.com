@@ -46,7 +46,7 @@ defaults:
       img: 
         file: full_head_shot.jpg
       social:
-        img: circle_fall_2018.png
+        img: social_head_shot.jpg
   - scope:
       path: "assets"
     values:
