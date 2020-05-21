@@ -1,5 +1,5 @@
 ---
 layout: redirect
 sitemap: false
-redirect_to: https://calendly.com/jeff-doolittle
+redirect_to: https://calendly.com/jeffdoolittle
 ---
