@@ -338,3 +338,38 @@ div.env {
     display: inline-block;
   }
 }
+
+.footnote {
+  margin-left: 1em;
+  margin-bottom: .8em;
+}
+
+.footnoteref {
+  vertical-align: super;
+  font-size: .8em;
+}
+
+a.anchor {
+  position: relative;
+  top: -80px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #F09f69;
+  border: 1px #f7f7f7 solid;
+  border-radius: 5px;
+
+  float: right;
+  width: 35%;
+  margin: .5em 1em 1em 2em;
+  padding: 1em;
+
+  @media screen and (max-width: 800px) {
+    float: none;
+    width: auto;
+    margin: .5em 1.5em 1em 1em;
+    padding: .6em;
+  }
+}
