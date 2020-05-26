@@ -37,16 +37,16 @@ plugins:
 defaults:
   - scope:
       path: ""
-      type: "pages"
     values:
       layout: "page"
       show_banner: true
       show_recents: true
       show_title: true
+      image: /assets/og_image.png
       img: 
-        file: full_head_shot.jpg
+        file: og_image.png
       social:
-        img: social_head_shot.jpg
+        img: og_image.png
   - scope:
       path: "assets"
     values:
