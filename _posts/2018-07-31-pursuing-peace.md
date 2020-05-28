@@ -4,9 +4,8 @@ title:  "Pursuing Peace"
 date:   2018-07-31 08:00:00 -0000
 categories: general
 excerpt: The pursuit begins here.
-img:
-  file: 2018-07-31-pursuing-peace.jpg
-  alt: The pursuit begins here
+image:  2018-07-31-pursuing-peace.jpg
+image_alt: The pursuit begins here
 published: false
 ---
 

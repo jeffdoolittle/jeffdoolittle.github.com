@@ -4,9 +4,8 @@ title:  "ideas scratch pad"
 # date:   2020-08-30 08:00:00 -0700
 categories: general
 excerpt: your few sentence excerpt goes here...
-img:
-  file: placeholder.png
-  alt: Placeholder
+image: placeholder.png
+image_alt: Placeholder
 published: true
 ---
 

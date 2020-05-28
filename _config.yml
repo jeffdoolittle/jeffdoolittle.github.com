@@ -43,10 +43,7 @@ defaults:
       show_recents: true
       show_title: true
       image: /assets/og_image.png
-      img: 
-        file: og_image.png
-      social:
-        img: og_image.png
+      image_alt: Jeff Doolittle dot com
   - scope:
       path: "assets"
     values:

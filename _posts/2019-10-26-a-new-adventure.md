@@ -4,9 +4,8 @@ title:  "A New Adventure"
 date:   2019-10-26 00:02:30 -0700
 categories: general
 excerpt: Why change one thing when you can change everything?
-img:
-  file: 2019-10-26-a-new-adventure.jpg
-  alt: The Willamette
+image:  2019-10-26-a-new-adventure.jpg
+image_alt: The Willamette
 published: true
 ---
 

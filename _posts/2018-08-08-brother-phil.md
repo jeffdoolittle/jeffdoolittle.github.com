@@ -4,9 +4,8 @@ title:  "Brother Phil"
 date:   2018-08-08 06:00:00 -0700
 categories: music
 excerpt: "\"Brother Phil\" is the first track from my instrumental, acoustic guitar demo, \"Hope in the Dark.\""
-img:
-  file: 2018-08-08-brother-phil.jpg
-  alt: Brother Phil
+image:  2018-08-08-brother-phil.jpg
+image_alt: Brother Phil
 published: false
 ---
 

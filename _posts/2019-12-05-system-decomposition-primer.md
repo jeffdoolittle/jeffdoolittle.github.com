@@ -4,9 +4,8 @@ title:  "System Decomposition Primer"
 date:   2019-12-05 15:00:00 -0800
 categories: system-design
 excerpt: Learning from the humble power outlet
-img:
-  file: 2019-12-05-system-decomposition-primer.jpg
-  alt: Hawthorne Bridge, Portland, OR
+image:  2019-12-05-system-decomposition-primer.jpg
+image_alt: Hawthorne Bridge, Portland, OR
 draft: true
 published: false
 ---

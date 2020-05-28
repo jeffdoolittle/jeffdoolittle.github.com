@@ -4,9 +4,8 @@ title:  "Leaving Lotpath"
 date:   2018-08-30 02:00:00 -0700
 categories: general
 excerpt: Sometimes you see the change coming. Other times, it sneaks up on you.
-img:
-  file: 2018-08-30-leaving-lotpath.jpg
-  alt: Leaving Lotpath
+image:  2018-08-30-leaving-lotpath.jpg
+image_alt: Leaving Lotpath
 published: false
 ---
 

@@ -4,9 +4,8 @@ title:  "Hope in the Dark (Album Demo)"
 date:   2018-08-04 08:00:00 -0700
 categories: music
 excerpt: Last summer I recorded a demo for an upcoming instrumental acoustic guitar album.
-img:
-  file: 2018-08-04-hope-in-the-dark.jpg
-  alt: Hope in the Dark
+image:  2018-08-04-hope-in-the-dark.jpg
+image_alt: Hope in the Dark
 published: true
 ---
 

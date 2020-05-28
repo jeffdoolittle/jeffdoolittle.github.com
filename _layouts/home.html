@@ -62,7 +62,7 @@ layout: default
       {%- if site.show_excerpts -%}
       <p><em>{{ post.excerpt }}</em></p>
       <a href="{{ post.url | relative_url }}">
-        <p><img src="/assets/{{ post.img.file }}" alt="{{ post.img.alt }}" /></p>
+        <p><img src="/assets/{{ post.image }}" alt="{{ post.image_alt }}" /></p>
         <p>Continue reading...</p>
       </a>
       {%- endif -%}

@@ -5,9 +5,8 @@ date:   2020-01-24 06:00:00 -0800
 categories: podcast
 tags: [seradio, podcast, software architecture, complexity, antifragile, antifragility, resilient, resiliency]
 excerpt: Designing systems that improve in the face of chaos and complexity
-img:
-  file: 2020-01-24-antifragile-architecture-barry-oreilly.jpg
-  alt: Hood River, Oregon
+image:  2020-01-24-antifragile-architecture-barry-oreilly.jpg
+image_alt: Hood River, Oregon
 published: true
 ---
 

@@ -4,9 +4,8 @@ title:  "I Surrender All"
 date:   2018-08-01 01:00:00 -0700
 categories: general
 excerpt: "What will happen if I let go, completely and totally?"
-img:
-  file: 2018-08-01-i-surrender-all.jpg
-  alt: I Surrender All
+image:  2018-08-01-i-surrender-all.jpg
+image_alt: I Surrender All
 published: false
 ---
 

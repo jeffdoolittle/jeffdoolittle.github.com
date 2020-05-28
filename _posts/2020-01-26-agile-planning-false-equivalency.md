@@ -5,9 +5,8 @@ date:   2020-01-26 06:00:00 -0800
 categories: general
 tags: [software architecture, agile, estimate, estimation, plan, planning]
 excerpt: Agile practitioners equate having architectural plans with big-up-front-design. Nothing could be further from the truth.
-img:
-  file: 2020-01-26-agile-planning-false-equivalency.jpg
-  alt: Hawthorne Bridge, Portland, Oregon
+image:  2020-01-26-agile-planning-false-equivalency.jpg
+image_alt: Hawthorne Bridge, Portland, Oregon
 published: true
 ---
 

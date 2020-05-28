@@ -5,9 +5,8 @@ date:   2020-05-22 08:00:00 -0700
 categories: publication
 tags: [software, agile, disrupt, cutter, cutter business technology journal, cutter consortium, manifesto, drop]
 excerpt: It's time to leave "Agile" behind and embrace the Post-agile era.
-img:
-  file: 2020-04-29-dont-disrupt-agile-drop-it.jpg
-  alt: A field near Hidden Falls Nature Park, Happy Valley, Oregon
+image:  2020-04-29-dont-disrupt-agile-drop-it.jpg
+image_alt: A field near Hidden Falls Nature Park, Happy Valley, Oregon
 published: true
 quotes:
     a: >- 

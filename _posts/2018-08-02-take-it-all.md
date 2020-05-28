@@ -4,9 +4,8 @@ title:  "Take it all"
 date:   2018-08-02 06:00:00 -0700
 categories: general
 excerpt: "Jesus is Lord of the World and I want him to have it all."
-img:
-  file: hands.jpg
-  alt: Take it all
+image:  hands.jpg
+image_alt: Take it all
 published: false
 ---
 

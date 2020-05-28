@@ -5,9 +5,8 @@ date:   2019-11-12 12:00:00 -0800
 categories: podcast
 tags: [seradio, podcast, software architecture, decoupling, content management, cms]
 excerpt: Talking to experts about the art and science of software engineering
-img:
-  file: 2019-11-12-hosting-software-engineering-radio.jpg
-  alt: Hawthorne Bridge, Portland, OR
+image: 2019-11-12-hosting-software-engineering-radio.jpg
+image_alt: Hawthorne Bridge, Portland, OR
 published: true
 ---
 

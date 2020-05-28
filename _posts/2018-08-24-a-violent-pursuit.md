@@ -4,9 +4,8 @@ title:  "A Violent Pursuit"
 date:   2018-08-24 05:00:00 -0700
 categories: general
 excerpt: Pursuing peace requires consistent, aggressive, violent action.
-img:
-  file: 2018-08-24-a-violent-pursuit.jpg
-  alt: Be killing sin, or it will be killing you.
+image:  2018-08-24-a-violent-pursuit.jpg
+image_alt: Be killing sin, or it will be killing you.
 published: false
 ---
 

@@ -5,9 +5,8 @@ date:   2020-05-05 08:30:00 -0700
 categories: presentation
 tags: [software, idesign, system design, project design, architecture, se radio, software engineering radio]
 excerpt: Avoid the Pit of Despair!
-img:
-  file: REST Wrecks Microservices!.png
-  alt: REST Wrecks Microservices!
+image:  REST Wrecks Microservices!.png
+image_alt: REST Wrecks Microservices!
 published: true
 ---
 
