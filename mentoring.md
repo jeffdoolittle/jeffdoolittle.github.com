@@ -9,6 +9,35 @@ pagenav:
     href: "#reading-list"
   - title: Let's Meet!
     href: "#meet"
+requiredReading:
+  - title: Righting Software
+    href: https://rightingsoftware.org
+    author: Juval Löwy
+  - title: "Exploring Requirements: Quality Before Design"
+    href: https://www.amazon.com/dp/0932633730
+    author: Donald Gause and Gerald Weinberg
+  - title: Simple Architectures for Complex Enterprises
+    href: https://www.amazon.com/dp/0735625786
+    author: Roger Sessions
+  - title: A Philosophy of Software Design
+    href: https://www.amazon.com/dp/1732102201
+    author: John Ousterhout
+  - title: Never Split the Difference
+    href: https://info.blackswanltd.com/library
+    author: Chris Voss
+additionalReading:
+  - title: Incerto
+    href: https://www.amazon.com/dp/0399590455
+    author: Nassim Taleb
+  - title: The Goal
+    href: https://www.amazon.com/dp/0884271951
+    author: Eli Goldratt
+  - title: 48 Laws of Power
+    href: https://www.amazon.com/dp/0140280197
+    author: Robert Greene
+  - title: 12 Rules for Life
+    href: https://www.amazon.com/dp/0141988517
+    author: Jordan Peterson
 
 ---
 
@@ -28,7 +57,7 @@ Learn to **think for yourself.** This requires significant, nearly comprehensive
 
 **Read. Read some more. Keep reading.** Don't merely read about technology. At minimum, read about history, art, literature, philosophy, economics, psychology, and leadership. Apply what you learn to yourself first, then in how you interact with others.
 
-Make your **personal brand appear as professional as possible**. Professional clothing, appearance and communication skills demonstrate how seriously you take yourself and others. Ensure consistency across all the sites where you have a public, visible presence, and in all your professional interactions with others.
+**Set the pace.** Become a thought leader in how you present yourself and prepare yourself. Professional clothing, appearance and communication skills demonstrate how seriously you take yourself and others. Ensure consistency across all the sites where you have a public, visible presence, and in all your professional interactions with others.
 
 **Make a plan.** Visualize what you want to achieve. Then break it down into attainable, smaller steps that, when put together, get you on the right path. These steps must align toward your highest aspiration. Ultimately you end up with many plans––daily plans, weekly plans, monthly, quarterly, yearly and multi-year plans. They must all connect. You can and should adjust as necessary to keep you on the path. These plans require flexibility but must continually aim toward the North Star on which you have chosen to focus.
 
@@ -36,13 +65,19 @@ Make your **personal brand appear as professional as possible**. Professional cl
 
 <p><hr /></p>
 
-<h2 id="reading-list">Reading List <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+<h2 id="required-reading">Required Reading <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+<ul>
+{% for item in page.requiredReading %}
+  <li><a href="{{item.href}}" target="_blank">{{item.title}}</a> by {{item.author}}</li>
+{% endfor %}
+</ul>
 
-* [Righting Software](https://rightingsoftware.org){:target="_blank"} by Juval Löwy
-* [The Goal](https://www.amazon.com/Goal-Process-Ongoing-Improvement/dp/0884271951){:target="_blank"} by Eli Goldratt
-* [Never Split the Difference](https://info.blackswanltd.com/library){:target="_blank"} by Chris Voss
-* [48 Laws of Power](https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197){:target="_blank"} by Robert Greene
-* [12 Rules for Life](https://www.amazon.com/12-Rules-Life-Antidote-Chaos/dp/0141988517){:target="_blank"} by Jordan Peterson
+<h2 id="additional-reading">Additional Reading <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+<ul>
+{% for item in page.additionalReading %}
+  <li><a href="{{item.href}}" target="_blank">{{item.title}}</a> by {{item.author}}</li>
+{% endfor %}
+</ul>
 
 <p><hr /></p>
 
