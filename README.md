@@ -1,4 +1,3 @@
 # Jeff Doolittle
 
-> I help make good software engineers great!
-
+> I help make good software professionals great!
