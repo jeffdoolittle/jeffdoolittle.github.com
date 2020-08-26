@@ -7,11 +7,11 @@ on:
     # The branches below must be a subset of the branches above
     branches: [master]
   schedule:
-    - cron: '0 21 * * 4'
+    - cron: '0 7 * * 0'
 
 jobs:
-  analyse:
-    name: Analyse
+  analyze:
+    name: Analyze
     runs-on: ubuntu-latest
 
     steps:
