@@ -48,7 +48,7 @@ See my [resume](/assets/resume.pdf){: target="_blank"} for an extensive descript
 
 * I grew up in San Diego, California and graduated from <a href="https://www.powayusd.com/en-US/Schools/HS/PHS/Home" target="_blank">Poway High School</a>.
 
-* I have been <a href="{{ site.baseurl }}{% post_url 2018-08-04-hope-in-the-dark %}">playing guitar</a> since I was 13, and it remains one of my passions and joys. I can also play piano and bass, and I'm learning to play the drums.
+* I have been <a href="{% post_url 2018-08-04-hope-in-the-dark %}">playing guitar</a> since I was 13, and it remains one of my passions and joys. I can also play piano and bass, and I'm learning to play the drums.
 
 * I met my bride, Amy, at <a href="https://www.biola.edu/" target="_blank">Biola University</a> where I received my BS in Business Administration with an emphasis in Marketing, and a minor in Biblical Studies.
 

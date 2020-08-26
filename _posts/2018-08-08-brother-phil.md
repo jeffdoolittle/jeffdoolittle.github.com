@@ -46,7 +46,7 @@ Phil and Jack, one day we will meet <em><a href="http://www.philkeaggy.com/disco
 
 <a href="http://www.philkeaggy.com/" target="_blank">Find out more about Phil at http://www.philkeaggy.com/</a>
 
-[Find out more about "Hope in the Dark," my instrumental acoustic guitar demo.]({{ site.baseurl }}{% post_url 2018-08-04-hope-in-the-dark %})
+[Find out more about "Hope in the Dark," my instrumental acoustic guitar demo.]({% post_url 2018-08-04-hope-in-the-dark %})
 
 # Listen
 
