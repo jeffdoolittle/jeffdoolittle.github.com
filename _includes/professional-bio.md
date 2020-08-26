@@ -2,7 +2,7 @@
 <div>
 
   <p>
-  As a Master Architect with over 20 years of industry experience, <strong>Jeff Doolittle helps make good software engineers great!</strong> His passion, resolve and can-do attitude are contagious.
+  As a Master Architect with over 20 years of industry experience, <strong>Jeff Doolittle helps make good software professionals great!</strong> His passion, resolve and can-do attitude are contagious.
   </p>
 
   <p>
