@@ -23,6 +23,10 @@ categories:
         url: "/2020/04/24/righting-software-with-juval-lowy/"
         date: 2020-04-24
         local: true
+      - title: "4xx - Philip Kiely on Writing for Software Engineers"
+        url: /2020/09/XX/writing-for-software-engineers-with-philip-kiely
+        date: 2020-09-XX
+        local: true
   - title: Cutter Consortium
     subtitle: Access to the Experts
     bio: /cutter
@@ -30,7 +34,7 @@ categories:
     id: cutter
     entriesHeader: Articles
     entriesType: article
-    entries: 
+    entries:
       - title: "Don't Disrupt Agile. Drop It."
         url: "/2020/04/29/dont-disrupt-agile-drop-it/"
         date: 2020-04-29

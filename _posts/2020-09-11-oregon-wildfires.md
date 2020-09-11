@@ -9,6 +9,8 @@ image_alt: Smoke from the Beachie Creek Fire
 published: true
 ---
 
+<a id="latest"></a>
+
 ## Update as of 9/15/2020 11:00 AM
 
 The area to the south of us has returned to Level 1, and we remain there as well. The threat of fire seems to have subsided for now. A few days ago the air outside was completely unbreathable and the smell of smoke leaked into our house, even with all windows and doors closed. The air remains quite unhealthy, but seems to be improving a bit each day. With a chance of rain in the forecast this week, we're hopeful that we might be able to return to our not-so-regular COVID life soon.

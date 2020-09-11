@@ -1,8 +1,18 @@
+- title: New Podcast Episode!
+  date: 2020-09-12
+  summary: >-
+    Software professionals regularly find ourselves writing for various purposes.
+    Improved writing skills are critical to ensure clarity of communication and intent.
+    In my latest episode on Software Engineering Radio I spoke with Philip Kiely about
+    his recently published book
+    <a href="/2020/09/15/writing-for-software-developers-with-philip-kiely">Writing for Software Developers</a>.
+    Give it a listen and grab a copy of the book to build your skills as a professional
+    who writes technical content.
+
 - title: 2020 Wildfires
+  date: 2020-09-11
   summary: >-
     As wildfires rage throughout the western United States, our family finds
-    ourselves a few miles from some of the fires in Oregon.
-    <br />
-    <br />
-    I will be sharing <a href="/2020/09/11/oregon-wildfires">updates on our status</a>
+    ourselves a few miles from some of the fires in Oregon. I will be sharing
+    <a href="/2020/09/11/oregon-wildfires">updates on our status</a>
     while the situation develops.
