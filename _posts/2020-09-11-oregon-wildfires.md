@@ -17,6 +17,8 @@ We have a neighbor working on the front lines of the evacuation and looting prev
 
 We stayed home last night with our important belongings and necessities packed and ready to go. Wonderful friends from our church family have offered us shelter in the event we need it. We hope it doesn't come to that. Our hearts go out to those who have already evacuated, and especially those with nowhere to go.
 
+Clackamas County has provided a [Wildfire Evacuation Zones Map](https://ccgis-mapservice.maps.arcgis.com/apps/webappviewer/index.html?id=fe0525732f1a4f679b75a5ccf1c84b30) that also shows the locations of the fires themselves.
+
 The first map below shows our neighborhood (<span style="color: #11AAFF">blue dot</span>) in relation to the [alert levels](https://www.clackamas.us/wildfires). Level 1 is green, 2 is yellow and 3 is red. *Note: This first map **does not** reflect the location of the fires.*
 
 The second map shows our neighborhood (<span style="color: #11AAFF">blue circle</span>) in relation to the fires themselves. Our home is about 5 miles from the nearest hotspot, and about 15 from the large Riverside Fire in the middle of the image.
