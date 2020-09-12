@@ -9,6 +9,16 @@ image_alt: Smoke from the Beachie Creek Fire
 published: true
 ---
 
+## Update as of 9/12/2020 3:45 PM
+
+We remain at home, but also on alert. The Riverside fire continues to move north along the Clackamas river, despite improved weather conditions.
+
+According to a [local news article](https://www.opb.org/article/2020/09/12/live-updates-oregon-northwest-wildfires/)
+
+> The Riverside Fire crept 2 miles closer to Estacada overnight Friday, and the leading edge was half a mile away from Estacada as of 9 a.m. Saturday. Officials planned to protect structures and build fire lines, as conditions allow. Officials said they expected better weather Saturday, as the smoke continues to block the sun. Still, they expect the fire to continue to progress northwest along both sides of the Clackamas River Corridor toward Estacada during the day and further overnight into Sunday.
+
+Our home is about 14 miles Northwest of Estacada.
+
 ## Update as of 9/11/2020 9:00 AM
 
 Yesterday the remainder of Clackamas County was placed on alert [Level 1](https://www.clackamas.us/wildfires){:target="_blank"}. Our neighborhood was elevated to [Level 2](https://www.clackamas.us/wildfires){:target="_blank"}. The emergency alert system functioned well yesterday, notifying us on our phones when the alert level changed.
