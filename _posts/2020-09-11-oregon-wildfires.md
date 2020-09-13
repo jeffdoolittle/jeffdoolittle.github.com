@@ -9,11 +9,21 @@ image_alt: Smoke from the Beachie Creek Fire
 published: true
 ---
 
+## Update as of 9/12/2020 8:40 PM
+
+Our neighborhood has returned to Level 1 and we remain prepared, but also thankful for this move in an improved direction. Our hearts go out to those experiencing loss of life and property during these fires.
+
+> Level 1: BE READY for potential evacuation. You should be aware of the danger that exists in the area, monitor emergency services websites and local media outlets for information. This is the time for preparation and precautionary movements of persons with special needs, mobile property and (under certain circumstances) pets and livestock. If conditions worsen, emergency services personnel may contact you via an emergency notification system.
+
+The [Wildfire Evacuation Zones Map](https://ccgis-mapservice.maps.arcgis.com/apps/webappviewer/index.html?id=fe0525732f1a4f679b75a5ccf1c84b30){:target="_blank"} continues to provide status updates on the current evacuation levels. The latest evacuation map of our neighborhood and the surrounding area can be seen below with our neigborhood in the <span style="color: #11AAFF">blue circle</span>.
+
+![Fire Evac Map 2020-09-12](/assets/2020-09-12-wildfire-evac-map.jpg)
+
 ## Update as of 9/12/2020 3:45 PM
 
 We remain at home, but also on alert. The Riverside fire continues to move north along the Clackamas river, despite improved weather conditions.
 
-According to a [local news article](https://www.opb.org/article/2020/09/12/live-updates-oregon-northwest-wildfires/)
+According to a [local news article](https://www.opb.org/article/2020/09/12/live-updates-oregon-northwest-wildfires/){:target="_blank"}
 
 > The Riverside Fire crept 2 miles closer to Estacada overnight Friday, and the leading edge was half a mile away from Estacada as of 9 a.m. Saturday. Officials planned to protect structures and build fire lines, as conditions allow. Officials said they expected better weather Saturday, as the smoke continues to block the sun. Still, they expect the fire to continue to progress northwest along both sides of the Clackamas River Corridor toward Estacada during the day and further overnight into Sunday.
 
