@@ -9,6 +9,12 @@ image_alt: Smoke from the Beachie Creek Fire
 published: true
 ---
 
+## Update as of 9/13/2020 1:45 PM
+
+Level 1 has been lifted from the far Northeastern Parts of Clackmas County. We remain in Level 1 in our neighborhood, but we are very close to areas that are no longer under evacuation alert. The air remains hazardous to breathe and hopefully some rain will help clear it out over the next week or so.
+
+![2020-09-13 Fire Map](/assets/2020-09-13-fire-map.jpg)
+
 ## Update as of 9/12/2020 8:40 PM
 
 Our neighborhood has returned to Level 1 and we remain prepared, but also thankful for this move in an improved direction. Our hearts go out to those experiencing loss of life and property during these fires.
