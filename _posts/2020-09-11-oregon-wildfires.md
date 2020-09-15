@@ -9,6 +9,16 @@ image_alt: Smoke from the Beachie Creek Fire
 published: true
 ---
 
+## Update as of 9/15/2020 11:00 AM
+
+The area to the south of us has returned to Level 1, and we remain there as well. The threat of fire seems to have subsided for now. A few days ago the air outside was completely unbreathable and the smell of smoke leaked into our house, even with all windows and doors closed. The air remains quite unhealthy, but seems to be improving a bit each day. With a chance of rain in the forecast this week, we're hopeful that we might be able to return to our not-so-regular COVID life soon.
+
+![2020-09-15 Fire Map](/assets/2020-09-15-fire-map.png)
+
+| Air Quality Chart | Air Quality Map |
+|-|-|
+| ![2020-09-15 Air Chart](/assets/2020-09-15-air-graph.png) | ![2020-09-15 Air Map](/assets/2020-09-15-air-map.png) |
+
 ## Update as of 9/13/2020 1:45 PM
 
 Level 1 has been lifted from the far Northeastern Parts of Clackmas County. We remain in Level 1 in our neighborhood, but we are very close to areas that are no longer under evacuation alert. The air remains hazardous to breathe and hopefully some rain will help clear it out over the next week or so.
