@@ -14,12 +14,12 @@ links:
   - title: Twitter
     class: "fab fa-twitter"
     url: /twitter
-  - title: Facebook
-    class: "fab fa-facebook"
-    url: /facebook
-  - title: Instagram
-    class: "fab fa-instagram"
-    url: /instagram
+  # - title: Facebook
+  #   class: "fab fa-facebook"
+  #   url: /facebook
+  # - title: Instagram
+  #   class: "fab fa-instagram"
+  #   url: /instagram
   - title: YouTube
     class: "fab fa-youtube"
     url: /youtube
