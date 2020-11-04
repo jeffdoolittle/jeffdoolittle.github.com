@@ -1,3 +1,8 @@
+- title: <a href="./software-leadership">Software Leadership</a>
+  date: 2020-11-04
+  summary: >-
+    <a href="/software-leadership/software-leadership-distilled">Software Leadership Distilled</a> provides an overview of concepts and practices software organizations can adopt to help their teams and leaders to thrive. It brings my experiences and studies together with expertise gleaned from mentoring and training as well as works by other leaders both inside and outside the software industry.
+
 - title: New Podcast Episode!
   date: 2020-09-12
   summary: >-
@@ -8,11 +13,3 @@
     <a href="/2020/09/15/writing-for-software-developers-with-philip-kiely">Writing for Software Developers</a>.
     Give it a listen and grab a copy of the book to build your skills as a professional
     who writes technical content.
-
-- title: 2020 Wildfires
-  date: 2020-09-11
-  summary: >-
-    As wildfires rage throughout the western United States, our family finds
-    ourselves a few miles from some of the fires in Oregon. I will be sharing
-    <a href="/2020/09/11/oregon-wildfires">updates on our status</a>
-    while the situation develops.
