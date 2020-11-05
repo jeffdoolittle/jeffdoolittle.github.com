@@ -20,13 +20,13 @@ footnotes:
     -
         id: 4
         content: >
-            *Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.* https://www.brainyquote.com/quotes/sun_tzu_387509.
+            "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win." https://www.brainyquote.com/quotes/sun_tzu_387509.
 
 ---
 
 I have had opportunities to lead in multiple contexts and capacities over the course of my life and career. These have included software consulting, co-founding software startups where I operated as CTO, planting a church, and my current role as a software architect. Along the way I realized I had been a student and practitioner of leadership for most of my life. I added academic studies to my ongoing education in leadership, completing a Master of Arts in Transformational Leadership in 2010. I remain passionate and dedicated to my primary vocation: *I help make good software professionals great!*
 
-[Software Leadership Distilled](./software-leadership-distilled) provides an overview of concepts and practices software organizations can adopt to help their teams and leaders to thrive. It brings my experiences and studies together with expertise gleaned from mentoring, training and works by other leaders both inside and outside the software industry.
+[Software Leadership Distilled](/software-leadership/software-leadership-distilled) provides an overview of concepts and practices software organizations can adopt to help their teams and leaders to thrive. It brings my experiences and studies together with expertise gleaned from mentoring, training and works by other leaders both inside and outside the software industry.
 
 ![Hank and Betsie by the Lake](/assets/software-leadership-distilled.jpg)
 
@@ -39,7 +39,7 @@ I have had opportunities to lead in multiple contexts and capacities over the co
 - **Make and Keep Agreements to [Build Trust](#build-trust)**
   - Foster a culture that rewards building trust by making and keeping agreements.
 - **Provide [Role Clarity](#role-clarity)**
-  - Clarifying roles clears up a host of issues that plague organzations and teams, orienting team members directly toward their specific value creation task and freeing them to empower people with roles different from their own.
+  - Clarifying roles clears up a host of issues that plague organizations and teams, orienting team members directly toward their specific value creation task and freeing them to empower people with roles different from their own.
 - **Build [Core Teams](#core-team)**
   - A core team consists of individuals who each fulfill one of three areas of primary responsibility: *managing customer expectations*, *managing business expecations* and *managing complexity*.
 - **Work toward emergence of the [Lead Team](#lead-team)**
@@ -162,9 +162,9 @@ Core teams can form anywhere within a software organization. Ideally over time t
 
 > You cannot mandate trust. Any attempts to do so will produce the exact opposite!
 
-Therefore, growing from the bottom up is typically the correct strategy. The best time to begin broad adoption comes when multiple core teams in the organization have experienced success and stand prepared to empower and equip other core teams. With a legacy of successes behind them, they can adopt a "show, don't tell" approach when discussing their resulsts. As pockets of trust, clarity and empowerment reach critical mass, the organization may be ready for broader adoption at an accelerated pace.{% include fnref.html x=4 %}
+Therefore, growing from the bottom up is typically the correct strategy. The best time to begin broad adoption comes when multiple core teams in the organization have experienced success and stand prepared to empower and equip other core teams. With a legacy of successes behind them, they can adopt a "show, don't tell" approach when discussing their results. As pockets of trust, clarity and empowerment reach critical mass, the organization may be ready for broader adoption at an accelerated pace.{% include fnref.html x=4 %}
 
-**Software leaders form core teams that built trust and empower each other as well as those they have opportunity to influence and lead.**
+**Software leaders form core teams that build trust and empower each other as well as those they have opportunity to influence and lead.**
 
 ___
 
@@ -212,6 +212,6 @@ ___
 
 ___
 
-Copyright © 2020 Jeff Doolittle. All rights reserved.
+[{{ page.title }}]({{ page.url }}) originally appeared at [jeffdoolittle.com](https://jeffdoolittle.com/).
 
-Find out more at [jeffdoolittle.com](https://jeffdoolittle.com/)
+Copyright © 2020 Jeff Doolittle. All rights reserved.

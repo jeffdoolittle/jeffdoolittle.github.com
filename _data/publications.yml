@@ -1,4 +1,20 @@
 categories:
+  - title: Software Leadership
+    subtitle: Empowering Software Leaders
+    bio: https://jeffdoolittle.com/about
+    bioTitle: "Jeff Doolittle - About"
+    id: software-leadership
+    entriesHeader: Articles
+    entriesType: article
+    entries:
+      - title: "Software Leadership Distilled"
+        url: /software-leadership/software-leadership-distilled
+        date: 2020-11-04
+        local: true
+      - title: "The Leadership Style Matrix"
+        url: /software-leadership/leadership-style-matrix
+        date: 2020-11-06
+        local: true
   - title: Software Engineering Radio
     subtitle: The Podcast for Professional Software Developers
     bio: https://www.se-radio.net/team/jeff-doolittle/
@@ -23,9 +39,9 @@ categories:
         url: "/2020/04/24/righting-software-with-juval-lowy/"
         date: 2020-04-24
         local: true
-      - title: "4xx - Philip Kiely on Writing for Software Engineers"
-        url: /2020/09/XX/writing-for-software-engineers-with-philip-kiely
-        date: 2020-09-XX
+      - title: "426 - Philip Kiely on Writing for Software Engineers"
+        url: /2020/09/15/writing-for-software-engineers-with-philip-kiely
+        date: 2020-09-15
         local: true
   - title: Cutter Consortium
     subtitle: Access to the Experts

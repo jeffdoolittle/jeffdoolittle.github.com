@@ -61,7 +61,7 @@ Let's make that hope a reality, disrupting *agile* by reclaiming true **agility*
 
 ## Author Bio
 
-[![Software Architect and Mentor]({{ "/assets/jeff_doolittle_bio_pic.jpg" | absolute_url }})](/assets/jeff_doolittle_bio_pic.jpg)
+[![Software Architect and Transformational Leader]({{ "/assets/jeff_doolittle_bio_pic.jpg" | absolute_url }})](/assets/jeff_doolittle_bio_pic.jpg)
 
 {%- include professional-bio.md -%}
 <!-- 

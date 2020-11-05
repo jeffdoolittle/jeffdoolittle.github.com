@@ -46,6 +46,10 @@ layout: default
 
   <hr />
 
+  {%- include google-ads-main.html -%}
+
+  <hr />
+
   {%- if site.posts.size > 0 -%}
   <h2 id="recent" class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
   <!-- {%- include google-ads-main.html -%} -->
@@ -71,7 +75,7 @@ layout: default
   </ul>
 
   <p class="rss-subscribe">
-    Subscribe <a target="_blank" href="/rss">via RSS</a>
+    <a target="_blank" href="/rss">Subscribe via RSS</a>
     or view the <a href="/archive">Archive</a> of all posts
   </p>
 

@@ -24,7 +24,7 @@ pagenav:
 
 {%- include pagenav.html -%}
 
-[![Software Architect and Mentor]({{ "/assets/about.jpg" | absolute_url }})](/assets/about.jpg)
+[![Software Architect and Tramsformational Leader]({{ "/assets/about.jpg" | absolute_url }})](/assets/about.jpg)
 
 <h2 id="professional-bio">Professional Bio <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
@@ -64,7 +64,7 @@ See my [resume](/assets/resume.pdf){: target="_blank"} for an extensive descript
   {% for image in page.images %}
       <p style="text-align: center">
         <a href="{{ image.url }}" download="{{ image.download }}">
-          <img width="480" src="{{ image.url | absolute_url }}" alt="Software Architect and Mentor" />
+          <img width="480" src="{{ image.url | absolute_url }}" alt="Software Architect and Transformational Leader" />
           <div style="margin: 0 0 2em 0; text-align: center;">
             Right click to download
           </div>

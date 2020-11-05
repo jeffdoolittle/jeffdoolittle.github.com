@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Software Leadership Distilled
-date: 2020-11-04 18:00:00 -0700
+date: 2020-11-04 11:59:00 -0000
 categories: software leadership
 tags: [software, leadership]
 excerpt: Humans thrive most as value creators.

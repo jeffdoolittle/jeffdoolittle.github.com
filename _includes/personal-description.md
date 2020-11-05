@@ -1,6 +1,6 @@
   
   <p>
-  I am a Software Architect and Mentor. I have over twenty years of experience designing and architecting software systems, and providing developer leadership and mentorship.
+  I am a Software Architect and Transformational Leader. I have over twenty years of experience designing and architecting software systems, and providing developer leadership and mentorship.
   </p>
 
   <p>
