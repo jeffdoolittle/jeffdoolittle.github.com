@@ -5,7 +5,7 @@ date: 2020-11-04 11:59:00 -0000
 categories: software leadership
 tags: [software, leadership]
 excerpt: Humans thrive most as value creators.
-image: software-leadership-distilled.jpg
+image: /assets/software-leadership-distilled.jpg
 image_alt: Hank and Betsie by the Lake
 published: true
 ---

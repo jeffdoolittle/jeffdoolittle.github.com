@@ -25,7 +25,7 @@ A leader may change styles depending on the situation or context. Style variatio
 
 ## Authoritarian
 
-Authoritarian leadership emerges in environments low on empowerment and lacking in clarity. Such a context allows for little to no autonomy. Without a foundation of clarity, authentic trust cannot exist in such a situation. This does not necessarily prevent an authoritarian leader from attempting to demand or mandate trust. Authoritarian leaders emerge in situations of ambiguity and frequently take arbirary actions.
+Authoritarian leadership emerges in environments low on empowerment and lacking in clarity. Such a context allows for little to no autonomy. Authentic trust cannot exist in such a situation due to the lack of foundational clarity. This does not necessarily prevent an authoritarian leader from attempting to demand or mandate trust. Authoritarian leaders emerge in situations of ambiguity and frequently take arbirary actions.
 
 Crisis situations may call for the authoritarian style. However its consistent application stifles trust, autonomy, and innovation. The perpetual authoritarian crushes personal ownership, responsibility and accountability. Fragile trust may exist between the consistent authoritarian leader and certain individuals, but its arbitrary nature places it on an unstable foundation. Authoritarian leaders manage situations by controlling narratives and delegating authority only to a circle of relatively predictable and conformative individuals.
 
@@ -35,19 +35,19 @@ Authoritarian success metrics can change at the whim of the authoritarian leader
 
 Managerial leadership provides much needed clarity but neglects to cultivate empowerment. Trust can grow in such an environment since clarity enables the making and keeping of agreements.{% include fnref.html x=2 %}
 
-This style can work well when standardized practices provide and clear [value creation](/software-leadership/software-leadership-distilled#value-creators) expectations. It provides additional clarity by defining and refining processes and practices where standardized practices do not exist.
+This style can work well when standardized practices provide clear [value creation](/software-leadership/software-leadership-distilled#value-creators) expectations. Managerial leaders provide additional clarity by defining and refining processes and practices where standardized practices do not exist.
 
-Misapplication of this style often results in micromanagement of tasks, excessive meetings, frequent "looking over the shoulder" of group members and management of people rather than processes.
+Misapplication of this style often results in micromanagement of tasks, excessive meetings and frequent "looking over the shoulder" of group members. At worst it devolves into management of people rather than processes.
 
-Managerial success metrics involve the upholding standardized procedures and processes. These can work when group members do not feel a strong need for personal creativity, autonomy and innovation in their work.
+Managerial success metrics relate to standardized procedures and processes. These metrics can prove sufficient when group members do not feel a strong need for personal creativity, autonomy and innovation in their work.
 
 ## Familial
 
 The familial leader cultivates a sense of empowerment in situations where ambiguity exceeds clarity. With this style trust grows from loyalty, personal history and other interpersonal factors.
 
-In some naturally ambiguous situations the familial leader can foster group cohesion in spite of a lack of value creation clarity. Fierce loyalty can characterize some group members under the familial leader, while others may become frustrated at what they might interpret as double-standards and playing favorites.
+In some naturally ambiguous situations the familial leader can foster group cohesion despite a lack of [value creation](/software-leadership/software-leadership-distilled#value-creators) clarity. Fierce loyalty can characterize some group members under the familial leader, while others may become frustrated at what they interpret as double-standards and playing favorites.
 
-Familial leadership can devolve into transactional relationships built on a foundation of quid-pro-quo. Subtle passive-aggression may become commonplace. Long term employment of this leadership style suffers from arbrariness similar to the authoritarian style, but with a smile on it.
+Familial leadership can devolve into transactional relationships built on a *quid-pro-quo* foundation. Subtle passive-aggression may become commonplace. Long term employment of the familial leadership style suffers from arbitrariness similar to the authoritarian style, but with a smile on it.
 
 The familial leader leaves [value creation](/software-leadership/software-leadership-distilled#value-creators) expectations unclear or undefined.
 

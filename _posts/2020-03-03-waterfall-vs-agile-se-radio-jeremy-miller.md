@@ -5,7 +5,7 @@ date:   2020-03-03 08:00:00 -0800
 categories: podcast
 tags: [software, agile, waterfall, scrum, scrappy doo, se radio, software engineering radio]
 excerpt: Exploring the good, the bad and the ugly of software development methodologies
-image:  2020-03-03-waterfall-vs-agile-se-radio-jeremy-miller.jpg
+image: /assets/2020-03-03-waterfall-vs-agile-se-radio-jeremy-miller.jpg
 image_alt: Grizzly Falls, Kings Canyon National Park, California
 published: true
 ---

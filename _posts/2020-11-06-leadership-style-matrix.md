@@ -5,7 +5,7 @@ date: 2020-11-06 07:45:00 -0700
 categories: software leadership
 tags: [software, leadership, authoritarian, manager, managerial, management, family, familial, transform, transformational]
 excerpt: Learn to apply the right leadership style in the right situation.
-image: leadership-style-matrix-banner.jpg
+image: /assets/leadership-style-matrix-banner.jpg
 image_alt: The Leadership Style Matrix
 published: true
 ---

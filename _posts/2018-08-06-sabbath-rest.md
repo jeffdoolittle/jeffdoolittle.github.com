@@ -4,7 +4,7 @@ title:  "Sabbath Rest"
 date:   2018-08-06 06:00:00 -0700
 categories: general
 excerpt: Accepting my limitations is an act of worship.
-image:  2018-08-06-sabbath-rest.jpg
+image:  /assets/2018-08-06-sabbath-rest.jpg
 image_alt: Sabbath Rest
 published: false
 ---

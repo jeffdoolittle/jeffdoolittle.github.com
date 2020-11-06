@@ -5,7 +5,7 @@ date:   2020-04-23 22:40:00 -0700
 categories: podcast
 tags: [software, idesign, system design, project design, architecture, se radio, software engineering radio]
 excerpt: A Method for System and Project Design
-image:  2020-04-23-righting-software-with-juval-lowy.jpg
+image: /assets/2020-04-23-righting-software-with-juval-lowy.jpg
 image_alt: Orchard Lake, Damascus, Oregon
 published: true
 ---

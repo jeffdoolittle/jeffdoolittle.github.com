@@ -4,7 +4,7 @@ title:  2020 Oregon Wildfires
 date:   2020-09-11 08:25:00 -0700
 categories: general
 excerpt: As wildfires rage throughout the western United States, our family finds ourselves a few miles from some of the fires in Oregon.
-image: og_beachie_creek_fire.jpg
+image: /assets/og_beachie_creek_fire.jpg
 image_alt: Smoke from the Beachie Creek Fire
 published: true
 ---

@@ -4,7 +4,7 @@ title:  "title forthcoming..."
 # date:   2020-08-30 08:00:00 -0700
 categories: general
 excerpt: your few sentence excerpt goes here...
-image: placeholder.png
+image: /assets/og_image.png
 image_alt: Placeholder
 published: false
 ---

@@ -4,7 +4,7 @@ title:  "Nine Days Off"
 date:   2018-08-17 05:00:00 -0700
 categories: general
 excerpt: The writing stream ebbs and flows.
-image:  2018-08-17-nine-days-off.jpg
+image:  /assets/2018-08-17-nine-days-off.jpg
 image_alt: Too busy sharpening the pencil to write.
 published: false
 ---
