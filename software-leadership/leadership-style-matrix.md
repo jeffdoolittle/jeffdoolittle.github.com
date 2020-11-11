@@ -19,13 +19,13 @@ In my recent article [Software Leadership Distilled](/software-leadership/softwa
 
 The Leadership Style Matrix visualizes how clarity and empowerment relate to four leadership styles: [authoritarian](#authoritarian), [managerial](#managerial), [familial](#familial) and [transformational](#transformational). Each of these styles may be effective and even necessary depending on the situation. However misapplication of a style in an inappropriate context hampers desirable outcomes.
 
-A leader may change styles depending on the situation or context. Style variations can manifest due to various factors such as recent events, personal stress and anxiety, time of day or mood, or interactions with different individuals or groups.
+A leader may change styles depending on the situation or context. Style variations may occur due to various factors such as recent events, personal stress and anxiety, time of day or mood, or interactions with different individuals or groups.
 
 ![The Leadership Style Matrix](/assets/leadership-style-matrix-1440.jpg)
 
 ## Authoritarian
 
-Authoritarian leadership emerges in environments low on empowerment and lacking in clarity. Such a context allows for little to no autonomy. Authentic trust cannot exist in such a situation due to the lack of foundational clarity. This does not necessarily prevent an authoritarian leader from attempting to demand or mandate trust. Authoritarian leaders emerge in situations of ambiguity and frequently take arbirary actions.
+Authoritarian leadership emerges in environments low on empowerment and lacking in clarity. Such a context leaves little to no room for autonomy. Without foundational clarity, authentic trust cannot be built. This does not necessarily prevent an authoritarian leader from attempting to demand or mandate trust. Authoritarian leaders may purposefully increase ambiguity and can tend to take arbirary actions.
 
 Crisis situations may call for the authoritarian style. However its consistent application stifles trust, autonomy, and innovation. The perpetual authoritarian crushes personal ownership, responsibility and accountability. Fragile trust may exist between the consistent authoritarian leader and certain individuals, but its arbitrary nature places it on an unstable foundation. Authoritarian leaders manage situations by controlling narratives and delegating authority only to a circle of relatively predictable and conformative individuals.
 
@@ -55,11 +55,11 @@ Familial leaders measure group member success through feelings of loyalty, share
 
 ## Transformational
 
-Transformational leaders catalyze leadership in others. They work to enable a healthy environment where trust can grow naturally. Every group experiences a lack of empowerment at times. Transformational leaders discover creative ways to shore it up with their own efforts. They frequently and consistently encourage other group members to mutually empower one another.
+Transformational leaders catalyze leadership in others. They work to enable a healthy environment where trust can grow naturally. Every group experiences a lack of empowerment at times. Transformational leaders discover creative ways to shore it up. They frequently and consistently guide the group toward mutually self-reinforcing empowerment.
 
 Upon discovering ambiguity regarding [value creation](/software-leadership/software-leadership-distilled#value-creators) expectations, the transformational leader takes necessary action to resolve the ambiguity as quickly and efficiently as possible. They regularly evaluate the fitness and alignment of group members for their individual [area of primary responsibility](/software-leadership/software-leadership-distilled#areas-of-primary-responsibility).
 
-Transformational leaders may manage in the sense of helping to define processes and practices. They avoid managing people.
+Transformational leaders may manage in the sense of helping to define processes and practices, but they avoid managing people.
 
 Transformational success metrics involve personal responsibility for individual [areas of primary responsibility](/software-leadership/software-leadership-distilled#areas-of-primary-responsibility) and group member effectiveness in [building trust, fighting for clarity, and empowering others](/software-leadership/software-leadership-distilled#areas-of-shared-responsibility) in the group.
 

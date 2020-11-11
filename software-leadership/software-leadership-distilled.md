@@ -39,9 +39,9 @@ I have had opportunities to lead in multiple contexts and capacities over the co
 - **Make and Keep Agreements to [Build Trust](#build-trust)**
   - Foster a culture that rewards building trust by making and keeping agreements.
 - **Provide [Role Clarity](#role-clarity)**
-  - Clarifying roles clears up a host of issues that plague organizations and teams, orienting team members directly toward their specific value creation task and freeing them to empower people with roles different from their own.
+  - Clarifying roles clears up a host of issues that plague organizations and teams, orienting team members directly toward their specific value creation task and freeing them to empower others.
 - **Build [Core Teams](#core-team)**
-  - A core team consists of individuals who each fulfill one of three areas of primary responsibility: *managing customer expectations*, *managing business expecations* and *managing complexity*.
+  - A core team consists of individuals who fulfill three areas of primary responsibility: *managing customer expectations*, *managing business expecations* and *managing complexity*.
 - **Work toward emergence of the [Lead Team](#lead-team)**
   - The emergence of the lead team reflects the success of core teams growing and thriving throughout the organization.
 - **[Authenticity is Not Optional](#authenticity-is-not-optional)**
@@ -84,9 +84,9 @@ ___
 
 Without trust all manner of dysfunctions tend to result such as hand-wringing, buck-passing and micromanagement to name a few. Healthy teams and organizations learn to make and keep agreements to build trust.
 
-Give individuals and teams the opportunity to make agreements in keeping with their clarified role. Foster a culture that rewards the building of trust that results from making and keeping agreements. Begin to model this culture at every level of the organization.
+Give individuals and teams the opportunity to make agreements in keeping with their clarified role. Cultivate a culture that rewards trust building by making and keeping agreements. Begin to model this culture at every level of the organization.
 
-**Software leaders build trust by making and keeping their agreements while empowering others to do the same.**
+**Software leaders build trust by making and keeping their agreements while empowering others to do so.**
 
 ___
 
