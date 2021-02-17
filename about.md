@@ -24,13 +24,24 @@ pagenav:
 
 {%- include pagenav.html -%}
 
-[![Software Architect and Tramsformational Leader]({{ "/assets/about.jpg" | absolute_url }})](/assets/about.jpg)
-
 <h2 id="professional-bio">Professional Bio <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 {%- include professional-bio.md -%}
 
-[Bio Pics](#bio-pics) for use in publications are [available further down on this page](#bio-pics).
+<h2 id="bio-pics">Bio Pics <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+<div>
+  {% for image in page.images %}
+      <p style="text-align: center">
+        <a href="{{ image.url }}" download="{{ image.download }}">
+          <img width="480" src="{{ image.url | absolute_url }}" alt="Software Architect and Transformational Leader" />
+          <div style="margin: 0 0 2em 0; text-align: center;">
+            Right click to download
+          </div>
+        </a>
+    </p>
+  {% endfor %}
+</div>
 
 <p><hr /></p>
 
@@ -55,23 +66,6 @@ See my [resume](/assets/resume.pdf){: target="_blank"} for an extensive descript
 * I graduated Summa Cum Laude with a Master of Arts in <a href="https://www.bethel.edu/seminary/academics/transformational-leadership/" target="_blank">Transformational Leadership</a> from <a href="https://www.bethel.edu/academics/san-diego/" target="_blank">Bethel Seminary San Diego</a> in 2010.
 
 * I believe life consists of three primary pursuits: Connecting with God, Connecting with People, and Connecting with Purpose.
-
-<p><hr /></p>
-
-<h2 id="bio-pics">Bio Pics <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
-
-<div>
-  {% for image in page.images %}
-      <p style="text-align: center">
-        <a href="{{ image.url }}" download="{{ image.download }}">
-          <img width="480" src="{{ image.url | absolute_url }}" alt="Software Architect and Transformational Leader" />
-          <div style="margin: 0 0 2em 0; text-align: center;">
-            Right click to download
-          </div>
-        </a>
-    </p>
-  {% endfor %}
-</div>
 
 <p><hr /></p>
 
