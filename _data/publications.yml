@@ -43,6 +43,10 @@ categories:
         url: /2020/09/15/writing-for-software-engineers-with-philip-kiely
         date: 2020-09-15
         local: true
+      - title: "447 - Michael Perry on Immutable Architecture"
+        url: 2021/02/18/the-art-of-immutable-architecture-michael-l-perry
+        date: 2021-02-18
+        local: true
   - title: Cutter Consortium
     subtitle: Access to the Experts
     bio: /cutter
