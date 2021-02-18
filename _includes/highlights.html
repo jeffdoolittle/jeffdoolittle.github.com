@@ -1,7 +1,9 @@
 {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
 
+<h2 class="post-list-heading">Recent Highlights</h2>
+
 {% for highlight in site.data.highlights %}
-<h2 class="post-list-heading">{{ highlight.title }}</h2>
+<h3 class="highlight-heading">{{ highlight.title }}</h2>
 
 <div style="margin: 0 2em 0 2em;">
 
