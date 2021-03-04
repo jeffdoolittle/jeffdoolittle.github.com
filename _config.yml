@@ -1,7 +1,7 @@
 title: Jeff Doolittle
 author: Jeff Doolittle
 email: jeff@jeffdoolittle.com
-description: Software Architect and Transformational Leader - I help make good software professionals great! 
+description: Software Architect and Transformational Leader - I help make good software professionals great!
 contact: You can reach me via email or through one of the social media platforms linked here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jeffdoolittle.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -9,7 +9,7 @@ permalink: /:year/:month/:day/:title/
 header_pages:
   - events.html
   - publications.html
-  - mentoring.md
+  - leadership.md
   - contact.md
   - about.md
 show_excerpts: true
