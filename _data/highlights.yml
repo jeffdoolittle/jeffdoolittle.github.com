@@ -2,6 +2,10 @@
   date: 2020-03-04
   summary: >-
     Improve your skills at discovering, defining, and distilling requirements by joining the <a href="/software-leadership/exploring-requirements">Exploring Requirements Book Club</a>.
+- title: Software Architecture as Complexity Containment
+  date: 2020-03-03
+  summary: >-
+    Ultimately, just one fundamental metric matters when evaluating the competence of software architects: the ability to identify, assess and ultimately <a href="/2021/03/03/padnug-software-architecture-as-complexity-containment">contain complexity</a>.
 - title: The Art of Immutable Architecture
   date: 2020-02-18
   summary: >-
