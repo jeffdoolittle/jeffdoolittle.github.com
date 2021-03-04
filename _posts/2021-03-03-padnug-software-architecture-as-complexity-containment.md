@@ -26,10 +26,12 @@ Software Fundamentals, Collected Papers by David Parnas (ISBN-13: 978-0201703696
 
 Simple Architectures for Complex Enterprises, by Roger Sessions (ISBN-13: 978-0735625785)
 
-
-
 ## Errata
 
-When referring to a 7 node, acyclic graph, I stated that it allows for 5,040 combinations. This actually applies to the 7 node network with no constraints on connections between them.
+All mistakes are my own and not the responsibility of any authors or practitioners mentioned during the presentation.
+
+- When referring to a 7 node, acyclic graph, I stated that it allows for 5,040 combinations. This actually applies to the 7 node network with no constraints on connections between them.
+
+Please contact me if you find any other errata from the presentation.
 
 {% include twitter_plug.html %}
