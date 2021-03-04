@@ -16,7 +16,19 @@ Recently, I had the distinct pleasure to present once again for my hometown tech
 <iframe width="760" height="420" src="https://www.youtube.com/embed/-DVo24Y1PcU?start=748" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-Errata:
+## Additional Resources
+
+[Righting Software](https://rightingsoftware.org), by Juval Löwy (ISBN-13: 978-0136524038)
+
+Exploring Requirements, by Gause and Weinberg (ISBN-13: 978-0932633132)
+
+Software Fundamentals, Collected Papers by David Parnas (ISBN-13: 978-0201703696)
+
+Simple Architectures for Complex Enterprises, by Roger Sessions (ISBN-13: 978-0735625785)
+
+
+
+## Errata
 
 When referring to a 7 node, acyclic graph, I stated that it allows for 5,040 combinations. This actually applies to the 7 node network with no constraints on connections between them.
 
