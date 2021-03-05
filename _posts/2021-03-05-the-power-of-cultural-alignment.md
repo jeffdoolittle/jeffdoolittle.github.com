@@ -45,15 +45,41 @@ A concise and comprehensive [**Mission**](#vision-and-mission) defines a *presen
 
 Returning briefly to the car example, what we really want is the ability to design a car in such a way that the alignment tends to remain in check with a reasonably predictable schedule of adjustments. In a similar fashion, we must *design* organizational communication structures to maintain alignment with long and short term objectives and to reliability guide team members toward the desired organizational culture.
 
-A hallmark of all good design is [composability](https://www.youtube.com/watch?v=ukU344kEwP8). Automobiles, software systems and organizational cultures benefit from good design. The Five-factor Cultural Alignment Model provides a framework for creating, applying, evaluating and refining such designs. This occurs at one level in the interrelationship between each of the five factors. Additionally each factor may be decomposed into more granular elements to provide detail and support for more generalized factors. This will become more clear in the following sections.
+A hallmark of all good design is [composability](https://www.youtube.com/watch?v=ukU344kEwP8). Automobiles, software systems and organizational cultures all benefit from good design. The Five-factor Cultural Alignment Model provides a framework for creating, applying, evaluating and refining such designs.
+
+When designing a cultural alignment model, each factor provides a grouping mechanism for specific **Elements** in the model.
+
+A well designed cultural alignment model can be composed along three axes.
+
+### Interrelationship Between the Five Factors
+
+### Interrelationship Between 
+
+### Composition 
+
+
+This occurs along two axes. One axis represents the interrelationship between each of the five factors. Additionally each factor may be decomposed into more granular elements to provide detail and support for more generalized factors. This will become more clear in the following sections.
+
+## The Five Factors in Detail
 
 ### Values
 
-It's pretty typical for organizations to define a set of corporate values. It's also typical for team members to ignore these values or view tham as useless window dressing. This perspective is frequenlty left unchallenged when organizations publish a set of values but do not discuss them frequently and highlight situations when they are successfully demonstrated. Failure to recognize and reward the embodiment of stated values can leave team members feeling jaded and unmotivated.
+Many organizations promote a set of corporate values. Team members often ignore these values or view tham as useless corporate window dressing. This perspective is frequently left unchallenged when organizations publish a set of values but do not discuss them regularly and highlight situations when they are successfully demonstrated. Failure to recognize and reward the embodiment of stated values can leave team members feeling jaded and unmotivated.
 
-Ditching the concept of values altogether isn't the answer. What organizations need is a simple set of understandable values that provide *perspective and guidance* for every human interaction between all stakeholders, inside and outside the organization.
+Ditching the concept of values altogether isn't the answer. What organizations need is a small, simple set of understandable values that provide *perspective and guidance* for every interaction between all stakeholders, inside and outside the organization.
 
-Regardless of an organization's stated values, there are three critical values that must be embraced and embodied by every organization that seeks maximum cultural effectiveness: [**Trust, Clarity and Empowerment**](/software-leadership/software-leadership-distilled#core-values). [Software Leadership Distilled](/software-leadership/software-leadership-distilled) describes these values and how to combine with other powerful leadership and organizational techniques to supercharge organizations and teams.
+Regardless of an organization's stated values, there are three critical values that should be embraced and embodied by every organization that seeks maximum cultural effectiveness: [**Trust, Clarity and Empowerment**](/software-leadership/software-leadership-distilled#core-values). [Software Leadership Distilled](/software-leadership/software-leadership-distilled) describes these values and how to combine them with other powerful leadership and organizational techniques to supercharge organizations and teams.
+
+As mentioned previously, each factor may be decomposed into more granular elements that support the factor, amplifying their diagnostic power. Take [Trust](/software-leadership/software-leadership-distilled#core-values) for example, achieving trust in an organization requires consideration of not only the relationship between trust and other factors like clarity and empowerment, but also of values that specifically relate to trust building. Values contributing to trust include integrity, honesty, keeping one's word, and making things as right as possible when an agreement is not or cannot be fulfulled.
+
+<a href="/assets/trust-composition.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%" class="lightbox-image current" title="Trust Composition">
+    <img src="/assets/trust-composition.png" alt="Trust Composition">
+</a>
+
+
+A small, well defined and simple set of values provides a diagnostic tool for the evaluation of organizational culture. By defining the compositional components of each high level value, leaders and team members can drill down and seek the root causes of misalignment with stated values and form action plans to remedy the situation.
+
+For example, we may recognize that team members tend to focus on their own work and tasks and do not invest in empowering those they work with. We can evaluate this situation along 
 
 ### Vision and Mission
 
