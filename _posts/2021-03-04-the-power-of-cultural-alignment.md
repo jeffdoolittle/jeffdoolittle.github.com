@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Power of Cultural Alignment"
-date: 2021-03-04 08:00:00 -0800
+date: 2021-03-05 00:00:00 -0800
 category: leadership
 tags: [software, developers, engineers, architect, architects, lead, leader, align, alignment, culture, cultural]
 excerpt: "A lack of cultural alignment leads to negative outcomes for teams and organizations. It often goes unnoticed or neglected while risks ramp up and the ramifications become more costly and challenging to remedy."
@@ -15,9 +15,9 @@ published: false
 Have you ever driven a car that pulls to the right or left? Or perhaps one where the vehicle only went straight when the steering wheel was off center? This happens when something gets out of alignment.
 Over time the alignment of a vehicle moves away from an optimal state.  Lack of alignment puts stress on the steering mechanism, increases tire wear, reduces performance, and generally makes driving more difficult. This may not have immediately damaging effects, but left unaddressed the impact will be felt.
 
-- with your time when something breaks down
-- in your wallet when you have to replace your tires more frequently
-- in your safety when a tire wears down from poor alignment and blows unexpectedly
+- With your time when something breaks down
+- In your wallet when you have to replace your tires more frequently
+- In your safety when a tire wears down from poor alignment and blows unexpectedly
 
 A properly maintained alignment saves time and money in the long run. But since negative impacts may not materialize right away, many drivers don't pay attention until it's too late.
 
@@ -25,7 +25,7 @@ A properly maintained alignment saves time and money in the long run. But since 
 
 In a similar fashion, a lack of cultural alignment leads to negative outcomes for teams and organizations. And just like a car, it often goes unnoticed or neglected while the risks ramp up and the ramifications become more costly and challenging to remedy.
 
-Mechanics use diagnostic tools and standard practices to realign your car. The Five-factor Cultural Alignment model provides the same benefits for organizational and team leaders.
+Mechanics use diagnostic tools and standard practices to realign your car. The Five-factor Cultural Alignment Model provides similar benefits for organizational and team leaders.
 
 <a href="/assets/cultural-alignment.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%" class="lightbox-image current" title="Vision, Mission, Strategies, Tactics, Values">
     <img src="/assets/cultural-alignment.jpg" alt="Vision, Mission, Strategies, Tactics, Values">
@@ -33,13 +33,19 @@ Mechanics use diagnostic tools and standard practices to realign your car. The F
 
 [**Values**](#values) are the guide rails of organizational culture. They provide *perspective and guidance* from the highest level all the way down to the most granular and tactical level.
 
-A clear and compelling [**Vision**](#vision-and-mission) provides a *future-oriented*, guiding north-star that paints a picture of the ideal an organization wants to bring into reality.
+A clear and compelling [**Vision**](#vision-and-mission) describes a *future-oriented*, guiding north-star that paints a picture of a desirable future.
 
-A concise and comprehensive [**Mission**](#vision-and-mission) defines the *present-oriented* focus needed to work toward the vision.
+A concise and comprehensive [**Mission**](#vision-and-mission) defines a *present-oriented* context in which work toward the [vision](#vision-and-mission) occurs.
 
 [**Strategies**](#strategies-and-tactics) answer the questions *why, who, what, when and how much* in relation to the [mission](#vision-and-mission).
 
 [**Tactics**](#strategies-and-tactics) define the *how* in relation to well defined and documented [strategies](#strategies-and-tactics).
+
+## Design for Cultural Alignment
+
+Returning briefly to the car example, what we really want is the ability to design a car in such a way that the alignment tends to remain in check with a reasonably predictable schedule of adjustments. In a similar fashion, we must *design* organizational communication structures to maintain alignment with long and short term objectives and to reliability guide team members toward the desired organizational culture.
+
+A hallmark of all good design is [composability](https://www.youtube.com/watch?v=ukU344kEwP8). Automobiles, software systems and organizational cultures benefit from good design. The Five-factor Cultural Alignment Model provides a framework for creating, applying, evaluating and refining such designs. This occurs at one level in the interrelationship between each of the five factors. Additionally each factor may be decomposed into more granular elements to provide detail and support for more generalized factors. This will become more clear in the following sections.
 
 ### Values
 
@@ -51,9 +57,38 @@ Regardless of an organization's stated values, there are three critical values t
 
 ### Vision and Mission
 
+Crafting a compelling vision requires a clear grasp of present reality coupled with the imagination of a new future. It provides the context to answer questions like "where do we see ourselves in the future" or "what should be the future experience of our customers."
+
+While vision describes a potential future to strive for, mission provides context for the present.
+
+For example, Henry Ford saw a vision of an America where working class people could afford a quality automobile. Progress toward this vision came through his mission of revolutionizing factory work. His present-oriented mission aligned with his future-oriented vision.
+
+Mission describes the means. Vision expresses the desired ends.
+
+
 
 ### Strategies and Tactics
 
+[**Strategies**](#strategies-and-tactics) answer the questions *why, who, what, when and how much* in relation to the [mission](#vision-and-mission).
+
+[**Tactics**](#strategies-and-tactics) define the *how* in relation to well defined and documented [strategies](#strategies-and-tactics).
+
+
+
+
+The second distinguishing characteristic of Ford's vision was that it was multidimensional. Henry Ford looked at every aspect of his business to achieve his grand vision: product, process and people. His product vision was based on interchangeable parts that fit together every time and a product that didn't break down as you used it; a product so cheap to build that everyone could afford it.
+
+Ford and Sorensen also created what we today call modular assembly—the process of putting together subassemblies before installing them on a vehicle. Modularity at that point was nothing more than putting hoses and attachments on the radiator before installation, but this simple innovation was another step toward Ford's ultimate goal.
+
+Ford's process vision was based on the continuous and waste-free flow of material all the way from the iron ore mine to the customer. His people vision was based on a capable, trained and motivated workforce that worked in a coordinated way and was also able to afford the products that the factory made. Any one piece of that vision was incomplete; together they were dynamite.
+
+___
+
+[{{ page.title }}]({{ page.url }}) originally appeared at [jeffdoolittle.com](https://jeffdoolittle.com/).
+
+Copyright © 2021 Jeff Doolittle. All rights reserved.
+
+<https://www.assemblymag.com/articles/83965-special-section-the-extraordinary-vision-of-henry-ford>
 
 {% include twitter_plug.html %}
 
