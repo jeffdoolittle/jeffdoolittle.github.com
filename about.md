@@ -10,6 +10,8 @@ images:
   - url: /assets/full_head_shot.jpg
     download: jeff_doolittle_bio_full.jpg
 pagenav:
+  - title: Focus
+    href: "#focus"
   - title: Professional Bio
     href: "#professional-bio"
   - title: Resume
@@ -27,6 +29,18 @@ pagenav:
 I am a Software Architect and Transformational Leader. I have over twenty years of experience designing and architecting software systems, and providing developer leadership and mentorship.
 
 I bring together a unique blend of technical prowess, compassion, empathy, commitment to high quality, and leadership skills. I excel at helping Software Executives, Engineers and Developers to accelerate their productivity. I thrive on helping everyone I work with to maximize their skills and fulfill their potential, personally and professionally.
+
+- Senior Software Architect for Trimble CMS
+- Third decade in the software industry
+- Former CTO for a boutique consulting firm
+- Former SaaS CTO in the AgTech industry
+- BS - Business Administration and Marketing
+- MA - Transformational Leadership
+- Host on [Software Engineering Radio](https://www.se-radio.net/team/jeff-doolittle/){:target="_blank"}
+- Published Author and Industry Thought Leader
+
+
+<h2 id="focus">Focus<span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 **Vision**: A world where humans thrive by discovering, refining and acting on their unique value creation potential while helping others do the same.
 

@@ -41,24 +41,29 @@ A concise and comprehensive [**Mission**](#vision-and-mission) defines a *presen
 
 [**Tactics**](#strategies-and-tactics) define the *how* in relation to well defined and documented [strategies](#strategies-and-tactics).
 
+My personal vision, mission and strategies provide an example of a well defined vision, mission, and set of strategies.
+
+**Vision**: A world where humans thrive by discovering, refining and acting on their unique value creation potential while helping others do the same.
+
+**Mission**: To help make good software professionals great!
+
+**Strategy**: Design Engineering Leadership (Training, Mentoring, Writing, Presenting, Model Building, Scientific Method)
+
 ## Design for Cultural Alignment
 
 Returning briefly to the car example, what we really want is the ability to design a car in such a way that the alignment tends to remain in check with a reasonably predictable schedule of adjustments. In a similar fashion, we must *design* organizational communication structures to maintain alignment with long and short term objectives and to reliability guide team members toward the desired organizational culture.
 
 A hallmark of all good design is [composability](https://www.youtube.com/watch?v=ukU344kEwP8). Automobiles, software systems and organizational cultures all benefit from good design. The Five-factor Cultural Alignment Model provides a framework for creating, applying, evaluating and refining such designs.
 
-When designing a cultural alignment model, each factor provides a grouping mechanism for specific **Elements** in the model.
+When designing a specific cultural alignment model using the five factors, each factor provides a grouping mechanism for specific **Elements** in the model.
 
-A well designed cultural alignment model can be composed along three axes.
+For example, take **Trust** as an organizational value.
 
-### Interrelationship Between the Five Factors
+<a href="/assets/trust-composition.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%" class="lightbox-image current" title="Trust Composition">
+    <img src="/assets/trust-composition.png" alt="Trust Composition">
+</a>
 
-### Interrelationship Between 
-
-### Composition 
-
-
-This occurs along two axes. One axis represents the interrelationship between each of the five factors. Additionally each factor may be decomposed into more granular elements to provide detail and support for more generalized factors. This will become more clear in the following sections.
+It can be difficult to evaluate levels of trust in the abstract, but the value of trust is composed 
 
 ## The Five Factors in Detail
 
