@@ -2,7 +2,7 @@
 layout: post
 title:  "REST Wrecks Microservices! PADNUG Presentation"
 date:   2020-05-05 08:30:00 -0700
-categories: presentation
+category: events
 tags: [software, idesign, system design, project design, architecture, se radio, software engineering radio]
 excerpt: Avoid the Pit of Despair!
 image:  /assets/REST Wrecks Microservices!.png

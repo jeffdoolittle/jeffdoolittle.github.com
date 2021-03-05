@@ -2,7 +2,7 @@
 layout: post
 title: "Writing for Software Developers with Philip Kiely"
 date: 2020-09-15 11:10:00 -0700
-categories: podcast
+category: publications
 tags: [software, writing, developers, engineers]
 excerpt: Philip Kiely joined me on Software Engineering radio to discuss his recently published book.
 image: /assets/damascus_oregon_farm_sunset.jpg

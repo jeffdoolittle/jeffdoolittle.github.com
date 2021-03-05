@@ -2,13 +2,7 @@
 layout: page
 title: Events
 permalink: /events/
-pagenav:
-  - title: PADNUG
-    href: "#padnug"
 ---
 
-{%- include pagenav.html -%}
-
-{% assign categories = site.data.publications.categories | where_exp: "item", "item.entriesType == 'event'" %}
-
-{% include content-entries.html categories=categories %}
+{% assign posts = site.posts | where: "category", "events" %}
+{%- include posts.html posts=posts -%}

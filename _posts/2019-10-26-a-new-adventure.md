@@ -2,7 +2,7 @@
 layout: post
 title:  "A New Adventure"
 date:   2019-10-26 00:02:30 -0700
-categories: general
+category: general
 excerpt: Why change one thing when you can change everything?
 image:  /assets/2019-10-26-a-new-adventure.jpg
 image_alt: The Willamette

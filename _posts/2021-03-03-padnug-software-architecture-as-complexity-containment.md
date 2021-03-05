@@ -2,7 +2,7 @@
 layout: post
 title: "Software Architecture as Complexity Containment"
 date: 2021-03-03 08:00:00 -0800
-categories: presentation
+category: events
 tags: [software, developers, engineers, architect, architects, complexity, complex, contain, containment]
 excerpt: "Ultimately, just one fundamental metric matters when evaluating the competence of software architects: the ability to identify, assess and ultimately contain complexity."
 image: /assets/pnw-snowpocalypse-2021.jpg

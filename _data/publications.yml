@@ -59,17 +59,3 @@ categories:
         url: "/2020/04/29/dont-disrupt-agile-drop-it/"
         date: 2020-04-29
         local: true
-  - title: PADNUG (Portland Area Dot Net User Group)
-    subtitle: The developer user group in the Portland, Oregon metro area
-    id: padnug
-    entriesHeader: Presentations
-    entriesType: event
-    entries:
-      - title: "REST Wrecks Microservices!"
-        url: "/2020/05/05/padnug-rest-wrecks-microservices/"
-        date: 2020-05-05
-        local: true
-      - title: "Software Architecture as Complexity Containment"
-        url: "/2021/03/03/padnug-software-architecture-as-complexity-containment/"
-        date: 2021-03-03
-        local: true

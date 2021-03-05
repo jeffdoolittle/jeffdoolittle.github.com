@@ -2,7 +2,7 @@
 layout: post
 title:  "The Agile Planning False Equivalency"
 date:   2020-01-26 06:00:00 -0800
-categories: general
+category: general
 tags: [software architecture, agile, estimate, estimation, plan, planning]
 excerpt: Agile practitioners equate having architectural plans with big-up-front-design. Nothing could be further from the truth.
 image: /assets/2020-01-26-agile-planning-false-equivalency.jpg

@@ -2,12 +2,12 @@
 layout: post
 title: "The Power of Cultural Alignment"
 date: 2021-03-04 0:00:00 -0800
-categories: software leadership
+category: leadership
 tags: [software, developers, engineers, architect, architects, lead, leader, align, alignment, culture, cultural]
 excerpt: "A lack of cultural alignment leads to negative outcomes for teams and organizations. It often goes unnoticed or neglected while risks ramp up and the ramifications become more costly and challenging to remedy."
 image: /assets/alignment.jpg
 image_alt: Alignment
-published: true
+published: false
 ---
 
 ## Alignment

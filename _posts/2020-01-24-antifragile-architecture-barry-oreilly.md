@@ -2,7 +2,7 @@
 layout: post
 title:  "Antifragile Architecture with Barry O'Reilly"
 date:   2020-01-24 06:00:00 -0800
-categories: podcast
+category: publications
 tags: [seradio, podcast, software architecture, complexity, antifragile, antifragility, resilient, resiliency]
 excerpt: Designing systems that improve in the face of chaos and complexity
 image: /assets/2020-01-24-antifragile-architecture-barry-oreilly.jpg
