@@ -24,6 +24,16 @@ pagenav:
 
 {%- include pagenav.html -%}
 
+I am a Software Architect and Transformational Leader. I have over twenty years of experience designing and architecting software systems, and providing developer leadership and mentorship.
+
+I bring together a unique blend of technical prowess, compassion, empathy, commitment to high quality, and leadership skills. I excel at helping Software Executives, Engineers and Developers to accelerate their productivity. I thrive on helping everyone I work with to maximize their skills and fulfill their potential, personally and professionally.
+
+**Vision**: A world where humans thrive by discovering, refining and acting on their unique value creation potential while helping others do the same.
+
+**Mission**: To help make good software professionals great!
+
+**Strategy**: Design Engineering Leadership (Training, Mentoring, Writing, Presenting, Model Building, Scientific Method)
+
 <h2 id="professional-bio">Professional Bio <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 {%- include professional-bio.md -%}
