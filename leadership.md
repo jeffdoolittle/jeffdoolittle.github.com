@@ -12,6 +12,9 @@ pagenav:
 
 {%- include pagenav.html -%}
 
+## The Power of Cultural Alignment
+
+
 ## The Leadership Style Matrix
 
 Different situations call for different styles of leadership. Applying a particular style in a non-ideal situation can obstruct the attainment of group goals and dampen group member satisfaction in their work.

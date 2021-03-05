@@ -1,0 +1,22 @@
+
+
+<h2 id="recent" class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
+<!-- {%- include google-ads-main.html -%} -->
+<ul class="post-list">
+  {%- for post in posts -%}
+  <li>
+    {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+    <h3 class="post-link">
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+    </h3>
+    <h3 class="post-date">{{ post.date | date: date_format }}</h3>
+    <p><em>{{ post.excerpt }}</em></p>
+    <a href="{{ post.url | relative_url }}">
+      <p><img src="{{ post.image }}" alt="{{ post.image_alt }}" /></p>
+      <p>Continue reading...</p>
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>
