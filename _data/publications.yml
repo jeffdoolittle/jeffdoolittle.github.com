@@ -11,13 +11,13 @@ categories:
         url: /2021/03/05/the-five-factor-model-of-cultural-alignment
         date: 2021-03-05
         local: true
-      - title: "Software Leadership Distilled"
-        url: /2020/11/04/software-leadership-distilled/
-        date: 2020-11-04
-        local: true
       - title: "The Leadership Style Matrix"
         url: /2020/11/06/leadership-style-matrix/
         date: 2020-11-06
+        local: true
+      - title: "Software Leadership Distilled"
+        url: /2020/11/04/software-leadership-distilled/
+        date: 2020-11-04
         local: true
   - title: Software Engineering Radio
     subtitle: The Podcast for Professional Software Developers
