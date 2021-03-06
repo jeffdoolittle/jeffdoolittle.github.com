@@ -109,7 +109,7 @@ Even a compelling vision and a well-conceived mission cannot suffice if attempts
 
 - Technophilia (obsession with tools and technologies)
 - Solutions Masquerading as Requirements
-- Product Owners or Customers referring to specific technologies
+- Product Owners or Customers referring to specific technologies when discussing requirements and features
 - Development managers making decisions about technology selection
 - High defect counts and frequent escalation events
 - Slow and decreasing velocity of project completion and delivery
