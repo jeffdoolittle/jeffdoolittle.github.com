@@ -69,7 +69,7 @@ Consider **Trust** as a possible organizational value.
 
 It can be difficult to evaluate levels of trust in the abstract, but trust itself is comprised of various elements. Different cultures may identify distinct elements of trust they wish to emphasize. The example above includes four elements that are components of the trust factor: integrity, honesty, keeping agreements, and recompense for when agreements are not or cannot be kept. When designing  cultural alignment models organizational leaders should seek to identify elements which are clear and measureable, either qualitatively or quantitatively.
 
-The same compositional approach may be taken across each of the five factors. This allows the model to scale with larger organizations since it is not constrained to only five factors in the details. But compositional elements of values, vision, mission, strategies and tactics must not contract with one another or with their higher level factor.
+The same compositional approach may be taken across each of the five factors. This allows the model to scale with larger organizations since it is not constrained to only five factors in the details. But compositional elements of values, vision, mission, strategies and tactics must not contradict with one another or with their higher level factor.
 
 ## The Five Factors in Detail
 
@@ -96,8 +96,6 @@ While vision describes a potential future to strive for, mission provides contex
 For example, Henry Ford saw a vision of an America where working class people could afford a quality automobile. Progress toward this vision came through his mission of revolutionizing factory work. His present-oriented mission aligned with his future-oriented vision.
 
 Mission describes the means. Vision expresses the desired ends.
-
-
 
 ### Strategies and Tactics
 
