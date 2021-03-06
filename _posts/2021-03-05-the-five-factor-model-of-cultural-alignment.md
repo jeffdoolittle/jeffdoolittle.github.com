@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "The Power of Cultural Alignment"
+title: "The Five-factor Model of Cultural Alignment"
 date: 2021-03-05 00:00:00 -0800
 category: leadership
 tags: [software, developers, engineers, architect, architects, lead, leader, align, alignment, culture, cultural]
 excerpt: "A lack of cultural alignment leads to negative outcomes for teams and organizations. It often goes unnoticed or neglected while risks ramp up and the ramifications become more costly and challenging to remedy."
 image: /assets/alignment.jpg
 image_alt: Alignment
-published: false
+published: true
 ---
 
 ## Alignment
@@ -43,27 +43,33 @@ A concise and comprehensive [**Mission**](#vision-and-mission) defines a *presen
 
 My personal vision, mission and strategies provide an example of a well defined vision, mission, and set of strategies.
 
+___
+
 **Vision**: A world where humans thrive by discovering, refining and acting on their unique value creation potential while helping others do the same.
 
 **Mission**: To help make good software professionals great!
 
 **Strategy**: Design Engineering Leadership (Training, Mentoring, Writing, Presenting, Model Building, Scientific Method)
 
+___
+
 ## Design for Cultural Alignment
 
 Returning briefly to the car example, what we really want is the ability to design a car in such a way that the alignment tends to remain in check with a reasonably predictable schedule of adjustments. In a similar fashion, we must *design* organizational communication structures to maintain alignment with long and short term objectives and to reliability guide team members toward the desired organizational culture.
 
-A hallmark of all good design is [composability](https://www.youtube.com/watch?v=ukU344kEwP8). Automobiles, software systems and organizational cultures all benefit from good design. The Five-factor Cultural Alignment Model provides a framework for creating, applying, evaluating and refining such designs.
+Automobiles, software systems and organizational cultures all benefit from good design. The Five-factor Cultural Alignment Model provides a framework for creating, applying, evaluating and refining such designs.
 
-When designing a specific cultural alignment model using the five factors, each factor provides a grouping mechanism for specific **Elements** in the model.
+A hallmark of all good design is [composability](https://www.youtube.com/watch?v=ukU344kEwP8). When designing a specific cultural alignment model using the five factors, each factor provides a grouping mechanism for specific **Elements** in the model. This decompositional approach provides the composability necessary for an actionable model.
 
-For example, take **Trust** as an organizational value.
+Consider **Trust** as a possible organizational value.
 
 <a href="/assets/trust-composition.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%" class="lightbox-image current" title="Trust Composition">
     <img src="/assets/trust-composition.png" alt="Trust Composition">
 </a>
 
-It can be difficult to evaluate levels of trust in the abstract, but the value of trust is composed 
+It can be difficult to evaluate levels of trust in the abstract, but trust itself is comprised of various elements. Different cultures may identify distinct elements of trust they wish to emphasize. The example above includes four elements that are components of the trust factor: integrity, honesty, keeping agreements, and recompense for when agreements are not or cannot be kept. When designing  cultural alignment models organizational leaders should seek to identify elements which are clear and measureable, either qualitatively or quantitatively.
+
+The same compositional approach may be taken across each of the five factors. This allows the model to scale with larger organizations since it is not constrained to only five factors in the details. But compositional elements of values, vision, mission, strategies and tactics must not contract with one another or with their higher level factor.
 
 ## The Five Factors in Detail
 
@@ -75,16 +81,11 @@ Ditching the concept of values altogether isn't the answer. What organizations n
 
 Regardless of an organization's stated values, there are three critical values that should be embraced and embodied by every organization that seeks maximum cultural effectiveness: [**Trust, Clarity and Empowerment**](/software-leadership/software-leadership-distilled#core-values). [Software Leadership Distilled](/software-leadership/software-leadership-distilled) describes these values and how to combine them with other powerful leadership and organizational techniques to supercharge organizations and teams.
 
-As mentioned previously, each factor may be decomposed into more granular elements that support the factor, amplifying their diagnostic power. Take [Trust](/software-leadership/software-leadership-distilled#core-values) for example, achieving trust in an organization requires consideration of not only the relationship between trust and other factors like clarity and empowerment, but also of values that specifically relate to trust building. Values contributing to trust include integrity, honesty, keeping one's word, and making things as right as possible when an agreement is not or cannot be fulfulled.
-
-<a href="/assets/trust-composition.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%" class="lightbox-image current" title="Trust Composition">
-    <img src="/assets/trust-composition.png" alt="Trust Composition">
+<a href="/assets/software-leadership-core-values.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%" class="lightbox-image current" title="Core Values">
+    <img src="/assets/software-leadership-core-values.png" alt="Core Values">
 </a>
 
-
-A small, well defined and simple set of values provides a diagnostic tool for the evaluation of organizational culture. By defining the compositional components of each high level value, leaders and team members can drill down and seek the root causes of misalignment with stated values and form action plans to remedy the situation.
-
-For example, we may recognize that team members tend to focus on their own work and tasks and do not invest in empowering those they work with. We can evaluate this situation along 
+A small, well defined and simple set of values provides a powerful diagnostic tool for the evaluation of organizational culture. By defining the compositional components of each high level value, leaders and team members can drill down and seek the root causes of misalignment with stated values and form action plans to remedy the situation.
 
 ### Vision and Mission
 
@@ -104,22 +105,17 @@ Mission describes the means. Vision expresses the desired ends.
 
 [**Tactics**](#strategies-and-tactics) define the *how* in relation to well defined and documented [strategies](#strategies-and-tactics).
 
+___
 
+## Additional Resources
 
-
-The second distinguishing characteristic of Ford's vision was that it was multidimensional. Henry Ford looked at every aspect of his business to achieve his grand vision: product, process and people. His product vision was based on interchangeable parts that fit together every time and a product that didn't break down as you used it; a product so cheap to build that everyone could afford it.
-
-Ford and Sorensen also created what we today call modular assembly—the process of putting together subassemblies before installing them on a vehicle. Modularity at that point was nothing more than putting hoses and attachments on the radiator before installation, but this simple innovation was another step toward Ford's ultimate goal.
-
-Ford's process vision was based on the continuous and waste-free flow of material all the way from the iron ore mine to the customer. His people vision was based on a capable, trained and motivated workforce that worked in a coordinated way and was also able to afford the products that the factory made. Any one piece of that vision was incomplete; together they were dynamite.
+[Assembly Magazine: The Extraordinary Vision of Henry Ford](https://www.assemblymag.com/articles/83965-special-section-the-extraordinary-vision-of-henry-ford)
 
 ___
 
 [{{ page.title }}]({{ page.url }}) originally appeared at [jeffdoolittle.com](https://jeffdoolittle.com/).
 
 Copyright © 2021 Jeff Doolittle. All rights reserved.
-
-<https://www.assemblymag.com/articles/83965-special-section-the-extraordinary-vision-of-henry-ford>
 
 {% include twitter_plug.html %}
 
