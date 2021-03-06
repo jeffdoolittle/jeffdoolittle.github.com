@@ -196,7 +196,7 @@ Over time, the growing ubiquity of core teams throughout an organization can res
 - Head of Development: **Manage Business Expectations**
 - Head of Architecture: **Contain Complexity**
 
-Role clarity is necessary but not sufficient for individuals in an organization. The lead team ensures that team members clearly understand the mission of the organization and any relevant areas of strategic focus.
+Role clarity is necessary but not sufficient for individuals in an organization. The lead team ensures that team members clearly understand [the vision and mission of the organization, including any relevant areas of strategic focus](/2021/03/05/the-five-factor-model-of-cultural-alignment/).
 
 **Software leaders work diligently on the excellence of each core team while patiently awaiting the emergence of the lead team.**
 
