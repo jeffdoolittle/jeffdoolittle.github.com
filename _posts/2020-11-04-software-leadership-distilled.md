@@ -89,7 +89,7 @@ ___
 
 **Make and keep agreements to build trust.**
 
-Without trust all manner of dysfunctions tend to result such as hand-wringing, buck-passing and micromanagement to name a few. Healthy teams and organizations learn to make and keep agreements to build trust.
+Without trust all manner of dysfunctions tend to result such as [hand-wringing, buck-passing and micromanagement](/2020/11/06/leadership-style-matrix/) to name a few. Healthy teams and organizations learn to make and keep agreements to build trust.
 
 Give individuals and teams the opportunity to make agreements in keeping with their clarified role. Cultivate a culture that rewards trust building by making and keeping agreements. Begin to model this culture at every level of the organization.
 
