@@ -55,7 +55,7 @@ ___
 
 ## Design for Cultural Alignment
 
-Returning briefly to the car example, what we really want is the ability to design a car in such a way that the alignment tends to remain in check with a reasonably predictable schedule of adjustments. In a similar fashion, we must *design* organizational communication structures to maintain alignment with long and short term objectives and to reliability guide team members toward the desired organizational culture.
+Returning briefly to the car example, what we really want is the ability to design a car in such a way that the alignment tends to remain in check with a reasonably predictable schedule of adjustments. In a similar fashion, we must *design* organizational communication structures to maintain alignment with long and short term objectives and to reliably guide team members toward the desired organizational culture.
 
 Automobiles, software systems and organizational cultures all benefit from good design. The Five-factor Cultural Alignment Model provides a framework for creating, applying, evaluating and refining such designs.
 
