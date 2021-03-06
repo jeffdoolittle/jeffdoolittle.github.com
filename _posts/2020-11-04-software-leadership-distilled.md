@@ -68,8 +68,8 @@ ___
 
 ## Core Values
 
-<a href="/assets/software-leadership-core-values.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%" class="lightbox-image current" title="Trust Composition">
-    <img src="/assets/software-leadership-core-values.png" alt="Trust Composition">
+<a href="/assets/software-leadership-core-values.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%" class="lightbox-image current" title="Core Values">
+    <img src="/assets/software-leadership-core-values.png" alt="Core Values">
 </a>
 
 > Trust, clarity and empowerment
