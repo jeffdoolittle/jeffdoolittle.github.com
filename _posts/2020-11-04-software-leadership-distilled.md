@@ -27,7 +27,7 @@ footnotes:
             "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win." https://www.brainyquote.com/quotes/sun_tzu_387509.
 ---
 
-I have had opportunities to lead in multiple contexts and capacities over the course of my life and career. These have included software consulting, co-founding software startups where I operated as CTO, planting a church, and my current role as a software architect. Along the way I realized I had been a student and practitioner of leadership for most of my life. I added academic studies to my ongoing education in leadership, completing a Master of Arts in Transformational Leadership in 2010. I remain passionate and dedicated to my primary vocation: *I help make good software professionals great!*
+I have had opportunities to lead in multiple contexts and capacities over the course of my life and career. These have included software consulting, co-founding software startups where I operated as CTO, planting a thriving church, and my current role as a software architect. Along the way I realized I had been a student and practitioner of leadership for most of my life. I added academic studies to my ongoing education in leadership, completing a Master of Arts in Transformational Leadership in 2010. I remain passionate and dedicated to my primary vocation: *I help make good software professionals great!*
 
 Software Leadership Distilled provides an overview of concepts and practices software organizations can adopt to help their teams and leaders to thrive. It brings my experiences and studies together with expertise gleaned from mentoring, training and works by other leaders both inside and outside the software industry.
 
@@ -44,7 +44,7 @@ Software Leadership Distilled provides an overview of concepts and practices sof
 - **Recognize and Reward [Empowerment Behaviors](#empowerment)**
   - Leveraging empowerment supercharges the benefits of role clarity, leading to accelerating levels of trust and health.
 - **Build [Core Teams](#core-team)**
-  - A core team consists of individuals who fulfill three areas of primary responsibility: *managing customer expectations*, *managing business expecations* and *containing complexity*.
+  - A core team consists of individuals who fulfill three primary responsibilities: *managing customer expectations*, *managing business expecations* and *containing complexity*.
 - **Work toward emergence of the [Lead Team](#lead-team)**
   - The emergence of the lead team reflects the success of core teams growing and thriving throughout the organization.
 - **[Authenticity is Not Optional](#authenticity-is-not-optional)**
