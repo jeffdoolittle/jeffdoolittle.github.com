@@ -12,14 +12,14 @@ footnotes:
     -
         id: 1
         content: >
-            Jeff Doolittle, <a href="/software-leadership/software-leadership-distilled">Software Leadership Distilled</a>.
+            Jeff Doolittle, <a href="/2020/11/04/software-leadership-distilled/">Software Leadership Distilled</a>.
     -
         id: 2
         content: >
             Ron Claassen, <a href="/assets/claassen-2002-a-peacemaking-model.pdf" target="_blank">A Peacemaking Model</a>. Original at <a href="http://www.rpforschools.net/articles/Theory/Claassen%202002%20A%20Peacemaking%20Model.pdf" target="_blank">http://www.rpforschools.net/articles/Theory/Claassen%202002%20A%20Peacemaking%20Model.pdf</a>.
 ---
 
-In my recent article [Software Leadership Distilled](/software-leadership/software-leadership-distilled){% include fnref.html x=1 %}, I described the importance of three core values: trust, clarity and empowerment.
+In my recent article [Software Leadership Distilled](/2020/11/04/software-leadership-distilled/){% include fnref.html x=1 %}, I described the importance of three core values: trust, clarity and empowerment.
 
 The Leadership Style Matrix visualizes how clarity and empowerment relate to four leadership styles: [authoritarian](#authoritarian), [managerial](#managerial), [familial](#familial) and [transformational](#transformational). Each of these styles may be effective and even necessary depending on the situation. However misapplication of a style in an inappropriate context hampers desirable outcomes.
 
