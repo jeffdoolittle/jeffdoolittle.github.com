@@ -155,6 +155,8 @@ ___
 
 Once roles are clarified, team members can begin a taking steps toward mutual empowerment. This process accelerates the growth of trust, leads to greater levels of clarity, and can continue in a self-reinforcing cycle of health.
 
+Organizations that recognize and reward effective empowerment behaviors cal experience radical cultural transformation capable of unleashing the value creation potential of their teams in ways previously unimaginable.
+
 ___
 
 ## Core Team
