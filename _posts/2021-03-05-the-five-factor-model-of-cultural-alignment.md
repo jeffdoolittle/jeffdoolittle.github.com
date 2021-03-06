@@ -103,7 +103,16 @@ Mission describes the means. Vision expresses the desired ends.
 
 [**Tactics**](#strategies-and-tactics) define the *how* in relation to well defined and documented [strategies](#strategies-and-tactics).
 
-Many organizations attempt to translate an ambiguous vision with an unclear mission directly into tactical action. This holds true especially in the software industry. Even a compelling vision and a well-conceived mission cannot suffice if attempts are made to jump directly from mission to tactices.
+Many organizations attempt to translate an ambiguous vision with an unclear mission directly into tactical action. This holds true especially in the software industry. Even a compelling vision and a well-conceived mission cannot suffice if attempts are made to jump directly from mission to tactics.
+
+I refer to this jump as the *Jump to How*. Some symptoms include:
+
+- Technophilia (obsession with tools and technologies)
+- Solutions Masquerading as Requirements
+- Product Owners or Customers referring to specific technologies
+- Development managers making decisions about technology selection
+- High defect counts and frequent escalation events
+- Slow and decreasing velocity of project completion and delivery
 
 ___
 
