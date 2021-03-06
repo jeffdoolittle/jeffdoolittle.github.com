@@ -16,6 +16,23 @@ Recently, I had the distinct pleasure to present once again for my hometown tech
 <iframe width="760" height="420" src="https://www.youtube.com/embed/-DVo24Y1PcU?start=748" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+## From the Presentation
+
+### The Sources of Complexity
+
+- Technological Complexity
+- Integration Complexity
+- Organizational Complexity
+- Operational Complexity
+- Market Complexity
+
+### Complexity Containment Strategies
+
+- Identify Capabilities
+- Enforce Constraints
+- Clarify Communication
+- Commit to Vigilance
+
 ## Additional Resources
 
 [Righting Software](https://rightingsoftware.org), by Juval Löwy (ISBN-13: 978-0136524038)
