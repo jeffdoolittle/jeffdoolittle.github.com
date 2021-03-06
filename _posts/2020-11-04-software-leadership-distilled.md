@@ -48,7 +48,7 @@ Software Leadership Distilled provides an overview of concepts and practices sof
 - **Work toward emergence of the [Lead Team](#lead-team)**
   - The emergence of the lead team reflects the success of core teams growing and thriving throughout the organization.
 - **[Authenticity is Not Optional](#authenticity-is-not-optional)**
-  - Nothing undermines improvements to organizational culture quite like a lack of authenticity.
+  - Nothing undermines a potentially healthy culture quite like a lack of authenticity.
 
 ___
 
