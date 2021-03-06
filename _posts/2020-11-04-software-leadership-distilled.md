@@ -153,7 +153,7 @@ ___
 
 ## Empowerment
 
-Once roles are clarified, team members can begin a taking steps toward mutual empowerment. This process builds more trust, leads to greater levels of clarity, and can continue in a self-reinforcing cycle of health.
+Once roles are clarified, team members can begin a taking steps toward mutual empowerment. This process accelerates the growth of trust, leads to greater levels of clarity, and can continue in a self-reinforcing cycle of health.
 
 ___
 
