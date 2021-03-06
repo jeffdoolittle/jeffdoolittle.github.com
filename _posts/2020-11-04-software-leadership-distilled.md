@@ -41,6 +41,8 @@ Software Leadership Distilled provides an overview of concepts and practices sof
   - Foster a culture that rewards building trust by making and keeping agreements.
 - **Provide [Role Clarity](#role-clarity)**
   - Clarifying roles clears up a host of issues that plague organizations and teams, orienting team members directly toward their specific value creation task and freeing them to empower others.
+- **Recognize and Reward [Empowerment Behaviors](#empowerment)**
+  - Once roles are clarified, team members can begin a power of mutual empowerment that builds more trust and leads to greater levels of clarity.
 - **Build [Core Teams](#core-team)**
   - A core team consists of individuals who fulfill three areas of primary responsibility: *managing customer expectations*, *managing business expecations* and *managing complexity*.
 - **Work toward emergence of the [Lead Team](#lead-team)**
@@ -146,6 +148,12 @@ In addition to the areas of primary responsibility, everyone in an organization 
 - Empower Others
 
 **Software leaders understand their own role and empower others to clarify and fulfil their respective roles as value creators.**
+
+___
+
+## Empowerment
+
+Once roles are clarified, team members can begin a taking steps toward mutual empowerment. This process builds more trust, leads to greater levels of clarity, and can continue in a virtuals self-reinforcing cycle of health.
 
 ___
 
