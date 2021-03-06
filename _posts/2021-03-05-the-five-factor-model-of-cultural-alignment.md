@@ -116,7 +116,9 @@ Even a compelling vision and a well-conceived mission cannot suffice if attempts
 
 Many organizations attempt to treat the symptoms directly without diagnosing the actual disease. Treating the symptoms of a disease does not address the real problem. I gives off an appearance that at least something is being done, but a professional doctor committed to the Hippocratic Oath would never allow appearences to dictate their actions.
 
+You may have already guessed that the strategic factor between mission and tactics is part of the solution. But what is the disease that must be cured in order to eradicate once and for all the exceissive coupling between product owners and software developers that inevitably leads to the "jump to how"?
 
+The answer lies in [Complexity Containment](/2021/03/03/padnug-software-architecture-as-complexity-containment).
 
 ___
 
