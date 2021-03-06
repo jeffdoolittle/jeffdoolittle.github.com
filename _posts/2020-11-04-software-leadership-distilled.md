@@ -111,7 +111,7 @@ Clarity enables individuals to understand and embrace their particular contribut
 Role clarity provides the following:
 
 - Comprehension of the value provided by the role
-- A clearly defined [primary responsibilities](#primary-responsibilities)
+- A clearly defined [primary responsibility](#primary-responsibilities)
 - Well defined points of connection with other roles
 - A sense of responsibility, ownership and accountability
 - A context in which mutual empowerment can grow
