@@ -118,7 +118,7 @@ Many organizations attempt to treat the symptoms directly without diagnosing the
 
 You may have already guessed that the strategic factor between mission and tactics is part of the solution. But what is the disease that must be cured in order to eradicate once and for all the excessive coupling between product owners and software developers that inevitably leads to the notorious "jump to how"?
 
-The answer lies in [Complexity Containment](/2021/03/03/padnug-software-architecture-as-complexity-containment) within a well functioning [Core Team](/2020/11/04/software-leadership-distilled/).
+The answer lies in [Complexity Containment](/2021/03/03/padnug-software-architecture-as-complexity-containment) as a vital responsibility within a well functioning [Core Team](/2020/11/04/software-leadership-distilled/).
 
 ___
 
