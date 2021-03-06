@@ -109,7 +109,7 @@ Clarity enables individuals to understand and embrace their particular contribut
 Role clarity provides the following:
 
 - Comprehension of the value provided by the role
-- A clearly defined [area of primary responsibility](#areas-of-primary-responsibility)
+- A clearly defined [primary responsibilities](#primary-responsibilities)
 - Well defined points of connection with other roles
 - A sense of responsibility, ownership and accountability
 - A context in which mutual empowerment can grow
@@ -137,7 +137,7 @@ It is important to recognize that the area of primary responsibility matters far
 
 Once team members have clarity regarding their role, they gain power to shed unnecessary tasks. They begin to narrow their focus to what really matters. They creatively explore ways to increase their own value creation potential. They can begin to imagine ways to empower individuals in the roles adjacent to their own. As team members gain clarity about their value creation reponsibility, their job satisfaction tends to increase. As team members begin to empower individuals in other roles, the positive network effects can completely transform an organization.
 
-### AreShared Responsibilities
+### Shared Responsibilities
 
 In addition to the areas of primary responsibility, everyone in an organization is responsible to:
 
