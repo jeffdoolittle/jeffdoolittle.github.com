@@ -114,7 +114,7 @@ Even a compelling vision and a well-conceived mission cannot suffice if attempts
 - High defect counts and frequent escalation events
 - Slow and decreasing velocity of project completion and delivery
 
-Many organizations attempt to treat the symptoms directly without diagnosing the actual problem. Treating the symptoms of a disease does not address the real problem. I gives off an appearance that at least something is being done, but a professional doctor committed to the Hippocratic Oath would never allow appearences to dictate their actions.
+Many organizations attempt to treat the symptoms directly without diagnosing the actual disease. Treating the symptoms of a disease does not address the real problem. I gives off an appearance that at least something is being done, but a professional doctor committed to the Hippocratic Oath would never allow appearences to dictate their actions.
 
 
 
