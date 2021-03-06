@@ -103,6 +103,8 @@ Mission describes the means. Vision expresses the desired ends.
 
 [**Tactics**](#strategies-and-tactics) define the *how* in relation to well defined and documented [strategies](#strategies-and-tactics).
 
+Many organizations attempt to translate an ambiguous vision with an unclear mission directly into tactical action. This holds true especially in the software industry.
+
 ___
 
 ## Additional Resources
