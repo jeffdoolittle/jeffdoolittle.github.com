@@ -7,12 +7,16 @@ categories:
     entriesHeader: Articles
     entriesType: article
     entries:
+      - title: "The Five-factor Model of Cultural Alignment"
+        url: /2021/03/05/the-five-factor-model-of-cultural-alignment
+        date: 2021-03-05
+        local: true
       - title: "Software Leadership Distilled"
         url: /2020/11/04/software-leadership-distilled/
         date: 2020-11-04
         local: true
       - title: "The Leadership Style Matrix"
-        url: /software-leadership/leadership-style-matrix
+        url: /2020/11/06/leadership-style-matrix/
         date: 2020-11-06
         local: true
   - title: Software Engineering Radio
@@ -44,7 +48,7 @@ categories:
         date: 2020-09-15
         local: true
       - title: "447 - Michael Perry on Immutable Architecture"
-        url: 2021/02/18/the-art-of-immutable-architecture-michael-l-perry
+        url: /2021/02/18/the-art-of-immutable-architecture-michael-l-perry
         date: 2021-02-18
         local: true
   - title: Cutter Consortium
@@ -56,7 +60,7 @@ categories:
     entriesType: article
     entries:
       - title: "Don't Disrupt Agile. Drop It."
-        url: "/2020/04/29/dont-disrupt-agile-drop-it/"
+        url: /2020/05/22/dont-disrupt-agile-drop-it/
         date: 2020-04-29
         local: true
   - title: PADNUG
