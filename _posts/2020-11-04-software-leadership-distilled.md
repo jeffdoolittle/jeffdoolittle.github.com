@@ -66,9 +66,9 @@ ___
 
 ## Core Values
 
-<div style="text-align: center">
-    <img src="/assets/software-leadership-core-values.png" width="50%" height="50%" /><p />
-</div>
+<a href="/assets/software-leadership-core-values.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%" class="lightbox-image current" title="Trust Composition">
+    <img src="/assets/software-leadership-core-values.png" alt="Trust Composition">
+</a>
 
 > Trust, clarity and empowerment
 
@@ -151,9 +151,10 @@ ___
 
 ## Core Team
 
-<div style="text-align: center">
-    <img src="/assets/software-leadership-core-team.png" width="80%" height="80%" /><p />
-</div>
+
+<a href="/assets/software-leadership-core-team.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%" class="lightbox-image current" title="Trust Composition">
+    <img src="/assets/software-leadership-core-team.png" alt="Trust Composition">
+</a>
 
 A core team{% include fnref.html x=3 %} consists of *three individuals*, each of whom take ownership in the following areas of primary responsibility:
 
