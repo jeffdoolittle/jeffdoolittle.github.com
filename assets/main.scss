@@ -121,11 +121,16 @@ blockquote {
 }
 
 table {
-  border-collapse: unset;
+  border-collapse: collapse;
   border: 0px;
-  tr, th, td {
+  tr, th {
     background-color: transparent;
-    color: #DDDDDD;
+    color: #c06f39;
+    border: 0px;
+  }
+  td {
+    background-color: transparent;
+    color: #999999;
     border: 0px;
   }
 }

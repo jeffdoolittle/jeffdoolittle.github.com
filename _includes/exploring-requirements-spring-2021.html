@@ -1,0 +1,60 @@
+
+<script src="https://js.stripe.com/v3"></script>
+
+<div style="background-color: #333333;">
+
+<table class="stripe">
+
+  <tr>
+    <th>Level</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <th>Rock Star!</th>
+    <td>
+      <button class="btn-stripe-pay" data-price="price_1IalmdGpk3v7CBohSrwokmvG" data-name="ROCKSTAR" role="link">$100</button>
+    </td>
+  </tr>
+  <tr>
+    <th>Roadie</th>
+    <td>
+      <button class="btn-stripe-pay" data-price="price_1IallaGpk3v7CBohvZDuXwyY" data-name="ROADIE" role="link">$50</button>
+    </td>
+  </tr>
+  <tr>
+    <th>Fan</th>
+    <td>
+      <button class="btn-stripe-pay" data-price="price_1IT6qGGpk3v7CBohtTWVoo4c" data-name="FAN" role="link">$35</button>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<div id="error-message"></div>
+
+<script>
+  var stripe = Stripe('pk_live_lmTZ1zDD75DrdLLpCPLstbmY00xyU8eqYg');
+
+  var buttons = document.getElementsByClassName("btn-stripe-pay");
+
+  var i;
+  for (i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function(button){
+      console.log(button.srcElement.dataset.name);
+      console.log(button.srcElement.dataset.price);
+      stripe.redirectToCheckout({
+        lineItems: [{price: button.srcElement.dataset.price, quantity: 1}],
+        mode: 'payment',
+        successUrl: 'https://jeffdoolittle.com/success',
+        cancelUrl: 'https://jeffdoolittle.com/canceled',
+      })
+      .then(function (result) {
+        if (result.error) {
+          var displayError = document.getElementById('error-message');
+          displayError.textContent = result.error.message;
+        }
+      });
+    });
+  }
+</script>
