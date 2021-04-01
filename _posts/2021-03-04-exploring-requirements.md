@@ -14,6 +14,8 @@ Improve your skills at discovering, defining, and distilling requirements. Get t
 
 The first meeting will occur on April 1, 2021 at 8:00AM Pacific Time.
 
+While the group started today, [you can still sign up](https://docs.google.com/forms/d/e/1FAIpQLSdOzhhzKSN5hhRl8Q1QA92KBTAOF2s6G7bZpCSlqdfrBk6GkA/viewform) for a few more days.
+
 <!-- <div style="text-align:center">
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOzhhzKSN5hhRl8Q1QA92KBTAOF2s6G7bZpCSlqdfrBk6GkA/viewform?embedded=true" width="640" height="1278" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div> -->
