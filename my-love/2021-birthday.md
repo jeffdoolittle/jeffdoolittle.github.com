@@ -1,12 +1,15 @@
 ---
 layout: page
-title: Anniversary 2021
+title: Amy's 44th Birthday!
 show_banner: false
 ---
 
 ## Happy Birthday to You my Love!
 
+### Friday May 28 to Sunday May 30, 2021
+
 Let's go spend a long weekend on the water with a river view, a fire place and a king bed!
+
 
 There are so many fun places to go and beautiful sights to see!
 
