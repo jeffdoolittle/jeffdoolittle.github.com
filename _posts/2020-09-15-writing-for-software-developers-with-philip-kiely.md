@@ -4,7 +4,7 @@ title: "Writing for Software Developers with Philip Kiely"
 date: 2020-09-15 11:10:00 -0700
 category: publications
 tags: [software, writing, developers, engineers]
-excerpt: Philip Kiely joined me on Software Engineering radio to discuss his recently published book.
+excerpt: Philip Kiely joined me on Software Engineering Radio to discuss his recently published book.
 image: /assets/damascus_oregon_farm_sunset.jpg
 image_alt: Sunset at a Farm in Damascus, Oregon
 published: true

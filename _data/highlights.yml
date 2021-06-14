@@ -1,12 +1,12 @@
-- title: Exploring Requirements Book Club
-  date: 2020-03-04
+- title: Felienne on The Programmer's Brain
+  date: 2021-06-02
   summary: >-
-    Improve your skills at discovering, defining, and distilling requirements by joining the <a href="/2021/03/04/exploring-requirements">Exploring Requirements Book Club</a>.
+    Listen as Felienne joins me on Software Engineering Radio for a conversation about boot, <a href="2021/06/02/the-programmers-brain-with-felienne/">The Programmer's Brain</a>.
 - title: Software Architecture as Complexity Containment
-  date: 2020-03-03
+  date: 2021-03-03
   summary: >-
     Ultimately, just one fundamental metric matters when evaluating the competence of software architects: the ability to identify, assess and ultimately <a href="/2021/03/03/padnug-software-architecture-as-complexity-containment">contain complexity</a>.
 - title: The Art of Immutable Architecture
-  date: 2020-02-18
+  date: 2021-02-18
   summary: >-
     Michael L. Perry joined me recently as a guest on <a href="/2021/02/18/the-art-of-immutable-architecture-michael-l-perry">Software Engineering Radio</a>. We had an enlightening conversation about the future potential of software architecture.
