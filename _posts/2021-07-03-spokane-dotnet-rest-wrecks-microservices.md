@@ -12,11 +12,15 @@ published: true
 
 ## TL;DR
 
-Download the [slide deck](/assets/REST Wrecks Microservices!.pdf){:target="_blank"} and [go watch the presentation](https://www.youtube-nocookie.com/embed/0hzMEjVfHhg?start=772){:target="_blank"}!
+> Wait, did you present this before?
+
+Yes, it's true! But this recent presentation provides more provocotive ideas for you to ponder as you consider whether REST and microservices really make your life better as a software engineer.
+
+Download the [slide deck](/assets/REST Wrecks Microservices!.pdf){:target="_blank"} and [go watch the presentation](https://www.youtube.com/watch?v=XTUIj-YqVzs){:target="_blank"}!
 
 ## About the Presentation
 
-On May 5, 2020 I had the privilege to present at the [PADNUG](https://www.meetup.com/PADNUG/events/jscxtmybchbhb/){:target="_blank"} (formerly called the Portland Area Dot Net User Group).
+On May 11, 2021 I had the privilege to present at the [Spokane .NET User Group](https://www.meetup.com/Spokane-NET-User-Group/){:target="_blank"} (formerly called the Portland Area Dot Net User Group). There were some technical glitches with the original video posting, hence the long delay in posting this video.
 
 We explored various questions and topics together, including:
 
@@ -36,9 +40,7 @@ I invite you to join me and our special guest, Inigo Montoya, as we delve into t
 <hr />
 
 <div class="framer">
-  <iframe src="https://www.youtube-nocookie.com/embed/0hzMEjVfHhg?start=772" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/XTUIj-YqVzs" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 {% include twitter_plug.html %}
-
-https://www.youtube.com/watch?v=q1n_0kw5uBc
