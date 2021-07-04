@@ -3,12 +3,12 @@ layout: default
 ---
 
 <div class="home">
-  
+
 {%- if site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Post Archive" }}</h2>
   <div>
       {%- include google-ads-main.html -%}
-  </div>    
+  </div>
   <ul class="post-list">
     {%- for post in site.posts -%}
     <li>
@@ -23,7 +23,7 @@ layout: default
       {%- if site.show_excerpts -%}
         <p><em>{{ post.excerpt }}</em></p>
         <a href="{{ post.url | relative_url }}">
-          <p><img src="/assets/{{ post.image }}" alt="{{ post.image_alt }}" /></p>
+          <p><img src="{{ post.image }}" alt="{{ post.image_alt }}" /></p>
           <p>Continue reading...</p>
         </a>
       {%- endif -%}
@@ -35,5 +35,5 @@ layout: default
   {%- endif -%}
 
   {%- include google-ads-main.html -%}
-  
+
 </div>
