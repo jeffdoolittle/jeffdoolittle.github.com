@@ -14,6 +14,8 @@ Improve your skills at discovering, defining, and distilling requirements. Get t
 
 The first meeting will occur on April 1, 2021 at 8:00AM Pacific Time.
 
+*This book club has ended*.
+
 <!-- While the group started today, [you can still sign up](https://docs.google.com/forms/d/e/1FAIpQLSdOzhhzKSN5hhRl8Q1QA92KBTAOF2s6G7bZpCSlqdfrBk6GkA/viewform) for a few more days. -->
 
 <!-- <div style="text-align:center">
@@ -25,8 +27,6 @@ The first meeting will occur on April 1, 2021 at 8:00AM Pacific Time.
 It has required a significant investment of time and resources to prepare for a smooth and professional book club experience. While not strictly a requirement for participating in the club, please consider supporting the club financially. This helps cover the costs of tools like Zoom and Google Groups. Your support is not tax-deductible, but will help ensure that this and future book clubs provide the best possible experience for all participants.
 
 To support the Book Club please choose your support level below to check out with Stripe:
-
-{% include exploring-requirements-spring-2021.html %} -->
 
 Please [contact me](/contact) if you have any questions.
 
