@@ -25,4 +25,3 @@ ___
 Copyright © 2021 Jeff Doolittle. All rights reserved.
 
 {% include twitter_plug.html %}
-
