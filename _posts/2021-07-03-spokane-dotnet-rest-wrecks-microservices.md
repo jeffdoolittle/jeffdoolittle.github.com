@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "REST *Still* Wrecks Microservices! Spokane .NET User Group Presentation"
-date:   2021-06-12 08:30:00 -0700
+date:   2021-07-03 08:30:00 -0700
 category: events
 tags: [software, idesign, system design, project design, architecture, se radio, software engineering radio]
 excerpt: My latest efforts to help you avoid the Pit of Despair!
