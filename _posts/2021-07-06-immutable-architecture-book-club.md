@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Immutable Architecture Book Club"
-date: 2021-07-06 08:00:00 -0800
+date: 2021-07-05 08:00:00 -0700
 category: events
 tags: [software, developers, engineers, architect, architects, architecture, immutable, immutability]
 excerpt: ""
-image: ...
+image: /assets/immutable_arch_banner.jpg
 image_alt: The Art of Immutable Architecture
-published: false
+published: true
 ---
 
 
