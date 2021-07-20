@@ -12,6 +12,7 @@ header_pages:
   - contact.md
   - about.md
 show_excerpts: true
+future: false
 
 # favicon: https://favicon.io/favicon-generator/?t=JD&ff=Covered+By+Your+Grace&fs=100&fc=%23FFF&b=rounded&bc=%2305A
 

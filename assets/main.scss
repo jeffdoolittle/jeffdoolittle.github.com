@@ -3,7 +3,11 @@
 
 @import "minima";
 
-//color: #c06f39; # orange
+$siteBgColor: #27272a;
+$siteHighlightColor: #c77640;
+$siteHighlightHover: #dd9988;
+
+//color: $siteHighlightColor; # orange
 // color: #5C7880; # medium blue
 // color: #819EA3; # light blue
 
@@ -12,7 +16,7 @@ html {
 }
 
 body {
-  background-color: #202025;
+  background-color: $siteBgColor;
   color: #DDDDDD;
 }
 
@@ -41,11 +45,11 @@ div.framer iframe {
 }
 
 .site-header {
-  border-top: 5px solid #c06f39;
+  border-top: 5px solid $siteHighlightColor;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #202025;
+  background-color: $siteBgColor;
   z-index: 1;
 }
 
@@ -125,7 +129,7 @@ table {
   border: 0px;
   tr, th {
     background-color: transparent;
-    color: #c06f39;
+    color: $siteHighlightColor;
     border: 0px;
   }
   td {
@@ -188,7 +192,7 @@ ul.entries {
     position: absolute;
     top: 9px;
     right: 15px;
-    background-color: #202025;
+    background-color: $siteBgColor;
     border: 1px solid #e8e8e8;
     border-radius: 5px;
     text-align: right;
@@ -276,7 +280,7 @@ ul.entries {
     color: #DDDDDD;
   }
   a:hover {
-    color: #c06f39;
+    color: $siteHighlightColor;
     background-color: #ffffff11;
     display: block;
     height:100%;
@@ -295,7 +299,7 @@ div.social {
   a {
     color: #828282;
     &:hover {
-      color: #c06f39;
+      color: $siteHighlightColor;
     }
     i {
       font-size: 1.5em;
@@ -323,20 +327,20 @@ div.social {
     text-decoration: none;
   }
   &:hover {
-    color: #F09f69;
+    color: $siteHighlightHover;
     text-decoration: underline;
   }
 }
 
 a {
-  color: #c06f39;
+  color: $siteHighlightColor;
   text-decoration: none;
   &:visited {
-    color: #c06f39;
+    color: $siteHighlightColor;
     text-decoration: none;
   }
   &:hover {
-    color: #F09f69;
+    color: $siteHighlightHover;
     text-decoration: underline;
   }
 }
@@ -373,7 +377,7 @@ a.anchor {
 .quote {
   font-style: italic;
   font-size: 1.2em;
-  color: #F09f69;
+  color: $siteHighlightHover;
   border: 1px #f7f7f7 solid;
   border-radius: 5px;
 
