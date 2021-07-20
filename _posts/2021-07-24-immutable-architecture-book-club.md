@@ -10,6 +10,8 @@ image_alt: The Art of Immutable Architecture
 published: true
 ---
 
+**TL;DR - [Register Now!](#register)**
+
 Distributed systems present unique challenges and difficulties for system designers and maintainers. No silver bullet can perfectly meet these challenges or magically resolve such difficulties. But sometimes taking a different approach to a problem can simplify the process of defining a system and make it easier to communicate the intent of the designer. In the [Fight for Clarity]({% post_url 2020-11-04-software-leadership-distilled %}#core-values), the value of improving the shared understanding of the design cannot be overstated.
 
 In The Art of Immutable Architecture, Michael L. Perry describes an approach to distributed system design based on fundamental principles of mathematics, logic and immutability. Applying the constraints and patterns described in the book can greatly reduce the effort required of system designers and implementers when dealing with the challenges of distributed systems.
@@ -57,22 +59,5 @@ Please [contact me](/contact) if you have any questions.
 | 13 | 04-Nov-2021 | Ch. 10 | SQL Databases |
 | 14 | 11-Nov-2021 | Ch. 11 | Communication |
 | 15 | 18-Nov-2021 | Ch. 12 | Generated Behaviors |
-
-<!-- 
-1	12-Aug-2021	Intro and Ch. 1 Pages 1-8	The Fallacies of Distributed Computing	
-2	19-Aug-2021	Ch. 1 Pages 9-27	Immutability Changes Everything	
-3	26-Aug-2021	Ch. 2 Pages 29-45	Event Sourcing and Async Model-View-Update	
-4	02-Sep-2021	Ch. 2 Pages 45-58	Historical Modeling	
-5	09-Sep-2021	Ch. 3	How to Read an Historical Model	Michael Joining
-6	16-Sep-2021	Ch. 4	Location Independence	
-7	23-Sep-2021	Ch. 5	Analysis	
-8	30-Sep-2021	Ch. 6	State Transitions	
-9	07-Oct-2021	Ch. 7	Security	
-10	14-Oct-2021	Ch. 8 Pages 243-268	Structural Patterns	
-11	21-Oct-2021	Ch. 8 Pages 268-286	Workflow Patterns	
-12	28-Oct-2021	Ch. 9	Query Inverses	
-13	04-Nov-2021	Ch. 10	SQL Databases	
-14	11-Nov-2021	Ch. 11	Communication	
-15	18-Nov-2021	Ch. 12	Generated Behaviors	Michael Joining -->
 
 {% include twitter_plug.html %}

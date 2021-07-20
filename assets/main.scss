@@ -393,3 +393,22 @@ a.anchor {
     padding: .6em;
   }
 }
+
+table.stripe {
+  a {
+    display: inline-block;
+    color: black;
+    background-color: #cccccc;
+    border: 2px solid #999999;
+    padding: 0.4rem;
+    min-width: 5rem;
+    text-align: center;
+    
+    &:hover {
+      color: $siteHighlightHover;
+      text-decoration: none;
+      background-color: #ffffff;
+      border: 2px solid $siteHighlightHover;
+    }
+  }
+}
