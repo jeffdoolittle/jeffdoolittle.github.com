@@ -9,6 +9,8 @@ pagenav:
     href: "#reading-list"
   - title: Let's Meet!
     href: "#meet"
+  - title: Make a Payment
+    href: "#payment"
 requiredReading:
   - title: Righting Software
     href: https://rightingsoftware.org
@@ -84,3 +86,11 @@ Learn to **think for yourself.** This requires significant, nearly comprehensive
 <h2 id="meet">Let's Meet! <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 I have regular time slots available for introductory phone calls, or even lunch if you're local. [Contact me](/contact)!
+
+<p><hr /></p>
+
+<h2 id="payment">Make a Payment <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+The current rate for a 50 minute session is $150 USD. No, I don't accept bitcoin. 😀 
+
+Visit the <a href="https://buy.stripe.com/8wMg359qLeLO2XK4gj" target="_blank">Payment Gateway</a> to make a payment.
