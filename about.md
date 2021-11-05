@@ -37,8 +37,7 @@ I bring together a unique blend of technical prowess, compassion, empathy, commi
 - BS - Business Administration and Marketing
 - MA - Transformational Leadership
 - Host on [Software Engineering Radio](https://www.se-radio.net/team/jeff-doolittle/){:target="_blank"}
-- Published Author and Industry Thought Leader
-
+- Published Author and Conference Presenter
 
 <h2 id="focus">Focus<span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
