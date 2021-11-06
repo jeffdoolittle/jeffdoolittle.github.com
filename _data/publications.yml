@@ -51,6 +51,10 @@ categories:
         url: /2021/02/18/the-art-of-immutable-architecture-michael-l-perry
         date: 2021-02-18
         local: true
+      - title: "470 – L Peter Deutsch on the Fallacies of Distributed Computing"
+        url: /2021/07/27/the-fallacies-of-distributed-computing-with-peter-deutsch/
+        date: 2021-07-27
+        local: true
   - title: Cutter Consortium
     subtitle: Access to the Experts
     bio: /cutter
