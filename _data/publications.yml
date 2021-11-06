@@ -55,6 +55,14 @@ categories:
         url: /2021/07/27/the-fallacies-of-distributed-computing-with-peter-deutsch/
         date: 2021-07-27
         local: true
+      - title: "481 - Ipek Ozkaya on Managing Technical Debt"
+        url: /2021/10/13/managing-technical-debt-with-ipek-ozkaya/
+        date: 2021-10-13
+        local: true
+      - title: "482 - Luke Hoban on Infrastructure as Code (IAC)"
+        url: /2021/10/21/infrastructure-as-code-with-luke-hoban/
+        date: 2021-10-21
+        local: true
   - title: Cutter Consortium
     subtitle: Access to the Experts
     bio: /cutter

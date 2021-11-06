@@ -1,16 +1,11 @@
-- title: The Fallacies of Distributed Computing
-  date: 2021-07-27
+- title: Software Engineering Radio
+  date: 2021-11-07
   summary: >-
-    <a href="/2021/07/27/the-fallacies-of-distributed-computing-with-peter-deutsch/">The Fallacies of Distributed Computing</a> have become something of an internet icon, at least within the software development community. L Peter Deutsch recently joined me on <a href="2021/07/27/the-fallacies-of-distributed-computing-with-peter-deutsch/">Software Engineering Radio</a> to discuss the history of the fallacies and their ongoing relevance. We had a great conversation and I hope you enjoy the show!
-- title: Immutable Architecture Book Club
-  date: 2021-07-24
-  summary: >-
-    Register for the <a href="/2021/07/24/immutable-architecture-book-club/">Immutable Architecture Book Club</a> to discover how mathematics, logic, immutability and other concepts can give you an edge when designing and running distributed systems. Depending on your registration level, you'll gain access to additional tools and a special event with a surprise industry expert in the area of distributed systems. Early registrants will receive promo code good for a $20 discount. You don't want to miss out so <a href="/2021/07/24/immutable-architecture-book-club/#register">register today</a>!
-- title: REST *Still* Wrecks Microservices!
-  date: 2021-07-03
-  summary: >-
-    <a href="2021/07/03/spokane-dotnet-rest-wrecks-microservices/">This presentation</a> provides more provocotive ideas for you to ponder as you consider whether REST and Microservices really make your life better as a software engineer.
-- title: Felienne on The Programmer's Brain
-  date: 2021-06-02
-  summary: >-
-    Listen as Felienne joins me on Software Engineering Radio for a conversation about her book, <a href="2021/06/02/the-programmers-brain-with-felienne/">The Programmer's Brain</a>.
+    You don't want to miss my latest episodes of Software Engineering Radio.
+    <ul>
+      <li><a href="/2021/10/21/infrastructure-as-code-with-luke-hoban/">Luke Hoban on Infrastructure as Code</a></li>
+      <li><a href="/2021/10/13/managing-technical-debt-with-ipek-ozkaya/">Ipek Ozkaya on Managing Technical Debt</a></li>
+      <li><a href="/2021/07/27/the-fallacies-of-distributed-computing-with-peter-deutsch/">L Peter Deutsch on The Fallacies of Distributed Computing</a></a></li>
+      <li><a href="/2021/06/02/the-programmers-brain-with-felienne/">Felienne on The Programmer's Brain</a></li>
+      <li><a href="https://www.se-radio.net/team/jeff-doolittle/">More Episodes</a> from my back catalog at <a href="https://www.se-radio.net/team/jeff-doolittle/">SE Radio</a></li>
+    </ul>
