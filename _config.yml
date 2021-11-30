@@ -14,6 +14,12 @@ header_pages:
 show_excerpts: true
 future: false
 
+webrick:
+  headers:
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
+    X-Frame-Options: SAMEORIGIN
+    X-Content-Type-Options: nosniff
+
 # favicon: https://favicon.io/favicon-generator/?t=JD&ff=Covered+By+Your+Grace&fs=100&fc=%23FFF&b=rounded&bc=%2305A
 
 #social
