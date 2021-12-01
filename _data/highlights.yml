@@ -1,8 +1,9 @@
 - title: Software Engineering Radio
-  date: 2021-11-07
+  date: 2021-11-30
   summary: >-
-    You don't want to miss my latest episodes of Software Engineering Radio.
+    Check out my latest episodes of Software Engineering Radio.
     <ul>
+      <li><a href="/2021/11/23/dapr-distributed-application-runtime-with-davide-bedin/">Davide Bedin on Dapr Distributed Application Runtime</a></li>
       <li><a href="/2021/10/21/infrastructure-as-code-with-luke-hoban/">Luke Hoban on Infrastructure as Code</a></li>
       <li><a href="/2021/10/13/managing-technical-debt-with-ipek-ozkaya/">Ipek Ozkaya on Managing Technical Debt</a></li>
       <li><a href="/2021/07/27/the-fallacies-of-distributed-computing-with-peter-deutsch/">L Peter Deutsch on The Fallacies of Distributed Computing</a></a></li>
