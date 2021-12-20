@@ -161,6 +161,18 @@ table {
   }
 }
 
+.small-banner {
+  letter-spacing: 1px;
+  font-size: 30px;
+  color: #DDDDDD;
+  margin: 2em 0 1em 0;
+  text-align: center;
+  div  {
+    display: inline-block;
+    white-space: nowrap;
+  }
+}
+
 #intro {
   display: block;
   margin: 2em 0 2em 0;
