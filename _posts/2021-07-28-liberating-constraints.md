@@ -41,8 +41,8 @@ Simply defining constraints along such lines does not in and of itself ensure th
 
 In contrast, liberating constraints act like the fence in the study referenced above. A liberating constraint lets the kids feel free to roam about the entire playground. In a similar fashion, **good constraints provide the freedom to fully explore a problem or solution space**.
 
-## Life Under Poor Constraints
+## Design Before Technology
 
-Up next in this series we'll explore the symptoms of Life Under Poor Constraints and begin asking important questions about how to define, evaluate and apply liberating constraints.
+The next step is to take a step back and look at constraints through the lens of [Design Before Technology]({% post_url 2021-12-20-design-before-technology %}).
 
 {% include twitter_plug.html %}
