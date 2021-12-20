@@ -2,6 +2,7 @@
 layout: page
 title: Leadership
 permalink: /leadership/
+show_banner: true
 pagenav:
   - title: Software Leadership
     href: /software-leadership/

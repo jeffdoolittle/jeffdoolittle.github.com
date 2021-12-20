@@ -45,7 +45,7 @@ defaults:
       path: ""
     values:
       layout: "page"
-      show_banner: true
+      show_banner: false
       show_recents: true
       show_title: true
       image: /assets/og_image.png

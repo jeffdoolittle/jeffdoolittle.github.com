@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
+show_banner: true
 pagenav:
   - title: Send me an email
     href: mailto:jeff@jeffdoolittle.com

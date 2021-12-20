@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+show_banner: true
 images:
   - url: /assets/jeff_doolittle_bio_pic.jpg
     download: jeff_doolittle_bio_bw.jpg
