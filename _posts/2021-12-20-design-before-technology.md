@@ -36,7 +36,7 @@ A good design keeps technical options open. A good design provides a few, simple
 
 A good design encapsulates implementation details. A good design strongly encapsulates the System ("back end") from the Application ("front end"), and vice versa, allowing the technology for the Application and the System to evolve independently. A good design applies the principle of encapsulation at all levels, from the most coarse-grained to the very fine-grained.
 
-A good design requires adoption of and adherence to critical constraints. No great work of art, literature, architecture or industry ever came into existence without critical constraints.
+[***A good design requires adoption of and adherence to critical constraints. No great work of art, literature, architecture or industry ever came into existence without critical constraints.***]({% post_url 2021-12-20-design-before-technology %})
 
 Off the top of my head, some examples of critical constraints for software systems include:
 
