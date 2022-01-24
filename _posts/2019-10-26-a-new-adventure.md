@@ -30,5 +30,3 @@ On November 4, I'll begin a new role as a Software Architect at [Trimble Viewpoi
 Our Kingsburg home is in escrow, and the current plan is to move into our new home in Oregon on November 21. Of course, as with any change, not everything will go exactly according to plan. But I can hardly wait to begin this new adventure.
 
 [![Clackamas River]({{ "/assets/clackamas.jpg" | absolute_url }})](/assets/clackamas.jpg){:style="display: block; margin-left: auto; margin-right: auto;}
-
-{% include twitter_plug.html %}

@@ -59,5 +59,3 @@ Please [contact me](/contact) if you have any questions.
 | 13 | 04-Nov-2021 | Ch. 10 | SQL Databases |
 | 14 | 11-Nov-2021 | Ch. 11 | Communication |
 | 15 | 18-Nov-2021 | Ch. 12 | Generated Behaviors |
-
-{% include twitter_plug.html %}

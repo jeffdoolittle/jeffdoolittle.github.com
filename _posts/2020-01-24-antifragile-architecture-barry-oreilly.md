@@ -19,5 +19,3 @@ You don't want to miss this excellent discussion of antifragility in software sy
 [Episode 396: Barry O’Reilly on Antifragile Architecture](https://www.se-radio.net/2020/01/episode-396-barry-oreilly-on-antifragile-architecture/){:target="_blank"}
 
 Also, make sure to subscribe to [Software Engineering Radio](https://se-radio.net){:target="_blank"} with [Spotify](https://open.spotify.com/show/6UO3XQclSuNnGxB39QdAnL){:target="_blank"}, [YouTube](https://www.youtube.com/playlist?list=PLHJB2bhmgB7esz0BxMCt1jJwsoaqWtFff){:target="_blank"}, [iTunes](https://feeds.feedburner.com/se-radio?mt=2&ls=1){:target="_blank"}, [Android](https://subscribeonandroid.com/www.se-radio.net/feed/podcast/){:target="_blank"}, or [RSS](https://www.se-radio.net/feed/podcast/){:target="_blank"}.
-
-{% include twitter_plug.html %}

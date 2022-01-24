@@ -22,5 +22,3 @@ I encourage you to find out more about Juval, IDesign and _[Righting Software](h
 * YouTube: [IDesignIncTV](https://www.youtube.com/user/IDesignIncTV/videos){:target="_blank"}
 * Twitter: [@idesign_inc](https://twitter.com/idesign_inc){:target="_blank"}
 * LinkedIn: [IDesign](https://www.linkedin.com/company/idesign/){:target="_blank"}
-
-{% include twitter_plug.html %}

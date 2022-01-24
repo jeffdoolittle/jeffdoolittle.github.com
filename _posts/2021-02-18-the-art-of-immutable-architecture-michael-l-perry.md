@@ -19,5 +19,3 @@ Michael presents his answers to these questions in his book, [The Art of Immutab
 You may also enjoy watching Michael's recent [presentation to the PADNUG user group](https://www.youtube.com/watch?v=13n9CIHQy5A){:target="_blank"}.
 
 Also, be sure to check out my [previous episodes](/publications/#se-radio) on the show as well.
-
-{% include twitter_plug.html %}

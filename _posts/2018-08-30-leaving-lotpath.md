@@ -16,5 +16,3 @@ A few weeks back, I received a phone call from [Aplos](http://aplos.com){:target
 It's not easy to move on from something I've invested so much time and energy building. It's also difficult to leave behind the daily interactions I've enjoyed with friends and co-workers after years of working together. I have been so blessed to be part of the [Lotpath](http://lotpath.com){:target="blank"} team and I wish them nothing but success now and in the future.
 
 I'm starting at [Aplos](http://aplos.com){:target="blank"} on Tuesday, September 4, 2018. Let the next adventure begin!
-
-{% include twitter_plug.html %}

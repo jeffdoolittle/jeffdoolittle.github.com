@@ -29,5 +29,3 @@ It has required a significant investment of time and resources to prepare for a 
 To support the Book Club please choose your support level below to check out with Stripe:
 
 Please [contact me](/contact) if you have any questions.
-
-{% include twitter_plug.html %}
