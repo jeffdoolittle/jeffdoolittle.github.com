@@ -131,7 +131,3 @@ ___
 [{{ page.title }}]({{ page.url }}) originally appeared at [jeffdoolittle.com](https://jeffdoolittle.com/).
 
 Copyright © 2021 Jeff Doolittle. All rights reserved.
-
-{% include twitter_plug.html %}
-
-{% include lightbox.html %}

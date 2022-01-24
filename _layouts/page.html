@@ -15,28 +15,30 @@ layout: default
     {{ content }}
 
     {% if page.show_recents %}
-    <hr />
+      <hr />
 
-    <h2>Recent Posts</h2>
-    {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+      <h2>Recent Posts</h2>
+      {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
 
-    <div class="blog-index">
-      <ul class="entries">
+      <div class="blog-index">
+        <ul class="entries">
 
-        {%- for post in site.posts limit: 3 -%}
-        <li>
-          <div class="entry-date">{{post.date | date: date_format}}</div>
-          <div class="entry-text">
-            <a href="{{ post.url | absolute_url }}">
-              {{ post.title }}
-            </a>
-          </div>
-        </li>
-        {%- endfor -%}
-      </ul>
-    </div>
+          {%- for post in site.posts limit: 3 -%}
+          <li>
+            <div class="entry-date">{{post.date | date: date_format}}</div>
+            <div class="entry-text">
+              <a href="{{ post.url | absolute_url }}">
+                {{ post.title }}
+              </a>
+            </div>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </div>
 
     {% endif %}
+
+    {% include action_footer.html %}
 
   </div>
 

@@ -26,11 +26,6 @@ layout: default
   {%- include posts.html posts=posts-%}
   {%- endif -%}
 
-  <p class="rss-subscribe">
-    <a target="_blank" href="/rss">Subscribe via RSS</a>
-    or view the <a href="/archive">Archive</a> of all posts
-  </p>
-
-  {%- include google-ads-main.html -%}
+  {% include action_footer.html %}
 
 </div>

@@ -190,5 +190,3 @@ Want to discuss these ideas in more detail? [Send me a tweet](https://twitter.co
 {% for fn in page.footnotes %}
 {% include fn.html x=fn.id text=fn.content %}
 {% endfor %}
-
-{% include twitter_plug.html %}

@@ -21,5 +21,3 @@ I am especially pleased to announce that **my first episode as a host was publis
 Make sure you go subscribe to the show with [Spotify](https://open.spotify.com/show/6UO3XQclSuNnGxB39QdAnL){:target="_blank"}, [YouTube](https://www.youtube.com/playlist?list=PLHJB2bhmgB7esz0BxMCt1jJwsoaqWtFff){:target="_blank"}, [iTunes](https://feeds.feedburner.com/se-radio?mt=2&ls=1){:target="_blank"}, [Android](https://subscribeonandroid.com/www.se-radio.net/feed/podcast/){:target="_blank"}, or [RSS](https://www.se-radio.net/feed/podcast/){:target="_blank"}.
 
 In future episodes I plan to focus the majority of my time discussing Software Architecture, Project Design, Team Dynamics, and Leadership in the context of Software Engineering. Stay tuned!
-
-{% include twitter_plug.html %}

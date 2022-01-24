@@ -50,5 +50,3 @@ All mistakes are my own and not the responsibility of any authors or practitione
 - When referring to a 7 node, acyclic graph, I stated that it allows for 5,040 combinations. This actually applies to the 7 node network with no constraints on connections between them.
 
 Please [contact me](/contact) if you find any other errata from the presentation.
-
-{% include twitter_plug.html %}

@@ -21,23 +21,32 @@ layout: default
         <img src="{{page.image}}" alt="{{page.image_alt}}" />
       </a>
     </p>
+
     {{ content }}
+
+    {% include action_footer.html %}
   </div>
 
-  {%- include google-ads-main.html -%}
 
-  <p><b>Looking for more?</b></p>
-
-  <div class="PageNavigation">
-    {% if page.previous.url %}
-      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-    {% endif %}
-    {% if page.previous.url and page.next.url %}
-      |
-    {%- endif -%}
-    {% if page.next.url %}
-      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-    {% endif %}
+  <div class="post-navigation">
+    <p><b>Looking for more?</b></p>
+    <div class="row">
+      <div class="column previous">
+        {% if page.previous.url %}
+        <a href="{{page.previous.url}}"><i class="fa fa-arrow-left"></i> {{page.previous.title}}</a>
+        {% endif %}
+      </div>
+      <div class="column delimiter">
+        {% if page.previous.url and page.next.url %}
+        <i class="fa fa-star"></i>
+        {%- endif -%}
+      </div>
+      <div class="column next">
+        {% if page.next.url %}
+        <a href="{{page.next.url}}">{{page.next.title}} <i class="fa fa-arrow-right"></i></a>
+        {% endif %}
+      </div>
+    </div>
   </div>
 
   {%- if site.disqus.shortname -%}

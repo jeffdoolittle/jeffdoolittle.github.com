@@ -17,5 +17,3 @@ If you fail to plan, you plan to fail.
 [The Agile Planning False Equivalency](https://medium.com/@hurlbert/the-agile-planning-false-equivalency-838547ac68b3){:target="_blank"}
 
 There is so much more to learn by reading [Righting Software](https://rightingsoftware.org){:target="_blank"} by Juval Löwy, or by visiting the [IDesign](https://idesign.net){:target="_blank"} website.
-
-{% include twitter_plug.html %}

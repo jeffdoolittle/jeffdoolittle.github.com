@@ -68,5 +68,3 @@ Required reading:
 How would you reply to the original question? What are your thoughts on design before technology?
 
 Stay tuned for more on [Liberating Constraints]({% post_url 2021-07-28-liberating-constraints %}) in this series!
-
-{% include twitter_plug.html %}

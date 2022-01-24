@@ -44,5 +44,3 @@ In contrast, liberating constraints act like the fence in the study referenced a
 ## Design Before Technology
 
 The next step is to take a step back and look at constraints through the lens of [Design Before Technology]({% post_url 2021-12-20-design-before-technology %}).
-
-{% include twitter_plug.html %}

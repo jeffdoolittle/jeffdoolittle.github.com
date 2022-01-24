@@ -25,5 +25,3 @@ To find out more about Jeremy, be sure to check out his website, his github repo
 You can listen to other episodes I have hosted as well by visiting my host page.
 
 [Software Engineering Team - Jeff Doolittle](https://www.se-radio.net/team/jeff-doolittle/)
-
-{% include twitter_plug.html %}

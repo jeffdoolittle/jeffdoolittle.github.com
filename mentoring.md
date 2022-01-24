@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Mentoring
-permalink: /mentoring
+permalink: /mentoring/
 pagenav:
   - title: Mentoring 101
     href: "#mentoring-101"

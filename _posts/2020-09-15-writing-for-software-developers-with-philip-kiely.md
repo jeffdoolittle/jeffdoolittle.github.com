@@ -20,5 +20,3 @@ Software professionals regularly find ourselves writing for various purposes. Im
 Be sure to [find out more about Phil and Writing for Software Developers at his website](https://philipkiely.com/wfsd/){:target="_blank"}.
 
 You can also browse the [back catalog of previous episodes that I have hosted](https://www.se-radio.net/team/jeff-doolittle/){:target="_blank"}.
-
-{% include twitter_plug.html %}
