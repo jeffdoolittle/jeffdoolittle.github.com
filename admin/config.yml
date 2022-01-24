@@ -3,7 +3,7 @@
 backend:
   name: github
   repo: jeffdoolittle/jeffdoolittle.github.com
-  branch: netlify-config
+  branch: develop
 
 media_folder: 'assets'
 # publish_mode: editorial_workflow
