@@ -19,6 +19,14 @@ categories:
         url: /2020/11/04/software-leadership-distilled/
         date: 2020-11-04
         local: true
+      - title: "Liberating Constraints"
+        url: /2021/07/28/liberating-constraints/
+        date: 2021-07-28
+        local: true
+      - title: "Design Before Technology"
+        url: /2021/12/20/design-before-technology/
+        date: 2021-12-20
+        local: true
   - title: Software Engineering Radio
     subtitle: The Podcast for Professional Software Developers
     bio: https://www.se-radio.net/team/jeff-doolittle/
