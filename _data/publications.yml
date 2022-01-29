@@ -63,6 +63,10 @@ categories:
         url: /2021/10/21/infrastructure-as-code-with-luke-hoban/
         date: 2021-10-21
         local: true
+      - title: "487 - Davide Bedin on Dapr Distributed Application Runtime"
+        url: /2021/11/23/dapr-distributed-application-runtime-with-davide-bedin/
+        date: 2021-11-23
+        local: true
   - title: Cutter Consortium
     subtitle: Access to the Experts
     bio: /cutter
@@ -75,17 +79,21 @@ categories:
         url: /2020/05/22/dont-disrupt-agile-drop-it/
         date: 2020-04-29
         local: true
-  - title: PADNUG
-    subtitle: Portland's Premier Technology User Group
-    id: padnug
+  - title: User Groups
+    subtitle: Presentations to local user groups
+    id: user-groups
     entriesHeader: Presentations
     entriesType: presentation
     entries:
-      - title: "REST Wrecks Microservices!"
+      - title: "REST Wrecks Microservices! PADNUG Presentation"
         url: "/2020/05/05/padnug-rest-wrecks-microservices"
         date: 2020-05-05
         local: true
-      - title: "Software Architecture as Complexity Containment"
+      - title: "Software Architecture as Complexity Containment PADNUG Presentation"
         url: "/2021/03/03/padnug-software-architecture-as-complexity-containment"
         date: 2021-03-03
+        local: true
+      - title: "REST *Still* Wrecks Microservices! Spokane .NET User Group Presentation"
+        url: "/2021/07/03/spokane-dotnet-rest-wrecks-microservices"
+        date: 2021-07-03
         local: true
