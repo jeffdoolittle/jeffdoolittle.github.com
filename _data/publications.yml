@@ -87,9 +87,9 @@ categories:
         url: /2020/05/22/dont-disrupt-agile-drop-it/
         date: 2020-04-29
         local: true
-  - title: User Groups
-    subtitle: Presentations to local user groups
-    id: user-groups
+  - title: Presentations and Appearances
+    subtitle: Presentations and Appearances for local user groups, conferences and podcases
+    id: presentation-and-appearances
     entriesHeader: Presentations
     entriesType: presentation
     entries:
@@ -104,4 +104,8 @@ categories:
       - title: "REST *Still* Wrecks Microservices! Spokane .NET User Group Presentation"
         url: "/2021/07/03/spokane-dotnet-rest-wrecks-microservices"
         date: 2021-07-03
+        local: true
+      - title: "Complexity in Engineering: The Engineering Career Coach Podcast"
+        url: "/2022/02/16/complexity-in-enginering"
+        date: 2022-02-16
         local: true

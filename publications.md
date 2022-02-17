@@ -10,8 +10,8 @@ pagenav:
     href: "#se-radio"
   - title: Cutter Consortium
     href: "#cutter"
-  - title: User Groups
-    href: "#user-groups"
+  - title: Presentations and Appearances
+    href: "#presentations-and-appearances"
 ---
 
 {%- include pagenav.html -%}
