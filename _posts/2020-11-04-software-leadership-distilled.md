@@ -39,7 +39,7 @@ Software Leadership Distilled provides an overview of concepts and practices sof
   - Teams and organizations that embody the values of *trust, clarity and empowerment* can experience a significant boost in productivity and morale.
 - **Make and Keep Agreements to [Build Trust](#build-trust)**
   - Foster a culture that rewards building trust by making and keeping agreements.
-- **Provide [Role Clarity](#role-clarity)**
+- **Provide [Clarity of Role and Responsibility](#role-clarity)**
   - Clarifying roles clears up a host of issues that plague organizations and teams, orienting team members directly toward their specific value creation task and freeing them to empower others.
 - **Recognize and Reward [Empowerment Behaviors](#empowerment)**
   - Leveraging empowerment supercharges the benefits of role clarity, leading to accelerating levels of trust and health.
@@ -60,9 +60,9 @@ ___
 
 Whether they realize it or not, most people desire to understand the value they can create and the means by which they will be evaluated in doing so. A sense of ownership, accountability and empowerment for delivering on their commitments helps people to thrive.
 
-When people do not see a direct connection between their efforts and their ability to create value, they can experience directionlessness leading to resignation, detachment, depression or other undesireable results. These outcomes reduce commitment, hamper productivity, stifle innovation, squelch determination and disrupt inter-personal dynamics.
+When people do not see a direct connection between their efforts and their ability to create value, they experience directionlessness leading to resignation, detachment, depression, going-through-the-motions, and many other undesirable results. These outcomes reduce commitment, hamper productivity, stifle innovation, squelch determination and disrupt inter-personal dynamics.
 
-**Software leaders clarify the *value creation* potential of every member of their team.**
+**Effective leaders clarify the *value creation* potential of every member of their team.**
 
 ___
 
@@ -78,7 +78,7 @@ Elevating *trust, clarity* and *empowerment* as fundamental values contributes t
 
 These core values must go beyond a mere rallying cry or slogan. You cannot manufacture trust. You will never "oops" your way into clarity. Without trust and clarity, the slightest sense of empowerment quickly dissipates.
 
-**Software leaders foster and facilitate an environment of *trust, clarity* and *empowerment*.**
+**Effective leaders foster and facilitate an environment of *trust, clarity* and *empowerment*.**
 
 ___
 
@@ -93,7 +93,7 @@ Without trust all manner of dysfunctions tend to result such as [hand-wringing, 
 
 Give individuals and teams the opportunity to make agreements in keeping with their clarified role. Cultivate a culture that rewards trust building by making and keeping agreements. Begin to model this culture at every level of the organization.
 
-**Software leaders build trust by making and keeping their agreements while empowering others to do so.**
+**Effective leaders build trust by making and keeping their agreements while empowering others to do so.**
 
 ___
 
@@ -147,7 +147,7 @@ In addition to the areas of primary responsibility, everyone in an organization 
 - Fight for Clarity
 - Empower Others
 
-**Software leaders understand their own role and empower others to clarify and fulfil their respective roles as value creators.**
+**Effective leaders understand their own role and empower others to clarify and fulfil their respective roles as value creators.**
 
 ___
 
@@ -182,7 +182,7 @@ Core teams can form anywhere within a software organization. Ideally over time t
 
 Therefore, growing from the bottom up is typically the correct strategy. The best time to begin broad adoption comes when multiple core teams in the organization have experienced success and stand prepared to empower and equip other core teams. With a legacy of successes behind them, they can adopt a "show, don't tell" approach when discussing their results. As pockets of trust, clarity and empowerment reach critical mass, the organization may be ready for broader adoption at an accelerated pace.{% include fnref.html x=4 %}
 
-**Software leaders form core teams that build trust and empower each other as well as those they have opportunity to influence and lead.**
+**Effective leaders form core teams that build trust and empower each other as well as those they have opportunity to influence and lead.**
 
 ___
 
@@ -198,7 +198,7 @@ Over time, the growing ubiquity of core teams throughout an organization can res
 
 Role clarity is necessary but not sufficient for individuals in an organization. The lead team ensures that team members clearly understand [the vision and mission of the organization, including any relevant areas of strategic focus](/2021/03/05/the-five-factor-model-of-cultural-alignment/).
 
-**Software leaders work diligently on the excellence of each core team while patiently awaiting the emergence of the lead team.**
+**Effective leaders work diligently on the excellence of each core team while patiently awaiting the emergence of the lead team.**
 
 ___
 
@@ -212,7 +212,7 @@ Performance evaluations should take the core values of trust, clarity and empowe
 
 Thriving teams include individuals that focus beyond their personal role and discover how they can empower team members in roles different than their own.
 
-**Software leaders cultivate an atmosphere of authenticity.**
+**Effective leaders cultivate an atmosphere of authenticity.**
 
 ___
 

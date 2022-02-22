@@ -3,9 +3,19 @@
 
 @import "minima";
 
-$siteBgColor: #27272a;
-$siteHighlightColor: #c77640;
+// schemer: https://coolors.co/c77640-c4d6b0-477998-291f1e-2d1e2f
+
+// $siteBgColor: #27272a;           // original
+$siteBgColor: #f1f4f9;
+$siteHighlightColor: #c77640;     // copper
 $siteHighlightHover: #dd9988;
+
+$siteSecondaryColor: #477998;      // CG blue
+$siteTertiaryColor: #C4D6B0;     // tea green
+$siteQuaternaryColor: #2D1E2F;    // dark purple
+
+$textColor: #17171B;
+$textInverseColor: #f1f4f9;
 
 //color: $siteHighlightColor; # orange
 // color: #5C7880; # medium blue
@@ -17,11 +27,37 @@ html {
 
 body {
   background-color: $siteBgColor;
-  color: #DDDDDD;
+  color: $textColor;
+  font-size: 1.2rem !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
   scroll-margin-top: 2em;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.3rem !important;
+}
+
+h2 {
+  font-size: 2.1rem !important;
+}
+
+h3 {
+  font-size: 1.9rem !important;
+}
+
+h4 {
+  font-size: 1.7em !important;
+}
+
+h5 {
+  font-size: 1.5rem !important;
+}
+
+h6 {
+  font-size: 1.3rem !important;
 }
 
 .highlight-description {
@@ -49,8 +85,14 @@ div.framer iframe {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: $siteBgColor;
+  background-color: $siteSecondaryColor;
   z-index: 1;
+  .site-title {
+    color: $textInverseColor !important;
+  }
+  .page-link {
+    color: $textInverseColor !important;
+  }
 }
 
 hr {
@@ -122,6 +164,8 @@ p {
 
 blockquote {
   margin-block-end: 1.5em;
+  font-size: 1.4rem;
+  color: $siteSecondaryColor;
 }
 
 table {
@@ -323,7 +367,7 @@ div.social {
 }
 
 .site-title, .site-title:visited {
-  color: #F7F7F7;
+  color: $textColor;
   letter-spacing: .5px;
   &:hover {
     text-decoration: none;
@@ -332,10 +376,10 @@ div.social {
 
 .site-nav .page-link {
   letter-spacing: .5px;
-  color: #F7F7F7;
+  color: $textColor;
   text-decoration: none;
   &:visited {
-    color: #F7F7F7;
+    color: $textColor;
     text-decoration: none;
   }
   &:hover {
@@ -463,4 +507,11 @@ table.stripe {
       }
     }
   }
+}
+
+.img-solution-design {
+  margin: 0 auto;
+  display: block;
+  height: 68%;
+  width: 68%;
 }
