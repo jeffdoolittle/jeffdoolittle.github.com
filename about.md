@@ -31,7 +31,6 @@ I am a Software Architect and Transformational Leader. I have over twenty-five y
 
 I bring together a unique blend of technical expertise, compassion, empathy, commitment to high quality, and leadership skills. I excel at helping Software Executives, Engineers and Developers to accelerate their productivity. I thrive on helping everyone I work with to maximize their skills and fulfill their potential, personally and professionally.
 
-
 - Senior Software Architect at Trimble
 - Third decade in the software industry
 - Former CTO for a boutique consulting firm

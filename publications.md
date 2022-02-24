@@ -10,7 +10,7 @@ pagenav:
     href: "#se-radio"
   - title: Cutter Consortium
     href: "#cutter"
-  - title: Presentations and Appearances
+  - title: Events
     href: "#events"
   - title: Music
     href: "#music"

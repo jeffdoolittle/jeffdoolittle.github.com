@@ -11,18 +11,17 @@ layout: default
 
   {%- include banner.html -%}
 
-  {%- include highlights.html -%}
-
   {%- include google-ads-main.html -%}
 
-  <hr />
+  <h2 id="recent" class="post-list-heading">Software Architect and Transformational Leader</h2>
+
+  {%- include highlights.html -%}
 
   {%- if site.posts.size > 0 -%}
   {% assign posts = '' | split: '' %}
   {% for post in site.posts limit: 25 %}
       {% assign posts = posts | push: post %}
   {% endfor %}
-  <h2 id="recent" class="post-list-heading">Recent Posts</h2>
   {%- include posts.html posts=posts-%}
   {%- endif -%}
 

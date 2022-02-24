@@ -1,22 +1,13 @@
 {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
 
-{% if site.data.highlights %}
+<p>Latest in...</p>
 
-<hr />
-
-<h2 class="post-list-heading">Recent Highlights</h2>
-
+<ul>
+{% for category in site.data.categories %}
+{% if category.highlight %}
+{% assign post = site.posts | where: "category", category.id | first %}
+  <li><a href="/publications/#{{ category.id }}">{{ category.title }}</a> -> <a href="{{ post.url }}"ß>{{ post.title }}</a></li>
 {% endif %}
-
-{% for highlight in site.data.highlights %}
-<h3 class="highlight-heading">{{ highlight.title }}</h2>
-
-<div style="margin: 0 2em 0 2em;">
-
-    <p class="highlight-description">
-      <span style="color: lightslategrey; font-style: italic;">{{ highlight.date | date: date_format }}</span>
-      <span> - {{ highlight.summary }}</span>
-    </p>
-
-</div>
 {% endfor %}
+</ul>
+
