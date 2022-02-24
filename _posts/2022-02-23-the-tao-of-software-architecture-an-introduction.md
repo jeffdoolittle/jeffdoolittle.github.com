@@ -2,7 +2,7 @@
 layout: post
 title: "The Tao of Software Architecture: An Introduction"
 date:   2022-02-23 02:30:00 -0800
-category: publications
+category: leadership
 tags: [software, problem, solution, discovery, design, delivery, complexity, system, business, technical, architect, engineer, software]
 excerpt: Perspectives for clarity, responsibility, and value creation.
 image:  /assets/20220109_144136.jpg
