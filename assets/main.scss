@@ -513,14 +513,9 @@ table.stripe {
   }
 }
 
-.lightbox-image {
-
-}
-
 .img-solution-design {
-  @extend .lightbox-image;
   margin: 0 auto;
   display: block;
-  height: 68%;
-  width: 68%;
+  height: 75%;
+  width: 75%;
 }

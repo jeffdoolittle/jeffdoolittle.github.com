@@ -27,15 +27,11 @@
         <div class="entry-date">{{entry.date | date: date_format}}</div>
         <div class="entry-text">
           {% if entry.url %}
-          {% if entry.local %}
-          <a href="{{entry.url}}">
-          {% else %}
-          <a href="{{entry.url}}" target="_blank">
-            {% endif %}
-            {% endif %}
+            <a href="{{entry.url}}">
+          {% endif %}
             {{entry.title | escape }}
-            {% if entry.url%}
-          </a>
+          {% if entry.url%}
+            </a>
           {% endif %}
         </div>
       </li>

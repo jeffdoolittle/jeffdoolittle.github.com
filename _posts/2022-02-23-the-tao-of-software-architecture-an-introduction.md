@@ -89,7 +89,7 @@ This diagram illustrates how the solution design process primarily moves from:
 - *Capability Oriented, Technology Focused* to
 - *Domain Oriented, Technology Focused*
 
-This does not imply strict linearity or a lack of mutual interdependence between these perspectives. It does explicitly delineate the most important flow of information and decision making in the solution design process.
+This does not imply strict linearity or a lack of mutual interdependence between these perspectives. It does explicitly delineate the primary flow of information and decision making in the solution design process.
 
 As a thought experiment imagine the potential results for the restaurant in the absence of one of these perspectives. Then consider what might happen if this solution design flow were reversed or altered. Imagine the horrible mess of confusion and blaming that would likely result.
 
@@ -162,7 +162,7 @@ Using the Solution Design Model, we can address the clarity gap by identifying a
   - "Integrators." Sector, division and product oriented. Domain familiar technology experts.
   - Experts in execution and solution delivery.
 
-## The Neglect of and Need for Systems Thinking
+## The Need for Systems Thinking
 
 Business Architects and Systems Architects remain rare and often misidentified. Systems Thinking is frequently neglected, misunderstood, or even opposed. The Solution Design Model highlights the necessity of these perspectives and illustrates how their distinct responsibilities relate to the more frequently identified and accepted perspectives.
 
