@@ -2,8 +2,8 @@
 layout: post
 title: Managing Technical Debt
 date: 2021-10-13 04:00:00 -0700
-category: publications
-tags: []
+category: se-radio
+tags: [technical debt, tech debt, software]
 excerpt: "Technical debt affects every software system and project while managing it effectively remains an elusive goal for many software companies and teams."
 image: /assets/pdx_tanner_springs_park_fall_2021.jpg
 image_alt: Tanner Springs Part, Portland. Fall 2021.

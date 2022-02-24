@@ -1,0 +1,33 @@
+- id: leadership
+  title: Leadership
+  subtitle: Empowering Transformational Leaders
+  entriesHeader: Articles
+  entriesType: article
+
+- id: se-radio
+  title: Software Engineering Radio
+  subtitle: The Podcast for Professional Software Developers
+  bio: https://www.se-radio.net/team/jeff-doolittle/
+  bioTitle: "SE Radio Team  - Jeff Doolittle"
+  entriesHeader: Episodes
+  entriesType: podcast
+
+- id: cutter
+  title: Cutter Consortium
+  subtitle: Access to the Experts
+  bio: /cutter
+  bioTitle: Cutter Consortium Experts - Jeff Doolittle
+  entriesHeader: Articles
+  entriesType: article
+
+- id: events
+  title: Presentations and Appearances
+  subtitle: Presentations and Appearances for local user groups, conferences and podcasts
+  entriesHeader: Presentations
+  entriesType: presentation
+
+- id: music
+  title: Music
+  subtitle: A sampling of my musical endeavors
+  entriesHeader: Recordings
+  entriesType: recording

@@ -55,13 +55,14 @@ This first diagram illustrates how these foundational questions relate to orient
 
 The Solution Design Model identifies two *ranges of orientation*: orientation according to the **domain** and orientation according to **capabilities**.
 
-- **Ranges of Orientation**
+#### Ranges of Orientation
+
   - Domain: What is the nature of the business and the general problems is seeks to solve?
   - Capabilities: What common capabilities can be integrated to provide solutions and how do these capabilities differ across customers or over time?
 
 The Solution Design Model also identifies two *lenses of focus*: the nature of **systems** and the functionality of **technologies**.
 
-- **Lenses of Focus**
+#### Lenses of Focus
   - Systems: How can we devise the simplest set of processes, components or services that provide a viable near- and long-term solution?
   - Technologies: What technologies will best maintain design integrity while fulfilling specific requirements?
 

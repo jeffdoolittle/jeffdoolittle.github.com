@@ -2,7 +2,7 @@
 layout: post
 title: Infrastructure as Code
 date: 2021-10-21 04:00:00 -0700
-category: publications
+category: se-radio
 tags: [iac, infrastructure, code, automated, automate, provision, provisioning, cloud]
 excerpt: "Learn how to apply and good engineering practices like reversibility and automation to your Dev Ops and resource provisioning processes with Infrastructure as Code."
 image: /assets/pdx_pearl_district_fall_2021.jpg

@@ -2,7 +2,7 @@
 layout: post
 title:  "Waterfall Versus Agile with Jeremy Miller"
 date:   2020-03-03 08:00:00 -0800
-category: publications
+category: se-radio
 tags: [software, agile, waterfall, scrum, scrappy doo, se radio, software engineering radio]
 excerpt: Exploring the good, the bad and the ugly of software development methodologies
 image: /assets/2020-03-03-waterfall-vs-agile-se-radio-jeremy-miller.jpg

@@ -242,7 +242,7 @@ ul.entries {
     }
     div.entry-text {
       display: inline-block;
-      width: 25em;
+      width: 30em;
     }
   }
 }
@@ -513,7 +513,12 @@ table.stripe {
   }
 }
 
+.lightbox-image {
+
+}
+
 .img-solution-design {
+  @extend .lightbox-image;
   margin: 0 auto;
   display: block;
   height: 68%;

@@ -11,11 +11,11 @@ pagenav:
   - title: Cutter Consortium
     href: "#cutter"
   - title: Presentations and Appearances
-    href: "#presentations-and-appearances"
+    href: "#events"
+  - title: Music
+    href: "#music"
 ---
 
 {%- include pagenav.html -%}
 
-{% assign categories = site.data.publications.categories %}
-
-{% include content-entries.html categories=categories %}
+{% include content-entries.html %}

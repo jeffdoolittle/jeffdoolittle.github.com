@@ -2,7 +2,7 @@
 layout: post
 title: Liberating Constraints
 date: 2021-07-28 04:00:00 -0700
-category: publications
+category: leadership
 tags: [software, developers, engineers, architect, architects, architecture, design, system, constraint, liberate, liberty, freedom, creative, creativity, standard]
 excerpt: "Good constraints provide the freedom to fully explore a problem or solution space."
 image: /assets/2021-07-27-willamette.jpg

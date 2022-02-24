@@ -2,7 +2,7 @@
 layout: post
 title:  "Complexity in Engineering: The Engineering Career Coach Podcast"
 date:   2022-02-16 08:30:00 -0800
-category: publications
+category: events
 tags: [software, idesign, system design, project design, architecture, complexity, containment, large numbers, exponential, geometric, factorial, integration, market, technological, operational]
 excerpt: Contain complexity before it contains you!
 image:  /assets/20220206_112917.jpg

@@ -2,7 +2,7 @@
 layout: post
 title: "Exploring Requirements"
 date: 2021-03-04 08:00:00 -0800
-category: events
+category: learn
 tags: [software, developers, engineers, architect, architects, require, requirements, explore, exploring, ambiguity, ambiguous]
 excerpt: "Improve your skills at discovering, defining, and distilling requirements. "
 image: /assets/exploring-requirements-cover.jpg

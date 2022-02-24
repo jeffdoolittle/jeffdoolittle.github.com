@@ -2,7 +2,7 @@
 layout: post
 title: Dapr Distributed Application Runtime
 date: 2021-11-23 04:00:00 -0800
-category: publications
+category: se-radio
 tags: [dapr, distributed, runtime, application, kubernetes, microservices]
 excerpt: "The Dapr Distributed Application Runtime empowers you to leverage industry best practices and focus on your application’s logic."
 image: /assets/20210416_113850.jpg

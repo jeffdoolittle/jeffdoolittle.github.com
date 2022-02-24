@@ -2,7 +2,7 @@
 layout: post
 title: "The Programmer's Brain with Felienne"
 date: 2021-06-02 00:00:00 -0800
-category: publications
+category: se-radio
 tags: [software, developer, developers, engineers, architect, architects, brain, programmer, programmers, programming, cognitive, think, thinking, psychology]
 excerpt: "Felienne joined me on Software Engineering Radio for a conversation about her recently published book, The Programmer's Brain."
 image: /assets/trillium_creek.jpg

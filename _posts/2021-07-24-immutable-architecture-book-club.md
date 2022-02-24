@@ -2,7 +2,7 @@
 layout: post
 title: "Immutable Architecture Book Club"
 date: 2021-07-24 04:00:00 -0700
-category: events
+category: learn
 tags: [software, developers, engineers, architect, architects, architecture, immutable, immutability]
 excerpt: "Discover how mathematics, logic, immutability and other concepts can give you an edge when designing and running distributed systems."
 image: /assets/immutable_arch_banner.jpg

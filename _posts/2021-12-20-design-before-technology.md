@@ -2,7 +2,7 @@
 layout: post
 title: Design Before Technology
 date: 2021-12-20 02:00:00 -0800
-category: publications
+category: leadership
 tags: [design, system, application, software, architecture, constraint, ]
 excerpt: A good design requires adoption of and adherence to critical constraints. No great work of art, literature, architecture or industry ever came into existence without critical constraints.
 image: /assets/20211204_133109.jpg

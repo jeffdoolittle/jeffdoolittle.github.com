@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Hosting Software Engineering Radio"
+title:  "Decoupled Content Management Systems"
 date:   2019-11-12 12:00:00 -0800
-category: publications
+category: se-radio
 tags: [seradio, podcast, software architecture, decoupling, content management, cms]
 excerpt: Talking to experts about the art and science of software engineering
 image: /assets/2019-11-12-hosting-software-engineering-radio.jpg

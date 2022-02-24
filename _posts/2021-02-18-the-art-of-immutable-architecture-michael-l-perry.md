@@ -2,7 +2,7 @@
 layout: post
 title: "The Art of Immutable Architecture with Michael L. Perry"
 date: 2021-02-18 11:00:00 -0800
-category: publications
+category: learn
 tags: [software, developers, engineers, architect, architects, immutable, immutability]
 excerpt: A Software Engineering Radio episode with Michael L. Perry on his recently published book.
 image: /assets/stevenson-washington-skamania.jpg
