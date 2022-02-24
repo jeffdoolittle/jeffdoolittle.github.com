@@ -24,6 +24,10 @@ footnotes:
 - TOC
 {:toc}
 
+## Executive Summary
+{: .no_toc }
+
+Understanding the purpose and value of different perspectives illuminates the process of solution design and clarifies the relevant responsibilities of various stakeholders. A lack of such understanding explains many of the persistent problems that plague software projects in particular, and the software industry in general.
 
 ## Discovery, Definition and Delivery
 
@@ -78,7 +82,7 @@ The following diagram illustrates the kinds of concerns that arise from each uni
 
 ![Solution Design Restaurant](/assets/solution-design/solutiondesign_03_restaurant.svg){:class="img-solution-design"}
 
-It should be clear that a well functioning restaurant must take all of these perspectives into consideration. These perspectives also delineate distinct areas of **responsibility**. These responsibilities depend on one another and can mutually affect one another in various ways. However, the primary flow from problem statement to solution execution flows according to the following illustration.
+It should be clear that a well functioning restaurant must take all of these perspectives into consideration. These perspectives also delineate distinct areas of **responsibility**. These responsibilities depend on one another and can mutually affect one another in various ways. However, the primary movement from problem statement to solution execution flows according to the following illustration.
 
 ![Solution Design Flow](/assets/solution-design/solutiondesign_05_flow.svg){:class="img-solution-design"}
 
@@ -95,7 +99,7 @@ As a thought experiment imagine the potential results for the restaurant in the 
 
 ### Clarifying Responsibilities
 
-As mentioned previously, each perspective in the Solution Design Model delineate distinct areas of responsibility. Clarifying responsibilities cultivates a sense of both personal and shared ownership for the solution design process.
+As mentioned previously, each perspective in the Solution Design Model delineates distinct areas of responsibility. Clarifying responsibilities cultivates a sense of both personal and shared ownership for the solution design process.
 
 ![Solution Design Perspectives](/assets/solution-design/solutiondesign_04_perspectives.svg){:class="img-solution-design"}
 
@@ -131,11 +135,11 @@ When it comes to software solution design, a lack of **role clarity** leads to p
 
 Variations in titles often add to the confusion rather than providing clarity. For example, what consistently differentiates a "Technical Architect" from a "Solution Architect?" Other titles like "Cloud Architect" and "Platform Architect" merely cloud matters further. This situation leaves huge gaps in the understanding of—and proper accountability for—critical responsibilities.
 
-Add to this the fact that the vast majority of software architects operate from a technology focused perspective. Diagrams and descriptions of systems that focus heavily on tools and technologies illustrate this fact clearly. Such [solutionizing](#a-cure-for-solutionizing) is rife in the software industry, demonstrated by endless examples of such "jumps to how." Sometimes it seems like software architects are more like ineffective linguists, creating new languages to describe complex concepts using symbols they don't even understand and therefore can't really explain.
+Add to this the fact that the vast majority of software architects operate from a technology focused perspective. Diagrams and descriptions of systems that focus heavily on tools and technologies illustrate this fact clearly. Such [solutionizing](#a-cure-for-solutionizing) is rife in the software industry, demonstrated by endless examples of such "jumps to how." Sometimes it seems that software architects are more like ineffective linguists, creating new languages to describe complex concepts using symbols they don't even understand and therefore can't really explain.
 
-> Sometimes it seems like software architects are more like ineffective linguists, creating new languages to describe complex concepts using symbols they don't even understand and therefore can't really explain.
+> Sometimes it seems that software architects are more like ineffective linguists, creating new languages to describe complex concepts using symbols they don't even understand and therefore can't really explain.
 
-That tools and technologies take center stage should not surprise us. Very few software architects have received training or guidance in **systems thinking**{% include fnref.html x=2 %}. When people don't know what to do, they rarely rise to the occasion but instead fall back on their training.
+When tools and technologies take center stage it should not surprise us. Very few individuals have received training or guidance in **systems thinking**{% include fnref.html x=2 %}, including software architects. When people don't know what to do, they rarely rise to the occasion but instead fall back on their training.
 
 > When people don't know what to do, they rarely rise to the occasion but instead fall back on their training.
 
