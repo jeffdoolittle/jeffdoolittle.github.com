@@ -35,7 +35,7 @@ For millennia, humans have sought to discover, define and deliver novel solution
 
 ## A Cure for Solutionizing
 
-Unfortunately, there many examples from human history to illustrate the results of quick solutions applied to poorly defined problems. In fact, *"quick solutions applied to poorly defined problems"* sums up the state of the software industry.
+In contrast to such noble aspirations, many examples from human history illustrate the results of quick solutions applied to poorly defined problems. In fact, *"quick solutions applied to poorly defined problems"* sums up the state of the software industry.
 
 > **"Quick solutions applied to poorly defined problems"** sums up the state of the software industry.
 
