@@ -176,7 +176,7 @@ Systems Architects must be deeply familiar with technological capabilities and p
 
 ## Next Steps
 
-Upcoming chapters will explore the Solution Design Model in more detail and from different angles. In the meantime, consider how this model can apply in your context. Imagine the advantages of having team members that represent the distinct lenses of Systems focus and Technology focus. Consider how to leverage the unique ranges of Domain orientation and Capability orientation. And envision how clarifying roles and responsibilities can help your organization design systems that meet the opportunities of today while preparing to meet the challenges of tomorrow.
+Upcoming chapters will explore the Solution Design Model in more detail and from different angles. In the meantime, consider how this model can apply in your context. Imagine the advantages of having team members that apply the distinct lenses of Systems focus and Technology focus. Consider how to leverage the unique ranges of Domain orientation and Capability orientation. And envision how clarifying roles and responsibilities can help your organization design systems that meet the opportunities of today while preparing to meet the challenges of tomorrow.
 
 <!-- 
 Title Inflation
