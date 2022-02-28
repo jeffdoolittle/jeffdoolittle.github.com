@@ -7,7 +7,7 @@ tags: [software, problem, solution, discovery, design, delivery, complexity, sys
 excerpt: Perspectives for clarity, responsibility, and value creation.
 image:  /assets/20220109_144136.jpg
 image_alt: "Portland: Pearl District"
-published: true
+published: false
 footnotes:
   - id: 1
     content: > 
