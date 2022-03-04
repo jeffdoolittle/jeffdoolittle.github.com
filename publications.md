@@ -6,12 +6,10 @@ show_banner: true
 pagenav:
   - title: Leadership
     href: "#leadership"
-  - title: Software Engineering Radio
-    href: "#se-radio"
-  - title: Cutter Consortium
-    href: "#cutter"
   - title: Events
     href: "#events"
+  - title: Software Engineering Radio
+    href: "#se-radio"
   - title: Music
     href: "#music"
 ---

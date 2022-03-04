@@ -2,7 +2,7 @@
 layout: post
 title:  "Don't Disrupt Agile. Drop it!"
 date:   2020-05-22 08:00:00 -0700
-category: cutter
+category: leadership
 tags: [software, agile, disrupt, cutter, cutter business technology journal, cutter consortium, manifesto, drop]
 excerpt: It's time to leave "Agile" behind and embrace the Post-agile era.
 image:  /assets/2020-04-29-dont-disrupt-agile-drop-it.jpg

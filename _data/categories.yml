@@ -5,6 +5,13 @@
   entriesType: article
   highlight: true
 
+- id: events
+  title: Events
+  subtitle: Presentations and Appearances for local user groups, conferences and podcasts
+  entriesHeader: Presentations
+  entriesType: presentation
+  highlight: true
+
 - id: se-radio
   title: Software Engineering Radio
   subtitle: The Podcast for Professional Software Developers
@@ -12,22 +19,6 @@
   bioTitle: "SE Radio Team  - Jeff Doolittle"
   entriesHeader: Episodes
   entriesType: podcast
-  highlight: true
-
-- id: cutter
-  title: Cutter Consortium
-  subtitle: Access to the Experts
-  bio: /cutter
-  bioTitle: Cutter Consortium Experts - Jeff Doolittle
-  entriesHeader: Articles
-  entriesType: article
-  highlight: false
-
-- id: events
-  title: Events
-  subtitle: Presentations and Appearances for local user groups, conferences and podcasts
-  entriesHeader: Presentations
-  entriesType: presentation
   highlight: true
 
 - id: music
