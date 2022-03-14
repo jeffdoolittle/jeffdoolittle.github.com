@@ -27,9 +27,9 @@ pagenav:
 
 {%- include pagenav.html -%}
 
-I am a Software Architect and Transformational Leader. I have over twenty-five years of experience designing and architecting software systems, and providing developer leadership and mentorship. I am passionate about designing and refining systems that cultivate repeatability, reversibility, reuse, [trust, clarity and empowerment](/2020/11/04/software-leadership-distilled/#core-values){:target="_blank"}.
+Jeff Doolittle is a software architect and transformational leader with over twenty-five years of experience designing and architecting software systems, and providing developer leadership and mentorship. He is passionate about designing and refining systems that cultivate repeatability, reversibility, reuse, [trust, clarity and empowerment](/2020/11/04/software-leadership-distilled/#core-values){:target="_blank"}.
 
-I bring together a unique blend of technical expertise, compassion, empathy, commitment to high quality, and leadership skills. I excel at helping Software Executives, Engineers and Developers to accelerate their productivity. I thrive on helping everyone I work with to maximize their skills and fulfill their potential, personally and professionally.
+Jeff brings together a unique blend of technical expertise, compassion, empathy, commitment to high quality, and leadership skills. He excels at helping software executives, engineers and developers to accelerate their productivity. He thrives on helping everyone he works with to maximize their skills and fulfill their potential, personally and professionally.
 
 - Senior Software Architect at Trimble
 - Third decade in the software industry
