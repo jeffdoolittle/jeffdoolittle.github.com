@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Antifragile Architecture with Barry O'Reilly"
+title:  Antifragile Architecture on Software Engineering Radio
 date:   2020-01-24 06:00:00 -0800
 category: se-radio
 tags: [seradio, podcast, software architecture, complexity, antifragile, antifragility, resilient, resiliency]

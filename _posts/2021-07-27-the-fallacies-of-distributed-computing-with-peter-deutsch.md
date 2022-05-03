@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Fallacies of Distributed Computing"
+title: The Fallacies of Distributed Computing on Software Engineering Radio
 date: 2021-07-27 04:00:00 -0700
 category: se-radio
 tags: [software, developers, engineers, architect, architects, architecture, fallacy, fallacies, distribute, distributed, network, security, reliable, reliability, retry]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Righting Software with Juval Löwy"
+title: Righting Software on Software Engineering Radio
 date:   2020-04-23 22:40:00 -0700
 category: se-radio
 tags: [software, idesign, system design, project design, architecture, se radio, software engineering radio]

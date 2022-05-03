@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dapr Distributed Application Runtime
+title: Dapr Distributed Application Runtime on Software Engineering Radio
 date: 2021-11-23 04:00:00 -0800
 category: se-radio
 tags: [dapr, distributed, runtime, application, kubernetes, microservices]

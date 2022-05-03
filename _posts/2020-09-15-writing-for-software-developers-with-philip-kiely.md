@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Writing for Software Developers with Philip Kiely"
+title: Writing for Software Developers on Software Engineering Radio
 date: 2020-09-15 11:10:00 -0700
 category: se-radio
 tags: [software, writing, developers, engineers]

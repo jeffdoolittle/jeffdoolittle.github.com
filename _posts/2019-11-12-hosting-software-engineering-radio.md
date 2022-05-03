@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Decoupled Content Management Systems"
+title:  Decoupled CMS on Software Engineering Radio
 date:   2019-11-12 12:00:00 -0800
 category: se-radio
 tags: [seradio, podcast, software architecture, decoupling, content management, cms]

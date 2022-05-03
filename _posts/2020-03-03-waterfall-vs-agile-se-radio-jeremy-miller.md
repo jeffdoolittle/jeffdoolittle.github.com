@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Waterfall Versus Agile with Jeremy Miller"
+title: Waterfall Versus Agile on Software Engineering Radio
 date:   2020-03-03 08:00:00 -0800
 category: se-radio
 tags: [software, agile, waterfall, scrum, scrappy doo, se radio, software engineering radio]

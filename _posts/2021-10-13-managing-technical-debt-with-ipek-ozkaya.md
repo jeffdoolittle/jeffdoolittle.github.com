@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Technical Debt
+title: Managing Technical Debt on Software Engineering Radio
 date: 2021-10-13 04:00:00 -0700
 category: se-radio
 tags: [technical debt, tech debt, software]
