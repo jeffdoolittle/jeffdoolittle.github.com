@@ -12,34 +12,34 @@ pagenav:
   - title: Make a Payment
     href: "#payment"
 requiredReading:
-  - title: Righting Software
-    href: https://rightingsoftware.org
-    author: Juval Löwy
-  - title: "Exploring Requirements: Quality Before Design"
-    href: https://www.amazon.com/dp/0932633730
-    author: Donald Gause and Gerald Weinberg
-  - title: Simple Architectures for Complex Enterprises
-    href: https://www.amazon.com/dp/0735625786
-    author: Roger Sessions
+  - title: Thinking in Systems
+    href: https://www.amazon.com/dp/1603580557
+    author: Donella H. Meadows
   - title: A Philosophy of Software Design
     href: https://www.amazon.com/dp/1732102201
     author: John Ousterhout
-  - title: Never Split the Difference
-    href: https://info.blackswanltd.com/library
-    author: Chris Voss
+  - title: Righting Software
+    href: https://rightingsoftware.org
+    author: Juval Löwy
 additionalReading:
-  - title: Incerto
-    href: https://www.amazon.com/dp/0399590455
-    author: Nassim Taleb
   - title: The Goal
     href: https://www.amazon.com/dp/0884271951
     author: Eli Goldratt
-  - title: 48 Laws of Power
-    href: https://www.amazon.com/dp/0140280197
-    author: Robert Greene
-  - title: 12 Rules for Life
-    href: https://www.amazon.com/dp/0141988517
-    author: Jordan Peterson
+  - title: Incerto
+    href: https://www.amazon.com/dp/0399590455
+    author: Nassim Taleb
+  - title: Never Split the Difference
+    href: https://info.blackswanltd.com/library
+    author: Chris Voss
+  - title: Simple Architectures for Complex Enterprises
+    href: https://www.amazon.com/dp/0735625786
+    author: Roger Sessions
+  - title: The Art of Immutable Architecture
+    href: https://www.amazon.com/dp/1484259548/
+    author: Michael L. Perry
+  - title: "Exploring Requirements: Quality Before Design"
+    href: https://www.amazon.com/dp/0932633730
+    author: Donald Gause and Gerald Weinberg
 
 ---
 
@@ -51,7 +51,7 @@ I regularly mentor Software Developers, Engineers, Architects and Executives at 
 
 Individuals I have mentored have gone on to work for companies of all sizes from startup ventures to Fortune 100 companies.
 
-**Start with yourself.** What aspiration can you pursue which rises above all others in importance and priority? This focus, this North Star, must drive every other decision you make.
+**Start with yourself.** What aspiration can you pursue which rises above all others in importance and priority? This focus, this *North Star*, must drive every other decision you make.
 
 Learn to **think for yourself.** This requires significant, nearly comprehensive brain rewiring. Do not let anyone hand your opinions to you.
 
@@ -59,11 +59,11 @@ Learn to **think for yourself.** This requires significant, nearly comprehensive
 
 **Read. Read some more. Keep reading.** Don't merely read about technology. At minimum, read about history, art, literature, philosophy, economics, psychology, and leadership. Apply what you learn to yourself first, then in how you interact with others.
 
-**Set the pace.** Become a thought leader in how you present yourself and prepare yourself. Professional clothing, appearance and communication skills demonstrate how seriously you take yourself and others. Ensure consistency across all the sites where you have a public, visible presence, and in all your professional interactions with others.
+**Set the pace.** Lead in the way you present yourself and prepare yourself. Professional clothing, appearance and communication skills demonstrate how seriously you take yourself and others. Ensure consistency across all the sites where you have a public, visible presence, and in all your professional interactions with others.
 
-**Make a plan.** Visualize what you want to achieve. Then break it down into attainable, smaller steps that, when put together, get you on the right path. These steps must align toward your highest aspiration. Ultimately you end up with many plans––daily plans, weekly plans, monthly, quarterly, yearly and multi-year plans. They must all connect. You can and should adjust as necessary to keep you on the path. These plans require flexibility but must continually aim toward the North Star on which you have chosen to focus.
+**Make a plan.** Visualize what you want to achieve. Then break it down into attainable, smaller steps that, when put together, get you on the right path. These steps must align toward your highest aspiration. Ultimately you end up with many plans—daily plans, weekly plans, monthly, quarterly, yearly and multi-year plans that all connect and interrelate. You can and should adjust as necessary to keep you on the path. These plans require flexibility but must continually aim you toward your *North Star*.
 
-**Keep aiming higher.** Evaluate your North Star regularly and continue to raise the bar.
+**Keep aiming higher.** Evaluate your *North Star* regularly and continue to raise the bar.
 
 <p><hr /></p>
 
