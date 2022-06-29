@@ -21,6 +21,12 @@ requiredReading:
   - title: Righting Software
     href: https://rightingsoftware.org
     author: Juval Löwy
+  - title: "Exploring Requirements: Quality Before Design"
+    href: https://www.amazon.com/dp/0932633730
+    author: Donald Gause and Gerald Weinberg
+  - title: "Software Fundamentals"
+    href: https://www.amazon.com/dp/0201703696
+    author: Collected Papers by David L. Parnas
 additionalReading:
   - title: The Goal
     href: https://www.amazon.com/dp/0884271951
@@ -37,15 +43,14 @@ additionalReading:
   - title: The Art of Immutable Architecture
     href: https://www.amazon.com/dp/1484259548/
     author: Michael L. Perry
-  - title: "Exploring Requirements: Quality Before Design"
-    href: https://www.amazon.com/dp/0932633730
-    author: Donald Gause and Gerald Weinberg
 
 ---
 
 {%- include pagenav.html -%}
 
 [![Millerton Lake, California]({{ "/assets/mentoring-101.jpg" | absolute_url }})](/assets/mentoring-101.jpg)
+
+<h2 id="mentoring-101">Mentoring 101 <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 I regularly mentor Software Developers, Engineers, Architects and Executives at every stage of their career. I aim for wholistic growth of the entire person, rather than focusing solely on technological and career growth.
 
@@ -67,14 +72,16 @@ Learn to **think for yourself.** This requires significant, nearly comprehensive
 
 <p><hr /></p>
 
-<h2 id="required-reading">Required Reading <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+<h2 id="reading-list">Reading List <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+<h3 id="required-reading">Required Reading <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h3>
 <ul>
 {% for item in page.requiredReading %}
   <li><a href="{{item.href}}" target="_blank">{{item.title}}</a> by {{item.author}}</li>
 {% endfor %}
 </ul>
 
-<h2 id="additional-reading">Additional Reading <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+<h3 id="additional-reading">Additional Reading <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h3>
 <ul>
 {% for item in page.additionalReading %}
   <li><a href="{{item.href}}" target="_blank">{{item.title}}</a> by {{item.author}}</li>

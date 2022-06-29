@@ -9,7 +9,7 @@ permalink: /:year/:month/:day/:title/
 header_pages:
   - publications.md
   - leadership.md
-  - contact.md
+  - mentoring.md
   - about.md
 show_excerpts: true
 future: false
