@@ -16,7 +16,7 @@
     <p><a href="{{category.bio}}" target="_blank">{{category.bioTitle}}</a></p>
     {% endif %}
 
-    <h3>{{category.entriesHeader}}</h3>
+    <h3 id="{{ category.entriesHeader | escape | downcase }}" >{{category.entriesHeader}}</h3>
 
     {% assign entries = site.posts | where: "category", category_id %}
 
