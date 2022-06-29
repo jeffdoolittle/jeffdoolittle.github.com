@@ -4,6 +4,14 @@
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 
 <script>
+  document.addEventListener("keydown", function(event) {
+    const key = event.key; // Or const {key} = event; in ES6+
+    if (key === "Escape") {
+      document.getElementById("results-container").innerHTML = "";
+      document.getElementById("search-input").value = "";
+    }
+  });
+
   var sjs = SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
