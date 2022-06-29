@@ -3,7 +3,6 @@
 
   <div class="wrapper">
 
-
     <div id="footer" class="footer-col-wrapper">
 
       <div class="footer-col footer-col-3">
@@ -11,10 +10,10 @@
         {%- include social.html -%}
 
         {%- if site.email -%}
-        <h5 class="footer-heading"><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></h5>
+        <h5 class="footer-heading"><a class="u-email" target="_blank" href="mailto:{{ site.email }}">{{ site.email }}</a></h5>
         {%- endif -%}
 
-        <h5 class="footer-heading"><a class="u-email" href="https://keybase.io/jeffdoolittle/pgp_keys.asc">4B1B B252 C58A 118C</a></h5>
+        <h5 class="footer-heading"><a class="u-email" target="_blank" href="https://keybase.io/jeffdoolittle/pgp_keys.asc">4B1B B252 C58A 118C</a></h5>
 
         <p>All contents &copy; 2018-{{ site.time | date: '%Y' }} Jeff Doolittle.<br />All rights reserved.</p>
 
@@ -23,7 +22,7 @@
       <div class="footer-col footer-col-3">
         <p>{{- site.description | escape -}}</p>
         <p>{{- site.contact | escape -}}</p>
-        <p>Last updated: {{ site.time | date: '%A, %B %e, %Y at %l:%M:%S %p %Z' }}</p>
+        <p><a href="{{ site.github_url }}" target="_blank">Last updated</a>: {{ site.time | date: '%A, %B %e, %Y at %l:%M:%S %p %Z' }}</p>
       </div>
 
     </div>

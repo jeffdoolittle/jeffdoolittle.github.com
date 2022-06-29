@@ -5,6 +5,7 @@ description: Software Architect. Transformational Leader. I help make good softw
 contact: You can reach me via email or through one of the social media platforms linked here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jeffdoolittle.com" # the base hostname & protocol for your site, e.g. http://example.com
+github_url: "https://github.com/jeffdoolittle/jeffdoolittle.github.com"
 permalink: /:year/:month/:day/:title/
 header_pages:
   - publications.md

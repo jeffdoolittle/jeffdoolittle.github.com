@@ -127,20 +127,11 @@ div.framer iframe {
   color: $siteSecondaryColor !important;
 }
 
-.social-link {
-  color: $siteBgColor;
-  &:hover {
-    color: $siteTertiaryColor !important;
-  }
-}
-
-.u-email {
-  color: $siteTertiaryColor !important;
-}
-
 #footer {
   color: $siteBgColor;
-
+  a {
+    color: $siteTertiaryColor !important;
+  }
 }
 
 hr {
