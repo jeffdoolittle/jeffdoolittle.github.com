@@ -2,7 +2,7 @@
 
   {%- assign links = site.data.social.links -%}
   {%- for link in links -%}
-  <a target="_blank" title="{{ link.title }}" href="{{ link.url }}"><i style="margin-right: .3em;" class="{{ link.class }}"></i></a>  
+  <a target="_blank" title="{{ link.title }}" href="{{ link.url }}"><i style="margin-right: .3em;" class="social-link {{ link.class }}"></i></a>
   {%- endfor -%}
 
 </div>

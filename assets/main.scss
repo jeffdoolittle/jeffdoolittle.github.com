@@ -99,6 +99,30 @@ div.framer iframe {
   background-color: $siteSecondaryColor !important;
 }
 
+.site-footer {
+  background-color: $siteSecondaryColor;
+}
+
+.footer-heading {
+  color: $siteSecondaryColor !important;
+}
+
+.social-link {
+  color: $siteBgColor;
+  &:hover {
+    color: $siteTertiaryColor !important;
+  }
+}
+
+.u-email {
+  color: $siteTertiaryColor !important;
+}
+
+#footer {
+  color: $siteBgColor;
+
+}
+
 hr {
   margin: 1em 0 1em 0;
 }
@@ -114,7 +138,6 @@ hr {
 .highlight-heading {
   font-size: 20px;
 }
-
 
 .post-date {
   float: right;
@@ -518,4 +541,38 @@ table.stripe {
   display: block;
   height: 75%;
   width: 75%;
+}
+
+#search-input {
+  margin: 1.5rem auto 0 auto;
+  width: -webkit-calc(960px - (30px * 2));
+  width: calc(960px - (30px * 2));
+  padding: 0px;
+  height: 2.5rem;
+  border-width: 0px;
+  background-image: url(/assets/search_icon.webp);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+#search-input:focus{
+  outline: 0px;
+}
+
+#results-container {
+  z-index: 65535;
+  position: absolute;
+  margin: 0px auto;
+  width: -webkit-calc(1000px - (30px * 2));
+  width: calc(1000px - (30px * 2));
+  height: 0px;
+  font-size: 1rem;
+  color: $siteSecondaryColor;
+  li {
+    font-size: 1rem;
+    list-style:none;
+    background-color: white;
+    padding: 0rem 1rem;
+  }
 }

@@ -11,6 +11,8 @@ images:
   - url: /assets/full_head_shot.jpg
     download: jeff_doolittle_bio_full.jpg
 pagenav:
+  - title: Contact
+    href: "#contact"
   - title: Focus
     href: "#focus"
   - title: Professional Bio
@@ -39,6 +41,22 @@ Jeff brings together a unique blend of technical expertise, compassion, empathy,
 - MA - Transformational Leadership
 - Host on [Software Engineering Radio](https://www.se-radio.net/team/jeff-doolittle/){:target="_blank"}
 - Published Author and Conference Presenter
+
+<h2 id="contact">Contact<span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+- [Send me an Email](mailto:jeff@jeffdoolittle.com){:target="_blank"}
+- [Find me around the internet](#footer)
+- [Schedule a time to meet](#calendar)
+
+<a id="calendar" />
+
+<div class="calendly-inline-widget" data-url="https://calendly.com/jeffdoolittle" style="min-width:320px;height:660px; margin: 0; padding: 0;"></div>
+
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+<div>Can't see the embedded calendar? Visit my <a href="/calendar" target="_blank">Calendly</a> page directly instead.</div>
+
+<p />
 
 <h2 id="focus">Focus<span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
