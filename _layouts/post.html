@@ -24,9 +24,8 @@ layout: default
 
     {{ content }}
 
-    {% include action_footer.html %}
+    {% include action-footer.html %}
   </div>
-
 
   <div class="post-navigation">
     <p><b>Looking for more?</b></p>
@@ -48,6 +47,8 @@ layout: default
       </div>
     </div>
   </div>
+
+  {% include related-posts.html %}
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
