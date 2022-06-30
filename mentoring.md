@@ -74,14 +74,14 @@ Learn to **think for yourself.** This requires significant, nearly comprehensive
 
 <h2 id="reading-list">Reading List <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
-<h3 id="required-reading">Required Reading <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h3>
+<h3 id="required-reading">Required Reading</h3>
 <ul>
 {% for item in page.requiredReading %}
   <li><a href="{{item.href}}" target="_blank">{{item.title}}</a> by {{item.author}}</li>
 {% endfor %}
 </ul>
 
-<h3 id="additional-reading">Additional Reading <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h3>
+<h3 id="additional-reading">Additional Reading</h3>
 <ul>
 {% for item in page.additionalReading %}
   <li><a href="{{item.href}}" target="_blank">{{item.title}}</a> by {{item.author}}</li>
