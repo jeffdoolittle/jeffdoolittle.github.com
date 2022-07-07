@@ -565,7 +565,8 @@ table.stripe {
 }
 
 #search-input {
-  box-sizing:border-box;
+  font-size: 1rem;
+  box-sizing: border-box;
   height: 2.5rem;
   border-width: 0px;
   background-image: url(/assets/search_icon.webp);
@@ -586,6 +587,7 @@ table.stripe {
   position: absolute;
   margin: 0px auto;
   height: 0px;
+  width: 94%;
   font-size: 1rem;
   a {
     color: $siteSecondaryColor;
