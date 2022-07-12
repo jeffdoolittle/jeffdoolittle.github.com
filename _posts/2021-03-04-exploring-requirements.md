@@ -12,9 +12,9 @@ published: true
 
 Improve your skills at discovering, defining, and distilling requirements. Get the book (ISBN-13: 978-0932633132, ISBN-10: 0932633137), download the [Exploring Requirements Book Club Guide](/assets/exploring-requirements-book-club.pdf){:target="_blank"} and sign up below to join. You will receive information about how to join the video conference after you sign up.
 
-The first meeting will occur on April 1, 2021 at 8:00AM Pacific Time.
-
 *This book club has ended*.
+
+<!-- The first meeting will occur on April 1, 2021 at 8:00AM Pacific Time. -->
 
 <!-- While the group started today, [you can still sign up](https://docs.google.com/forms/d/e/1FAIpQLSdOzhhzKSN5hhRl8Q1QA92KBTAOF2s6G7bZpCSlqdfrBk6GkA/viewform) for a few more days. -->
 
@@ -29,3 +29,4 @@ It has required a significant investment of time and resources to prepare for a 
 To support the Book Club please choose your support level below to check out with Stripe:
 
 Please [contact me](/contact) if you have any questions.
+-->

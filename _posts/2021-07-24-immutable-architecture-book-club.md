@@ -18,6 +18,9 @@ In The Art of Immutable Architecture, Michael L. Perry describes an approach to 
 
 The [Immutable Architecture Book Club]({{ page.url }}) will, of course, explore the principles of immutable architecture. But even better, you'll come away with practical knowledge and tools you can use to begin applying these principles in your own system design and implementation endeavors. As an added bonus Michael will join us for a few strategic sessions throughout the duration of the club.
 
+*This book club has ended*.
+
+<!-- 
 **You don't want to miss out on this opportunity to grow as a software professional and connect with like-minded colleagues and industry experts.**
 
 The book club will meet at 8 AM Pacific Time for 15 weeks from August 12 to November 18, 2021. See the [Schedule](#schedule) below for details.
@@ -58,4 +61,5 @@ Please [contact me](/contact) if you have any questions.
 | 12 | 28-Oct-2021 | Ch. 9 | Query Inverses |
 | 13 | 04-Nov-2021 | Ch. 10 | SQL Databases |
 | 14 | 11-Nov-2021 | Ch. 11 | Communication |
-| 15 | 18-Nov-2021 | Ch. 12 | Generated Behaviors |
+| 15 | 18-Nov-2021 | Ch. 12 | Generated Behaviors | 
+-->
