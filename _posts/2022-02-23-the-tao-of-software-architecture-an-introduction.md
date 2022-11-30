@@ -163,7 +163,7 @@ Using the Solution Design Model, we can address the clarity gap by identifying a
   - Technology, integration and distributed systems experts.
 - Solution Architect
   - Domain Oriented, Technology Focused
-  - "Integrators." Sector, division and product oriented. Domain familiar technology experts.
+  - Integrators and Implementors. Sector, division and product oriented. Domain familiar implementation experts.
   - Experts in execution and solution delivery.
 
 ## The Need for Systems Thinking
