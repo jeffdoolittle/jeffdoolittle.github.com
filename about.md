@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 show_banner: true
 images:
-  - url: /assets/jeff_doolittle_bio_pic.jpg
+  - url: /assets/head_shot_2022_small_bw.jpg
     download: jeff_doolittle_bio_bw.jpg
-  - url: /assets/head_shot_square_zoomed.jpg
+  - url: /assets/head_shot_2022_small.jpg
     download: head_shot_square_zoomed.jpg
-  - url: /assets/full_head_shot.jpg
+  - url: /assets/head_shot_2022.jpg
     download: jeff_doolittle_bio_full.jpg
 pagenav:
   - title: Contact
