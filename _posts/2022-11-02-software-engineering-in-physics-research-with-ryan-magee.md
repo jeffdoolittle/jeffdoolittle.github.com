@@ -4,7 +4,7 @@ title: Software Engineering in Physics Research with Ryan Magee
 date: 2022-11-02 04:00:00 -0800
 category: se-radio
 tags: [software, physics, ligo, gravity, research, ryan, magee, se, radio, podcast, interview, se-radio]
-excerpt: ""
+excerpt: "Find out how scientists use software as a critical component of their research."
 image: /assets/20221105_143832.jpg
 image_alt: Tryon Creek Park, Portland, Oregon
 published: true

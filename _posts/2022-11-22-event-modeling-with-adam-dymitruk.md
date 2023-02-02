@@ -4,7 +4,7 @@ title: Event Modeling with Adam Dymitruk
 date: 2022-11-22 04:00:00 -0800
 category: se-radio
 tags: [event, event sourcing, event modeling, event storming, adam, dymitruk, se, radio, podcast, interview, se-radio]
-excerpt: ""
+excerpt: "Learn how to leverage the event modeling approach to discovering requirements and designing software systems."
 image: /assets/20221211_130214.jpg
 image_alt: Portland, Oregon
 published: true
