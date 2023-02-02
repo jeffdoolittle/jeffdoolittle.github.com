@@ -5,7 +5,7 @@ date: 2023-01-31 04:00:00 -0800
 category: events
 tags: [systems, architecture, jeff, doolittle, ditching, hourly, podcast, interview]
 excerpt: "Learn a bit about my career journey and passion for good system design"
-image: 20221229_220257.jpg
+image: /assets/20221229_220257.jpg
 image_alt: China Town, San Francisco, California
 published: true
 ---
