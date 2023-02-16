@@ -28,6 +28,9 @@ requiredReading:
     href: https://www.amazon.com/dp/0201703696
     author: Collected Papers by David L. Parnas
 additionalReading:
+  - title: 48 Laws of Power
+    href: https://www.amazon.com/dp/0140280197
+    author: Robert Greene
   - title: The Goal
     href: https://www.amazon.com/dp/0884271951
     author: Eli Goldratt
