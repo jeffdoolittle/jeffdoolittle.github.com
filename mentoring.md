@@ -98,7 +98,7 @@ If you'd like to meet for informal mentoring every 4-6 weeks for 30 minutes, I h
 
 <p><hr /></p>
 
-<h2 id="payment">Coaching <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+<h2 id="coaching">Coaching <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
 I have a limited number of slots available for formal coaching on a weekly or bi-weekly basis. [Contact me](/contact) me if you're interested.
 
