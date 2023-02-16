@@ -9,8 +9,8 @@ pagenav:
     href: "#reading-list"
   - title: Let's Meet!
     href: "#meet"
-  - title: Make a Payment
-    href: "#payment"
+  - title: Coaching
+    href: "#coaching"
 requiredReading:
   - title: Thinking in Systems
     href: https://www.amazon.com/dp/1603580557
