@@ -15,12 +15,15 @@ requiredReading:
   - title: Thinking in Systems
     href: https://www.amazon.com/dp/1603580557
     author: Donella H. Meadows
-  - title: A Philosophy of Software Design
-    href: https://www.amazon.com/dp/1732102201
-    author: John Ousterhout
   - title: Righting Software
     href: https://rightingsoftware.org
     author: Juval Löwy
+  - title: Lean Software Systems Engineering for Developers
+    href: https://www.amazon.com/Lean-Software-Systems-Engineering-Developers/dp/1484269322
+    author: Doug Durham, Chad Michel 
+  - title: A Philosophy of Software Design
+    href: https://www.amazon.com/dp/1732102201
+    author: John Ousterhout
   - title: "Exploring Requirements: Quality Before Design"
     href: https://www.amazon.com/dp/0932633730
     author: Donald Gause and Gerald Weinberg
