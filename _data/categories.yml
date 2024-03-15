@@ -26,4 +26,11 @@
   subtitle: A sampling of my musical endeavors
   entriesHeader: Recordings
   entriesType: recording
-  highlight: false
+  highlight: true
+
+- id: travel
+  title: Travel
+  subtitle: Exploring the world
+  entriesHeader: Trips
+  entriesType: trip
+  highlight: true
