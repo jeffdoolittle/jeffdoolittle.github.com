@@ -29,7 +29,7 @@ pagenav:
 
 {%- include pagenav.html -%}
 
-Jeff Doolittle is a software architect and transformational leader with over twenty-five years of experience designing and architecting software systems, and providing developer leadership and mentorship. He is passionate about designing and refining systems that cultivate repeatability, reversibility, reuse, [trust, clarity and empowerment](/2020/11/04/software-leadership-distilled/#core-values){:target="_blank"}.
+Jeff Doolittle is a software architect with over twenty-five years of experience designing and architecting software systems, and providing developer leadership and mentorship. He is passionate about designing and refining systems that cultivate repeatability, reversibility, reuse, [trust, clarity and empowerment](/2020/11/04/software-leadership-distilled/#core-values){:target="_blank"}.
 
 Jeff brings together a unique blend of technical expertise, compassion, empathy, commitment to high quality, and leadership skills. He excels at helping software executives, engineers and developers to accelerate their productivity. He thrives on helping everyone he works with to maximize their skills and fulfill their potential, personally and professionally.
 
@@ -76,7 +76,7 @@ Jeff brings together a unique blend of technical expertise, compassion, empathy,
   {% for image in page.images %}
       <p style="text-align: center">
         <a href="{{ image.url }}" download="{{ image.download }}">
-          <img width="480" src="{{ image.url | absolute_url }}" alt="Software Architect and Transformational Leader" />
+          <img width="480" src="{{ image.url | absolute_url }}" alt="Software Architect" />
           <div style="margin: 0 0 2em 0; text-align: center;">
             Right click to download
           </div>
