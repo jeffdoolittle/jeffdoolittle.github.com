@@ -89,7 +89,7 @@ Jeff brings together a unique blend of technical expertise, compassion, empathy,
 
 <h2 id="resume">Resume <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
-See my [resume](/assets/resume.pdf){: target="_blank"} for an extensive description of my career.
+See my [resume](/assets/resume.pdf){: target="_blank"} for an overview of my career.
 
 <p><hr /></p>
 
