@@ -129,7 +129,6 @@ While each role may involve multiple responsibilities they *at least* require ow
 - *Architect*: **Contain Complexity**
 - *QA / Test Engineering*: **Manage Requirements**
 - *UX / Design*: **Manage the Customer Experience**
-- *Engineer / Developer*: **Manage Optionality**
 
 It is crucial to note that none of these roles involve managing *people*.
 
