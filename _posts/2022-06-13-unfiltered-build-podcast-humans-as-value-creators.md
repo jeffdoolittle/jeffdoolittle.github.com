@@ -14,7 +14,7 @@ published: true
 
 A couple of weeks ago, [Nigel Finley](https://www.linkedin.com/in/nigelfinley/){:target="_blank"} invited me to join him on [Building With People For People: The Unfiltered Build Podcast](https://podcast.unfilteredbuild.com/){:target="_blank"}. We covered a broad range of leadership and organizational topics during the conversation.
 
-> A Software Architect's role is to contain complexity and an Engineer's role is to manage optionality, but what is a Product Owner's role? To perform at your best you must understand your value creation responsibilities. In this episode we'll explore the primary responsibilities of key roles in software development, the three crucial values that provide significant boosts in morale and productivity, the meaning of technical empathy, foundational principles of leadership and more.
+> A Software Architect's role is to contain complexity and a Project managers role is to handle the noise from the business, but what is a Product Owner's role? To perform at your best you must understand your value creation responsibilities. In this episode we'll explore the primary responsibilities of key roles in software development, the three crucial values that provide significant boosts in morale and productivity, the meaning of technical empathy, foundational principles of leadership and more.
 
 Go give it a listen! [Humans as Value Creators - Unlocking your potential and building trust, clarity and empowerment](https://anchor.fm/buildingwithpeople/episodes/Ep--11-Humans-as-Value-Creators---Unlocking-your-potential-and-building-trust--clarity-and-empowerment-with-Jeff-Doolittle-e1jstko){:target="_blank"}.
 
