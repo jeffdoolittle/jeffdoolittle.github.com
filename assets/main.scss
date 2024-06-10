@@ -603,3 +603,13 @@ table.stripe {
     padding: 0rem 1rem;
   }
 }
+
+pre.song {
+  font-family: 'Lucida Console', 'Courier New', Courier, monospace;
+  padding: .5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #ffffff;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
