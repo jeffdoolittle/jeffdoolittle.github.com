@@ -31,7 +31,7 @@ pagenav:
 
 Jeff Doolittle is a software architect with over twenty-five years of experience designing and architecting software systems, and providing developer leadership and mentorship. He is passionate about designing and refining systems that cultivate repeatability, reversibility, reuse, [trust, clarity and empowerment](/2020/11/04/software-leadership-distilled/#core-values){:target="_blank"}.
 
-Jeff brings together a unique blend of technical expertise, compassion, empathy, commitment to high quality, and leadership skills. He excels at helping software executives, engineers and developers to accelerate their productivity. He thrives on helping everyone he works with to maximize their skills and fulfill their potential, personally and professionally.
+Jeff brings together a unique blend of technical expertise, compassion, empathy, commitment to high quality, and leadership skills. He excels at helping software executives, engineers and developers to accelerate their productivity by adopting rigorous systems engineering principles and practices. He thrives on helping everyone he works with to maximize their skills and fulfill their potential, personally and professionally.
 
 - Senior Software Architect at Trimble
 - Third decade in the software industry
