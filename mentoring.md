@@ -31,6 +31,12 @@ requiredReading:
     href: https://www.amazon.com/dp/0201703696
     author: Collected Papers by David L. Parnas
 additionalReading:
+  - title: Balancing Coupling in Software Design
+    href: https://www.amazon.com/dp/0137353480
+    author: Vlad Khononov
+  - title: Code Health Guardian
+    href: https://www.amazon.com/dp/1763771709
+    author: Artie Shevchenko
   - title: 48 Laws of Power
     href: https://www.amazon.com/dp/0140280197
     author: Robert Greene
