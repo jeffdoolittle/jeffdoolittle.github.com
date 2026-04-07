@@ -11,6 +11,12 @@
 
       {%- include page_banner.html -%}
 
+      {%- if page.layout == 'home' -%}
+
+        {{ content }}
+
+      {%- else -%}
+
       <div class="wrapper">
 
         {{ content }}
@@ -20,6 +26,8 @@
         </div>
 
       </div>
+
+      {%- endif -%}
 
     </main>
 

@@ -2,6 +2,24 @@
 layout: default
 ---
 
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__avatar">
+      <img src="/assets/circle_head_shot_2025_small.png" alt="{{ site.title }}" />
+    </div>
+    <h1 class="hero__title">{{ site.title | escape }}</h1>
+    <p class="hero__tagline">
+      <strong>Software Architect.</strong> Strategic Business Leader.<br />
+      I help make good software professionals <strong>great</strong>.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn-primary" href="/about/">About Me</a>
+      <a class="btn btn-ghost" href="/publications/">Explore Publications</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrapper">
 <div class="home">
 
   {%- if page.title -%}
@@ -9,23 +27,6 @@ layout: default
   {%- endif -%}
 
   {{ content }}
-
-  <section class="hero">
-    <div class="hero__inner">
-      <div class="hero__avatar">
-        <img src="/assets/circle_head_shot_2025_small.png" alt="{{ site.title }}" />
-      </div>
-      <h1 class="hero__title">{{ site.title | escape }}</h1>
-      <p class="hero__tagline">
-        <strong>Software Architect.</strong> Strategic Business Leader.<br />
-        I help make good software professionals <strong>great</strong>.
-      </p>
-      <div class="hero__cta">
-        <a class="btn btn-primary" href="/about/">About Me</a>
-        <a class="btn btn-ghost" href="/publications/">Explore Publications</a>
-      </div>
-    </div>
-  </section>
 
   <div class="home-content">
 
@@ -58,5 +59,11 @@ layout: default
     {% include action-footer.html %}
 
   </div>
+
+</div>
+
+<div class="small-banner wrapper">
+  <img src="/assets/circle_head_shot_2025_small.png" />
+</div>
 
 </div>
