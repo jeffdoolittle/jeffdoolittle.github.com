@@ -988,7 +988,7 @@ pre.song {
   font-family: 'Sora', system-ui, sans-serif !important;
   font-size: 1.4rem !important;
   font-weight: 700 !important;
-  color: $siteSecondaryColor !important;
+  color: var(--section-title) !important;
   letter-spacing: -0.02em;
   white-space: nowrap;
   margin-bottom: 0 !important;
@@ -1098,12 +1098,12 @@ pre.song {
     font-family: 'Sora', system-ui, sans-serif !important;
     font-size: 1.05rem !important;
     font-weight: 700 !important;
-    color: $siteSecondaryColor !important;
+    color: var(--section-title) !important;
     line-height: 1.3;
     letter-spacing: -0.01em;
     margin-bottom: 0 !important;
     a {
-      color: $siteSecondaryColor !important;
+      color: var(--section-title) !important;
       text-decoration: none !important;
       &:hover { color: $siteHighlightHover !important; }
     }
