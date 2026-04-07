@@ -3,30 +3,60 @@ layout: default
 ---
 
 <div class="home">
+
   {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
   {{ content }}
 
-  {%- include banner.html -%}
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__avatar">
+        <img src="/assets/circle_head_shot_2025_small.png" alt="{{ site.title }}" />
+      </div>
+      <h1 class="hero__title">{{ site.title | escape }}</h1>
+      <p class="hero__tagline">
+        <strong>Software Architect.</strong> Strategic Business Leader.<br />
+        I help make good software professionals <strong>great</strong>.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn-primary" href="/about/">About Me</a>
+        <a class="btn btn-ghost" href="/publications/">Explore Publications</a>
+      </div>
+    </div>
+  </section>
 
-  <p style="text-align: center; font-size: xx-large; font-weight: 700;">Software Architect. Strategic Business Leader.</p>
+  <div class="home-content">
 
-  <h2 id="recent" class="post-list-heading">Latest Updates</h2>
+    <div class="home-section">
+      <div class="section-header">
+        <h2 class="section-title">Latest by Topic</h2>
+        <div class="section-divider"></div>
+        <a class="section-link" href="/publications/">All Publications →</a>
+      </div>
+      {%- include highlights.html -%}
+    </div>
 
-  {%- include highlights.html -%}
+    {%- include google-ads-main.html -%}
 
-  {%- include google-ads-main.html -%}
+    <div class="home-section">
+      <div class="section-header">
+        <h2 class="section-title">Recent Writing</h2>
+        <div class="section-divider"></div>
+        <a class="section-link" href="/archive/">Full Archive →</a>
+      </div>
+      {%- if site.posts.size > 0 -%}
+      {% assign posts = '' | split: '' %}
+      {% for post in site.posts limit: 25 %}
+          {% assign posts = posts | push: post %}
+      {% endfor %}
+      {%- include posts.html posts=posts -%}
+      {%- endif -%}
+    </div>
 
-  {%- if site.posts.size > 0 -%}
-  {% assign posts = '' | split: '' %}
-  {% for post in site.posts limit: 25 %}
-      {% assign posts = posts | push: post %}
-  {% endfor %}
-  {%- include posts.html posts=posts-%}
-  {%- endif -%}
+    {% include action-footer.html %}
 
-  {% include action-footer.html %}
+  </div>
 
 </div>

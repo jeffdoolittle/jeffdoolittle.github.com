@@ -100,20 +100,3 @@ Learn to **think for yourself.** This requires significant, nearly comprehensive
 {% endfor %}
 </ul>
 
-<p><hr /></p>
-
-<h2 id="meet">Let's Meet! <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
-
-I have regular time slots available for introductory phone calls, or even lunch if you're local. [Contact me](/contact)!
-
-If you'd like to meet for informal mentoring every 2-3 months for 30 minutes, I have a limited number of slots available. If you're interested in formal coaching on a more frequent basis, continue on to the next section.
-
-<p><hr /></p>
-
-<h2 id="coaching">Coaching <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
-
-I have a limited number of slots available for formal coaching on a semi-monthly or monthly basis. [Contact me](/contact) me if you're interested.
-
-The current rate per 50 minute session is $150 USD. No, I don't accept bitcoin. 😀 
-
-Visit the <a href="https://buy.stripe.com/8wMg359qLeLO2XK4gj" target="_blank">Payment Gateway</a> to make a payment.

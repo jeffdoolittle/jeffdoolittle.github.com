@@ -1,7 +1,29 @@
-{% if page.show_banner %}
-<div id="banner">
-  <img src="/assets/og_image.png" />
+{% unless page.layout == 'home' %}
+{% if page.title %}
+<div class="page-hero">
+  <div class="page-hero__inner wrapper">
+    <div class="page-hero__body">
+      <div class="page-hero__text">
+        {%- if page.category -%}
+        <p class="page-hero__eyebrow">{{ page.category | capitalize }}</p>
+        {%- elsif page.date -%}
+        <p class="page-hero__eyebrow">Article</p>
+        {%- endif -%}
+        <h1 class="page-hero__title">{{ page.title | escape }}</h1>
+        {%- if page.date -%}
+        <p class="page-hero__meta">
+          {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </p>
+        {%- endif -%}
+      </div>
+      {%- unless page.date -%}
+      <div class="page-hero__avatar">
+        <img src="/assets/circle_head_shot_2025_small.png" alt="Jeff Doolittle" />
+      </div>
+      {%- endunless -%}
+    </div>
+  </div>
 </div>
-{% else %}
-<div id="banner"></div>
 {% endif %}
+{% endunless %}
