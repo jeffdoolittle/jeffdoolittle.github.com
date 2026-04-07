@@ -3,20 +3,63 @@
 
 @import "minima";
 
-// schemer: https://coolors.co/c77640-c4d6b0-477998-291f1e-2d1e2f
+// ─── CSS custom properties (theming) ─────────────────────────────────────────
 
-// $siteBgColor: #27272a;           // original
-$siteBgColor: #f0f4f8;
-$siteHoverBgColor: #f8fbff;
-$siteHighlightColor: #2c5282;   // navy-light, used for links
-$siteHighlightHover: #d97706;   // amber-dark, used for hover states
+:root {
+  --bg:             #f0f4f8;
+  --bg-hover:       #f8fbff;
+  --text:           #1a202c;
+  --text-inv:       #ffffff;
+  --link:           #2c5282;
+  --link-hover:     #d97706;
+  --header-bg:      #0f2744;
+  --header-bg-mid:  #1a3a5c;
+  --amber:          #f59e0b;
+  --card-bg:        #ffffff;
+  --card-border:    #d1dae6;
+  --section-border: #d1dae6;
+  --section-title:  #0f2744;
+  --code-bg:        #ffffff;
+  --blockquote:     #1a3a5c;
+  --meta:           #4a5568;
+  --post-meta:      #a0a0a0;
+  --search-result:  #ffffff;
+  --song-bg:        #ffffff;
+}
 
-$siteSecondaryColor: #0f2744;   // deep navy, used for header/footer bg
-$siteTertiaryColor: #f59e0b;    // amber
-$siteQuaternaryColor: #1a3a5c;  // navy-mid
+[data-theme="dark"] {
+  --bg:             #0d1117;
+  --bg-hover:       #161b22;
+  --text:           #e2e8f0;
+  --text-inv:       #ffffff;
+  --link:           #7eb8f7;
+  --link-hover:     #f59e0b;
+  --header-bg:      #0a1628;
+  --header-bg-mid:  #0f1f3a;
+  --amber:          #f59e0b;
+  --card-bg:        #161b22;
+  --card-border:    #2d3748;
+  --section-border: #2d3748;
+  --section-title:  #7eb8f7;
+  --code-bg:        #1a1f2a;
+  --blockquote:     #7eb8f7;
+  --meta:           #9aa5b4;
+  --post-meta:      #718096;
+  --search-result:  #161b22;
+  --song-bg:        #1a1f2a;
+}
 
-$textColor: #1a202c;
-$textInverseColor: #ffffff;
+// ─── SCSS aliases → CSS vars ─────────────────────────────────────────────────
+
+$siteBgColor:        var(--bg);
+$siteHoverBgColor:   var(--bg-hover);
+$siteHighlightColor: var(--link);
+$siteHighlightHover: var(--link-hover);
+$siteSecondaryColor: var(--header-bg);
+$siteTertiaryColor:  var(--amber);
+$siteQuaternaryColor:var(--blockquote);
+$textColor:          var(--text);
+$textInverseColor:   var(--text-inv);
 
 //color: $siteHighlightColor; # orange
 // color: #5C7880; # medium blue
@@ -27,8 +70,8 @@ html {
 }
 
 body {
-  background-color: $siteBgColor;
-  color: $textColor;
+  background-color: var(--bg);
+  color: var(--text);
   font-size: 1.0625rem !important;
   font-family: 'Inter', system-ui, sans-serif;
 }
@@ -252,8 +295,8 @@ p {
 blockquote {
   margin-block-end: 1.5em;
   font-size: 1.4rem;
-  color: $siteQuaternaryColor;
-  border-left: 3px solid $siteTertiaryColor;
+  color: var(--blockquote);
+  border-left: 3px solid var(--amber);
   padding-left: 1rem;
 }
 
@@ -279,7 +322,7 @@ table {
 
 .post-meta {
   font-size: 14px;
-  color: #a0a0a0;
+  color: var(--post-meta);
 }
 
 #banner {
@@ -336,7 +379,7 @@ ul.entries {
     position: absolute;
     top: 9px;
     right: 15px;
-    background-color: $siteBgColor;
+    background-color: var(--bg);
     border: 1px solid #e8e8e8;
     border-radius: 5px;
     text-align: right;
@@ -586,7 +629,7 @@ table.stripe {
 
 .post-excerpt {
   font-size: 1.05rem;
-  color: #4a5568;
+  color: var(--meta);
   font-style: italic;
   margin-bottom: 1.5rem;
   line-height: 1.7;
@@ -664,7 +707,7 @@ table.stripe {
   margin-left: auto;
   background-color: transparent;
   li {
-    background-color: $siteBgColor;
+    background-color: var(--bg);
   }
   @media screen and (max-width: 600px) {
     display: none;
@@ -707,11 +750,11 @@ table.stripe {
   li {
     list-style: none;
     padding: 0 !important;
-    background-color: #ffffff;
-    border: 1px solid #d1dae6;
+    background-color: var(--search-result);
+    border: 1px solid var(--card-border);
     border-top: none;
     &:first-child {
-      border-top: 1px solid #d1dae6;
+      border-top: 1px solid var(--card-border);
       border-radius: 6px 6px 0 0;
     }
     &:last-child {
@@ -722,7 +765,7 @@ table.stripe {
       display: block;
       padding: 0.5rem 1rem;
       font-size: 0.875rem;
-      color: $siteQuaternaryColor;
+      color: var(--text);
       text-decoration: none;
       &:hover {
         background: $siteBgColor;
@@ -738,7 +781,8 @@ pre.song {
   padding: .5rem;
   font-size: 1.2rem;
   font-weight: bold;
-  background-color: #ffffff;
+  background-color: var(--song-bg);
+  color: var(--text);
   white-space: pre-wrap;
   word-wrap: break-word;
 }
@@ -929,7 +973,7 @@ pre.song {
 .home-section {
   padding: 2.5rem 0;
   & + .home-section {
-    border-top: 1px solid #d1dae6;
+    border-top: 1px solid var(--section-border);
   }
 }
 
@@ -953,7 +997,7 @@ pre.song {
 .section-divider {
   flex: 1;
   height: 1px;
-  background: #d1dae6;
+  background: var(--section-border);
 }
 
 .section-link {
@@ -974,8 +1018,8 @@ pre.song {
 }
 
 .highlight-card {
-  background: #ffffff;
-  border: 1px solid #d1dae6;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 14px;
   padding: 1.25rem 1.4rem;
   box-shadow: 0 1px 3px rgba(15,39,68,0.10);
@@ -1000,12 +1044,12 @@ pre.song {
   &__title {
     font-size: 0.95rem;
     font-weight: 600;
-    color: $siteSecondaryColor;
+    color: var(--section-title);
     line-height: 1.4;
   }
   &__date {
     font-size: 0.775rem;
-    color: #4a5568;
+    color: var(--meta);
   }
 }
 
@@ -1018,8 +1062,8 @@ pre.song {
 }
 
 .post-card {
-  background: #ffffff;
-  border: 1px solid #d1dae6;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(15,39,68,0.10);
@@ -1036,7 +1080,7 @@ pre.song {
     height: 170px;
     object-fit: cover;
     display: block;
-    background: #e8edf4;
+    background: var(--card-border);
   }
   &__body {
     padding: 1.2rem 1.4rem 1.5rem;
@@ -1047,7 +1091,7 @@ pre.song {
   }
   &__meta {
     font-size: 0.75rem;
-    color: #4a5568;
+    color: var(--meta);
     font-weight: 500;
   }
   &__title {
@@ -1066,7 +1110,7 @@ pre.song {
   }
   &__excerpt {
     font-size: 0.88rem;
-    color: #4a5568;
+    color: var(--meta);
     line-height: 1.6;
     flex: 1;
     margin-bottom: 0;
@@ -1156,4 +1200,37 @@ pre.song {
   color: rgba(255,255,255,0.35);
   p { color: rgba(255,255,255,0.35); margin: 0; }
   a { color: rgba(255,255,255,0.50) !important; &:hover { color: #fff !important; } }
+}
+
+// ─── Dark mode toggle button ─────────────────────────────────────────────────
+
+.theme-toggle {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.20);
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.80);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  padding: 0;
+
+  &:hover {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+  }
+
+  // Show sun when in dark mode (clicking will switch to light)
+  // Show moon when in light mode (clicking will switch to dark)
+  .theme-toggle__sun  { display: none; }
+  .theme-toggle__moon { display: block; }
+
+  &[data-theme="dark"] {
+    .theme-toggle__sun  { display: block; }
+    .theme-toggle__moon { display: none; }
+  }
 }
