@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "From Dormant to Redesigned: One Day with GitHub Copilot"
-date: 2026-04-07 12:00:00 -0700
+date: 2026-04-07
 category: software
 tags: [ai, copilot, design, jekyll]
 excerpt: How I used GitHub Copilot to completely redesign my personal site in a single day — and what that reveals about AI-assisted development.
