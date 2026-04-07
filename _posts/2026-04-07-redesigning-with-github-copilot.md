@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "From Dormant to Redesigned: One Day with GitHub Copilot"
+title: "From Dormant to Redesigned: Two Hours with GitHub Copilot"
 date: 2026-04-07
 category: software
 tags: [ai, copilot, design, jekyll]
-excerpt: How I used GitHub Copilot to completely redesign my personal site in a single day — and what that reveals about AI-assisted development.
+excerpt: How I used GitHub Copilot to completely redesign my personal site in about two hours — and what that reveals about AI-assisted development.
 image: /assets/20260307_182107.jpg
 image_alt: Photo from March 2026
 published: true
@@ -14,7 +14,7 @@ published: true
 
 The site had been quiet since October 14, 2025 — just a two-line biographical update. The underlying design was years-old Minima with hand-crafted SCSS variables, flat post lists, and no real visual identity. Security vulnerabilities were aging in the Gemfile.
 
-On April 7, 2026, all of that changed — in a single day.
+On April 7, 2026, all of that changed — in about two hours.
 
 Not a few tweaks. A complete transformation spanning five distinct phases, each tracked as a GitHub Issue with its own branch and merge.
 
@@ -116,7 +116,7 @@ This was followed by three refinement commits: amber lightened from `#f59e0b` to
 | Diagnose and fix Netlify/Ruby version matrix | 2–4 hours | ~45 minutes (3 targeted commits) |
 | Dark mode with no-flash + cookie + toggle | 4–8 hours | ~1 hour |
 | Security gem audit and update | 1–2 hours | ~10 minutes |
-| **Total** | **~5–7 days** | **~1 day** |
+| **Total** | **~5–7 days** | **~2 hours** |
 
 The most striking leverage wasn't in any single feature — it was in the **design exploration phase**. Generating three complete, browser-renderable prototypes with coherent typography, color systems, and component structures in under an hour is something that previously required a designer, a prototype tool, and multiple review cycles. Here, it was a single conversation that produced artifacts you could open directly in a browser and compare.
 
