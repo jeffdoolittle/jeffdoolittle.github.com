@@ -144,6 +144,36 @@ div.framer iframe {
   left: 0;
 }
 
+// ─── Inline code + table: override Minima's hardcoded light colors ──────────
+
+pre, code {
+  background-color: var(--code-bg);
+  border-color: var(--card-border);
+  color: var(--text);
+}
+
+table {
+  color: var(--text);
+  border: none;
+  tr {
+    &:nth-child(even) {
+      background-color: var(--card-bg);
+    }
+    border-top: 1px solid var(--amber);
+    border-bottom: 1px solid var(--amber);
+  }
+  th {
+    background-color: var(--card-bg);
+    border: none;
+    border-top: 2px solid var(--amber);
+    border-bottom: 2px solid var(--amber);
+    color: var(--text);
+  }
+  td {
+    border: none;
+  }
+}
+
 .site-header {
   border-bottom: 3px solid $siteTertiaryColor;
   position: -webkit-sticky;
