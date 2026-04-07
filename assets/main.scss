@@ -154,19 +154,23 @@ pre, code {
 
 table {
   color: var(--text);
-  border-color: var(--card-border);
+  border: none;
   tr {
     &:nth-child(even) {
       background-color: var(--card-bg);
     }
+    border-top: 1px solid var(--amber);
+    border-bottom: 1px solid var(--amber);
   }
   th {
     background-color: var(--card-bg);
-    border-color: var(--card-border);
+    border: none;
+    border-top: 2px solid var(--amber);
+    border-bottom: 2px solid var(--amber);
     color: var(--text);
   }
   td {
-    border-color: var(--card-border);
+    border: none;
   }
 }
 
