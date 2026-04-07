@@ -5,8 +5,8 @@ date: 2026-04-07
 category: software
 tags: [ai, copilot, design, jekyll]
 excerpt: How I used GitHub Copilot to completely redesign my personal site in a single day — and what that reveals about AI-assisted development.
-image: /assets/portland_view_from_mt_tabor.jpg
-image_alt: View from Mt. Tabor, Portland
+image: /assets/20260307_182107.jpg
+image_alt: Photo from March 2026
 published: true
 ---
 
