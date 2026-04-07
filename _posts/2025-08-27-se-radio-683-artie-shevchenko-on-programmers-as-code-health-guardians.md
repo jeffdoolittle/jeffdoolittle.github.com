@@ -5,8 +5,8 @@ date: 2025-08-27 11:00:00 -0800
 category: se-radio
 tags: [software, developers, engineers, ai, code health, complexity, code review, productivity]
 excerpt: "What is the role of human programmers in the age of AI, and why does code health matter more than ever?"
-image: /assets/mcminnville-or-2023-04-22.jpg
-image_alt: McMinnville, Oregon
+image: /assets/20260328_191403.jpg
+image_alt: Seattle, Washington - Port at Sunset
 published: true
 episode_url: https://se-radio.net/2025/08/se-radio-683-artie-shevchenko-on-programmers-as-code-health-guardians/
 guest: Artie Shevchenko
