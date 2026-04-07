@@ -17,3 +17,7 @@ Thumbs.db
 vendor/
 
 _site
+
+# Local environment variables (secrets)
+.env
+.env.*
