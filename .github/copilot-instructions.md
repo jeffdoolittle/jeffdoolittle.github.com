@@ -56,6 +56,7 @@ When the user says any of the following — **lgtm, gtm, merge, ship it, looks g
 2. `git merge issue/123-short-description --no-ff -m "merge: <title> (closes #123)"`
 3. `git push origin main`
 4. `git push origin --delete issue/123-short-description`
+5. `git branch -d issue/123-short-description`
 
 Do **not** merge until explicitly told to.
 
