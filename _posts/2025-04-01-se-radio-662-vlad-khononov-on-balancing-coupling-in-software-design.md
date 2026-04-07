@@ -5,8 +5,8 @@ date: 2025-04-01 11:00:00 -0800
 category: se-radio
 tags: [software, architecture, coupling, cohesion, complexity, design, modularity, integration]
 excerpt: "How do you balance coupling in software design to manage complexity and build resilient systems?"
-image: /assets/trillium_creek.jpg
-image_alt: Trillium Creek, Oregon
+image: /assets/20260329_111656.jpg
+image_alt: Seattle, Washington - Downtown Skyline
 published: true
 episode_url: https://se-radio.net/2025/04/se-radio-662-vlad-khononov-on-balancing-coupling-in-software-design/
 guest: Vlad Khononov

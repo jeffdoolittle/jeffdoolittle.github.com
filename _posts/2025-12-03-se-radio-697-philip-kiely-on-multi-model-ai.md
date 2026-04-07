@@ -5,8 +5,8 @@ date: 2025-12-03 11:00:00 -0800
 category: se-radio
 tags: [software, ai, machine learning, agentic, multi-model, inference, models, llm]
 excerpt: "How do you build AI-native software that goes beyond a simple ChatGPT wrapper?"
-image: /assets/portland-bridges-morrison-bridge.jpg
-image_alt: Portland, Oregon - Morrison Bridge
+image: /assets/20260405_065854.jpg
+image_alt: Pacific Coast at Sunrise
 published: true
 episode_url: https://se-radio.net/2025/12/se-radio-697-philip-kiely-on-multi-model-ai/
 guest: Philip Kiely
