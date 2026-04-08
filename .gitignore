@@ -21,3 +21,8 @@ _site
 # Local environment variables (secrets)
 .env
 .env.*
+
+# Astro
+dist/
+.astro/
+node_modules/
