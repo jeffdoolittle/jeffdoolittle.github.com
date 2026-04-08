@@ -1,20 +1,12 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { postUrl, formatDate } from '../utils/post';
 
 interface Props {
   posts: CollectionEntry<'blog'>[];
 }
 
 const { posts } = Astro.props;
-
-const postUrl = (post: CollectionEntry<'blog'>) => {
-  const d = post.data.date;
-  return `/${d.getFullYear().toString().padStart(4,'0')}/${(d.getMonth()+1).toString().padStart(2,'0')}/${d.getDate().toString().padStart(2,'0')}/${post.slug}/`;
-};
-
-const dateFormat = (d: Date | string) => new Date(d).toLocaleDateString('en-US', {
-  month: 'long', day: 'numeric', year: 'numeric'
-});
 ---
 
 <div class="post-grid">
@@ -26,7 +18,7 @@ const dateFormat = (d: Date | string) => new Date(d).toLocaleDateString('en-US',
         </a>
       )}
       <div class="post-card__body">
-        <span class="post-card__meta">{dateFormat(post.data.date)}</span>
+        <span class="post-card__meta">{formatDate(post.data.date)}</span>
         <h3 class="post-card__title">
           <a href={postUrl(post)}>{post.data.title}</a>
         </h3>

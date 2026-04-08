@@ -12,8 +12,8 @@ published: true
 
 ## Ditching Hourly: From Web Dev to Software Architect
 
-I had the privilege to join Jonathan Stark on his podcast, [Ditching Hourly](https://podcast.ditchinghourly.com/about){:target="_blank"}.
+I had the privilege to join Jonathan Stark on his podcast, [Ditching Hourly](https://podcast.ditchinghourly.com/about).
 
 We talked about my career journey from web developer to software architect. Along the way, we talked about the importance of strategy, systems thinking as applied to software, and finding a balance between story telling and problem solving in order to deliver real business value.
 
-Go give it a listen! [Ditching Hourly: From Web Dev to Software Architect](https://podcast.ditchinghourly.com/episodes/jeff-doolittle-from-web-dev-to-software-architect){:target="_blank"}.
+Go give it a listen! [Ditching Hourly: From Web Dev to Software Architect](https://podcast.ditchinghourly.com/episodes/jeff-doolittle-from-web-dev-to-software-architect).

@@ -12,12 +12,12 @@ episode_url: https://www.se-radio.net/2023/05/se-radio-565-luca-galante-on-platf
 guest: Luca Galante
 ---
 
-Luca Galante, head of product at [Humanitec](https://humanitec.com){:target="blank"}, joined me on [Software Engineering Radio](https://se-radio.net/team/jeff-doolittle){:target="blank"} for a conversation about platform engineering. We began by defining platform engineering and its relationship to, and distinction from, DevOps. Tracing platform engineering’s history, Luca described how internal developer platforms are fundamental, and explored the goals of addressing complexity and reducing the cognitive load on developers by creating golden paths.
+Luca Galante, head of product at [Humanitec](https://humanitec.com), joined me on [Software Engineering Radio](https://se-radio.net/team/jeff-doolittle) for a conversation about platform engineering. We began by defining platform engineering and its relationship to, and distinction from, DevOps. Tracing platform engineering’s history, Luca described how internal developer platforms are fundamental, and explored the goals of addressing complexity and reducing the cognitive load on developers by creating golden paths.
 
 Give it a listen!
 
-[{{ page.title }}]({{ page.episode_url }}){:target="blank"} on Software Engineering Radio.
+[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
 
-[Go give it a listen]({{ page.episode_url }}){:target="blank"} and be sure to share with your colleagues.
+[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
 
 {%- include se-radio-plug.md -%}

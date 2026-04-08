@@ -22,10 +22,10 @@ footnotes:
 ---
 
 - TOC
-{:toc}
+
 
 ## Executive Summary
-{: .no_toc }
+
 
 Understanding the purpose and value of different perspectives illuminates the process of solution design and clarifies the relevant responsibilities of various stakeholders. A lack of such understanding explains many of the persistent problems that plague software projects in particular, and the software industry in general.
 
@@ -55,7 +55,7 @@ Usually we don't even realize how each of us arrives at our unique perspectives.
 
 This first diagram illustrates how these foundational questions relate to orientation and to focus.
 
-![Solution Design Orientation and Focus](/assets/solution-design/solutiondesign_01_orientation_and_focus.svg){:class="img-solution-design"}
+![Solution Design Orientation and Focus](/assets/solution-design/solutiondesign_01_orientation_and_focus.svg)
 
 The Solution Design Model identifies two *ranges of orientation*: orientation according to the **domain** and orientation according to **capabilities**.
 
@@ -72,7 +72,7 @@ The Solution Design Model also identifies two *lenses of focus*: the nature of *
 
 This results in four unique perspectives, each of which explores distinct questions. The following diagram provides some examples.
 
-![Solution Design Questions](/assets/solution-design/solutiondesign_02_questions.svg){:class="img-solution-design"}
+![Solution Design Questions](/assets/solution-design/solutiondesign_02_questions.svg)
 
 ### Example: A Restaurant
 
@@ -80,11 +80,11 @@ Let's take an example to illustrate the concept. In a restaurant, distinct stake
 
 The following diagram illustrates the kinds of concerns that arise from each unique perspective.
 
-![Solution Design Restaurant](/assets/solution-design/solutiondesign_03_restaurant.svg){:class="img-solution-design"}
+![Solution Design Restaurant](/assets/solution-design/solutiondesign_03_restaurant.svg)
 
 It should be clear that a well functioning restaurant must take all of these perspectives into consideration. These perspectives also delineate distinct areas of **responsibility**. These responsibilities depend on one another and can mutually affect one another in various ways. However, the primary movement from problem statement to solution execution flows according to the following illustration.
 
-![Solution Design Flow](/assets/solution-design/solutiondesign_05_flow.svg){:class="img-solution-design"}
+![Solution Design Flow](/assets/solution-design/solutiondesign_05_flow.svg)
 
 This diagram illustrates how the solution design process primarily moves from:
 
@@ -101,7 +101,7 @@ As a thought experiment imagine the potential results for the restaurant in the 
 
 As mentioned previously, each perspective in the Solution Design Model delineates distinct areas of responsibility. Clarifying responsibilities cultivates a sense of both personal and shared ownership for the solution design process.
 
-![Solution Design Perspectives](/assets/solution-design/solutiondesign_04_perspectives.svg){:class="img-solution-design"}
+![Solution Design Perspectives](/assets/solution-design/solutiondesign_04_perspectives.svg)
 
 The *Domain Oriented, Systems Focused* perspective bears responsibility to discover and clarify unique problems and opportunities for a particular business or type of business. This makes such a perspective primarily responsible for concerns such as business model, business systems and product/market fit.
 
@@ -123,7 +123,7 @@ Various *Experts* may provide guidance regarding common materials and equipment,
 
 The *Contractor* bears the responsibility to fulfill the requirements of the construction project according to all of the requirements, constraints, and capabilities defined by those responsible for the other perspectives.
 
-![Solution Design Construction Roles](/assets/solution-design/solutiondesign_06_construction_roles.svg){:class="img-solution-design"}
+![Solution Design Construction Roles](/assets/solution-design/solutiondesign_06_construction_roles.svg)
 
 Now that we have a clearer sense of these distinct perspectives and responsibilities, let's explore how they can apply in the software industry.
 
@@ -149,7 +149,7 @@ Imagine the same lack of clarity in relation to the construction example from ab
 
 Using the Solution Design Model, we can address the clarity gap by identifying and differentiating the roles and responsibilities of each type of software architect.
 
-![Solution Design Software Architect Roles](/assets/solution-design/solutiondesign_07_software_architect_roles.svg){:class="img-solution-design"}
+![Solution Design Software Architect Roles](/assets/solution-design/solutiondesign_07_software_architect_roles.svg)
 
 - Business Architect
   - Domain Oriented, Systems Focused
@@ -229,13 +229,13 @@ These core values fall into two broad categories: [engineering values](#engineer
 
 ### Interpersonal Values
   
-[**Trust**](/2020/11/04/software-leadership-distilled/#core-values){:target="_blank"} - Make and keep agreements to build trust.
+[**Trust**](/2020/11/04/software-leadership-distilled/#core-values) - Make and keep agreements to build trust.
 
-[**Clarity**](/2020/11/04/software-leadership-distilled/#core-values){:target="_blank"} - Provide clarity of role and responsibility.
+[**Clarity**](/2020/11/04/software-leadership-distilled/#core-values) - Provide clarity of role and responsibility.
 
-[**Empowerment**](/2020/11/04/software-leadership-distilled/#core-values){:target="_blank"} - Cultivate systems of empowerment.
+[**Empowerment**](/2020/11/04/software-leadership-distilled/#core-values) - Cultivate systems of empowerment.
 
-Read more about how [Trust, Clarity and Empowerment form a foundation of excellence and empowerment for software leaders](/2020/11/04/software-leadership-distilled){:target="_blank"}.
+Read more about how [Trust, Clarity and Empowerment form a foundation of excellence and empowerment for software leaders](/2020/11/04/software-leadership-distilled).
 
 With these core values in mind, let's explore some unique perspectives related to Solution Design. -->
 

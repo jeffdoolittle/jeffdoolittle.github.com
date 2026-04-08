@@ -12,4 +12,4 @@ published: true
 
 [jeffdoolittle.com](#) now has site search functionality! Check out the search bar at the top of this and all other pages on this site.
 
-Thanks to [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search){:target="_blank"} for making this ... simple. 😃
+Thanks to [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search) for making this ... simple. 😃

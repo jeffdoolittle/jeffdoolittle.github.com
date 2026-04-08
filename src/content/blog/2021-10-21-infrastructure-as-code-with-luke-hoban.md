@@ -12,10 +12,10 @@ episode_url: https://www.se-radio.net/2021/10/episode-482-luke-hoban-on-infrastr
 guest: Luke Hoban
 ---
 
-Luke Hoban, CTO of Pulumi, joined me for [a conversation about infrastructure as code (IAC)]({{ page.episode_url }}){:target="blank"}, which allows software development teams to configure and control their cloud infrastructure assets using code in contrast to other approaches such as using web interfaces or command line interfaces. Luke described how IAC allows teams to apply good software development practices and patterns to their provisioning and management of cloud infrastructure resources. Various related topics were explored in more detail such as managing and applying IAC definitions, security considerations with IAC, compliance enforcement when using IAC, and testing practices to employ when using IAC.
+Luke Hoban, CTO of Pulumi, joined me for [a conversation about infrastructure as code (IAC)]({{ page.episode_url }}), which allows software development teams to configure and control their cloud infrastructure assets using code in contrast to other approaches such as using web interfaces or command line interfaces. Luke described how IAC allows teams to apply good software development practices and patterns to their provisioning and management of cloud infrastructure resources. Various related topics were explored in more detail such as managing and applying IAC definitions, security considerations with IAC, compliance enforcement when using IAC, and testing practices to employ when using IAC.
 
-[{{ page.title }}]({{ page.episode_url }}){:target="blank"} on Software Engineering Radio.
+[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
 
-Make sure to go [give it a listen]({{ page.episode_url }}){:target="blank"}!
+Make sure to go [give it a listen]({{ page.episode_url }})!
 
 {%- include se-radio-plug.md -%}

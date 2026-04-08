@@ -27,7 +27,7 @@ The book club will meet at 8 AM Pacific Time for 15 weeks from August 12 to Nove
 
 ## Register
 
-Get the book ([The Art of Immutable Architecture](https://www.immutablearchitecture.com/){:target="blank"}) and register below.
+Get the book ([The Art of Immutable Architecture](https://www.immutablearchitecture.com/)) and register below.
 
 ### But wait! There's more...
 

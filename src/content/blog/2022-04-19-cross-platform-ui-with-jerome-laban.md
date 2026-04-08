@@ -14,8 +14,8 @@ guest: Jérôme Laban
 
 Jérôme Laban, CTO of Uno Platform, joined me for a conversation about cross-platform user interfaces. We discussed the unique challenges and possibilities related to applications designed to run on multiple platforms — issues such as platform fidelity versus product-specific fidelity, including the trade-offs between a lowest-common-denominator approach and embracing each specific platform's interaction patterns and presentation styles. We also explored the risks of over-reliance on tools over design goals, as well as the unique challenges related to prioritizing technical issues in relation to business goals and customer expectations.
 
-[{{ page.title }}]({{ page.episode_url }}){:target="blank"} on Software Engineering Radio.
+[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
 
-Make sure to go [give it a listen]({{ page.episode_url }}){:target="blank"}!
+Make sure to go [give it a listen]({{ page.episode_url }})!
 
 {%- include se-radio-plug.md -%}

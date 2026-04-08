@@ -16,8 +16,8 @@ Vlad Khononov, software architect and author, joined me on Software Engineering 
 
 We explored three dimensions of coupling: integration strength (how much knowledge components share), distance (the proximity of components), and volatility (the likelihood of change). The conversation illustrated how design decisions can lead systems toward complexity or modularity, and why managing coupling is critical for minimizing cognitive load and cascading changes. Vlad offered practical insights for applying these principles in real-world software projects, with an emphasis on coupling's central role in software architecture.
 
-[{{ page.title }}]({{ page.episode_url }}){:target="blank"} on Software Engineering Radio.
+[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
 
-[Go give it a listen]({{ page.episode_url }}){:target="blank"} and be sure to share with your colleagues.
+[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
 
 {%- include se-radio-plug.md -%}

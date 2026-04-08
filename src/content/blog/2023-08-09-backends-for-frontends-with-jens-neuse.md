@@ -12,10 +12,10 @@ episode_url: https://www.se-radio.net/2023/08/se-radio-576-jens-neuse-on-back-en
 guest: Jens Neuse
 ---
 
-[Jens Neuse](https://github.com/jensneuse){:target="blank"}, founder of [Wundergraph](https://wundergraph.com), joined me on [Software Engineering Radio](https://se-radio.net/team/jeff-doolittle){:target="blank"} for a conversation about [back ends for front ends](https://bff-patterns.com/){:target="blank"}, also known as [BFF](https://bff-patterns.com/){:target="blank"}. Jens began by explaining how a heavy integration burden is often placed on front-end development teams. When multiple APIs must be integrated, it can be challenging for client development in web, mobile, and desktop environments. Explaining how APIs should be treated as dependencies, just like packages, the episode explored BFF patterns and use cases, as well as the future potential emergence of a “git for APIs” standard.
+[Jens Neuse](https://github.com/jensneuse), founder of [Wundergraph](https://wundergraph.com), joined me on [Software Engineering Radio](https://se-radio.net/team/jeff-doolittle) for a conversation about [back ends for front ends](https://bff-patterns.com/), also known as [BFF](https://bff-patterns.com/). Jens began by explaining how a heavy integration burden is often placed on front-end development teams. When multiple APIs must be integrated, it can be challenging for client development in web, mobile, and desktop environments. Explaining how APIs should be treated as dependencies, just like packages, the episode explored BFF patterns and use cases, as well as the future potential emergence of a “git for APIs” standard.
 
-[{{ page.title }}]({{ page.episode_url }}){:target="blank"} on Software Engineering Radio.
+[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
 
-[Go give it a listen]({{ page.episode_url }}){:target="blank"} and be sure to share with your colleagues.
+[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
 
 {%- include se-radio-plug.md -%}

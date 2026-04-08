@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Post from '../../../../layouts/Post.astro';
+import { postUrl } from '../../../../utils/post';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => data.published !== false);
@@ -11,17 +12,14 @@ export async function getStaticPaths() {
     const year = d.getFullYear().toString().padStart(4, '0');
     const month = (d.getMonth() + 1).toString().padStart(2, '0');
     const day = d.getDate().toString().padStart(2, '0');
+    // Strip YYYY-MM-DD- prefix so URL matches Jekyll permalink pattern
+    const slug = post.slug.replace(/^\d{4}-\d{2}-\d{2}-/, '');
 
     const prev = index < sorted.length - 1 ? sorted[index + 1] : null;
     const next = index > 0 ? sorted[index - 1] : null;
 
-    const postUrl = (p: CollectionEntry<'blog'>) => {
-      const pd = p.data.date;
-      return `/${pd.getFullYear().toString().padStart(4,'0')}/${(pd.getMonth()+1).toString().padStart(2,'0')}/${pd.getDate().toString().padStart(2,'0')}/${p.slug}/`;
-    };
-
     return {
-      params: { year, month, day, slug: post.slug },
+      params: { year, month, day, slug },
       props: {
         post,
         prev: prev ? { url: postUrl(prev), title: prev.data.title } : null,

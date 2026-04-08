@@ -23,10 +23,10 @@ I think a better question is: Why not?
 
 Honestly, there are good reasons to stay, and good reasons to go. For my part, the opportunity to live near the woods and work in the city thrills me. I've never enjoyed hot Central California summers. The air wreaks havoc on my son who has asthma. But more than anything, after 21 years, I just sense it's time for a new adventure.
 
-I've enjoyed this past year working at [Aplos](https://aplos.com){:target="_blank"} and they have been incredibly gracious to me during this time of transition. My last day there will be November 1, 2019.
+I've enjoyed this past year working at [Aplos](https://aplos.com) and they have been incredibly gracious to me during this time of transition. My last day there will be November 1, 2019.
 
-On November 4, I'll begin a new role as a Software Architect at [Trimble Viewpoint](https://viewpoint.com){:target="_blank"}, a company that specializes in construction software. My role involves influencing and creating architectural designs for highly scalable and distributed cloud systems.
+On November 4, I'll begin a new role as a Software Architect at [Trimble Viewpoint](https://viewpoint.com), a company that specializes in construction software. My role involves influencing and creating architectural designs for highly scalable and distributed cloud systems.
 
 With the Kingsburg home in escrow, the plan is to move into a new home in Oregon on November 21. Of course, as with any change, not everything will go exactly according to plan. But I can hardly wait to begin this new adventure.
 
-[![Clackamas River]({{ "/assets/clackamas.jpg" | absolute_url }})](/assets/clackamas.jpg){:style="display: block; margin-left: auto; margin-right: auto;}
+[![Clackamas River]({{ "/assets/clackamas.jpg" | absolute_url }})](/assets/clackamas.jpg)

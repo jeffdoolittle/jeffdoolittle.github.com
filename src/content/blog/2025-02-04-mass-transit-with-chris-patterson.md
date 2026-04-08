@@ -16,8 +16,8 @@ guest: Chris Patterson
 
 The discussion also delved into advanced topics such as sagas, stateful consumers for orchestrating complex processes, and how MassTransit supports patterns like outbox and routing slips for ensuring transactional consistency. Chris highlighted the importance of observability in distributed systems, sharing how MassTransit integrates with tools like OpenTelemetry to provide comprehensive monitoring. The episode includes advice on adopting event-driven approaches, overcoming leadership hesitancy, and ensuring secure and efficient implementations. Chris also emphasized the balance between leveraging cutting-edge tools and addressing real-world challenges in software architecture.
 
-[{{ page.title }}]({{ page.episode_url }}){:target="blank"} on Software Engineering Radio.
+[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
 
-[Go give it a listen]({{ page.episode_url }}){:target="blank"} and be sure to share with your colleagues.
+[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
 
 {%- include se-radio-plug.md -%}

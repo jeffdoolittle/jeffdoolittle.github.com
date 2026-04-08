@@ -16,11 +16,11 @@ published: true
 
 Yes, it's true! But this recent presentation provides more provocotive ideas for you to ponder as you consider whether REST and microservices really make your life better as a software engineer.
 
-Download the [slide deck](/assets/REST Wrecks Microservices!.pdf){:target="_blank"} and [go watch the presentation](https://www.youtube.com/watch?v=XTUIj-YqVzs){:target="_blank"}!
+Download the [slide deck](/assets/REST Wrecks Microservices!.pdf) and [go watch the presentation](https://www.youtube.com/watch?v=XTUIj-YqVzs)!
 
 ## About the Presentation
 
-On May 11, 2021 I had the privilege to present at the [Spokane .NET User Group](https://www.meetup.com/Spokane-NET-User-Group/){:target="_blank"} (formerly called the Portland Area Dot Net User Group). There were some technical glitches with the original video posting, hence the long delay in posting this video.
+On May 11, 2021 I had the privilege to present at the [Spokane .NET User Group](https://www.meetup.com/Spokane-NET-User-Group/) (formerly called the Portland Area Dot Net User Group). There were some technical glitches with the original video posting, hence the long delay in posting this video.
 
 We explored various questions and topics together, including:
 

@@ -16,8 +16,8 @@ Philip Kiely, software developer relations lead at Baseten, joined me on Softwar
 
 We covered the journey from using off-the-shelf models to building custom AI solutions, driven by needs for domain-specific quality, improved latency, and economic sustainability. Philip introduced the engineering challenges of inference engineering—from choosing inference engines to managing GPU infrastructure at scale—while consistently reinforcing that AI engineering is primarily software engineering with exciting new challenges layered on top. The conversation also addressed trust, safety, and observability in agentic systems, concluding with Philip's recommendation for iterative experimentation as the best path into multi-agent AI.
 
-[{{ page.title }}]({{ page.episode_url }}){:target="blank"} on Software Engineering Radio.
+[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
 
-[Go give it a listen]({{ page.episode_url }}){:target="blank"} and be sure to share with your colleagues.
+[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
 
 {%- include se-radio-plug.md -%}

@@ -12,8 +12,8 @@ published: true
 
 If you fail to plan, you plan to fail.
 
-[Scott Hurlbert](https://medium.com/@hurlbert){:target="_blank"} provides an excellent analogy to describe the optimal amount of planning for software projects.
+[Scott Hurlbert](https://medium.com/@hurlbert) provides an excellent analogy to describe the optimal amount of planning for software projects.
 
-[The Agile Planning False Equivalency](https://medium.com/@hurlbert/the-agile-planning-false-equivalency-838547ac68b3){:target="_blank"}
+[The Agile Planning False Equivalency](https://medium.com/@hurlbert/the-agile-planning-false-equivalency-838547ac68b3)
 
-There is so much more to learn by reading [Righting Software](https://rightingsoftware.org){:target="_blank"} by Juval Löwy, or by visiting the [IDesign](https://idesign.net){:target="_blank"} website.
+There is so much more to learn by reading [Righting Software](https://rightingsoftware.org) by Juval Löwy, or by visiting the [IDesign](https://idesign.net) website.

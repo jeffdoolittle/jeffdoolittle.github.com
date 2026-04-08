@@ -1,18 +1,10 @@
 ---
 import Base from './Base.astro';
 import { getCollection } from 'astro:content';
+import { postUrl, formatDate } from '../utils/post';
 
 const allPosts = await getCollection('blog', ({ data }) => data.published !== false);
 const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
-
-const dateFormat = (d: Date | string) => new Date(d).toLocaleDateString('en-US', {
-  month: 'short', day: 'numeric', year: 'numeric'
-});
-
-const postUrl = (post: typeof posts[0]) => {
-  const d = post.data.date;
-  return `/${d.getFullYear().toString().padStart(4,'0')}/${(d.getMonth()+1).toString().padStart(2,'0')}/${d.getDate().toString().padStart(2,'0')}/${post.slug}/`;
-};
 ---
 
 <Base title="Archive">
@@ -22,7 +14,7 @@ const postUrl = (post: typeof posts[0]) => {
       <ul class="post-list">
         {posts.map(post => (
           <li>
-            <span class="post-meta">{dateFormat(post.data.date)}</span>
+            <span class="post-meta">{formatDate(post.data.date, 'short')}</span>
             <hr />
             <h3>
               <a class="post-link" href={postUrl(post)}>{post.data.title}</a>

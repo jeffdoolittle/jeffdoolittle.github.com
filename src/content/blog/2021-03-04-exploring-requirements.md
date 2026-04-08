@@ -10,7 +10,7 @@ image_alt: Exploring Requirements
 published: true
 ---
 
-Improve your skills at discovering, defining, and distilling requirements. Get the book (ISBN-13: 978-0932633132, ISBN-10: 0932633137), download the [Exploring Requirements Book Club Guide](/assets/exploring-requirements-book-club.pdf){:target="_blank"} and sign up below to join. You will receive information about how to join the video conference after you sign up.
+Improve your skills at discovering, defining, and distilling requirements. Get the book (ISBN-13: 978-0932633132, ISBN-10: 0932633137), download the [Exploring Requirements Book Club Guide](/assets/exploring-requirements-book-club.pdf) and sign up below to join. You will receive information about how to join the video conference after you sign up.
 
 *This book club has ended*.
 

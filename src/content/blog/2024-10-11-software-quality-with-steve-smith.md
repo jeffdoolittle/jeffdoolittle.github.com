@@ -14,8 +14,8 @@ guest: Steve Smith
 
 [Steve Smith](https://ardalis.com), founder and principal architect at [Nimble Pros](https://nimblepros.com/), joined me on Software Engineering Radio for a conversation about software quality. The episode started with a discussion of why software quality matters for businesses, customers, and developers. Steve explained some patterns and practices that help teams design for quality. We discussed in detail the practices of testing and quality assurance, and the conversation wrapped up with suggestions for fostering a culture of quality in teams and organizations.
 
-[{{ page.title }}]({{ page.episode_url }}){:target="blank"} on Software Engineering Radio.
+[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
 
-[Go give it a listen]({{ page.episode_url }}){:target="blank"} and be sure to share with your colleagues.
+[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
 
 {%- include se-radio-plug.md -%}

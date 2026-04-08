@@ -181,7 +181,7 @@ I present no new manifesto. I offer no silver bullet methodology. I have no magi
 
 This paper first appeared in The Cutter Business Technology Journal, Vol. 33, no. 4, 2020, "<a href="https://www.cutter.com/article/don%E2%80%99t-disrupt-agile-drop-it" target="_blank">Don't Disrupt Agile. Drop It</a>."
 
-Want to discuss these ideas in more detail? [Send me a tweet](https://twitter.com/jeffdoolittle){:target="_blank"}, or find me on any of the social media platforms at [the bottom of this page](#footer).
+Want to discuss these ideas in more detail? [Send me a tweet](https://twitter.com/jeffdoolittle), or find me on any of the social media platforms at [the bottom of this page](#footer).
 
 ---
 
