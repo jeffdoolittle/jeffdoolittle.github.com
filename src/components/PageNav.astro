@@ -1,0 +1,29 @@
+---
+interface NavEntry {
+  href: string;
+  title: string;
+  external?: boolean;
+}
+
+interface Props {
+  entries: NavEntry[];
+}
+
+const { entries } = Astro.props;
+---
+
+<div class="pagenav">
+  {entries.map((entry, i) => (
+    <>
+      {i > 0 && <div class="separator"> | </div>}
+      <div class="entry">
+        {entry.external
+          ? <a href={entry.href} target="_blank">{entry.title}</a>
+          : <a href={entry.href}>{entry.title}</a>
+        }
+      </div>
+    </>
+  ))}
+  <i style="clear:both"></i>
+</div>
+<hr style="margin-bottom: 1em;" />

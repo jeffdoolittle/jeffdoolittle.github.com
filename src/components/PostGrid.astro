@@ -1,0 +1,38 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  posts: CollectionEntry<'blog'>[];
+}
+
+const { posts } = Astro.props;
+
+const postUrl = (post: CollectionEntry<'blog'>) => {
+  const d = post.data.date;
+  return `/${d.getFullYear().toString().padStart(4,'0')}/${(d.getMonth()+1).toString().padStart(2,'0')}/${d.getDate().toString().padStart(2,'0')}/${post.slug}/`;
+};
+
+const dateFormat = (d: Date | string) => new Date(d).toLocaleDateString('en-US', {
+  month: 'long', day: 'numeric', year: 'numeric'
+});
+---
+
+<div class="post-grid">
+  {posts.map(post => (
+    <div class="post-card">
+      {post.data.image && (
+        <a href={postUrl(post)} class="post-card__img-link">
+          <img class="post-card__img" src={post.data.image} alt={post.data.image_alt || post.data.title} loading="lazy" />
+        </a>
+      )}
+      <div class="post-card__body">
+        <span class="post-card__meta">{dateFormat(post.data.date)}</span>
+        <h3 class="post-card__title">
+          <a href={postUrl(post)}>{post.data.title}</a>
+        </h3>
+        <p class="post-card__excerpt">{(post.data.excerpt || '').substring(0, 160)}</p>
+        <a class="post-card__link" href={postUrl(post)}>Continue reading</a>
+      </div>
+    </div>
+  ))}
+</div>

@@ -1,0 +1,44 @@
+export default [
+  {
+    "id": "leadership",
+    "title": "Leadership",
+    "subtitle": "Empowering Transformational Leaders",
+    "entriesHeader": "Articles",
+    "entriesType": "article",
+    "highlight": true
+  },
+  {
+    "id": "events",
+    "title": "Events",
+    "subtitle": "Presentations and Appearances for local user groups, conferences and podcasts",
+    "entriesHeader": "Presentations",
+    "entriesType": "presentation",
+    "highlight": true
+  },
+  {
+    "id": "se-radio",
+    "title": "Software Engineering Radio",
+    "subtitle": "The Podcast for Professional Software Developers",
+    "bio": "https://www.se-radio.net/team/jeff-doolittle/",
+    "bioTitle": "SE Radio Team  - Jeff Doolittle",
+    "entriesHeader": "Episodes",
+    "entriesType": "podcast",
+    "highlight": true
+  },
+  {
+    "id": "music",
+    "title": "Music",
+    "subtitle": "A sampling of my musical endeavors",
+    "entriesHeader": "Recordings",
+    "entriesType": "recording",
+    "highlight": true
+  },
+  {
+    "id": "travel",
+    "title": "Travel",
+    "subtitle": "Exploring the world",
+    "entriesHeader": "Trips",
+    "entriesType": "trip",
+    "highlight": true
+  }
+] as const;

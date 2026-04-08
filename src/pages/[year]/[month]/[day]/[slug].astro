@@ -1,0 +1,40 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Post from '../../../../layouts/Post.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => data.published !== false);
+  const sorted = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+  return sorted.map((post, index) => {
+    const d = post.data.date;
+    const year = d.getFullYear().toString().padStart(4, '0');
+    const month = (d.getMonth() + 1).toString().padStart(2, '0');
+    const day = d.getDate().toString().padStart(2, '0');
+
+    const prev = index < sorted.length - 1 ? sorted[index + 1] : null;
+    const next = index > 0 ? sorted[index - 1] : null;
+
+    const postUrl = (p: CollectionEntry<'blog'>) => {
+      const pd = p.data.date;
+      return `/${pd.getFullYear().toString().padStart(4,'0')}/${(pd.getMonth()+1).toString().padStart(2,'0')}/${pd.getDate().toString().padStart(2,'0')}/${p.slug}/`;
+    };
+
+    return {
+      params: { year, month, day, slug: post.slug },
+      props: {
+        post,
+        prev: prev ? { url: postUrl(prev), title: prev.data.title } : null,
+        next: next ? { url: postUrl(next), title: next.data.title } : null,
+      },
+    };
+  });
+}
+
+const { post, prev, next } = Astro.props;
+const { Content } = await post.render();
+---
+
+<Post post={post} prev={prev} next={next}>
+  <Content />
+</Post>

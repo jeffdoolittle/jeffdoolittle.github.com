@@ -1,0 +1,69 @@
+---
+import Base from './Base.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog', ({ data }) => data.published !== false);
+const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+const dateFormat = (d: Date | string) => new Date(d).toLocaleDateString('en-US', {
+  month: 'short', day: 'numeric', year: 'numeric'
+});
+
+const postUrl = (post: typeof posts[0]) => {
+  const d = post.data.date;
+  return `/${d.getFullYear().toString().padStart(4,'0')}/${(d.getMonth()+1).toString().padStart(2,'0')}/${d.getDate().toString().padStart(2,'0')}/${post.slug}/`;
+};
+---
+
+<Base title="Archive">
+  <div class="wrapper">
+    <div class="home">
+      <h2 class="post-list-heading">Post Archive</h2>
+      <ul class="post-list">
+        {posts.map(post => (
+          <li>
+            <span class="post-meta">{dateFormat(post.data.date)}</span>
+            <hr />
+            <h3>
+              <a class="post-link" href={postUrl(post)}>{post.data.title}</a>
+            </h3>
+            {post.data.excerpt && (
+              <>
+                <p><em>{post.data.excerpt}</em></p>
+                <a href={postUrl(post)}>
+                  {post.data.image && <p><img src={post.data.image} alt={post.data.image_alt || post.data.title} /></p>}
+                  <p>Continue reading...</p>
+                </a>
+              </>
+            )}
+          </li>
+        ))}
+      </ul>
+
+      <hr />
+      <div class="flexgrid">
+        <div class="row">
+          <div class="column">
+            <a href="/rss" target="_blank">
+              <div><i class="fas fa-rss"></i></div>
+              <div>Subscribe</div>
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://twitter.com/jeffdoolittle" target="_blank">
+              <div><i class="fab fa-twitter-square"></i></div>
+              <div>Follow</div>
+            </a>
+          </div>
+          <div class="column">
+            <a href="/archive">
+              <div><i class="fas fa-archive"></i></div>
+              <div>Archives</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </div>
+</Base>

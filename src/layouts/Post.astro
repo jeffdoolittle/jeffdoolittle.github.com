@@ -1,0 +1,100 @@
+---
+import Base from './Base.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  prev?: { url: string; title: string } | null;
+  next?: { url: string; title: string } | null;
+}
+
+const { post, prev, next } = Astro.props;
+const { title, excerpt, image, image_alt, date, tags = [] } = post.data;
+
+const dateStr = date ? new Date(date).toLocaleDateString('en-US', {
+  month: 'long', day: 'numeric', year: 'numeric'
+}) : '';
+
+const pageUrl = Astro.url.pathname;
+const tweetText = encodeURIComponent(title);
+const tweetUrl = encodeURIComponent(`https://jeffdoolittle.com${pageUrl}`);
+---
+
+<Base title={title} description={excerpt || undefined} image={image || undefined}>
+  <div class="wrapper">
+    <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+      {image && (
+        <div class="post-hero-image">
+          <a href={image} title={image_alt || title}>
+            <img src={image} alt={image_alt || title} />
+          </a>
+        </div>
+      )}
+
+      <div class="post-content e-content" itemprop="articleBody">
+        {excerpt && (
+          <p class="post-excerpt"><em>{excerpt}</em></p>
+        )}
+
+        <slot />
+
+        <hr />
+        <div class="flexgrid">
+          <div class="row">
+            <div class="column">
+              <a href="/rss" target="_blank">
+                <div><i class="fas fa-rss"></i></div>
+                <div>Subscribe</div>
+              </a>
+            </div>
+            <div class="column">
+              <a href={`https://twitter.com/intent/tweet?url=${tweetUrl}&text=${tweetText}&via=jeffdoolittle`} target="_blank">
+                <div><i class="fab fa-twitter"></i></div>
+                <div>Tweet</div>
+              </a>
+            </div>
+            <div class="column">
+              <a href="https://twitter.com/jeffdoolittle" target="_blank">
+                <div><i class="fab fa-twitter-square"></i></div>
+                <div>Follow</div>
+              </a>
+            </div>
+            <div class="column">
+              <a href="/archive">
+                <div><i class="fas fa-archive"></i></div>
+                <div>Archives</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <div class="post-navigation">
+        <p><b>Looking for more?</b></p>
+        <div class="row">
+          <div class="column previous">
+            {prev && (
+              <a href={prev.url}><i class="fa fa-arrow-left"></i> {prev.title}</a>
+            )}
+          </div>
+          <div class="column delimiter">
+            {prev && next && <i class="fa fa-star"></i>}
+          </div>
+          <div class="column next">
+            {next && (
+              <a href={next.url}>{next.title} <i class="fa fa-arrow-right"></i></a>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <a class="u-url" href={pageUrl} hidden></a>
+    </article>
+
+    <div class="small-banner">
+      <img src="/assets/circle_head_shot_2025_small.png" />
+    </div>
+  </div>
+</Base>

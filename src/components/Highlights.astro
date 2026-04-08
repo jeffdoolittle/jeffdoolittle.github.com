@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import categoriesData from '../data/categories';
+
+const categories = categoriesData as Array<{ id: string; title: string; highlight?: boolean }>;
+const allPosts = await getCollection('blog', ({ data }) => data.published !== false);
+
+const dateFormat = (d: Date | string) => new Date(d).toLocaleDateString('en-US', {
+  month: 'long', day: 'numeric', year: 'numeric'
+});
+
+const highlightCards = categories
+  .filter(cat => cat.highlight)
+  .map(cat => {
+    const posts = allPosts
+      .filter(p => p.data.category === cat.id)
+      .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+    const post = posts[0];
+    if (!post) return null;
+    const d = post.data.date;
+    const url = `/${d.getFullYear().toString().padStart(4,'0')}/${(d.getMonth()+1).toString().padStart(2,'0')}/${d.getDate().toString().padStart(2,'0')}/${post.slug}/`;
+    return { cat, post, url, dateStr: dateFormat(d) };
+  })
+  .filter(Boolean);
+---
+
+<div class="highlights-grid">
+  {highlightCards.map(item => (
+    <a class="highlight-card" href={item!.url}>
+      <span class="highlight-card__category">{item!.cat.title}</span>
+      <span class="highlight-card__title">{item!.post.data.title}</span>
+      <span class="highlight-card__date">{item!.dateStr}</span>
+    </a>
+  ))}
+</div>
