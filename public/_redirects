@@ -1,0 +1,45 @@
+# Social redirects
+/rss/ https://feeds.feedburner.com/jeffdoolittle 301
+/github/ https://github.com/jeffdoolittle 301
+/linkedin/ https://www.linkedin.com/in/jeffdoolittle 301
+/twitter/ https://twitter.com/jeffdoolittle 301
+/youtube/ https://www.youtube.com/ 301
+/soundcloud/ https://soundcloud.com/jeffdoolittle 301
+/stackoverflow/ https://stackoverflow.com/users/627205/jeff-doolittle 301
+/facebook/ https://www.facebook.com/ 301
+/instagram/ https://www.instagram.com/ 301
+/cutter/ https://www.cutter.com/experts/jeff-doolittle/ 301
+/orcid/ https://orcid.org/0000-0001-9428-2333 301
+
+# Page redirects
+/bio/ /about/#professional-bio 301
+/endorsements/ /about#endorsements 301
+/portfolio/ /about#portfolio 301
+/resume/ /about#resume 301
+/design-templates/ https://drive.google.com/drive/folders/18apePSa299QS8nGycRlLqlAM8ObL3WFA 301
+/design-templates-access/ https://docs.google.com/forms/d/e/1FAIpQLSeq9t_5n726IjqLu7fqc-ckV8r1kHANNSehnF_478D-Qd6L4Q/viewform 301
+/design-templates-license/ https://docs.google.com/document/d/1QyVwP2HqdEARZR78c_p0lYBYenVewRaEeuUHLriJzj8 301
+/right_design_templates/ /design-templates 301
+/arch-dojo-slack https://join.slack.com/t/arch-dojo/shared_invite/zt-9mn7teo6-PUiaTDN5724Z2YbAWtYR6A 301
+
+# Post redirects (old URLs to corrected URLs)
+/2020/04/29/dont-disrupt-agile-drop-it/ /2020/05/22/dont-disrupt-agile-drop-it/ 301
+/2020/05/06/padnug-rest-wrecks-microservices/ /2020/05/05/padnug-rest-wrecks-microservices/ 301
+/2020/02/24/software-architecture-fundamentals/ / 301
+/2019/12/05/system-decomposition-primer/ / 301
+/2020/01/29/system-design-fundamentals/ / 301
+
+# Named redirects
+/software-leadership/software-leadership-distilled/ /2020/11/04/software-leadership-distilled/ 301
+/software-leadership/leadership-style-matrix/ /2020/11/06/leadership-style-matrix/ 301
+/software-leadership/exploring-requirements /2021/03/04/exploring-requirements/ 301
+/papers/disrupting-agile/ /2020/05/22/dont-disrupt-agile-drop-it/ 301
+
+# Short links
+/l/1 /2022/04/19/cross-platform-ui-with-jerome-laban/ 301
+
+# Redirect page fallbacks
+/contact/ /about/#contact 301
+/calendar/ https://calendly.com/jeffdoolittle 301
+/services/mentoring/mentoring-101 /mentoring/ 301
+/services/mentoring /mentoring/ 301
