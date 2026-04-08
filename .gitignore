@@ -21,3 +21,9 @@ _site
 # Local environment variables (secrets)
 .env
 .env.*
+
+# Temporary working files (used by Copilot agents instead of /tmp)
+.tmp/
+
+# Git worktrees for issue branches
+.worktrees/

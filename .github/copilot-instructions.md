@@ -1,5 +1,34 @@
 # Copilot Instructions — jeffdoolittle.github.com
 
+## Agent Rules
+
+### No writes to /tmp
+
+Never write files to `/tmp`. Use the `.tmp/` directory at the repo root instead. It is gitignored.
+
+Example: `.tmp/issue-body.md`, `.tmp/comment.md`, `.tmp/audit-output.txt`
+
+### No heredocs
+
+Never use `cat << 'EOF'` or any heredoc syntax in terminal commands — it fails in this environment. Instead, write file content using the `create_file` tool or `echo`/`printf` line-by-line.
+
+### gh CLI: bypass dotenv prompt
+
+The repo has an `.env` file. The `gh` CLI will hang waiting for a dotenv prompt unless bypassed:
+
+```bash
+DOTENV_LOADED=1 gh issue create ... < /dev/null
+```
+
+Always use `DOTENV_LOADED=1` and `< /dev/null` with every `gh` command.
+
+### Worktree-aware file paths
+
+When working inside a worktree, all tool calls that take absolute file paths (e.g. `create_file`, `read_file`, `replace_string_in_file`) must use the **worktree path**, not the main repo root.
+
+- Correct: `/Users/jeff/projects/jeffdoolittle.github.com/.worktrees/issue-21-astro-migration/src/layouts/Base.astro`
+- Wrong: `/Users/jeff/projects/jeffdoolittle.github.com/src/layouts/Base.astro`
+
 ## Stack
 
 - Jekyll 4.2.2, Minima 2.5.1, Ruby 2.6
@@ -21,25 +50,27 @@ gh issue create --title "short description" --body "details" --label "bug|enhanc
 
 Note the issue number — all subsequent work is tied to it.
 
-### 2. Ensure Clean Branch State
+### 2. Create a Worktree for the Issue
+
+All issue work happens in **git worktrees** inside `.worktrees/` (gitignored). This avoids switching branches in the main checkout.
 
 ```bash
-git checkout main
-git pull origin main
-git status   # must be clean before branching
-```
-
-### 3. Create an Issue Branch
-
-```bash
-git checkout -b issue/123-short-description
+git fetch origin main
+git worktree add .worktrees/issue-123-short-description -b issue/123-short-description origin/main
+cd .worktrees/issue-123-short-description
 ```
 
 Branch naming: `issue/<number>-<kebab-slug>` (max ~5 words in slug).
 
-### 4. Do the Work and Commit
+All subsequent commands (build, test, commit) run **inside the worktree directory**. Do not `cd` above the repo root — stay within `.worktrees/<branch>/`.
 
-All commit messages **must** reference the issue number so it auto-closes on merge to main:
+### Sub-issues
+
+When an issue has sub-issues (e.g. #22–#33 are sub-issues of #21), the sub-issues **do not get their own branches or worktrees**. Work on all sub-issues happens in the **parent issue's worktree**. Commits reference the parent issue number. Sub-issues close when their acceptance criteria are met.
+
+### 3. Do the Work and Commit
+
+Work entirely inside the worktree. All commit messages **must** reference the issue number so it auto-closes on merge to main:
 
 ```
 fix: correct hero layout (#123)
@@ -48,15 +79,17 @@ feat: add SE Radio episode posts (#123)
 
 Use `fixes #123` or `closes #123` in the commit body when the commit fully resolves the issue.
 
-### 5. Merge Trigger Words
+### 4. Merge Trigger Words
 
 When the user says any of the following — **lgtm, gtm, merge, ship it, looks good** — treat it as approval to:
 
-1. `git checkout main && git pull origin main`
-2. `git merge issue/123-short-description --no-ff -m "merge: <title> (closes #123)"`
-3. `git push origin main`
-4. `git push origin --delete issue/123-short-description`
-5. `git branch -d issue/123-short-description`
+1. `cd` back to the main repo root (not the worktree)
+2. `git checkout main && git pull origin main`
+3. `git merge issue/123-short-description --no-ff -m "merge: <title> (closes #123)"`
+4. `git push origin main`
+5. `git push origin --delete issue/123-short-description`
+6. `git worktree remove .worktrees/issue-123-short-description`
+7. `git branch -d issue/123-short-description`
 
 Do **not** merge until explicitly told to.
 
