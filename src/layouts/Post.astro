@@ -1,5 +1,6 @@
 ---
 import Base from './Base.astro';
+import SERadioPlug from '../components/SERadioPlug.astro';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -9,7 +10,8 @@ interface Props {
 }
 
 const { post, prev, next } = Astro.props;
-const { title, excerpt, image, image_alt, date, tags = [] } = post.data;
+const { title, excerpt, image, image_alt, date, tags = [], category, episode_url } = post.data;
+const isSeRadio = category === 'se-radio';
 
 const dateStr = date ? new Date(date).toLocaleDateString('en-US', {
   month: 'long', day: 'numeric', year: 'numeric'
@@ -38,6 +40,14 @@ const tweetUrl = encodeURIComponent(`https://jeffdoolittle.com${pageUrl}`);
         )}
 
         <slot />
+
+        {isSeRadio && episode_url && (
+          <>
+            <p><a href={episode_url} target="_blank" rel="noopener noreferrer">{title}</a> on Software Engineering Radio.</p>
+            <p><a href={episode_url} target="_blank" rel="noopener noreferrer">Go give it a listen</a> and be sure to share with your colleagues.</p>
+            <SERadioPlug />
+          </>
+        )}
 
         <hr />
         <div class="flexgrid">

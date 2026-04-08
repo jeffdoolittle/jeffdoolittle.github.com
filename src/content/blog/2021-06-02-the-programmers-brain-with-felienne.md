@@ -20,6 +20,5 @@ I encourage you to listen to [Episode 462: Felienne on the Programmers Brain](ht
 
 ___
 
-[{{ page.title }}]({{ page.url }}) originally appeared at [jeffdoolittle.com](https://jeffdoolittle.com/).
 
 Copyright © 2021 Jeff Doolittle. All rights reserved.

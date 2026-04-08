@@ -13,9 +13,3 @@ guest: Jonathan Crossland
 ---
 
 [Jonathan Crossland](https://github.com/JonathanCrossland) software architect, author, and business owner, joined me on [Software Engineering Radio](https://se-radio.net/team/jeff-doolittle) for a conversation about the [AMMERSE](https://ammerse.org) framework of design principles. We discussed the agile manifesto as a statement of values, and Jonathan shared his perspective based on his experience as a software developer and business owner. We explored the three layers of the [AMMERSE](https://ammerse.org) framework and how they help business and engineering leaders to align their values, thereby improving their ability to collaborate and reach common goals.
-
-[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
-
-[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
-
-{%- include se-radio-plug.md -%}

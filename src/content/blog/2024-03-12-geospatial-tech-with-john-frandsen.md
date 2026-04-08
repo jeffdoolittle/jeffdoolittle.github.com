@@ -13,9 +13,3 @@ guest: John Frandsen
 ---
 
 [John Frandsen](https://www.linkedin.com/in/johnofrandsen/), Chief Product officer for Elebase, joined me on [Software Engineering Radio](https://se-radio.net/team/jeff-doolittle) for an exploration of geospatial technologies. We discussed the history of mapping and global information systems (GIS) technologies. Then John described the underlying technologies used in location-aware applications and the ways that developers can incorporate maps in their own applications. The conversation also highlighted recent changes and innovations in the space, as well as the challenges and opportunities of incorporating your own data into existing base map providers.
-
-[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
-
-[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
-
-{%- include se-radio-plug.md -%}

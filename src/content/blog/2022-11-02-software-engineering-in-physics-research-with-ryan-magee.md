@@ -15,9 +15,3 @@ guest: Ryan Magee
 Ryan Magee, a software engineer at the LIGO Laboratory, joined me on Software Engineering Radio for a conversation about software engineering in physics research. We discussed the history of the LIGO project, the challenges of building software for a scientific instrument, and the role of software engineering scientific research. Ryan also described the software engineering practices used in the LIGO project, and how they have evolved over time.
 
 Give it a listen!
-
-[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
-
-[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
-
-{%- include se-radio-plug.md -%}

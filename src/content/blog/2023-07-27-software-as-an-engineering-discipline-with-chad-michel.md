@@ -13,9 +13,3 @@ guest: Chad Michel
 ---
 
 Chad Michel, Senior Software Architect at [Don’t Panic Labs](https://dontpaniclabs.com/) and co-author of Lean Software Systems Engineering for Developers, joined me on [Software Engineering Radio](https://se-radio.net/team/jeff-doolittle) for a conversation about treating software development as an engineering discipline. A discussion of the need for engineering rigor in the software industry kicked off the episode. Chad pointed out that many developers lack awareness of good engineering practice and are often unaware of resources such as the [Software Engineering Body of Knowledge (SWEBOK)](https://www.computer.org/education/bodies-of-knowledge/software-engineering). Other topics explored in the episode include design methodologies such as volatility-based decomposition, the work of [David Parnas](https://en.wikipedia.org/wiki/David_Parnas), as well as important topics such as quality, how to address complexity, designing for change, and the role of the chief engineer.
-
-[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
-
-[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
-
-{%- include se-radio-plug.md -%}

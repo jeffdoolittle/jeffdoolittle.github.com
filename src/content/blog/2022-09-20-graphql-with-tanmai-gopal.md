@@ -15,9 +15,3 @@ guest: Tanmai Gopal
 Tanmai Gopal, CEO of Hasura.io, joined me on Software Engineering Radio for a conversation about GraphQL. We discussed the history and rationale behind the original conception of GraphQL, as well as some of the use cases it is best suited for. Tanmai described how GraphQL differs from other API specification styles such as REST and gRPC. Various concepts related to GraphQL were also explored such as performance, caching, and security.
 
 Give it a listen!
-
-[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
-
-[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
-
-{%- include se-radio-plug.md -%}

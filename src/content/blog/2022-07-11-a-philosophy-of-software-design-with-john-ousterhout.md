@@ -17,9 +17,3 @@ Every software development team struggles to identify and address complexity in 
 [John](https://profiles.stanford.edu/john-ousterhout) joined me recently on [Software Engineering Radio](https://se-radio.net) for a conversation about his book, [A Philosophy of Software Design](https://www.amazon.com/Philosophy-Software-Design-2nd/dp/173210221X). We discussed the history and ongoing challenges of software system design, especially the nature of complexity and the difficulties handling it. We also explored various design concepts from the book, such as modularity, layering, abstraction, information hiding, maintainability, and readability.
 
 I highly recommend you listen to this episode and share it with your colleagues in the software industry. And don't forget to grab a copy of [John's Book](https://www.amazon.com/Philosophy-Software-Design-2nd/dp/173210221X)!
-
-[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
-
-[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
-
-{%- include se-radio-plug.md -%}

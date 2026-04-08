@@ -15,9 +15,3 @@ guest: Adam Dymitruk
 Adam Dymitruk, CEO and founder of Adaptech Group, joined me for an exploration of the event modeling approach to discovering requirements and designing software systems. Adam explained how the structured approach eliminates the specifics of implementation details and technology decisions, enabling clearer communication for all stakeholders while keeping conversations focused on the business opportunity. Using concrete examples of event modeling in practice, we examined event modeling in the context of other related approaches and methodologies, including event sourcing, event storming, CQRS, and domain-driven design.
 
 Give it a listen!
-
-[{{ page.title }}]({{ page.episode_url }}) on Software Engineering Radio.
-
-[Go give it a listen]({{ page.episode_url }}) and be sure to share with your colleagues.
-
-{%- include se-radio-plug.md -%}
