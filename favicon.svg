@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Option A: "The Mark" — Navy tile, clean JD monogram, amber accent bar -->
+
+  <!-- Navy rounded-square background -->
+  <rect width="32" height="32" rx="6" fill="#0f2744"/>
+
+  <!-- Subtle inner highlight ring -->
+  <rect x="1" y="1" width="30" height="30" rx="5.2" fill="none" stroke="#1a3a5c" stroke-width="1.2"/>
+
+  <!-- JD letterforms -->
+  <text
+    x="16" y="21.5"
+    font-family="Inter, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif"
+    font-size="14.5"
+    font-weight="700"
+    fill="#ffffff"
+    text-anchor="middle"
+    letter-spacing="-0.8"
+  >JD</text>
+
+  <!-- Amber accent underbar -->
+  <rect x="6" y="25.5" width="20" height="2.2" rx="1.1" fill="#f59e0b"/>
+</svg>
