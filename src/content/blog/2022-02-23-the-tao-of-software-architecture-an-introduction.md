@@ -8,17 +8,6 @@ excerpt: Perspectives for clarity, responsibility, and value creation.
 image:  /assets/20220109_144136.jpg
 image_alt: "Portland: Pearl District"
 published: true
-footnotes:
-  - id: 1
-    content: > 
-      <strong>Title Inflation</strong>: The propensity to apply fancy sounding titles based on seniority, interviewing prowess, technological comprehension, and/or resume-driven-development.
-  - id: 2
-    content: > 
-      <a href="https://www.amazon.com/dp/1603580557">Thinking in Systems</a> by Donella Meadows is a wonderful introduction to systems thinking.
-  - id: 3
-    content: > 
-      See my presentation for Portland's Microsoft User Group on <a href="/2021/03/03/padnug-software-architecture-as-complexity-containment">Software Architecture as Complexity Containment</a>
-            
 ---
 
 - TOC
@@ -45,7 +34,7 @@ This can be described in a word: *solutionizing*. Jumping too quickly to "how" i
 
 ## The Solution Design Model
 
-All day, every day, humans constantly **orient** ourselves to our surroundings while placing our **focus** on a particular aspect or element within our environment. It’s so natural we usually don’t even think about it. Just stop for a second to consider your current environment (your **orientation**) and the current object of your attention (your **focus**)—which hopefully is [this page]({{ page.url }}#orientation-and-focus). Notice how every thought and action comes into existence within a **contextual orientation** and a **particular focus**. Orientation helps you find your location within your current reality. Focus directs your attention and shapes the space of available actions you might take next within your current context. An orientation plus a focus equals a perspective.
+All day, every day, humans constantly **orient** ourselves to our surroundings while placing our **focus** on a particular aspect or element within our environment. It’s so natural we usually don’t even think about it. Just stop for a second to consider your current environment (your **orientation**) and the current object of your attention (your **focus**)—which hopefully is [this page](#orientation-and-focus). Notice how every thought and action comes into existence within a **contextual orientation** and a **particular focus**. Orientation helps you find your location within your current reality. Focus directs your attention and shapes the space of available actions you might take next within your current context. An orientation plus a focus equals a perspective.
 
 > An orientation plus a focus equals a perspective.
 
@@ -129,7 +118,7 @@ Now that we have a clearer sense of these distinct perspectives and responsibili
 
 ## Software Solution Design
 
-When it comes to software solution design, a lack of **role clarity** leads to persistent problems for organizations and for the industry as a whole. The words "Software Architect" fail to provide such clarity of role and responsibility. The title "Software Architect" essentially amounts to an undifferentiated description, subject to **title inflation**{% include fnref.html x=1 %}, that is **regularly misapplied exclusively to technologists**.
+When it comes to software solution design, a lack of **role clarity** leads to persistent problems for organizations and for the industry as a whole. The words "Software Architect" fail to provide such clarity of role and responsibility. The title "Software Architect" essentially amounts to an undifferentiated description, subject to **title inflation**[^1], that is **regularly misapplied exclusively to technologists**.
 
 > Software Architect: An undifferentiated description, subject to **title inflation**, that is **regularly misapplied exclusively to technologists**.
 
@@ -139,11 +128,11 @@ Add to this the fact that the vast majority of software architects operate from 
 
 > Sometimes it seems that software architects are more like ineffective linguists, creating new languages to describe complex concepts using symbols they don't even understand and therefore can't really explain.
 
-When tools and technologies take center stage it should not surprise us. Very few individuals have received training or guidance in **systems thinking**{% include fnref.html x=2 %}, including software architects. When people don't know what to do, they rarely rise to the occasion but instead fall back on their training.
+When tools and technologies take center stage it should not surprise us. Very few individuals have received training or guidance in **systems thinking**[^2], including software architects. When people don't know what to do, they rarely rise to the occasion but instead fall back on their training.
 
 > When people don't know what to do, they rarely rise to the occasion but instead fall back on their training.
 
-This is not to say anything negative about technologists. Individuals with a deep understanding of the technology landscape are critical. But when your fallbacks are tools and technologies, it's no wonder that relentless pressure to release "MVPs" or "just ship something" leads to undifferentiated, unmaintainable blobs of interconnected technologies with no cohesion or attention to complexity containment{% include fnref.html x=3 %}.
+This is not to say anything negative about technologists. Individuals with a deep understanding of the technology landscape are critical. But when your fallbacks are tools and technologies, it's no wonder that relentless pressure to release "MVPs" or "just ship something" leads to undifferentiated, unmaintainable blobs of interconnected technologies with no cohesion or attention to complexity containment[^3].
 
 Imagine the same lack of clarity in relation to the construction example from above. Suppose the contractor takes on responsibilities from the architect and the owner / client. Or imagine someone *expecting them to do so* while the contractor remains unaware of such expectations. Imagine the confusion, finger pointing and blaming. It's easy to imagine this for restaurants and construction, and yet these same behaviors are tolerated and even expected in most software projects and organizations.
 
@@ -244,6 +233,6 @@ With these core values in mind, let's explore some unique perspectives related t
 
 ## Footnotes
 
-{% for fn in page.footnotes %}
-{% include fn.html x=fn.id text=fn.content %}
-{% endfor %}
+[^1]: <strong>Title Inflation</strong>: The propensity to apply fancy sounding titles based on seniority, interviewing prowess, technological comprehension, and/or resume-driven-development.
+[^2]: <a href="https://www.amazon.com/dp/1603580557">Thinking in Systems</a> by Donella Meadows is a wonderful introduction to systems thinking.
+[^3]: See my presentation for Portland's Microsoft User Group on <a href="/2021/03/03/padnug-software-architecture-as-complexity-containment">Software Architecture as Complexity Containment</a>

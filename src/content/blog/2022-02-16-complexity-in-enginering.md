@@ -23,4 +23,3 @@ Also, don't miss my related presentation for the PADNUG User Group on [Software 
 <div class="framer">
     <iframe src="https://www.youtube.com/embed/GJQrMYHTMLM" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-

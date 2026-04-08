@@ -1,0 +1,39 @@
+---
+interface Photo {
+  file: string;
+  description: string | null;
+}
+
+interface Location {
+  name: string;
+  slug: string;
+  summary: string;
+  base_path: string;
+  photos: Photo[];
+}
+
+interface Props {
+  locations: Location[];
+}
+
+const { locations } = Astro.props;
+---
+
+{locations.map(loc => (
+  <>
+    <a id={loc.slug}></a>
+    <hr />
+    <h2>{loc.name}</h2>
+    <p>{loc.summary}</p>
+    {loc.photos.map(p => (
+      <>
+        <a href={`${loc.base_path}/${p.file}`}>
+          <img src={`${loc.base_path}/${p.file}`} alt={p.description || loc.name} loading="lazy" />
+        </a>
+        {p.description && (
+          <p style="font-size: .8em; padding-top: 0px; margin-top: -1em; margin-bottom: 3em; font-style: italic">{p.description}</p>
+        )}
+      </>
+    ))}
+  </>
+))}

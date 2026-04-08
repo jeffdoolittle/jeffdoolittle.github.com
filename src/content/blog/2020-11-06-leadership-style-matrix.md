@@ -8,18 +8,9 @@ excerpt: Learn to apply the right leadership style in the right situation.
 image: /assets/leadership-style-matrix-banner.jpg
 image_alt: The Leadership Style Matrix
 published: true
-footnotes:
-    -
-        id: 1
-        content: >
-            Jeff Doolittle, <a href="/2020/11/04/software-leadership-distilled/">Software Leadership Distilled</a>.
-    -
-        id: 2
-        content: >
-            Ron Claassen, <a href="/assets/claassen-2002-a-peacemaking-model.pdf" target="_blank">A Peacemaking Model</a>. Original at <a href="http://www.rpforschools.net/articles/Theory/Claassen%202002%20A%20Peacemaking%20Model.pdf" target="_blank">http://www.rpforschools.net/articles/Theory/Claassen%202002%20A%20Peacemaking%20Model.pdf</a>.
 ---
 
-In my recent article [Software Leadership Distilled](/2020/11/04/software-leadership-distilled/){% include fnref.html x=1 %}, I described the importance of three core values: trust, clarity and empowerment.
+In my recent article [Software Leadership Distilled](/2020/11/04/software-leadership-distilled/)[^1], I described the importance of three core values: trust, clarity and empowerment.
 
 The Leadership Style Matrix visualizes how clarity and empowerment relate to four leadership styles: [authoritarian](#authoritarian), [managerial](#managerial), [familial](#familial) and [transformational](#transformational). Each of these styles may be effective and even necessary depending on the situation. However misapplication of a style in an inappropriate context hampers desirable outcomes.
 
@@ -37,7 +28,7 @@ Authoritarian success metrics can change at the whim of the authoritarian leader
 
 ## Managerial
 
-Managerial leadership provides much needed clarity but neglects to cultivate empowerment. Trust can grow in such an environment since clarity enables the making and keeping of agreements.{% include fnref.html x=2 %}
+Managerial leadership provides much needed clarity but neglects to cultivate empowerment. Trust can grow in such an environment since clarity enables the making and keeping of agreements.[^2]
 
 This style can work well when standardized practices provide clear [value creation](/2020/11/04/software-leadership-distilled#value-creators) expectations. Managerial leaders provide additional clarity by defining and refining processes and practices where standardized practices do not exist.
 
@@ -79,12 +70,11 @@ ___
 
 ## Footnotes
 
-{% for fn in page.footnotes %}
-{% include fn.html x=fn.id text=fn.content %}
-{% endfor %}
 
 ___
 
-[{{ page.title }}]({{ page.url }}) originally appeared at [jeffdoolittle.com](https://jeffdoolittle.com/).
 
 Copyright © 2020 Jeff Doolittle. All rights reserved.
+
+[^1]: Jeff Doolittle, <a href="/2020/11/04/software-leadership-distilled/">Software Leadership Distilled</a>.
+[^2]: Ron Claassen, <a href="/assets/claassen-2002-a-peacemaking-model.pdf" target="_blank">A Peacemaking Model</a>. Original at <a href="http://www.rpforschools.net/articles/Theory/Claassen%202002%20A%20Peacemaking%20Model.pdf" target="_blank">http://www.rpforschools.net/articles/Theory/Claassen%202002%20A%20Peacemaking%20Model.pdf</a>.

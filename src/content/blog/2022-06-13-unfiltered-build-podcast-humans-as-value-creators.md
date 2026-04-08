@@ -41,4 +41,3 @@ Go give it a listen! [Humans as Value Creators - Unlocking your potential and bu
 [Subscribe to The Unfiltered Build Podcast](https://anchor.fm/s/7503f050/podcast/rss)
 
 [The Unfiltered Build Podcast Home](https://podcast.unfilteredbuild.com/)
-

@@ -8,23 +8,6 @@ excerpt: Humans thrive most as value creators.
 image: /assets/software-leadership-distilled.jpg
 image_alt: Hank and Betsie by the Lake
 published: true
-footnotes:
-    -
-        id: 1
-        content: >
-            https://www.goodreads.com/quotes/319245-it-s-a-lack-of-clarity-that-creates-chaos-and-frustration
-    -
-        id: 2
-        content: >
-            https://www.imdb.com/title/tt0151804/characters/nm0726223
-    -
-        id: 3
-        content: >
-            Juval Löwy, Righting Software (San Francisco: Addison-Wesley, 2020), 149-151.
-    -
-        id: 4
-        content: >
-            "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win." https://www.brainyquote.com/quotes/sun_tzu_387509.
 ---
 
 I have had opportunities to lead in multiple contexts and capacities over the course of my life and career. These have included software consulting, co-founding software startups where I operated as CTO, planting a thriving church, and my current role as a software architect. Along the way I realized I had been a student and practitioner of leadership for most of my life. I added academic studies to my ongoing education in leadership, completing a Master of Arts in Transformational Leadership in 2010. I remain passionate and dedicated to my primary vocation: *I help make good software professionals great!*
@@ -100,7 +83,7 @@ ___
 ## Clarify Roles
 
 > It’s a lack of clarity that creates chaos and frustration.
-> — Steve Maraboli, Life, the Truth, and Being Free{% include fnref.html x=1 %}
+> — Steve Maraboli, Life, the Truth, and Being Free[^1]
 
 When people find meaning and purpose in their work, they become focused and committed to delivering value. Their personal goals align with those of their team and of the organization as a whole. This cannot happen without clarity.
 
@@ -165,7 +148,7 @@ ___
     <img src="/assets/software-leadership-core-team.png" alt="Trust Composition">
 </a>
 
-A core team{% include fnref.html x=3 %} consists of *three individuals*, each of whom take ownership in the following areas of primary responsibility:
+A core team[^3] consists of *three individuals*, each of whom take ownership in the following areas of primary responsibility:
 
 - Manage Customer Expectations (Product Owner)
 - Manage Business Expectations (Project Manager)
@@ -179,7 +162,7 @@ Core teams can form anywhere within a software organization. Ideally over time t
 
 > You cannot mandate trust. Any attempts to do so will produce the exact opposite!
 
-Therefore, growing from the bottom up is typically the correct strategy. The best time to begin broad adoption comes when multiple core teams in the organization have experienced success and stand prepared to empower and equip other core teams. With a legacy of successes behind them, they can adopt a "show, don't tell" approach when discussing their results. As pockets of trust, clarity and empowerment reach critical mass, the organization may be ready for broader adoption at an accelerated pace.{% include fnref.html x=4 %}
+Therefore, growing from the bottom up is typically the correct strategy. The best time to begin broad adoption comes when multiple core teams in the organization have experienced success and stand prepared to empower and equip other core teams. With a legacy of successes behind them, they can adopt a "show, don't tell" approach when discussing their results. As pockets of trust, clarity and empowerment reach critical mass, the organization may be ready for broader adoption at an accelerated pace.[^4]
 
 **Effective leaders form core teams that build trust and empower each other as well as those they have opportunity to influence and lead.**
 
@@ -223,12 +206,13 @@ ___
 
 ## Footnotes
 
-{% for fn in page.footnotes %}
-{% include fn.html x=fn.id text=fn.content %}
-{% endfor %}
 
 ___
 
-[{{ page.title }}]({{ page.url }}) originally appeared at [jeffdoolittle.com](https://jeffdoolittle.com/).
 
 Copyright © 2020 Jeff Doolittle. All rights reserved.
+
+[^1]: https://www.goodreads.com/quotes/319245-it-s-a-lack-of-clarity-that-creates-chaos-and-frustration
+[^2]: https://www.imdb.com/title/tt0151804/characters/nm0726223
+[^3]: Juval Löwy, Righting Software (San Francisco: Addison-Wesley, 2020), 149-151.
+[^4]: "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win." https://www.brainyquote.com/quotes/sun_tzu_387509.
