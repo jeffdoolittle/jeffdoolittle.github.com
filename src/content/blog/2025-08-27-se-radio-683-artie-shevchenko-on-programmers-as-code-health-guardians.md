@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Programmers as Code Health Guardians with Artie Shevchenko
 date: 2025-08-27 11:00:00 -0800
 category: se-radio

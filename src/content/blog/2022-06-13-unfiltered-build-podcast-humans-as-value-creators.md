@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Humans as Value Creators: The Unfiltered Build Podcast"
 date: 2022-06-13 02:00:00 -0700
 category: events

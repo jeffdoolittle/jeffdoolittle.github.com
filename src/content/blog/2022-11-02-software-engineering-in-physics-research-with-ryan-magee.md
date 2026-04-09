@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Software Engineering in Physics Research with Ryan Magee
 date: 2022-11-02 04:00:00 -0800
 category: se-radio

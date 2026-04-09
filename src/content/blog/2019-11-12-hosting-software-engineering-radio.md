@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  Decoupled CMS on Software Engineering Radio
 date:   2019-11-12 12:00:00 -0800
 category: se-radio

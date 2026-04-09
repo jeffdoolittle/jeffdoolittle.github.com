@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Waterfall Versus Agile on Software Engineering Radio
 date:   2020-03-03 08:00:00 -0800
 category: se-radio

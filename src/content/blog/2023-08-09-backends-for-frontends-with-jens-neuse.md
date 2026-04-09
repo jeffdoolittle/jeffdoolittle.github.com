@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Back ends for Front ends with Jens Neuse
 date: 2023-08-09 04:00:00 -0800
 category: se-radio

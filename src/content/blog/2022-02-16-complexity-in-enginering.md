@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Complexity in Engineering: The Engineering Career Coach Podcast"
 date:   2022-02-16 08:30:00 -0800
 category: events

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Event Modeling with Adam Dymitruk
 date: 2022-11-22 04:00:00 -0800
 category: se-radio

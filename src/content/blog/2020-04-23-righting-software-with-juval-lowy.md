@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Righting Software on Software Engineering Radio
 date:   2020-04-23 22:40:00 -0700
 category: se-radio

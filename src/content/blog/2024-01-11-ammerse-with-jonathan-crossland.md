@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Software Engineering Values with Jonathan Crossland
 date: 2024-01-11 04:00:00 -0800
 category: se-radio

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "REST Wrecks Microservices! PADNUG Presentation"
 date:   2020-05-05 08:30:00 -0700
 category: events

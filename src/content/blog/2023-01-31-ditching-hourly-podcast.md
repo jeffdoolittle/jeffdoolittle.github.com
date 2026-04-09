@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Ditching Hourly: From Web Dev to Software Architect"
 date: 2023-01-31 04:00:00 -0800
 category: events

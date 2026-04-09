@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "The Agile Planning False Equivalency"
 date:   2020-01-26 06:00:00 -0800
 category: general

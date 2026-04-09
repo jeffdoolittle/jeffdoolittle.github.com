@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "A New Adventure"
 date:   2019-10-26 00:02:30 -0700
 category: general

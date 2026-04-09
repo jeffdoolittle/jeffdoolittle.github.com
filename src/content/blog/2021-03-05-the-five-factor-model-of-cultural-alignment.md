@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Five factor Model of Cultural Alignment
 date: 2021-03-05 00:00:00 -0800
 category: leadership

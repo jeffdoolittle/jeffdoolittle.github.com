@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Leaving Lotpath"
 date:   2018-08-30 02:00:00 -0700
 category: general

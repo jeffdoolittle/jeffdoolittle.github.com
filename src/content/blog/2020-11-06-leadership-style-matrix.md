@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Leadership Style Matrix
 date: 2020-11-06 07:45:00 -0700
 category: leadership

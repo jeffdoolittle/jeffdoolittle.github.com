@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Hope in the Dark (Album Demo)"
 date:   2018-08-04 08:00:00 -0700
 category: music

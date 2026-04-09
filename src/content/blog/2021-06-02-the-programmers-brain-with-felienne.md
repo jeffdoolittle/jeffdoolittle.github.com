@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Programmer's Brain on Software Engineering Radio
 date: 2021-06-02 00:00:00 -0800
 category: se-radio

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Fallacies of Distributed Computing on Software Engineering Radio
 date: 2021-07-27 04:00:00 -0700
 category: se-radio

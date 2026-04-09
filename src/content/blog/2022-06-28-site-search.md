@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Searchability"
 date: 2022-06-28 0:00:00 -0700
 category: general

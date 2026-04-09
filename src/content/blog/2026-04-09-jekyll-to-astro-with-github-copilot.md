@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Architect and the AI: Migrating from Jekyll to Astro with GitHub Copilot"
 date: 2026-04-09
 category: software

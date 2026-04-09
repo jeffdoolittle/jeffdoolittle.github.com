@@ -1,5 +1,4 @@
 ---
-layout: post
 title: GraphQL with Tanmai Gopal
 date: 2022-09-20 04:00:00 -0800
 category: se-radio

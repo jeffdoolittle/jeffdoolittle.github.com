@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A Philosophy of Software Design with John Ousterhout
 date: 2022-07-11 04:00:00 -0800
 category: se-radio
