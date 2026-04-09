@@ -8,9 +8,20 @@ const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date
 ---
 
 <Base title="Archive">
+  <div class="page-hero">
+    <div class="page-hero__inner wrapper">
+      <div class="page-hero__body">
+        <div class="page-hero__text">
+          <h1 class="page-hero__title">Post Archive</h1>
+        </div>
+        <div class="page-hero__avatar">
+          <img src="/assets/circle_head_shot_2025_small.png" alt="Jeff Doolittle" />
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="wrapper">
     <div class="home">
-      <h2 class="post-list-heading">Post Archive</h2>
       <ul class="post-list">
         {posts.map(post => (
           <li>
