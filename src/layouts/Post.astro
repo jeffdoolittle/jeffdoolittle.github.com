@@ -18,8 +18,6 @@ const dateStr = date ? new Date(date).toLocaleDateString('en-US', {
 }) : '';
 
 const pageUrl = Astro.url.pathname;
-const tweetText = encodeURIComponent(title);
-const tweetUrl = encodeURIComponent(`https://jeffdoolittle.com${pageUrl}`);
 ---
 
 <Base title={title} description={excerpt || undefined} image={image || undefined}>
@@ -65,21 +63,15 @@ const tweetUrl = encodeURIComponent(`https://jeffdoolittle.com${pageUrl}`);
         <div class="flexgrid">
           <div class="row">
             <div class="column">
-              <a href="/rss" target="_blank">
+              <a href="/feed.xml" target="_blank">
                 <div><i class="fas fa-rss"></i></div>
                 <div>Subscribe</div>
               </a>
             </div>
             <div class="column">
-              <a href={`https://twitter.com/intent/tweet?url=${tweetUrl}&text=${tweetText}&via=jeffdoolittle`} target="_blank">
-                <div><i class="fab fa-twitter"></i></div>
-                <div>Tweet</div>
-              </a>
-            </div>
-            <div class="column">
-              <a href="https://twitter.com/jeffdoolittle" target="_blank">
-                <div><i class="fab fa-twitter-square"></i></div>
-                <div>Follow</div>
+              <a href="https://www.linkedin.com/in/jeffdoolittle/" target="_blank" rel="noopener noreferrer">
+                <div><i class="fab fa-linkedin"></i></div>
+                <div>Connect</div>
               </a>
             </div>
             <div class="column">
