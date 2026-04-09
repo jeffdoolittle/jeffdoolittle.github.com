@@ -1,0 +1,535 @@
+<!DOCTYPE html><html><head>
+      <title>historical_modeling_with_factually</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="file:////Users/jeff/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.5.13/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+
+
+
+
+
+
+
+
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before,
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="historical-modeling-with-factually">Historical Modeling with <em>Factually</em></h1>
+
+<p>&#xA9; 2020 <a target="_parent" href="https://jeffdoolittle.com">Jeff Doolittle</a>. All rights reserved.</p>
+<h2 class="mume-header" id="dot-graph">Dot Graph</h2>
+
+<p><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: CanonicalRelationshipsModel Pages: 1 -->
+<svg width="395pt" height="251pt" viewBox="0.00 0.00 395.17 251.46" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 247.4626)">
+<title>CanonicalRelationshipsModel</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-247.4626 391.1696,-247.4626 391.1696,4 -4,4"/>
+<!-- OptionalPredecessor -->
+<g id="node1" class="node">
+<title>OptionalPredecessor</title>
+<ellipse fill="none" stroke="#000000" cx="58.5848" cy="-214.0469" rx="58.6697" ry="29.3315"/>
+<text text-anchor="middle" x="58.5848" y="-218.2469" font-family="Times,serif" font-size="14.00" fill="#000000">Optional</text>
+<text text-anchor="middle" x="58.5848" y="-201.4469" font-family="Times,serif" font-size="14.00" fill="#000000">Predecessor</text>
+</g>
+<!-- RequiredPredecessor -->
+<g id="node2" class="node">
+<title>RequiredPredecessor</title>
+<ellipse fill="none" stroke="#000000" cx="193.5848" cy="-214.0469" rx="58.6697" ry="29.3315"/>
+<text text-anchor="middle" x="193.5848" y="-218.2469" font-family="Times,serif" font-size="14.00" fill="#000000">Required</text>
+<text text-anchor="middle" x="193.5848" y="-201.4469" font-family="Times,serif" font-size="14.00" fill="#000000">Predecessor</text>
+</g>
+<!-- MultiplePredecessor -->
+<g id="node3" class="node">
+<title>MultiplePredecessor</title>
+<ellipse fill="none" stroke="#000000" cx="328.5848" cy="-214.0469" rx="58.6697" ry="29.3315"/>
+<text text-anchor="middle" x="328.5848" y="-218.2469" font-family="Times,serif" font-size="14.00" fill="#000000">Multiple</text>
+<text text-anchor="middle" x="328.5848" y="-201.4469" font-family="Times,serif" font-size="14.00" fill="#000000">Predecessor</text>
+</g>
+<!-- FactType -->
+<g id="node4" class="node">
+<title>FactType</title>
+<ellipse fill="none" stroke="#000000" cx="193.5848" cy="-113.8313" rx="49.8386" ry="18"/>
+<text text-anchor="middle" x="193.5848" y="-109.6313" font-family="Times,serif" font-size="14.00" fill="#000000">Fact Type</text>
+</g>
+<!-- FactType&#45;&gt;OptionalPredecessor -->
+<g id="edge1" class="edge">
+<title>FactType-&gt;OptionalPredecessor</title>
+<path fill="none" stroke="#000000" d="M171.5942,-130.1557C152.1454,-144.5933 123.2614,-166.035 99.5634,-183.6269"/>
+<polygon fill="#000000" stroke="#000000" points="97.3646,-180.9002 91.4214,-189.6711 101.537,-186.5208 97.3646,-180.9002"/>
+<text text-anchor="middle" x="145.6921" y="-154.0313" font-family="Times,serif" font-size="14.00" fill="#000000">?</text>
+</g>
+<!-- FactType&#45;&gt;RequiredPredecessor -->
+<g id="edge2" class="edge">
+<title>FactType-&gt;RequiredPredecessor</title>
+<path fill="none" stroke="#000000" d="M193.5848,-132.2124C193.5848,-143.9437 193.5848,-159.6164 193.5848,-174.1053"/>
+<polygon fill="#000000" stroke="#000000" points="190.0849,-174.373 193.5848,-184.373 197.0849,-174.373 190.0849,-174.373"/>
+</g>
+<!-- FactType&#45;&gt;MultiplePredecessor -->
+<g id="edge3" class="edge">
+<title>FactType-&gt;MultiplePredecessor</title>
+<path fill="none" stroke="#000000" d="M215.5753,-130.1557C235.0242,-144.5933 263.9082,-166.035 287.6062,-183.6269"/>
+<polygon fill="#000000" stroke="#000000" points="285.6325,-186.5208 295.7482,-189.6711 289.805,-180.9002 285.6325,-186.5208"/>
+<text text-anchor="middle" x="264.0848" y="-154.0313" font-family="Times,serif" font-size="14.00" fill="#000000">*</text>
+</g>
+<!-- MultipleSuccessor -->
+<g id="node5" class="node">
+<title>MultipleSuccessor</title>
+<ellipse fill="none" stroke="#000000" cx="181.5848" cy="-29.4156" rx="50.7899" ry="29.3315"/>
+<text text-anchor="middle" x="181.5848" y="-33.6156" font-family="Times,serif" font-size="14.00" fill="#000000">Multiple</text>
+<text text-anchor="middle" x="181.5848" y="-16.8156" font-family="Times,serif" font-size="14.00" fill="#000000">Successor</text>
+</g>
+<!-- MultipleSuccessor&#45;&gt;FactType -->
+<g id="edge4" class="edge">
+<title>MultipleSuccessor-&gt;FactType</title>
+<path fill="none" stroke="#000000" d="M185.7818,-58.9401C187.0119,-67.5933 188.3534,-77.0306 189.5718,-85.6011"/>
+<polygon fill="#000000" stroke="#000000" points="186.1083,-86.1065 190.981,-95.5143 193.0387,-85.1213 186.1083,-86.1065"/>
+</g>
+<!-- MutableSuccessor -->
+<g id="node6" class="node">
+<title>MutableSuccessor</title>
+<ellipse fill="none" stroke="#000000" cx="301.5848" cy="-29.4156" rx="50.7899" ry="29.3315"/>
+<text text-anchor="middle" x="301.5848" y="-33.6156" font-family="Times,serif" font-size="14.00" fill="#000000">Mutable</text>
+<text text-anchor="middle" x="301.5848" y="-16.8156" font-family="Times,serif" font-size="14.00" fill="#000000">Successor</text>
+</g>
+<!-- MutableSuccessor&#45;&gt;FactType -->
+<g id="edge5" class="edge">
+<title>MutableSuccessor-&gt;FactType</title>
+<path fill="none" stroke="#000000" d="M271.2134,-53.1548C255.9473,-65.0871 237.5428,-79.4725 222.4864,-91.2411"/>
+<polygon fill="#000000" stroke="#000000" points="220.2307,-88.5618 214.5073,-97.4777 224.5415,-94.077 220.2307,-88.5618"/>
+</g>
+<!-- MutableSuccessor&#45;&gt;MutableSuccessor -->
+<g id="edge6" class="edge">
+<title>MutableSuccessor-&gt;MutableSuccessor</title>
+<path fill="none" stroke="#000000" d="M350.505,-20.9612C361.9995,-21.6561 370.4796,-24.4742 370.4796,-29.4156 370.4796,-32.7356 366.6516,-35.0972 360.6532,-36.5002"/>
+<polygon fill="#000000" stroke="#000000" points="359.9469,-33.0637 350.505,-37.8701 360.8834,-40.0008 359.9469,-33.0637"/>
+<text text-anchor="middle" x="373.9796" y="-25.2156" font-family="Times,serif" font-size="14.00" fill="#000000">*</text>
+</g>
+</g>
+</svg>
+</p><h2 class="mume-header" id="legend">Legend</h2>
+
+<p>The following Fact Type prefixes provide additional definition to the type without the need to include additional types or fields in order to fully define the type.</p>
+<pre data-role="codeBlock" data-info="text" class="language-text"><code>@ - time-based (moment)
+# - grant/revoke
+$ - singleton fact
+% - disable/enable
+^ - irreversible disable
+: - reversible delete
+! - irreversible delete
+</code></pre><h2 class="mume-header" id="historical-modeling-overview">Historical Modeling Overview</h2>
+
+<p>A <strong>Fact</strong> represents an irreversible declaration that something has happened. This makes Facts <em>immutable</em> which means they never change once created and successfully shared with others.</p>
+<p>An <strong>Historical Model</strong> describes the relationships between different types of Facts. The <em>immutable</em> nature of such a model allows distributed nodes to remain autonomous in creating new Facts, while providing a common data substrate that all nodes can share.</p>
+<p>A Fact may or may not have <strong>Predecessors</strong>. Predecessors to a fact may be optional (zero or 1), required (must have 1 and only 1), or multiple (zero to many, also known as fact <em>capturing</em>). Since Facts are <em>immutable</em>, once a Fact has been created, its Predecessors <em>can never change</em>.</p>
+<p>A Fact may or may not have <strong>Successors</strong>. From the perspective of cause-and-effect, a Successor always comes after a Predecessor. Therefore, Successors can always be added to a Fact.</p>
+<p>Sometimes things do need to change over time. An Historical Model simulates mutability by describing Successor Facts that link together in a self-referencing chain. The first Fact in this chain has no <em>prior</em> Fact. Each Succeeding Fact references the last Fact in the current chain as <em>prior</em> to it. The &quot;current&quot; Fact is represented by the Fact in the chain that no other Fact of the same type references as <em>prior</em>.</p>
+<p>Historical Modeling begins by defining facts and the relationships between them in a visual graph of nodes and arrows. Some additional constraints for this form of modeling are:</p>
+<ul>
+<li>Lines always point up from a Successor to a Predecessor.</li>
+<li>Required Predecessors are represented with an arrow from Successor to Predecessor. Multiple Successors are modeled in the same fashion.</li>
+<li>Optional Predecessors are represented with an arrow plus a question mark (?).</li>
+<li>Multiple Predecessors are represented with an arrow plus an asterisk (*).</li>
+<li>A &quot;mutable&quot; Successor is represented with an arrow to its Predecessor, and a self-referencing arrow to itself plus an asterisk (*).</li>
+</ul>
+<p>You can find out more about Historical Modeling in <em><a target="_blank" href="https://immutablearchitecture.com">The Art of Immutable Architecture</a>. Theory and Practice of Data Management in Distrubuted Systems</em> by Michael L. Perry. Apress, 2020. ISBN 978-1-4842-5954-2.</p>
+<h2 class="mume-header" id="example-fact-instances">Example Fact Instances</h2>
+
+<pre data-role="codeBlock" data-info="json" class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">&quot;facts&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;e5778396-5391-404a-8175-5e71d57c259c&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OptionalPredecessor&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;264b5b33-944c-4994-9607-efc87c3eac24&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;RequiredPredecessor&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fd4045cf-7260-4d7c-8b1f-9094b7e9664d&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MultiplePredecessor&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;multiplePredecessor&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;qbqxvUsFihJawa4LJhRGVgCc0m5azQUwazYBa2R8/XDX7AQoFd5D9T3p0id73VHEG976TKYF9nZ0O21kFWrvDA==&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;optionalPredecessor&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;r3CkTFMiA36c6ryVsPPmlXz7ShisrfDBjInDKig8VP+OycVx1FRu4JqLTV3Xzys2ztHBkrpwOKPfhIaCl740aA==&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;requiredPredecessor&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;folx8LFZ9OYJvh4c6+Ivb/MRcbfqUjnNfnkOmuJSpX4qPlNrojqTL7qbdABa/PmAgWp4778CSz3Q9MowCqErgw==&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FactType&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;factType&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;uySz8eyuD5QpLhNfFqFuzKQItT7vHoZvMTraHWS7uj5+mtwySFTStsdgfE4oNeXxR2n+J071RTIxj2hE2mjaGg==&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MultipleSuccessor&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ae6359e4-cfc0-4609-b04a-7b4c685cc21d&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OptionalPredecessor&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;449ed864-c4de-4812-8a0d-4cc88698aaf3&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;RequiredPredecessor&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1fcc37c2-2cad-4ece-9016-64515105e03a&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MultiplePredecessor&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;multiplePredecessor&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;9F5H43KBmUK5yI2awNquMl23O4uGzOEYYa0XJUzQKMNT9bEfchWdHtNIjYVwgW8fJ8jgYmt0RpT21jzs3vAZ3w==&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;qbqxvUsFihJawa4LJhRGVgCc0m5azQUwazYBa2R8/XDX7AQoFd5D9T3p0id73VHEG976TKYF9nZ0O21kFWrvDA==&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;optionalPredecessor&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;OptionalPredecessor=null&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;requiredPredecessor&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;F5UNzt5chWLyGwtRO9WYW1CPnOHnWf7skI8HRHZKm5iHDtwuLkf7XzJHdDovLG3UpNYr5yOctYAvFyxlQs0RlA==&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;FactType&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;factType&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dvMEoaAN9R4jPoggSsgVSwAbxMRcLXYGEqJpRm+BoiYzGOo+3rMUE6eIGMvTvjgJ2Puu5uSgNmGXqW60TIdP9A==&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MutableSuccessor&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;58ee09f3-7730-4818-85f3-3e0367689022&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;factType&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;uySz8eyuD5QpLhNfFqFuzKQItT7vHoZvMTraHWS7uj5+mtwySFTStsdgfE4oNeXxR2n+J071RTIxj2hE2mjaGg==&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MutableSuccessor&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0b0ac0b6-5351-4b8b-8b39-15226bab422d&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;factType&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dvMEoaAN9R4jPoggSsgVSwAbxMRcLXYGEqJpRm+BoiYzGOo+3rMUE6eIGMvTvjgJ2Puu5uSgNmGXqW60TIdP9A==&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MultipleSuccessor&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;6d38408a-ea9a-456c-8578-8d2fea064d90&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;factType&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;uySz8eyuD5QpLhNfFqFuzKQItT7vHoZvMTraHWS7uj5+mtwySFTStsdgfE4oNeXxR2n+J071RTIxj2hE2mjaGg==&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MultipleSuccessor&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;28d94a61-a207-4ce2-ac84-47649b97f6a6&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;factType&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;ref&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dvMEoaAN9R4jPoggSsgVSwAbxMRcLXYGEqJpRm+BoiYzGOo+3rMUE6eIGMvTvjgJ2Puu5uSgNmGXqW60TIdP9A==&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MultipleSuccessor&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3d8462c5-5a89-40b6-87e8-484c516cdd8e&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;factTypes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;OptionalPredecessor{id:string}&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;RequiredPredecessor{id:string}&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;MultiplePredecessor{id:string}&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;FactType{multiplePredecessors:MultiplePredecessor*;optionalPredecessor:OptionalPredecessor?;requiredPredecessor:RequiredPredecessor}&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;MultipleSuccessor{factType:FactType;value:string}&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;OptionalPredecessor{}&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;MutableSuccessor{factType:FactType;prior:MutableSuccessor*;value:string}&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</pre><h2 class="mume-header" id="type-definitions">Type Definitions</h2>
+
+<h3 class="mume-header" id="optional-predecessor">Optional Predecessor</h3>
+
+<pre data-role="codeBlock" data-info="text" class="language-text"><code>OptionalPredecessor{id:string}
+</code></pre><h3 class="mume-header" id="required-predecessor">Required Predecessor</h3>
+
+<pre data-role="codeBlock" data-info="text" class="language-text"><code>RequiredPredecessor{id:string}
+</code></pre><h3 class="mume-header" id="multiple-predecessor">Multiple Predecessor</h3>
+
+<pre data-role="codeBlock" data-info="text" class="language-text"><code>MultiplePredecessor{id:string}
+</code></pre><h3 class="mume-header" id="fact-type">Fact Type</h3>
+
+<pre data-role="codeBlock" data-info="text" class="language-text"><code>FactType{multiplePredecessors:MultiplePredecessor*;optionalPredecessor:OptionalPredecessor?;requiredPredecessor:RequiredPredecessor}
+</code></pre><h3 class="mume-header" id="multiple-successor">Multiple Successor</h3>
+
+<pre data-role="codeBlock" data-info="text" class="language-text"><code>MultipleSuccessor{factType:FactType;value:string}
+</code></pre><h3 class="mume-header" id="mutable-successor">Mutable Successor</h3>
+
+<pre data-role="codeBlock" data-info="text" class="language-text"><code>MutableSuccessor{factType:FactType;prior:MutableSuccessor*;value:string}
+</code></pre><h2 class="mume-header" id="about-factually">About Factually</h2>
+
+<p>Rendered on 2020-09-25 at 18:28:47 UTC with <em><a target="_parent" href="https://jeffdoolittle.com/factually">Factually</a></em>.<br>
+<em><a target="_parent" href="https://jeffdoolittle.com/factually">Factually</a></em> project &#xA9; 2020 <a target="_parent" href="https://jeffdoolittle.com">Jeff Doolittle</a>. All rights reserved.<br>
+<a target="_parent" href="https://jeffdoolittle.com">https://jeffdoolittle.com</a></p>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    </body></html>
