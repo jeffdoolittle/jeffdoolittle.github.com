@@ -1,0 +1,112 @@
+---
+import Page from '../layouts/Page.astro';
+import PageNav from '../components/PageNav.astro';
+
+const requiredReading = [
+  { title: 'Thinking in Systems', href: 'https://www.amazon.com/dp/1603580557', author: 'Donella H. Meadows' },
+  { title: 'Righting Software', href: 'https://rightingsoftware.org', author: 'Juval Löwy' },
+  { title: 'Lean Software Systems Engineering for Developers', href: 'https://www.amazon.com/Lean-Software-Systems-Engineering-Developers/dp/1484269322', author: 'Doug Durham, Chad Michel' },
+  { title: 'A Philosophy of Software Design', href: 'https://www.amazon.com/dp/1732102201', author: 'John Ousterhout' },
+  { title: 'Exploring Requirements: Quality Before Design', href: 'https://www.amazon.com/dp/0932633730', author: 'Donald Gause and Gerald Weinberg' },
+  { title: 'Software Fundamentals', href: 'https://www.amazon.com/dp/0201703696', author: 'Collected Papers by David L. Parnas' },
+];
+
+const additionalReading = [
+  { title: 'Balancing Coupling in Software Design', href: 'https://www.amazon.com/dp/0137353480', author: 'Vlad Khononov' },
+  { title: 'Code Health Guardian', href: 'https://www.amazon.com/dp/1763771709', author: 'Artie Shevchenko' },
+  { title: '48 Laws of Power', href: 'https://www.amazon.com/dp/0140280197', author: 'Robert Greene' },
+  { title: 'The Goal', href: 'https://www.amazon.com/dp/0884271951', author: 'Eli Goldratt' },
+  { title: 'Incerto', href: 'https://www.amazon.com/dp/0399590455', author: 'Nassim Taleb' },
+  { title: 'Never Split the Difference', href: 'https://info.blackswanltd.com/library', author: 'Chris Voss' },
+  { title: 'Simple Architectures for Complex Enterprises', href: 'https://www.amazon.com/dp/0735625786', author: 'Roger Sessions' },
+  { title: 'The Art of Immutable Architecture', href: 'https://www.amazon.com/dp/1484259548/', author: 'Michael L. Perry' },
+];
+---
+<Page title="Mentoring" showRecents={false}>
+  <PageNav entries={[
+    { title: 'Mentoring 101', href: '#mentoring-101' },
+    { title: 'Reading List', href: '#reading-list' },
+    { title: "Let's Meet!", href: '#meet' },
+    { title: 'Coaching', href: '#coaching' },
+  ]} />
+
+  <a href="/assets/mentoring-101.jpg">
+    <img src="/assets/mentoring-101.jpg" alt="Millerton Lake, California" style="max-width: 100%;" />
+  </a>
+
+  <h2 id="mentoring-101">Mentoring 101 <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <p>
+    I regularly mentor Software Developers, Engineers, Architects and Executives at every stage of their career. I aim
+    for wholistic growth of the entire person, rather than focusing solely on technological and career growth.
+  </p>
+
+  <p>Individuals I have mentored have gone on to work for companies of all sizes from startup ventures to Fortune 100 companies.</p>
+
+  <p>
+    <strong>Start with yourself.</strong> What aspiration can you pursue which rises above all others in importance and
+    priority? This focus, this <em>North Star</em>, must drive every other decision you make.
+  </p>
+
+  <p>
+    Learn to <strong>think for yourself.</strong> This requires significant, nearly comprehensive brain rewiring. Do not
+    let anyone hand your opinions to you.
+  </p>
+
+  <p>
+    <strong>Take responsibility. Be accountable.</strong> Make promises you can keep, then deliver on your promises. Aim
+    to make your employer's or client's life better. Show them the value you can provide. Help others around you to
+    achieve the same once you have demonstrated how to do it yourself.
+  </p>
+
+  <p>
+    <strong>Read. Read some more. Keep reading.</strong> Don't merely read about technology. At minimum, read about
+    history, art, literature, philosophy, economics, psychology, and leadership. Apply what you learn to yourself first,
+    then in how you interact with others.
+  </p>
+
+  <p>
+    <strong>Set the pace.</strong> Lead in the way you present yourself and prepare yourself. Professional clothing,
+    appearance and communication skills demonstrate how seriously you take yourself and others. Ensure consistency
+    across all the sites where you have a public, visible presence, and in all your professional interactions with
+    others.
+  </p>
+
+  <p>
+    <strong>Make a plan.</strong> Visualize what you want to achieve. Then break it down into attainable, smaller steps
+    that, when put together, get you on the right path. These steps must align toward your highest aspiration.
+    Ultimately you end up with many plans—daily plans, weekly plans, monthly, quarterly, yearly and multi-year plans
+    that all connect and interrelate. You can and should adjust as necessary to keep you on the path. These plans
+    require flexibility but must continually aim you toward your <em>North Star</em>.
+  </p>
+
+  <p><strong>Keep aiming higher.</strong> Evaluate your <em>North Star</em> regularly and continue to raise the bar.</p>
+
+  <p><hr /></p>
+
+  <h2 id="reading-list">Reading List <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <h3 id="required-reading">Required Reading</h3>
+  <ul>
+    {requiredReading.map(item => (
+      <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.title}</a> by {item.author}</li>
+    ))}
+  </ul>
+
+  <h3 id="additional-reading">Additional Reading</h3>
+  <ul>
+    {additionalReading.map(item => (
+      <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.title}</a> by {item.author}</li>
+    ))}
+  </ul>
+
+  <p><hr /></p>
+
+  <h2 id="meet">Let's Meet! <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <p>Schedule a time to meet with me via <a href="/calendar">my calendar</a>.</p>
+
+  <h2 id="coaching">Coaching <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <p>Interested in coaching? <a href="/contact">Contact me</a> to learn more.</p>
+</Page>

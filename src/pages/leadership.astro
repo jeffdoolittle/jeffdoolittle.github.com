@@ -1,0 +1,22 @@
+---
+import Page from '../layouts/Page.astro';
+import { getCollection } from 'astro:content';
+import { postUrl, formatDate } from '../utils/post';
+
+const allPosts = await getCollection('blog', ({ data }) => data.published !== false && data.category === 'leadership');
+const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+---
+<Page title="Leadership">
+  <h1>Leadership</h1>
+  <p><em>Empowering Transformational Leaders</em></p>
+  <ul class="entries">
+    {posts.map(post => (
+      <li>
+        <div class="entry-date">{formatDate(post.data.date)}</div>
+        <div class="entry-text">
+          <a href={postUrl(post)}>{post.data.title}</a>
+        </div>
+      </li>
+    ))}
+  </ul>
+</Page>

@@ -1,0 +1,107 @@
+---
+import Page from '../layouts/Page.astro';
+import PageNav from '../components/PageNav.astro';
+import Endorsements from '../components/Endorsements.astro';
+import Portfolio from '../components/Portfolio.astro';
+---
+<Page title="About">
+  <PageNav entries={[
+    { title: 'Contact', href: '#contact' },
+    { title: 'Focus', href: '#focus' },
+    { title: 'Professional Bio', href: '#professional-bio' },
+    { title: 'Resume', href: '#resume' },
+    { title: 'Personal Bio', href: '#personal-bio' },
+    { title: 'Endorsements', href: '#endorsements' },
+    { title: 'Portfolio', href: '#portfolio' },
+  ]} />
+
+  <p>
+    <a href="/assets/headshot-2025-square.jpg" download="headshot-2025-square.jpg">
+      <img src="/assets/headshot-2025-square.jpg" alt="Jeff Doolittle headshot" style="max-width: 200px; margin-right: 1em;" />
+    </a>
+    <a href="/assets/headshot-2025-zoom.jpg" download="headshot-2025-zoom.jpg">
+      <img src="/assets/headshot-2025-zoom.jpg" alt="Jeff Doolittle headshot zoom" style="max-width: 200px;" />
+    </a>
+  </p>
+
+  <p>
+    Jeff Doolittle is a software architect with over twenty-five years of experience designing and architecting software
+    systems, and providing developer leadership and mentorship. He is passionate about designing and refining systems
+    that cultivate repeatability, reversibility, reuse,{' '}
+    <a href="/2020/11/04/software-leadership-distilled/#core-values" target="_blank" rel="noopener noreferrer">trust, clarity and empowerment</a>.
+  </p>
+
+  <p>
+    Jeff brings together a unique blend of technical expertise, compassion, empathy, commitment to high quality, and
+    leadership skills. He excels at helping software executives, engineers and developers to accelerate their
+    productivity by adopting rigorous systems engineering principles and practices. He thrives on helping everyone he
+    works with to maximize their skills and fulfill their potential, personally and professionally.
+  </p>
+
+  <ul>
+    <li>Distinguished Engineer and Principal Architect at Trimble</li>
+    <li>Third decade in the software industry</li>
+    <li>Former CTO for a boutique consulting firm</li>
+    <li>Former SaaS CTO in the AgTech industry</li>
+    <li>BS - Business Administration and Marketing</li>
+    <li>MA - Transformational Leadership</li>
+    <li>Former Host for <a href="https://www.se-radio.net/team/jeff-doolittle/" target="_blank" rel="noopener noreferrer">Software Engineering Radio</a></li>
+    <li>Published Author and Conference Presenter</li>
+  </ul>
+
+  <h2 id="contact">Contact <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <p>You can reach me via email at <a href="mailto:jeff@jeffdoolittle.com">jeff@jeffdoolittle.com</a>.</p>
+  <p>You can also <a href="/calendar">schedule a call</a> with me.</p>
+
+  <h2 id="focus">Focus <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <p><strong>Vision</strong>: A world where humans thrive by discovering, refining and acting on their unique value creation potential while helping others do the same.</p>
+  <p><strong>Mission</strong>: To help make good software professionals great!</p>
+  <p><strong>Strategy</strong>: Design Engineering Leadership (Training, Mentoring, Writing, Presenting, Model Building, Scientific Method)</p>
+
+  <h2 id="professional-bio">Professional Bio <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <div>
+    <p>
+      As a Software Architect with over 25 years of industry experience, <strong>Jeff Doolittle helps make good software professionals great!</strong> His passion, resolve and can-do attitude are contagious.
+    </p>
+    <p>
+      Jeff began his career in a successful software consulting firm serving companies of all sizes, from small businesses through Fortune 100 companies. He took on the role of CTO in just a few short years. Jeff's experience as a consultant exposed him to a vast array of business problems for which he crafted valuable, customer-centric solutions. His next challenge came in his role as Co-founder and CTO of a SaaS startup where he provided strong business, architectural, system design and process leadership. Under Jeff's guidance, his company pioneered cloud automation processes and event-driven systems long before these had become standard industry practice. Jeff currently works at <a href="https://trimble.com" target="_blank" rel="noopener noreferrer">Trimble</a> in the <a href="https://construction.trimble.com/" target="_blank" rel="noopener noreferrer">Construction</a> division as a Distinguished Engineer and Principal Architect.
+    </p>
+    <p>
+      In addition to architectural mastery, Jeff has completed a Master of Arts in Transformational Leadership, a discipline which focuses on the techniques of leadership replication. An inspiring teacher and leader, anyone who has had the opportunity to work with or be mentored by him will confirm that <strong>working with Jeff has made them better software engineers, architects and leaders</strong>.
+    </p>
+    <p>
+      Find out more about Jeff at <a href="https://jeffdoolittle.com">jeffdoolittle.com</a>.
+    </p>
+  </div>
+
+  <h2 id="resume">Resume <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <p>See my <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">resume</a> for an overview of my career.</p>
+
+  <p><hr /></p>
+
+  <h2 id="personal-bio">Personal Bio <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <ul>
+    <li>I currently reside in the Portland, Oregon area.</li>
+    <li>I grew up in San Diego, California and graduated from <a href="https://www.powayusd.com/en-US/Schools/HS/PHS/Home" target="_blank" rel="noopener noreferrer">Poway High School</a>.</li>
+    <li>I have been <a href="/2018/08/04/hope-in-the-dark/">playing guitar</a> since I was 13, and it remains one of my passions and joys. I can also play piano and bass, and I'm learning to play the drums.</li>
+    <li>I graduated from <a href="https://www.biola.edu/" target="_blank" rel="noopener noreferrer">Biola University</a> where I received my BS in Business Administration with an emphasis in Marketing, and a minor in Biblical Studies.</li>
+    <li>I graduated Summa Cum Laude with a Master of Arts in <a href="https://www.bethel.edu/seminary/academics/transformational-leadership/" target="_blank" rel="noopener noreferrer">Transformational Leadership</a> from <a href="https://www.bethel.edu/academics/san-diego/" target="_blank" rel="noopener noreferrer">Bethel Seminary San Diego</a> in 2010.</li>
+  </ul>
+
+  <p><hr /></p>
+
+  <h2 id="endorsements">Endorsements <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <Endorsements />
+
+  <p><hr /></p>
+
+  <h2 id="portfolio">Portfolio <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <Portfolio />
+</Page>
