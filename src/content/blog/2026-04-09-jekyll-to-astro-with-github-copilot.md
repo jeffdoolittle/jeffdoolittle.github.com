@@ -5,8 +5,8 @@ date: 2026-04-09
 category: software
 tags: [ai, copilot, astro, jekyll, migration]
 excerpt: How I migrated my personal site from a deprecated Ruby-based framework to a modern Astro stack — through conversation, not code.
-image: /assets/20260329_111656.jpg
-image_alt: Seattle, Washington skyline - March 2026
+image: /assets/20260301_180203.jpg
+image_alt: Sunset over the mountains, Los Cabos, Baja California Sur, Mexico
 published: true
 ---
 
