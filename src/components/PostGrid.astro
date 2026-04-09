@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { postUrl, formatDate } from '../utils/post';
+import { postUrl, formatDate, slugDate } from '../utils/post';
 
 interface Props {
   posts: CollectionEntry<'blog'>[];
@@ -18,7 +18,7 @@ const { posts } = Astro.props;
         </a>
       )}
       <div class="post-card__body">
-        <span class="post-card__meta">{formatDate(post.data.date)}</span>
+        <span class="post-card__meta">{formatDate(slugDate(post))}</span>
         <h3 class="post-card__title">
           <a href={postUrl(post)}>{post.data.title}</a>
         </h3>

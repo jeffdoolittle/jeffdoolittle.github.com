@@ -1,7 +1,7 @@
 ---
 import Page from '../layouts/Page.astro';
 import { getCollection } from 'astro:content';
-import { postUrl, formatDate } from '../utils/post';
+import { postUrl, formatDate, slugDate } from '../utils/post';
 
 const allPosts = await getCollection('blog', ({ data }) => data.published !== false && data.category === 'leadership');
 const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
@@ -12,7 +12,7 @@ const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date
   <ul class="entries">
     {posts.map(post => (
       <li>
-        <div class="entry-date">{formatDate(post.data.date)}</div>
+        <div class="entry-date">{formatDate(slugDate(post))}</div>
         <div class="entry-text">
           <a href={postUrl(post)}>{post.data.title}</a>
         </div>

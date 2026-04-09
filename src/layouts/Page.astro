@@ -1,7 +1,7 @@
 ---
 import Base from './Base.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { postUrl, formatDate } from '../utils/post';
+import { postUrl, formatDate, slugDate } from '../utils/post';
 
 interface Props {
   title?: string;
@@ -46,7 +46,7 @@ if (showRecents) {
               <ul class="entries">
                 {recentPosts.map(post => (
                   <li>
-                    <div class="entry-date">{formatDate(post.data.date)}</div>
+                    <div class="entry-date">{formatDate(slugDate(post))}</div>
                     <div class="entry-text">
                       <a href={postUrl(post)}>
                         {post.data.title}

@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import categoriesData from '../data/categories';
-import { postUrl, formatDate } from '../utils/post';
+import { postUrl, formatDate, slugDate } from '../utils/post';
 
 const categories = categoriesData as Array<{ id: string; title: string; highlight?: boolean }>;
 const allPosts = await getCollection('blog', ({ data }) => data.published !== false);
@@ -14,7 +14,7 @@ const highlightCards = categories
       .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
     const post = posts[0];
     if (!post) return null;
-    return { cat, post, url: postUrl(post), dateStr: formatDate(post.data.date) };
+    return { cat, post, url: postUrl(post), dateStr: formatDate(slugDate(post)) };
   })
   .filter(Boolean);
 ---
