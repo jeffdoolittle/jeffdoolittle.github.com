@@ -736,15 +736,126 @@ table.stripe {
   margin: 0;
   margin-left: auto;
   background-color: transparent;
-  li {
-    background-color: var(--bg);
+
+  // ── pagefind CSS variable overrides ───────────────────────────────────────
+  --pagefind-ui-scale: 0.65;
+  --pagefind-ui-background: rgba(255,255,255,0.10);
+  --pagefind-ui-border: rgba(255,255,255,0.20);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 6px;
+  --pagefind-ui-text: rgba(255,255,255,0.90);
+  --pagefind-ui-primary: var(--amber);
+  --pagefind-ui-font: inherit;
+
+  // ── Input bar ─────────────────────────────────────────────────────────────
+  .pagefind-ui__search-input {
+    height: 36px;
+    padding: 0 28px 0 36px;
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.90);
+    background-color: rgba(255,255,255,0.10);
+    background-image: url(/assets/search_icon.webp);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 18px;
+    border: 1px solid rgba(255,255,255,0.20);
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    &::placeholder { color: rgba(255,255,255,0.45); opacity: 1; }
+    &:focus {
+      outline: none;
+      border-color: var(--amber);
+      background-color: rgba(255,255,255,0.15);
+    }
   }
+
+  // hide the pagefind magnifier icon that overlaps our custom bg-image icon
+  .pagefind-ui__form::before { display: none; }
+
+  // ── Clear button ──────────────────────────────────────────────────────────
+  .pagefind-ui__search-clear {
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    padding: 0 4px;
+    height: 24px;
+    font-size: 0.75rem;
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.50);
+    cursor: pointer;
+    &:hover { color: rgba(255,255,255,0.90); }
+  }
+
+  // ── Results dropdown ──────────────────────────────────────────────────────
+  .pagefind-ui__results-area {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    z-index: 200;
+    margin-top: 0;
+    min-width: unset;
+    background-color: var(--search-result);
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(15,39,68,0.18);
+    max-height: 60vh;
+    overflow-y: auto;
+    &:empty { display: none; }
+  }
+
+  .pagefind-ui__message {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: var(--text);
+  }
+
+  .pagefind-ui__results {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .pagefind-ui__result {
+    padding: 0.5rem 1rem !important;
+    border-top: 1px solid var(--card-border);
+    display: block;
+    &:first-child { border-top: none; }
+  }
+
+  .pagefind-ui__result-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .pagefind-ui__result-link {
+    color: var(--text);
+    text-decoration: none;
+    &:hover { color: var(--link-hover); }
+  }
+
+  .pagefind-ui__result-excerpt {
+    font-size: 0.775rem;
+    margin-top: 2px;
+    color: var(--meta);
+    display: block;
+    mark { background: transparent; color: var(--amber); font-weight: 700; }
+  }
+
+  .pagefind-ui__result-thumb,
+  .pagefind-ui__result-tags,
+  .pagefind-ui__result-nested { display: none; }
+
   @media screen and (max-width: 600px) {
     display: none;
   }
 }
 
 #search-input {
+  // kept for fallback — not used when pagefind component is active
   font-size: 0.875rem;
   box-sizing: border-box;
   height: 36px;
@@ -764,45 +875,6 @@ table.stripe {
     outline: 0px;
     border: 1px $siteTertiaryColor solid;
     background-color: rgba(255,255,255,0.15);
-  }
-}
-
-#results-container {
-  box-sizing: border-box;
-  display: block;
-  z-index: 200;
-  position: absolute;
-  top: calc(100% + 4px);
-  left: 0;
-  right: 0;
-  height: 0;
-  overflow: visible;
-  li {
-    list-style: none;
-    padding: 0 !important;
-    background-color: var(--search-result);
-    border: 1px solid var(--card-border);
-    border-top: none;
-    &:first-child {
-      border-top: 1px solid var(--card-border);
-      border-radius: 6px 6px 0 0;
-    }
-    &:last-child {
-      border-radius: 0 0 6px 6px;
-      box-shadow: 0 4px 8px rgba(15,39,68,0.10);
-    }
-    a {
-      display: block;
-      padding: 0.5rem 1rem;
-      font-size: 0.875rem;
-      color: var(--text);
-      text-decoration: none;
-      &:hover {
-        background: $siteBgColor;
-        color: $siteHighlightHover;
-        text-decoration: none;
-      }
-    }
   }
 }
 
