@@ -23,6 +23,18 @@ const tweetUrl = encodeURIComponent(`https://jeffdoolittle.com${pageUrl}`);
 ---
 
 <Base title={title} description={excerpt || undefined} image={image || undefined}>
+  <div class="page-hero">
+    <div class="page-hero__inner wrapper">
+      <div class="page-hero__body">
+        <div class="page-hero__text">
+          <p class="page-hero__eyebrow">{category ? category.charAt(0).toUpperCase() + category.slice(1) : 'Article'}</p>
+          <h1 class="page-hero__title">{title}</h1>
+          {dateStr && <p class="page-hero__meta">{dateStr}</p>}
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="wrapper">
     <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -102,9 +114,5 @@ const tweetUrl = encodeURIComponent(`https://jeffdoolittle.com${pageUrl}`);
 
       <a class="u-url" href={pageUrl} hidden></a>
     </article>
-
-    <div class="small-banner">
-      <img src="/assets/circle_head_shot_2025_small.png" />
-    </div>
   </div>
 </Base>
