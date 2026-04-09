@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "REST *Still* Wrecks Microservices! Spokane .NET User Group Presentation"
 date:   2021-07-03 08:30:00 -0700
 category: events

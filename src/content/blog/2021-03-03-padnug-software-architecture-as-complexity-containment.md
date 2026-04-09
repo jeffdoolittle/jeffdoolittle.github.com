@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Software Architecture as Complexity Containment"
 date: 2021-03-03 08:00:00 -0800
 category: events

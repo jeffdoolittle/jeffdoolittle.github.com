@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Balancing Coupling in Software Design with Vlad Khononov
 date: 2025-04-01 11:00:00 -0800
 category: se-radio

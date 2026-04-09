@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Art of Immutable Architecture with Michael L. Perry"
 date: 2021-02-18 11:00:00 -0800
 category: learn

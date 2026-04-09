@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Drawbridge Down + Missing It"
 date:   2023-09-14 00:00:00 -0700
 category: music

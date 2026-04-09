@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Dataware with Dan DeMers
 date: 2023-04-26 04:00:00 -0800
 category: se-radio

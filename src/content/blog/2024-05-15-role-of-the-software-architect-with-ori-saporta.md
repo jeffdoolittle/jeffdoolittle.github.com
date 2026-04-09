@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Role of the Software Architect with Ori Saporta
 date: 2024-05-15 04:00:00 -0800
 category: se-radio

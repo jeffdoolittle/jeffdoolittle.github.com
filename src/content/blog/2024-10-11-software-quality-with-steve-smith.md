@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Software Quality with Steve Smith
 date: 2024-10-11 04:00:00 -0800
 category: se-radio

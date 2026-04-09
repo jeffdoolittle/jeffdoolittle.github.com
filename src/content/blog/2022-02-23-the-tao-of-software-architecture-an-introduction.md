@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Tao of Software Architecture: An Introduction"
 date:   2022-02-23 02:30:00 -0800
 category: leadership

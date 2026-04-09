@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Geospatial Technologies with John Frandsen
 date: 2024-03-12 04:00:00 -0800
 category: se-radio

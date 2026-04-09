@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Exploring Requirements"
 date: 2021-03-04 08:00:00 -0800
 category: learn

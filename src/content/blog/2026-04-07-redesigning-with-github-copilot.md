@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "From Dormant to Redesigned: Two Hours with GitHub Copilot"
 date: 2026-04-07
 category: software

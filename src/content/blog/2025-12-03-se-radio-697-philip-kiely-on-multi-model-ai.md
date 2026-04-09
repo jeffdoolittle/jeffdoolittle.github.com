@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Multi-Model AI with Philip Kiely
 date: 2025-12-03 11:00:00 -0800
 category: se-radio

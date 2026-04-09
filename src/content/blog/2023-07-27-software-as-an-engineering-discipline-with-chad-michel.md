@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Software as an Engineering Discipline with Chad Michel
 date: 2023-07-27 04:00:00 -0800
 category: se-radio

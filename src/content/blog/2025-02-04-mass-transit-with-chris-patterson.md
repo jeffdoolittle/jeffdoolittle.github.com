@@ -1,5 +1,4 @@
 ---
-layout: post
 title: MassTransit with Chris Patterson
 date: 2025-02-04 04:00:00 -0800
 category: se-radio

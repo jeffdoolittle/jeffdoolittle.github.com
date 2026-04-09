@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Leaders and Software Engineers with Chuck Weindorf
 date: 2024-07-31 04:00:00 -0800
 category: se-radio

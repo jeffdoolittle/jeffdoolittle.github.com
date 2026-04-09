@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Mindfulness
 date:   2022-02-28 2:30:00 -0800
 category: general

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Platform Engineering with Luca Galante
 date: 2023-04-26 04:00:00 -0800
 category: se-radio
