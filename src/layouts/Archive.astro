@@ -1,7 +1,7 @@
 ---
 import Base from './Base.astro';
 import { getCollection } from 'astro:content';
-import { postUrl, formatDate } from '../utils/post';
+import { postUrl, formatDate, slugDate } from '../utils/post';
 
 const allPosts = await getCollection('blog', ({ data }) => data.published !== false);
 const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
@@ -25,7 +25,7 @@ const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date
       <ul class="post-list">
         {posts.map(post => (
           <li>
-            <span class="post-meta">{formatDate(post.data.date, 'short')}</span>
+            <span class="post-meta">{formatDate(slugDate(post), 'short')}</span>
             <hr />
             <h3>
               <a class="post-link" href={postUrl(post)}>{post.data.title}</a>

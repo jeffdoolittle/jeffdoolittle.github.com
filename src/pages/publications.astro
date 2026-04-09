@@ -2,7 +2,7 @@
 import Page from '../layouts/Page.astro';
 import PageNav from '../components/PageNav.astro';
 import { getCollection } from 'astro:content';
-import { postUrl, formatDate } from '../utils/post';
+import { postUrl, formatDate, slugDate } from '../utils/post';
 import categoriesData from '../data/categories';
 
 const allPosts = await getCollection('blog', ({ data }) => data.published !== false);
@@ -43,7 +43,7 @@ const categories = categoriesData as Array<{
         <ul class="entries">
           {posts.map(post => (
             <li>
-              <div class="entry-date">{formatDate(post.data.date)}</div>
+              <div class="entry-date">{formatDate(slugDate(post))}</div>
               <div class="entry-text">
                 <a href={postUrl(post)}>{post.data.title}</a>
               </div>

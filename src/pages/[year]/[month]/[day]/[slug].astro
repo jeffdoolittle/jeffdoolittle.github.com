@@ -1,19 +1,19 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Post from '../../../../layouts/Post.astro';
-import { postUrl } from '../../../../utils/post';
+import { postUrl, slugDate } from '../../../../utils/post';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => data.published !== false);
   const sorted = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 
   return sorted.map((post, index) => {
-    const d = post.data.date;
+    const d = slugDate(post);
     const year = d.getUTCFullYear().toString().padStart(4, '0');
     const month = (d.getUTCMonth() + 1).toString().padStart(2, '0');
     const day = d.getUTCDate().toString().padStart(2, '0');
     // Strip YYYY-MM-DD- prefix so URL matches Jekyll permalink pattern
-    const slug = post.slug.replace(/^\d{4}-\d{2}-\d{2}-/, '');
+    const slug = post.slug.replace(/^\d{4}-\d{2}-\d{2}-/, '');  
 
     const prev = index < sorted.length - 1 ? sorted[index + 1] : null;
     const next = index > 0 ? sorted[index - 1] : null;
