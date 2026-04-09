@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jeffdoolittle
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jeffdoolittle.com
+  * I am jeffdoolittle (https://keybase.io/jeffdoolittle) on keybase.
+  * I have a public key ASC_s-jhuvPyNXrYBWgP9esOR49vOqzI40IXgbA_OocyYQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120cb5f23ab4166250c9f41ca8451123bde5b9cfd828e8a3c2fa5db3522ac7e295e0a",
+      "host": "keybase.io",
+      "kid": "0120bfb3e8e1baf3f2357ad805680ff5eb0e478f6f3aacc8e3421781b03f3a8732610a",
+      "uid": "284a1a85735c943e83cf925668d87b19",
+      "username": "jeffdoolittle"
+    },
+    "merkle_root": {
+      "ctime": 1566182107,
+      "hash": "10811d027e44622d12be10389868ea643d94c72a9efa1f31813261f13d540950ede6f4e37aa7e74fbaa1827826c88ae60def9ddcbe9a8105941288a2cc70148f",
+      "hash_meta": "3b4fe9b8871a6cd5e25dcba95d3b17485cd4a84cf11bafa8192fc65baae93a11",
+      "seqno": 6045239
+    },
+    "service": {
+      "entropy": "8uFzS0ppxfKF58e8seDhj/pL",
+      "hostname": "jeffdoolittle.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.3.0"
+  },
+  "ctime": 1566182114,
+  "expire_in": 504576000,
+  "prev": "4809ec6256dddc80a628cad0a9eeeb740ec21c2f51104424761f3326ae41cfc5",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgv7Po4brz8jV62AVoD/XrDkePbzqsyONCF4GwPzqHMmEKp3BheWxvYWTESpcCCsQgSAnsYlbd3ICmKMrQqe7rdA7CHC9REEQkdh8zJq5Bz8XEIBlxGv/NF75qsMpSoyz719P6U3x/EC0FAXoOCF93q0iGAgHCo3NpZ8RAp21MOFUXf7sL3vPmz+5SAEhUv+h4r1I13dqGa2ppYXMI1rAmAk7BNUIYjDBAb3Lcq6+MOArWCPNHmLCQ7cUlC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILWGrmllRxVpoh8W3qVaRrxvwFUuSpFx3jm6jwxJEe9To3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jeffdoolittle
+
+==================================================================

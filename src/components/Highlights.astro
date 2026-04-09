@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import categoriesData from '../data/categories';
+import { postUrl, formatDate } from '../utils/post';
+
+const categories = categoriesData as Array<{ id: string; title: string; highlight?: boolean }>;
+const allPosts = await getCollection('blog', ({ data }) => data.published !== false);
+
+const highlightCards = categories
+  .filter(cat => cat.highlight)
+  .map(cat => {
+    const posts = allPosts
+      .filter(p => p.data.category === cat.id)
+      .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+    const post = posts[0];
+    if (!post) return null;
+    return { cat, post, url: postUrl(post), dateStr: formatDate(post.data.date) };
+  })
+  .filter(Boolean);
+---
+
+<div class="highlights-grid">
+  {highlightCards.map(item => (
+    <a class="highlight-card" href={item!.url}>
+      <span class="highlight-card__category">{item!.cat.title}</span>
+      <span class="highlight-card__title">{item!.post.data.title}</span>
+      <span class="highlight-card__date">{item!.dateStr}</span>
+    </a>
+  ))}
+</div>

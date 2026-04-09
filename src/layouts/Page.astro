@@ -1,0 +1,81 @@
+---
+import Base from './Base.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { postUrl, formatDate } from '../utils/post';
+
+interface Props {
+  title?: string;
+  description?: string;
+  showRecents?: boolean;
+}
+
+const { title, description, showRecents = true } = Astro.props;
+
+let recentPosts: CollectionEntry<'blog'>[] = [];
+if (showRecents) {
+  const allPosts = await getCollection('blog', ({ data }) => data.published !== false);
+  recentPosts = allPosts
+    .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+    .slice(0, 3);
+}
+---
+
+<Base title={title} description={description}>
+  <div class="wrapper">
+    <article class="post">
+      <div class="post-content">
+        <slot />
+
+        {showRecents && recentPosts.length > 0 && (
+          <>
+            <hr />
+            <h2>Recent Posts</h2>
+            <div class="blog-index">
+              <ul class="entries">
+                {recentPosts.map(post => (
+                  <li>
+                    <div class="entry-date">{formatDate(post.data.date)}</div>
+                    <div class="entry-text">
+                      <a href={postUrl(post)}>
+                        {post.data.title}
+                      </a>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </>
+        )}
+
+        <hr />
+        <div class="flexgrid">
+          <div class="row">
+            <div class="column">
+              <a href="/rss" target="_blank">
+                <div><i class="fas fa-rss"></i></div>
+                <div>Subscribe</div>
+              </a>
+            </div>
+            <div class="column">
+              <a href="https://twitter.com/jeffdoolittle" target="_blank">
+                <div><i class="fab fa-twitter-square"></i></div>
+                <div>Follow</div>
+              </a>
+            </div>
+            <div class="column">
+              <a href="/archive">
+                <div><i class="fas fa-archive"></i></div>
+                <div>Archives</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </article>
+
+    <div class="small-banner">
+      <img src="/assets/circle_head_shot_2025_small.png" />
+    </div>
+  </div>
+</Base>

@@ -27,3 +27,9 @@ _site
 
 # Git worktrees for issue branches
 .worktrees/
+
+# Astro
+dist/
+.astro/
+node_modules/
+.netlify/

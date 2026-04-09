@@ -1,0 +1,38 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Post from '../../../../layouts/Post.astro';
+import { postUrl } from '../../../../utils/post';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => data.published !== false);
+  const sorted = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+  return sorted.map((post, index) => {
+    const d = post.data.date;
+    const year = d.getFullYear().toString().padStart(4, '0');
+    const month = (d.getMonth() + 1).toString().padStart(2, '0');
+    const day = d.getDate().toString().padStart(2, '0');
+    // Strip YYYY-MM-DD- prefix so URL matches Jekyll permalink pattern
+    const slug = post.slug.replace(/^\d{4}-\d{2}-\d{2}-/, '');
+
+    const prev = index < sorted.length - 1 ? sorted[index + 1] : null;
+    const next = index > 0 ? sorted[index - 1] : null;
+
+    return {
+      params: { year, month, day, slug },
+      props: {
+        post,
+        prev: prev ? { url: postUrl(prev), title: prev.data.title } : null,
+        next: next ? { url: postUrl(next), title: next.data.title } : null,
+      },
+    };
+  });
+}
+
+const { post, prev, next } = Astro.props;
+const { Content } = await post.render();
+---
+
+<Post post={post} prev={prev} next={next}>
+  <Content />
+</Post>

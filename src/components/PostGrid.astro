@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { postUrl, formatDate } from '../utils/post';
+
+interface Props {
+  posts: CollectionEntry<'blog'>[];
+}
+
+const { posts } = Astro.props;
+---
+
+<div class="post-grid">
+  {posts.map(post => (
+    <div class="post-card">
+      {post.data.image && (
+        <a href={postUrl(post)} class="post-card__img-link">
+          <img class="post-card__img" src={post.data.image} alt={post.data.image_alt || post.data.title} loading="lazy" />
+        </a>
+      )}
+      <div class="post-card__body">
+        <span class="post-card__meta">{formatDate(post.data.date)}</span>
+        <h3 class="post-card__title">
+          <a href={postUrl(post)}>{post.data.title}</a>
+        </h3>
+        <p class="post-card__excerpt">{(post.data.excerpt || '').substring(0, 160)}</p>
+        <a class="post-card__link" href={postUrl(post)}>Continue reading</a>
+      </div>
+    </div>
+  ))}
+</div>
