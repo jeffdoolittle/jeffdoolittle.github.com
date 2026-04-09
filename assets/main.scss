@@ -918,7 +918,8 @@ pre.song {
   max-width: 540px;
   line-height: 1.65;
   margin-bottom: 0;
-  strong { color: $siteTertiaryColor; font-weight: 600; }
+  &--primary { color: #ffffff; }
+  &--accent   { color: var(--amber); }
 }
 
 .hero__cta {
@@ -1198,10 +1199,9 @@ pre.song {
   }
   &__desc {
     font-size: 0.85rem;
+    color: rgba(255,255,255,0.50);
     margin-top: 0.4rem;
     line-height: 1.6;
-    &--primary { color: #ffffff; }
-    &--accent   { color: var(--amber); }
   }
 }
 
