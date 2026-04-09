@@ -21,6 +21,18 @@ if (showRecents) {
 ---
 
 <Base title={title} description={description}>
+  <div class="page-hero">
+    <div class="page-hero__inner wrapper">
+      <div class="page-hero__body">
+        <div class="page-hero__text">
+          <h1 class="page-hero__title">{title}</h1>
+        </div>
+        <div class="page-hero__avatar">
+          <img src="/assets/circle_head_shot_2025_small.png" alt="Jeff Doolittle" />
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="wrapper">
     <article class="post">
       <div class="post-content">
@@ -73,9 +85,5 @@ if (showRecents) {
         <hr />
       </div>
     </article>
-
-    <div class="small-banner">
-      <img src="/assets/circle_head_shot_2025_small.png" />
-    </div>
   </div>
 </Base>
