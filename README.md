@@ -15,7 +15,7 @@ Open `http://localhost:4300/` in your browser.
 
 ```bash
 npm run build     # output to dist/
-npm run preview   # preview the dist/ build locally
+npm run preview   # serve dist/ at localhost:3000 (requires build first)
 ```
 
 ## Stack
