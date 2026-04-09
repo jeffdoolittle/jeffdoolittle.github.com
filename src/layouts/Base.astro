@@ -1,7 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import GoogleAnalytics from '../components/GoogleAnalytics.astro';
-import Search from 'astro-pagefind/components/Search';
 
 interface Props {
   title?: string;
@@ -108,8 +107,57 @@ const navLinks = [
         </div>
       </nav>
 
-      <!-- Pagefind Search -->
-      <Search id="search-wrapper" className="pagefind-search" />
+      <!-- Search -->
+      <div id="search-wrapper">
+        <input type="text" id="search-input" placeholder="Search" autocomplete="off" />
+        <ul id="results-container"></ul>
+      </div>
+
+      <script is:inline>
+        (function() {
+          var input = document.getElementById('search-input');
+          var results = document.getElementById('results-container');
+          var pagefind;
+          var debounceTimer;
+
+          async function ensurePagefind() {
+            if (!pagefind) {
+              pagefind = await import('/pagefind/pagefind.js');
+              await pagefind.init();
+            }
+          }
+
+          function clearResults() {
+            results.innerHTML = '';
+          }
+
+          input.addEventListener('input', function() {
+            clearTimeout(debounceTimer);
+            var q = input.value.trim();
+            if (!q) { clearResults(); return; }
+            debounceTimer = setTimeout(async function() {
+              await ensurePagefind();
+              var search = await pagefind.search(q);
+              var hits = search.results.slice(0, 8);
+              if (!hits.length) { clearResults(); return; }
+              var items = await Promise.all(hits.map(function(r) { return r.data(); }));
+              results.innerHTML = items.map(function(d) {
+                return '<li><a href="' + d.url + '">' + d.meta.title + '</a></li>';
+              }).join('');
+            }, 150);
+          });
+
+          document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') { clearResults(); input.value = ''; }
+          });
+
+          document.addEventListener('click', function(e) {
+            if (!document.getElementById('search-wrapper').contains(e.target)) {
+              clearResults();
+            }
+          });
+        })();
+      </script>
 
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
         <svg class="theme-toggle__sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
