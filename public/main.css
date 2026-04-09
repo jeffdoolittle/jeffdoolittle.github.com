@@ -1820,9 +1820,16 @@ pre.song {
 }
 .footer-brand__desc {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.5);
   margin-top: 0.4rem;
   line-height: 1.6;
+}
+
+.footer-brand__desc--primary {
+  color: #ffffff;
+}
+
+.footer-brand__desc--accent {
+  color: #f59e0b;
 }
 
 .footer-links {
