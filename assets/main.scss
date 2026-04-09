@@ -747,7 +747,19 @@ table.stripe {
   --pagefind-ui-primary: var(--amber);
   --pagefind-ui-font: inherit;
 
+  // ── Root pagefind div — prevent it from expanding the header ──────────────
+  .pagefind-ui {
+    width: 100%;
+    position: relative; // establishes context for the drawer dropdown
+  }
+
   // ── Input bar ─────────────────────────────────────────────────────────────
+  .pagefind-ui__form {
+    position: relative;
+    // hide pagefind's own magnifier mask (we use a bg-image instead)
+    &::before { display: none; }
+  }
+
   .pagefind-ui__search-input {
     height: 36px;
     padding: 0 28px 0 36px;
@@ -770,11 +782,9 @@ table.stripe {
     }
   }
 
-  // hide the pagefind magnifier icon that overlaps our custom bg-image icon
-  .pagefind-ui__form::before { display: none; }
-
   // ── Clear button ──────────────────────────────────────────────────────────
   .pagefind-ui__search-clear {
+    position: absolute;
     top: 50%;
     right: 6px;
     transform: translateY(-50%);
@@ -788,28 +798,39 @@ table.stripe {
     &:hover { color: rgba(255,255,255,0.90); }
   }
 
-  // ── Results dropdown ──────────────────────────────────────────────────────
-  .pagefind-ui__results-area {
+  // ── Results drawer — positioned below the 36px input bar ──────────────────
+  // The drawer is a sibling to the form inside .pagefind-ui (position: relative)
+  .pagefind-ui__drawer {
     position: absolute;
-    top: calc(100% + 4px);
+    top: calc(36px + 4px); // input height + gap
     left: 0;
     right: 0;
-    z-index: 200;
-    margin-top: 0;
-    min-width: unset;
+    z-index: 300;
+    display: flex;
+    flex-direction: column;
     background-color: var(--search-result);
     border: 1px solid var(--card-border);
     border-radius: 6px;
     box-shadow: 0 4px 12px rgba(15,39,68,0.18);
     max-height: 60vh;
     overflow-y: auto;
-    &:empty { display: none; }
+  }
+
+  // hide drawer when empty (no results yet)
+  .pagefind-ui__drawer:not(:has(*)) { display: none; }
+  .pagefind-ui__hidden { display: none !important; }
+
+  .pagefind-ui__results-area {
+    min-width: unset;
+    margin-top: 0;
+    flex: 1;
   }
 
   .pagefind-ui__message {
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.78rem;
     color: var(--text);
+    border-bottom: 1px solid var(--card-border);
   }
 
   .pagefind-ui__results {
@@ -819,10 +840,15 @@ table.stripe {
   }
 
   .pagefind-ui__result {
-    padding: 0.5rem 1rem !important;
+    padding: 0.5rem 0.75rem !important;
     border-top: 1px solid var(--card-border);
     display: block;
     &:first-child { border-top: none; }
+  }
+
+  .pagefind-ui__result-inner {
+    display: block;
+    margin-top: 0;
   }
 
   .pagefind-ui__result-title {
@@ -842,39 +868,17 @@ table.stripe {
     margin-top: 2px;
     color: var(--meta);
     display: block;
+    min-width: unset;
     mark { background: transparent; color: var(--amber); font-weight: 700; }
   }
 
   .pagefind-ui__result-thumb,
   .pagefind-ui__result-tags,
-  .pagefind-ui__result-nested { display: none; }
+  .pagefind-ui__result-nested,
+  .pagefind-ui__filter-panel { display: none !important; }
 
   @media screen and (max-width: 600px) {
     display: none;
-  }
-}
-
-#search-input {
-  // kept for fallback — not used when pagefind component is active
-  font-size: 0.875rem;
-  box-sizing: border-box;
-  height: 36px;
-  border: 1px solid rgba(255,255,255,0.20);
-  border-radius: 6px;
-  background-color: rgba(255,255,255,0.10);
-  background-image: url(/assets/search_icon.webp);
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  background-size: 18px;
-  padding-left: 36px;
-  padding-right: 12px;
-  width: 100%;
-  color: rgba(255,255,255,0.90);
-  &::placeholder { color: rgba(255,255,255,0.45); }
-  &:focus {
-    outline: 0px;
-    border: 1px $siteTertiaryColor solid;
-    background-color: rgba(255,255,255,0.15);
   }
 }
 
