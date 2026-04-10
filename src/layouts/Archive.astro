@@ -2,6 +2,7 @@
 import Base from './Base.astro';
 import { getCollection } from 'astro:content';
 import { postUrl, formatDate, slugDate } from '../utils/post';
+import { Image } from 'astro:assets';
 
 const allPosts = await getCollection('blog', ({ data }) => data.published !== false);
 const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
@@ -15,7 +16,7 @@ const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date
           <h1 class="page-hero__title">Post Archive</h1>
         </div>
         <div class="page-hero__avatar">
-          <img src="/assets/circle_head_shot_2025_small.png" alt="Jeff Doolittle" />
+          <Image src="/assets/circle_head_shot_2025_small.png" alt="Jeff Doolittle" width={256} height={256} format="webp" quality={70} loading="eager" />
         </div>
       </div>
     </div>
@@ -48,19 +49,19 @@ const posts = allPosts.sort((a, b) => new Date(b.data.date).getTime() - new Date
         <div class="row">
           <div class="column">
             <a href="/feed.xml" target="_blank">
-              <div><i class="fas fa-rss"></i></div>
+              <div><span aria-hidden="true">RSS</span></div>
               <div>Subscribe</div>
             </a>
           </div>
           <div class="column">
             <a href="https://www.linkedin.com/in/jeffdoolittle/" target="_blank" rel="noopener noreferrer">
-              <div><i class="fab fa-linkedin"></i></div>
+              <div><span aria-hidden="true">in</span></div>
               <div>Connect</div>
             </a>
           </div>
           <div class="column">
             <a href="/archive">
-              <div><i class="fas fa-archive"></i></div>
+              <div><span aria-hidden="true">Arc</span></div>
               <div>Archives</div>
             </a>
           </div>

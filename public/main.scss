@@ -515,13 +515,22 @@ img.center {
 div.social {
   a {
     color: #828282;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    min-height: 2rem;
+    padding: 0.15rem 0.35rem;
     &:hover {
       color: $siteHighlightColor;
     }
-    i {
-      font-size: 1.5em;
-      margin-right: 0.1em;
-      margin-bottom: 0.3em;
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 1;
     }
   }
   margin-bottom: 1em;
@@ -707,6 +716,11 @@ table.stripe {
 
   .column {
     margin: 1em auto;
+    a {
+      display: inline-block;
+      min-width: 3rem;
+      min-height: 3rem;
+    }
     a:hover {
       text-decoration: none;
     }
@@ -714,9 +728,10 @@ table.stripe {
       font-size: 1.2em;
       display: flex;
       justify-content: center;
-      i {
+      span {
         font-size: 2em;
         margin: .2em auto;
+        line-height: 1;
       }
     }
   }

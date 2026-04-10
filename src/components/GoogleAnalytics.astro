@@ -3,13 +3,39 @@ const GA_ID = "G-2317DQC7JS";
 const isProd = import.meta.env.PROD;
 ---
 {isProd && (
-  <>
-    <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
-    <script define:vars={{ GA_ID }}>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', GA_ID);
-    </script>
-  </>
+  <script define:vars={{ GA_ID }}>
+    (function() {
+      var loaded = false;
+
+      function startAnalytics() {
+        if (loaded) return;
+        loaded = true;
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = window.gtag || function() { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', GA_ID);
+
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+        document.head.appendChild(s);
+      }
+
+      var events = ['pointerdown', 'keydown', 'scroll'];
+      function onFirstInteraction() {
+        events.forEach(function(evt) {
+          window.removeEventListener(evt, onFirstInteraction, { passive: true });
+        });
+        startAnalytics();
+      }
+
+      events.forEach(function(evt) {
+        window.addEventListener(evt, onFirstInteraction, { once: true, passive: true });
+      });
+
+      var idle = window.requestIdleCallback || function(cb) { return setTimeout(cb, 5000); };
+      idle(startAnalytics);
+    })();
+  </script>
 )}

@@ -67,19 +67,19 @@ const pageUrl = Astro.url.pathname;
           <div class="row">
             <div class="column">
               <a href="/feed.xml" target="_blank">
-                <div><i class="fas fa-rss"></i></div>
+                <div><span aria-hidden="true">RSS</span></div>
                 <div>Subscribe</div>
               </a>
             </div>
             <div class="column">
               <a href="https://www.linkedin.com/in/jeffdoolittle/" target="_blank" rel="noopener noreferrer">
-                <div><i class="fab fa-linkedin"></i></div>
+                <div><span aria-hidden="true">in</span></div>
                 <div>Connect</div>
               </a>
             </div>
             <div class="column">
               <a href="/archive">
-                <div><i class="fas fa-archive"></i></div>
+                <div><span aria-hidden="true">Arc</span></div>
                 <div>Archives</div>
               </a>
             </div>
@@ -93,15 +93,15 @@ const pageUrl = Astro.url.pathname;
         <div class="row">
           <div class="column previous">
             {prev && (
-              <a href={prev.url}><i class="fa fa-arrow-left"></i> {prev.title}</a>
+              <a href={prev.url}>&larr; {prev.title}</a>
             )}
           </div>
           <div class="column delimiter">
-            {prev && next && <i class="fa fa-star"></i>}
+            {prev && next && <span aria-hidden="true">*</span>}
           </div>
           <div class="column next">
             {next && (
-              <a href={next.url}>{next.title} <i class="fa fa-arrow-right"></i></a>
+              <a href={next.url}>{next.title} &rarr;</a>
             )}
           </div>
         </div>
