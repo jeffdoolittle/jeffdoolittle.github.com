@@ -6,6 +6,10 @@ on:
     - cron: "0 14 * * 5"
   workflow_dispatch:
 
+concurrency:
+  group: weekly-copilot-topic-research
+  cancel-in-progress: false
+
 permissions:
   contents: read
   issues: write
@@ -32,7 +36,7 @@ jobs:
               per_page: 100,
             });
 
-            const existingWeeklyIssue = existingOpenIssues.find((issue) => issue.title.startsWith(weeklyTitlePrefix));
+            const existingWeeklyIssue = existingOpenIssues.find((issue) => !issue.pull_request && issue.title.startsWith(weeklyTitlePrefix));
             if (existingWeeklyIssue) {
               core.info(`Skipping creation because issue #${existingWeeklyIssue.number} is already open: ${existingWeeklyIssue.html_url}`);
               return;
@@ -52,18 +56,33 @@ jobs:
               '- Adjacent topics that would interest experienced software engineers and engineering leaders',
               '',
               '### Research Requirements',
-              '- Focus on what is newly published, emerging, or newly relevant in the last 7 to 14 days.',
+              '- Focus on what is newly published, newly announced, or newly relevant in the last 7 days (up to 14 days only if high-signal).',
               '- Prioritize credible original sources (vendor engineering blogs, research labs, standards bodies, conference talks, notable essays, and well-sourced industry analysis).',
-              '- Provide 6 to 10 suggestions.',
+              '- Prioritize current news-cycle relevance over evergreen advice.',
+              '- Provide 6 to 10 suggestions total.',
+              '- Include at least one suggestion in each core area: AI and engineering; software process/design/technical leadership; human psychology in software engineering.',
               '- Do not include duplicate or near-duplicate stories.',
               '',
               '### Output Format (required for each suggestion)',
               '1. **Title**',
               '2. **Original source URL**',
-              '3. **Summary**: 2 to 4 sentences',
-              '4. **Topic match**: map to one or more of the theme areas above',
-              '5. **Why this fits jeffdoolittle.github.com**: specific explanation tied to likely audience value and Jeff\'s perspective',
-              '6. **Potential angle/headline ideas**: 1 to 2 ideas',
+              '3. **Publication date**: ISO date when available',
+              '4. **Why this is timely now**: 1 to 2 sentences tied to the current news cycle',
+              '5. **Summary**: 2 to 4 sentences',
+              '6. **Topic match**: map to one or more of the theme areas above',
+              '7. **Why this fits jeffdoolittle.github.com**: specific explanation tied to likely audience value and Jeff\'s perspective',
+              '8. **Potential angle/headline ideas**: 1 to 2 ideas',
+              '',
+              '### Final Organization (required)',
+              '- Group your suggestions under these headings:',
+              '  - AI and engineering',
+              '  - Software process, design, and technical leadership',
+              '  - Human psychology in software engineering',
+              '- Put at least one suggestion under each heading.',
+              '- You may add a fourth section for adjacent topics after the three required sections.',
+              '',
+              '### Validation',
+              '- End with a short checklist confirming: (a) at least one suggestion per required area, (b) all URLs included, (c) each suggestion is tied to current news-cycle timing.',
               '',
               '### Quality Bar',
               '- Be concrete and specific.',
