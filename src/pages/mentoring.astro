@@ -7,12 +7,12 @@ const requiredReading = [
   { title: 'Righting Software', href: 'https://rightingsoftware.org', author: 'Juval Löwy' },
   { title: 'Lean Software Systems Engineering for Developers', href: 'https://www.amazon.com/Lean-Software-Systems-Engineering-Developers/dp/1484269322', author: 'Doug Durham, Chad Michel' },
   { title: 'A Philosophy of Software Design', href: 'https://www.amazon.com/dp/1732102201', author: 'John Ousterhout' },
+  { title: 'Balancing Coupling in Software Design', href: 'https://www.amazon.com/dp/0137353480', author: 'Vlad Khononov' },
   { title: 'Exploring Requirements: Quality Before Design', href: 'https://www.amazon.com/dp/0932633730', author: 'Donald Gause and Gerald Weinberg' },
   { title: 'Software Fundamentals', href: 'https://www.amazon.com/dp/0201703696', author: 'Collected Papers by David L. Parnas' },
 ];
 
 const additionalReading = [
-  { title: 'Balancing Coupling in Software Design', href: 'https://www.amazon.com/dp/0137353480', author: 'Vlad Khononov' },
   { title: 'Code Health Guardian', href: 'https://www.amazon.com/dp/1763771709', author: 'Artie Shevchenko' },
   { title: '48 Laws of Power', href: 'https://www.amazon.com/dp/0140280197', author: 'Robert Greene' },
   { title: 'The Goal', href: 'https://www.amazon.com/dp/0884271951', author: 'Eli Goldratt' },
@@ -86,6 +86,9 @@ const additionalReading = [
   <h2 id="reading-list">Reading List <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
   <h3 id="required-reading">Required Reading</h3>
+
+  <h4>Books you must read as a software architect and systems engineer.</h4>
+
   <ul>
     {requiredReading.map(item => (
       <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.title}</a> by {item.author}</li>
@@ -93,6 +96,9 @@ const additionalReading = [
   </ul>
 
   <h3 id="additional-reading">Additional Reading</h3>
+
+  <h4>Books you should consider reading.</h4>
+
   <ul>
     {additionalReading.map(item => (
       <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.title}</a> by {item.author}</li>
