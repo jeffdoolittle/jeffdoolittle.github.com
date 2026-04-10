@@ -2,8 +2,8 @@ name: Weekly Copilot Topic Research
 
 on:
   schedule:
-    # 16:00 UTC on Friday (8:00 AM PT during PST, 9:00 AM PT during PDT)
-    - cron: "0 16 * * 5"
+    # 14:00 UTC on Friday (6:00 AM PT during PST, 7:00 AM PT during PDT)
+    - cron: "0 14 * * 5"
   workflow_dispatch:
 
 permissions:
