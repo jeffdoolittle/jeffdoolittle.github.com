@@ -18,13 +18,27 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const weeklyTitlePrefix = 'Weekly content research suggestions (';
             const today = new Date();
             const yyyy = today.getUTCFullYear();
             const mm = String(today.getUTCMonth() + 1).padStart(2, '0');
             const dd = String(today.getUTCDate()).padStart(2, '0');
             const dateStamp = `${yyyy}-${mm}-${dd}`;
 
-            const title = `Weekly content research suggestions (${dateStamp})`;
+            const existingOpenIssues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100,
+            });
+
+            const existingWeeklyIssue = existingOpenIssues.find((issue) => issue.title.startsWith(weeklyTitlePrefix));
+            if (existingWeeklyIssue) {
+              core.info(`Skipping creation because issue #${existingWeeklyIssue.number} is already open: ${existingWeeklyIssue.html_url}`);
+              return;
+            }
+
+            const title = `${weeklyTitlePrefix}${dateStamp})`;
 
             const body = [
               '## Task for Copilot cloud agent',
