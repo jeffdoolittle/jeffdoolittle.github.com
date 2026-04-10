@@ -1134,14 +1134,23 @@ img.center {
 
 div.social a {
   color: #828282;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 0.15rem 0.35rem;
 }
 div.social a:hover {
   color: var(--link);
 }
-div.social a i {
-  font-size: 1.5em;
-  margin-right: 0.1em;
-  margin-bottom: 0.3em;
+div.social a .social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
 }
 div.social {
   margin-bottom: 1em;
@@ -1314,6 +1323,11 @@ table.stripe a:hover {
 .flexgrid .column {
   margin: 1em auto;
 }
+.flexgrid .column a {
+  display: inline-block;
+  min-width: 3rem;
+  min-height: 3rem;
+}
 .flexgrid .column a:hover {
   text-decoration: none;
 }
@@ -1322,9 +1336,10 @@ table.stripe a:hover {
   display: flex;
   justify-content: center;
 }
-.flexgrid .column div i {
+.flexgrid .column div span {
   font-size: 2em;
   margin: 0.2em auto;
+  line-height: 1;
 }
 
 .img-solution-design {
