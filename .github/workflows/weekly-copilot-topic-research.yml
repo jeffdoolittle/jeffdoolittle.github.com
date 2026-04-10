@@ -13,12 +13,14 @@ concurrency:
 permissions:
   contents: read
   issues: write
+  models: read
 
 jobs:
   create-weekly-research-issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Create and assign weekly research issue
+      - name: Check for existing weekly research issue
+        id: precheck
         uses: actions/github-script@v7
         with:
           script: |
@@ -39,78 +41,164 @@ jobs:
             const existingWeeklyIssue = existingOpenIssues.find((issue) => !issue.pull_request && issue.title.startsWith(weeklyTitlePrefix));
             if (existingWeeklyIssue) {
               core.info(`Skipping creation because issue #${existingWeeklyIssue.number} is already open: ${existingWeeklyIssue.html_url}`);
+              core.setOutput('should_create', 'false');
+              core.setOutput('existing_issue_url', existingWeeklyIssue.html_url);
               return;
             }
 
             const title = `${weeklyTitlePrefix}${dateStamp})`;
+            core.setOutput('should_create', 'true');
+            core.setOutput('issue_title', title);
+            core.setOutput('date_stamp', dateStamp);
 
-            const body = [
-              '## Task for Copilot cloud agent',
+      - name: Gather recent source candidates
+        id: gather_sources
+        if: steps.precheck.outputs.should_create == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const queries = [
+              { area: 'AI and engineering', query: 'LLM engineering production' },
+              { area: 'AI and engineering', query: 'AI software engineering tools' },
+              { area: 'Software process, design, and technical leadership', query: 'software architecture decision record leadership' },
+              { area: 'Software process, design, and technical leadership', query: 'engineering leadership software process' },
+              { area: 'Human psychology in software engineering', query: 'developer productivity psychology burnout' },
+              { area: 'Human psychology in software engineering', query: 'team cognition software engineering' },
+            ];
+
+            const candidates = [];
+            const maxPerQuery = 6;
+
+            for (const item of queries) {
+              const url = `https://hn.algolia.com/api/v1/search_by_date?tags=story&hitsPerPage=${maxPerQuery}&query=${encodeURIComponent(item.query)}`;
+              try {
+                const res = await fetch(url, { headers: { 'user-agent': 'weekly-research-workflow' } });
+                if (!res.ok) {
+                  core.warning(`Source fetch failed for query '${item.query}' with status ${res.status}`);
+                  continue;
+                }
+
+                const data = await res.json();
+                for (const hit of data.hits || []) {
+                  if (!hit.url || !hit.title) {
+                    continue;
+                  }
+                  candidates.push({
+                    area: item.area,
+                    source: 'Hacker News (Algolia API)',
+                    title: hit.title,
+                    url: hit.url,
+                    published: hit.created_at,
+                    score: hit.points || 0,
+                    matched_query: item.query,
+                  });
+                }
+              } catch (error) {
+                core.warning(`Source fetch error for query '${item.query}': ${error.message}`);
+              }
+            }
+
+            const deduped = [];
+            const seen = new Set();
+            for (const c of candidates) {
+              if (seen.has(c.url)) {
+                continue;
+              }
+              seen.add(c.url);
+              deduped.push(c);
+            }
+
+            deduped.sort((a, b) => (b.score || 0) - (a.score || 0));
+            const selected = deduped.slice(0, 40);
+
+            const lines = [];
+            lines.push('## Candidate Sources');
+            lines.push('Use these as raw inputs. Prioritize recency and relevance.');
+            lines.push('');
+            for (const c of selected) {
+              lines.push(`- [${c.title}](${c.url})`);
+              lines.push(`  - Area hint: ${c.area}`);
+              lines.push(`  - Published: ${c.published || 'unknown'}`);
+              lines.push(`  - Signal: HN points ${c.score || 0}`);
+              lines.push(`  - Query: ${c.matched_query}`);
+            }
+
+            core.info(`Prepared ${selected.length} deduplicated candidate sources.`);
+            core.setOutput('sources_markdown', lines.join('\n'));
+
+      - name: Generate weekly research suggestions with AI inference
+        id: infer
+        if: steps.precheck.outputs.should_create == 'true'
+        uses: actions/ai-inference@v2
+        with:
+          model: openai/gpt-4o-mini
+          max-tokens: 3000
+          system-prompt: |
+            You are creating a weekly editorial briefing for Jeff Doolittle's website.
+
+            Requirements:
+            - Use only the candidate sources provided by the prompt.
+            - Prioritize current news-cycle relevance and concrete signal over hype.
+            - Produce 6 to 10 suggestions total.
+            - Include at least one suggestion in EACH required area:
+              1) AI and engineering
+              2) Software process, design, and technical leadership
+              3) Human psychology in software engineering
+            - Avoid duplicates and near-duplicates.
+
+            For each suggestion include:
+            1. Title
+            2. Original source URL
+            3. Publication date (ISO if known, else "unknown")
+            4. Why this is timely now (1-2 sentences)
+            5. Summary (2-4 sentences)
+            6. Topic match
+            7. Why this fits jeffdoolittle.github.com
+            8. Potential angle/headline ideas (1-2)
+
+            Output format:
+            - Markdown only.
+            - Sections in this order:
+              ## Weekly Content Research Suggestions
+              ### AI and engineering
+              ### Software process, design, and technical leadership
+              ### Human psychology in software engineering
+              ### Optional adjacent topics
+              ### Validation checklist
+            - Under Validation checklist, explicitly confirm per-topic coverage, URL completeness, and timeliness.
+          prompt: |
+            Date: ${{ steps.precheck.outputs.date_stamp }}
+
+            Build this week's suggestions from these candidate sources:
+
+            ${{ steps.gather_sources.outputs.sources_markdown }}
+
+      - name: Create weekly research issue
+        if: steps.precheck.outputs.should_create == 'true'
+        env:
+          AI_RESPONSE: ${{ steps.infer.outputs.response }}
+          ISSUE_TITLE: ${{ steps.precheck.outputs.issue_title }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const aiBody = (process.env.AI_RESPONSE || '').trim();
+            const fallbackBody = [
+              '## Weekly Content Research Suggestions',
               '',
-              'Research recent internet sources and propose blog/article ideas that are a strong fit for Jeff Doolittle\'s website and writing style.',
-              '',
-              '### Audience + Theme Fit',
-              '- AI and engineering',
-              '- Software process, design, and technical leadership',
-              '- Human psychology in software engineering',
-              '- Adjacent topics that would interest experienced software engineers and engineering leaders',
-              '',
-              '### Research Requirements',
-              '- Focus on what is newly published, newly announced, or newly relevant in the last 7 days (up to 14 days only if high-signal).',
-              '- Prioritize credible original sources (vendor engineering blogs, research labs, standards bodies, conference talks, notable essays, and well-sourced industry analysis).',
-              '- Prioritize current news-cycle relevance over evergreen advice.',
-              '- Provide 6 to 10 suggestions total.',
-              '- Include at least one suggestion in each core area: AI and engineering; software process/design/technical leadership; human psychology in software engineering.',
-              '- Do not include duplicate or near-duplicate stories.',
-              '',
-              '### Output Format (required for each suggestion)',
-              '1. **Title**',
-              '2. **Original source URL**',
-              '3. **Publication date**: ISO date when available',
-              '4. **Why this is timely now**: 1 to 2 sentences tied to the current news cycle',
-              '5. **Summary**: 2 to 4 sentences',
-              '6. **Topic match**: map to one or more of the theme areas above',
-              '7. **Why this fits jeffdoolittle.github.com**: specific explanation tied to likely audience value and Jeff\'s perspective',
-              '8. **Potential angle/headline ideas**: 1 to 2 ideas',
-              '',
-              '### Final Organization (required)',
-              '- Group your suggestions under these headings:',
-              '  - AI and engineering',
-              '  - Software process, design, and technical leadership',
-              '  - Human psychology in software engineering',
-              '- Put at least one suggestion under each heading.',
-              '- You may add a fourth section for adjacent topics after the three required sections.',
-              '',
-              '### Validation',
-              '- End with a short checklist confirming: (a) at least one suggestion per required area, (b) all URLs included, (c) each suggestion is tied to current news-cycle timing.',
-              '',
-              '### Quality Bar',
-              '- Be concrete and specific.',
-              '- Favor signal over hype.',
-              '- Include enough context that Jeff can decide quickly what to write next.',
-              '',
-              'Post your full findings as a comment on this issue.',
+              'AI generation returned an empty response. Please manually rerun the workflow.',
             ].join('\n');
 
             const issue = await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title,
-              body,
+              title: process.env.ISSUE_TITLE,
+              body: aiBody || fallbackBody,
               labels: ['enhancement'],
             });
 
             core.info(`Created issue #${issue.data.number}: ${issue.data.html_url}`);
 
-            try {
-              await github.rest.issues.addAssignees({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.data.number,
-                assignees: ['copilot'],
-              });
-              core.info('Assigned issue to @copilot.');
-            } catch (error) {
-              core.warning(`Could not assign @copilot automatically: ${error.message}`);
-              core.setFailed('Issue created, but assignment to @copilot failed. Check Copilot cloud agent availability and repository settings.');
-            }
+      - name: Report skip reason
+        if: steps.precheck.outputs.should_create != 'true'
+        run: |
+          echo "Skipping weekly issue creation because one is already open: ${{ steps.precheck.outputs.existing_issue_url }}"
