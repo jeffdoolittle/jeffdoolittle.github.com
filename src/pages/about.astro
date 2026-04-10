@@ -7,7 +7,6 @@ import Portfolio from '../components/Portfolio.astro';
 <Page title="About">
   <PageNav entries={[
     { title: 'Focus', href: '#focus' },
-    { title: 'Resume', href: '#resume' },
     { title: 'Professional Bio', href: '#professional-bio' },
     { title: 'Contact', href: '#contact' },
     { title: 'Personal Bio', href: '#personal-bio' },
@@ -15,30 +14,46 @@ import Portfolio from '../components/Portfolio.astro';
     { title: 'Portfolio', href: '#portfolio' },
   ]} />
 
-  <ul>
-    <li>Distinguished Engineer and Principal Architect at Trimble</li>
-    <li>Third decade in the software industry</li>
-    <li>Former CTO for a boutique consulting firm</li>
-    <li>Former SaaS CTO in the AgTech industry</li>
-    <li>BS - Business Administration and Marketing</li>
-    <li>MA - Transformational Leadership</li>
-    <li>Former Host for <a href="https://www.se-radio.net/team/jeff-doolittle/" target="_blank" rel="noopener noreferrer">Software Engineering Radio</a></li>
-    <li>Published Author and Conference Presenter</li>
-  </ul>
-
   <h2 id="focus">Focus <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
-  <p><strong>Vision</strong>: A world where humans thrive by discovering, refining and acting on their unique value creation potential while helping others do the same.</p>
-  <p><strong>Mission</strong>: To help make good software professionals great!</p>
-  <p><strong>Strategy</strong>: Design Engineering Leadership (Training, Mentoring, Writing, Presenting, Model Building, Scientific Method)</p>
+  <table style="width:100%; border-collapse: collapse; margin-bottom: 0.5rem;">
+    <tbody>
+      <tr style="border-bottom: 1px solid var(--section-border);">
+        <td style="padding: 0.75rem 1rem; font-weight: 700; color: var(--section-title); white-space: nowrap; width: 7rem;">Dream</td>
+        <td style="padding: 0.75rem 1rem;">A world where humans thrive by discovering, refining and acting on their unique value creation potential while helping others do the same.</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--section-border);">
+        <td style="padding: 0.75rem 1rem; font-weight: 700; color: var(--section-title); white-space: nowrap;">Vision</td>
+        <td style="padding: 0.75rem 1rem;">Rigorous systems engineering principles applied broadly in the software industry.</td>
+      </tr>
+      <tr style="border-bottom: 1px solid var(--section-border);">
+        <td style="padding: 0.75rem 1rem; font-weight: 700; color: var(--section-title); white-space: nowrap;">Mission</td>
+        <td style="padding: 0.75rem 1rem;">To help make good software professionals great!</td>
+      </tr>
+      <tr>
+        <td style="padding: 0.75rem 1rem; font-weight: 700; color: var(--section-title); white-space: nowrap;">Strategy</td>
+        <td style="padding: 0.75rem 1rem;">Design Engineering Leadership (Training, Mentoring, Writing, Presenting, Model Building, Scientific Method)</td>
+      </tr>
+    </tbody>
+  </table>
 
-  <h2 id="resume">Resume <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
-
-  <p>
+  <p style="text-align: center; margin-top: 1.5rem;">
     <a class="btn btn-primary" href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer">
       &#8594; View My Resume
     </a>
   </p>
+
+  <h2 id="overview">Overview <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
+
+  <ul>
+    <li>AI Engineering Leader</li>
+    <li>Distinguished Engineer and Principal Architect at Trimble</li>
+    <li>Third decade in the software industry</li>
+    <li>Former CTO for a boutique consulting firm</li>
+    <li>Former SaaS CTO in the AgTech industry</li>
+    <li>Former Host for <a href="https://www.se-radio.net/team/jeff-doolittle/" target="_blank" rel="noopener noreferrer">Software Engineering Radio</a></li>
+    <li>Published Author and Conference Presenter</li>
+  </ul>
 
   <h2 id="professional-bio">Professional Bio <span style="float: right; vertical-align: center; font-size: .5em">^ <a href="#top">top</a></span></h2>
 
@@ -47,7 +62,10 @@ import Portfolio from '../components/Portfolio.astro';
       Jeff began his career in a successful software consulting firm serving companies of all sizes, from small businesses through Fortune 100 companies. He took on the role of CTO in just a few short years. Jeff's experience as a consultant exposed him to a vast array of business problems for which he crafted valuable, customer-centric solutions. His next challenge came in his role as Co-founder and CTO of a SaaS startup where he provided strong business, architectural, system design and process leadership. Under Jeff's guidance, his company pioneered cloud automation processes and event-driven systems long before these had become standard industry practice. Jeff currently works at <a href="https://trimble.com" target="_blank" rel="noopener noreferrer">Trimble</a> in the <a href="https://construction.trimble.com/" target="_blank" rel="noopener noreferrer">Construction</a> division as a Distinguished Engineer and Principal Architect.
     </p>
     <p>
-      In addition to architectural mastery, Jeff has completed a Master of Arts in Transformational Leadership, a discipline which focuses on the techniques of leadership replication. An inspiring teacher and leader, anyone who has had the opportunity to work with or be mentored by him will confirm that <strong>working with Jeff has made them better software engineers, architects and leaders</strong>.
+      In addition to architectural mastery, Jeff has completed a Master of Arts in Transformational Leadership, a discipline which focuses on the techniques of leadership replication. An inspiring teacher and leader, anyone who has had the opportunity to work with or be mentored by him will confirm:
+    </p>
+    <p style="text-align: center;">
+      <strong style="color: var(--amber);">Working with Jeff has made them better software engineers, architects and leaders</strong>.
     </p>
   </div>
 
@@ -62,8 +80,8 @@ import Portfolio from '../components/Portfolio.astro';
   <ul>
     <li>I currently reside in the Portland, Oregon area.</li>
     <li>I grew up in San Diego, California and graduated from <a href="https://www.powayusd.com/en-US/Schools/HS/PHS/Home" target="_blank" rel="noopener noreferrer">Poway High School</a>.</li>
-    <li>I have been <a href="/2018/08/04/hope-in-the-dark/">playing guitar</a> since I was 13, and it remains one of my passions and joys. I can also play piano and bass, and I'm learning to play the drums.</li>
-    <li>I graduated from <a href="https://www.biola.edu/" target="_blank" rel="noopener noreferrer">Biola University</a> where I received my BS in Business Administration with an emphasis in Marketing, and a minor in Biblical Studies.</li>
+    <li>I have been <a href="/2018/08/04/hope-in-the-dark/">playing guitar</a> since I was 13, and it remains one of my passions and joys. I can also play piano and bass, and starting in the fall of 2024, I finally fufilled my dream of learning to play the drums.</li>
+    <li>I graduated from <a href="https://www.biola.edu/" target="_blank" rel="noopener noreferrer">Biola University</a> where I received my BS in Business Administration with an emphasis in Marketing.</li>
     <li>I graduated Summa Cum Laude with a Master of Arts in <a href="https://www.bethel.edu/seminary/academics/transformational-leadership/" target="_blank" rel="noopener noreferrer">Transformational Leadership</a> from <a href="https://www.bethel.edu/academics/san-diego/" target="_blank" rel="noopener noreferrer">Bethel Seminary San Diego</a> in 2010.</li>
   </ul>
 

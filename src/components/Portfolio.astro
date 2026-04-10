@@ -7,7 +7,7 @@ const { projects } = portfolioData as { projects: Array<{ title: string; summary
 {projects.map(p => (
   <>
     <h3>{p.title}</h3>
-    <blockquote><h4 style="color: #c06f39">{p.summary}</h4></blockquote>
+    <blockquote><h4 style="color: var(--amber)">{p.summary}</h4></blockquote>
     <div set:html={p.content} />
   </>
 ))}
