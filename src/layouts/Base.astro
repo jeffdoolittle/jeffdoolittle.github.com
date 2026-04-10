@@ -77,16 +77,17 @@ const navLinks = [
   <link rel="stylesheet" href="/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Lightbox CSS -->
-  <link rel="stylesheet" href="/lightbox.css" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  </noscript>
 
   <!-- RSS Feed -->
   <link rel="alternate" type="application/rss+xml" title="Jeff Doolittle" href="/feed.xml" />
 
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/2202cfd9ba.js" crossorigin="anonymous" is:inline></script>
+  <script src="https://kit.fontawesome.com/2202cfd9ba.js" crossorigin="anonymous" defer is:inline></script>
 
   <GoogleAnalytics />
 </head>
@@ -240,9 +241,31 @@ const navLinks = [
     </div>
   </footer>
 
-  <!-- jQuery + Lightbox -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" is:inline></script>
-  <script is:inline src="/lightbox.js"></script>
+  <script is:inline>
+    (function() {
+      // Load lightbox assets only on pages that have likely lightbox/embed targets.
+      var hasLightboxTargets = !!document.querySelector(
+        '.lightbox-image, a[href*="youtube.com"], a[href*="youtu.be"], a[href*="vimeo.com"], a[href$=".jpg"], a[href$=".jpeg"], a[href$=".png"], a[href$=".gif"], a[href$=".svg"]'
+      );
+      if (!hasLightboxTargets) return;
+
+      var css = document.createElement('link');
+      css.rel = 'stylesheet';
+      css.href = '/lightbox.css';
+      document.head.appendChild(css);
+
+      var jquery = document.createElement('script');
+      jquery.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js';
+      jquery.defer = true;
+      jquery.onload = function() {
+        var lightbox = document.createElement('script');
+        lightbox.src = '/lightbox.js';
+        lightbox.defer = true;
+        document.body.appendChild(lightbox);
+      };
+      document.body.appendChild(jquery);
+    })();
+  </script>
 
 </body>
 </html>

@@ -14,7 +14,7 @@ const { posts } = Astro.props;
     <div class="post-card">
       {post.data.image && (
         <a href={postUrl(post)} class="post-card__img-link">
-          <img class="post-card__img" src={post.data.image} alt={post.data.image_alt || post.data.title} loading="lazy" />
+          <img class="post-card__img" src={post.data.image} alt={post.data.image_alt || post.data.title} loading="lazy" decoding="async" fetchpriority="low" />
         </a>
       )}
       <div class="post-card__body">
