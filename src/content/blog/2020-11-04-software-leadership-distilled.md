@@ -21,7 +21,7 @@ Software Leadership Distilled provides an overview of concepts and practices sof
   - Teams and organizations that embody the values of *trust, clarity and empowerment* can experience a significant boost in productivity and morale.
 - **Make and Keep Agreements to [Build Trust](#build-trust)**
   - Foster a culture that rewards building trust by making and keeping agreements.
-- **Provide [Clarity of Role and Responsibility](#role-clarity)**
+- **Provide [Clarity of Role and Responsibility](#clarify-roles)**
   - Clarifying roles clears up a host of issues that plague organizations and teams, orienting team members directly toward their specific value creation task and freeing them to empower others.
 - **Recognize and Reward [Empowerment Behaviors](#empowerment)**
   - Leveraging empowerment supercharges the benefits of role clarity, leading to accelerating levels of trust and health.

@@ -39,5 +39,5 @@ I invite you to join me and our special guest, Inigo Montoya, as we delve into t
 <hr />
 
 <div class="framer">
-  <iframe src="https://www.youtube-nocookie.com/embed/XTUIj-YqVzs" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe title="YouTube video" src="https://www.youtube-nocookie.com/embed/XTUIj-YqVzs" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

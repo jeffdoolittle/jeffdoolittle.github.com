@@ -30,7 +30,7 @@ This can be described in a word: *solutionizing*. Jumping too quickly to "how" i
 
 ## The Solution Design Model
 
-All day, every day, humans constantly **orient** ourselves to our surroundings while placing our **focus** on a particular aspect or element within our environment. It’s so natural we usually don’t even think about it. Just stop for a second to consider your current environment (your **orientation**) and the current object of your attention (your **focus**)—which hopefully is [this page](#orientation-and-focus). Notice how every thought and action comes into existence within a **contextual orientation** and a **particular focus**. Orientation helps you find your location within your current reality. Focus directs your attention and shapes the space of available actions you might take next within your current context. An orientation plus a focus equals a perspective.
+All day, every day, humans constantly **orient** ourselves to our surroundings while placing our **focus** on a particular aspect or element within our environment. It’s so natural we usually don’t even think about it. Just stop for a second to consider your current environment (your **orientation**) and the current object of your attention (your **focus**)—which hopefully is [this page](#the-solution-design-model). Notice how every thought and action comes into existence within a **contextual orientation** and a **particular focus**. Orientation helps you find your location within your current reality. Focus directs your attention and shapes the space of available actions you might take next within your current context. An orientation plus a focus equals a perspective.
 
 > An orientation plus a focus equals a perspective.
 
