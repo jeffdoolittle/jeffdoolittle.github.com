@@ -12,7 +12,7 @@ published: true
 Recently, I had the distinct pleasure to present once again for my hometown technology user group on a topic that is near and dear to my heart - *Software Architecture as Complexity Containment*.
 
 <div style="width: 80%; margin: 0 auto 0 auto;">
-<iframe width="760" height="420" src="https://www.youtube.com/embed/-DVo24Y1PcU?start=748" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe title="YouTube video" width="760" height="420" src="https://www.youtube.com/embed/-DVo24Y1PcU?start=748" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## From the Presentation

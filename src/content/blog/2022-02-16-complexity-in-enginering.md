@@ -20,5 +20,5 @@ Watch the episode on [YouTube](https://www.youtube.com/watch?v=GJQrMYHTMLM).
 Also, don't miss my related presentation for the PADNUG User Group on [Software Architecture as Complexity Containment](/2021/03/03/padnug-software-architecture-as-complexity-containment/).
 
 <div class="framer">
-    <iframe src="https://www.youtube.com/embed/GJQrMYHTMLM" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="YouTube video" src="https://www.youtube.com/embed/GJQrMYHTMLM" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

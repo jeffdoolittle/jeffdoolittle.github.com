@@ -31,7 +31,7 @@ Go give it a listen! [Humans as Value Creators - Unlocking your potential and bu
 
 ### Find out more about Nigel and the Unfiltered Build Podcast
 
-<a href="https://www.linkedin.com/in/nigelfinley/" target="_blank"><img src="/assets/nigel_finley.jpg" width=196 style="margin: 1.2rem 0em;" /></a>
+<a href="https://www.linkedin.com/in/nigelfinley/" target="_blank"><img src="/assets/nigel_finley.jpg" alt="Nigel Finley" width=196 style="margin: 1.2rem 0em;" /></a>
 
 [Nigel Finley on LinkedIn](https://www.linkedin.com/in/nigelfinley/)
 

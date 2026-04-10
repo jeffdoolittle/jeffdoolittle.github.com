@@ -76,4 +76,4 @@ ___
 Copyright © 2020 Jeff Doolittle. All rights reserved.
 
 [^1]: Jeff Doolittle, <a href="/2020/11/04/software-leadership-distilled/">Software Leadership Distilled</a>.
-[^2]: Ron Claassen, <a href="/assets/claassen-2002-a-peacemaking-model.pdf" target="_blank">A Peacemaking Model</a>. Original at <a href="http://www.rpforschools.net/articles/Theory/Claassen%202002%20A%20Peacemaking%20Model.pdf" target="_blank">http://www.rpforschools.net/articles/Theory/Claassen%202002%20A%20Peacemaking%20Model.pdf</a>.
+[^2]: Ron Claassen, <a href="/assets/claassen-2002-a-peacemaking-model.pdf" target="_blank">A Peacemaking Model</a>. Original at <a href="http://www.rpforschools.net/articles/Theory/Claassen%202002%20A%20Peacemaking%20Model.pdf" target="_blank">Original source document</a>.
