@@ -26,9 +26,7 @@ In a similar fashion, a lack of cultural alignment leads to negative outcomes fo
 
 Mechanics use diagnostic tools and standard practices to realign your car. The Five-factor Cultural Alignment Model provides similar benefits for organizational and team leaders.
 
-<a href="/assets/cultural-alignment.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%" class="lightbox-image current" title="Vision, Mission, Strategies, Tactics, Values">
-    <img src="/assets/cultural-alignment.jpg" alt="Vision, Mission, Strategies, Tactics, Values">
-</a>
+<img src="/assets/cultural-alignment.svg" alt="Vision, Mission, Strategies, Tactics, Values" style="display: block; margin-left: auto; margin-right: auto; width: 50%"/>
 
 [**Values**](#values) are the guide rails of organizational culture. They provide *perspective and guidance* from the highest level all the way down to the most granular and tactical level.
 

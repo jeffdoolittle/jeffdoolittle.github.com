@@ -7,7 +7,7 @@ const { endorsements } = endorsementsData as { endorsements: Array<{ reference: 
 {endorsements.map(e => (
   <>
     <h3>{e.reference}</h3>
-    <blockquote><h4 style="color: #c06f39">{e.tagLine}</h4></blockquote>
+    <blockquote><h4 style="color: var(--amber)">{e.tagLine}</h4></blockquote>
     <div set:html={e.content} />
   </>
 ))}

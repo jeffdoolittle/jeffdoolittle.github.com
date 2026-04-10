@@ -9,9 +9,6 @@ image_alt: "Portland: Pearl District"
 published: true
 ---
 
-- TOC
-
-
 ## Executive Summary
 
 

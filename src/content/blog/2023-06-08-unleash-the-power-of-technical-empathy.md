@@ -11,12 +11,12 @@ published: true
 
 ## PlatformCon 2023
 
-I'm excited to be part of an amazing line up of presenters for [PlatformCon 2023](https://platformcon.com/talks/unleash-the-power-of-technical-empathy) June 8-9, 2023. My talk is about how to [*Unleash the Power of Technical Empathy*](https://platformcon.com/talks/unleash-the-power-of-technical-empathy). The presentation is hosted on YouTube so you can watch it any time during or after the conference.
+I'm excited to be part of an amazing line up of presenters for [PlatformCon 2023](https://2023.platformcon.com/talks/unleash-the-power-of-technical-empathy) June 8-9, 2023. My talk is about how to [*Unleash the Power of Technical Empathy*](https://2023.platformcon.com/talks/unleash-the-power-of-technical-empathy). The presentation is hosted on YouTube so you can watch it any time during or after the conference.
 
 Technical empathy provides a shift in mindset and culture that cultivates greater clarity of responsibility, increases the empowerment of both implementers and integrators, and ultimately helps build and maintain trust between software delivery teams.
 
 Give it a watch and please feel free to share with your colleagues!
 
-[![PlatformCon 2023 - Jeff Doolittle](/assets/platform-con-2023-jeff.png)](https://platformcon.com/talks/unleash-the-power-of-technical-empathy)
+[![PlatformCon 2023 - Jeff Doolittle](/assets/platform-con-2023-jeff.png)](https://2023.platformcon.com/talks/unleash-the-power-of-technical-empathy)
 
 For related content on complexity, software engineering and leadership, check out my other [publications](/publications/#events).
