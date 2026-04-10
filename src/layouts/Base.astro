@@ -12,7 +12,7 @@ interface Props {
 const {
   title,
   description = "Software Architect. Strategic Business Leader. I help make good software professionals great!",
-  image = "/assets/og_image.png",
+  image = "/assets/social_head_shot.jpg",
   canonicalUrl,
 } = Astro.props;
 
@@ -57,6 +57,12 @@ const navLinks = [
   <meta property="og:description" content={description} />
   <meta property="og:image" content={image} />
   <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={image} />
 
   {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
 
