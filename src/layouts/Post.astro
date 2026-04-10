@@ -107,7 +107,9 @@ const pageUrl = Astro.url.pathname;
         </div>
       </div>
 
-      <a class="u-url" href={pageUrl} hidden></a>
+      <a class="u-url" href={pageUrl} aria-label={`Permalink for ${title}`}>
+        <span style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Permalink</span>
+      </a>
     </article>
   </div>
 </Base>
