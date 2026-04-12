@@ -1,0 +1,326 @@
+---
+import Page from '../layouts/Page.astro';
+---
+
+<Page title="Low Tide Finder" description="NOAA low-tide finder for Clatsop County, Oregon and Long Beach-area Washington beaches.">
+  <h2>NOAA Low Tide Finder</h2>
+  <p>
+    This page checks NOAA tide predictions and reports low tides at <strong>-0.8 ft or lower</strong>
+    for Clatsop County, Oregon beaches and southern Washington (Long Beach area).
+  </p>
+
+  <div class="tide-controls" aria-label="Low tide filters">
+    <label>
+      Start date
+      <input id="start-date" type="date" />
+    </label>
+    <label>
+      Days
+      <select id="day-range">
+        <option value="60">60</option>
+        <option value="90" selected>90</option>
+        <option value="120">120</option>
+      </select>
+    </label>
+    <label>
+      Threshold (ft)
+      <input id="threshold" type="number" step="0.1" value="-0.8" />
+    </label>
+    <button id="refresh-tides" class="btn btn-primary" type="button">Refresh</button>
+  </div>
+
+  <p id="status" class="tide-status" aria-live="polite">Loading tide predictions...</p>
+
+  <section id="results" class="tide-results" aria-live="polite"></section>
+
+  <p class="tide-note">
+    Notes: Predictions are NOAA station-based proxies, not exact beach spot measurements. Tide conditions can vary by location,
+    weather, swell, and barometric pressure.
+  </p>
+
+  <script is:inline>
+    (function() {
+      var STATIONS = [
+        {
+          id: '9439011',
+          name: 'Hammond, OR',
+          area: 'Clatsop County beaches (Fort Stevens, Sunset Beach, Seaside)',
+        },
+        {
+          id: '9439040',
+          name: 'Astoria, OR',
+          area: 'Clatsop County estuary context',
+        },
+        {
+          id: '9440910',
+          name: 'Toke Point, WA',
+          area: 'Long Beach peninsula area (southern Washington)',
+        },
+      ];
+
+      var startDateInput = document.getElementById('start-date');
+      var dayRangeInput = document.getElementById('day-range');
+      var thresholdInput = document.getElementById('threshold');
+      var refreshButton = document.getElementById('refresh-tides');
+      var statusEl = document.getElementById('status');
+      var resultsEl = document.getElementById('results');
+
+      function toYyyymmdd(dateText) {
+        return (dateText || '').replace(/-/g, '');
+      }
+
+      function addDays(dateText, days) {
+        var date = new Date(dateText + 'T00:00:00');
+        date.setDate(date.getDate() + days);
+        return date.toISOString().slice(0, 10);
+      }
+
+      function formatFeet(value) {
+        return Number(value).toFixed(2) + ' ft';
+      }
+
+      function formatDateTime(localText) {
+        var parsed = new Date(localText.replace(' ', 'T'));
+        if (Number.isNaN(parsed.getTime())) return localText;
+        return parsed.toLocaleString([], {
+          weekday: 'short',
+          month: 'short',
+          day: 'numeric',
+          hour: 'numeric',
+          minute: '2-digit',
+        });
+      }
+
+      function renderNoData(station) {
+        return '<article class="tide-card">' +
+          '<h3>' + station.name + '</h3>' +
+          '<p class="tide-area">' + station.area + '</p>' +
+          '<p class="tide-empty">No low tides at or below threshold in the selected range.</p>' +
+          '</article>';
+      }
+
+      function renderStation(station, lows, threshold) {
+        if (!lows.length) return renderNoData(station);
+
+        var rows = lows.map(function(item) {
+          var value = Number(item.v);
+          var isVeryLow = value <= -1.0;
+          var rowClass = isVeryLow ? ' class="tide-list__item tide-list__item--very-low"' : ' class="tide-list__item"';
+          return '<li' + rowClass + '><span class="tide-list__time">' + formatDateTime(item.t) + '</span><strong class="tide-list__value">' + formatFeet(value) + '</strong></li>';
+        }).join('');
+
+        return '<article class="tide-card">' +
+          '<h3>' + station.name + '</h3>' +
+          '<p class="tide-area">' + station.area + '</p>' +
+          '<p class="tide-count">Found ' + lows.length + ' low tide(s) <= ' + formatFeet(threshold) + '</p>' +
+          '<ul class="tide-list">' + rows + '</ul>' +
+          '</article>';
+      }
+
+      function buildUrl(stationId, beginDate, rangeHours) {
+        var params = new URLSearchParams({
+          product: 'predictions',
+          application: 'jeffdoolittle-low-tides',
+          begin_date: beginDate,
+          range: String(rangeHours),
+          datum: 'MLLW',
+          station: stationId,
+          time_zone: 'lst_ldt',
+          units: 'english',
+          interval: 'hilo',
+          format: 'json',
+        });
+        return 'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?' + params.toString();
+      }
+
+      function parseLows(predictions, threshold) {
+        if (!Array.isArray(predictions)) return [];
+        return predictions
+          .filter(function(item) {
+            return item.type === 'L' && Number(item.v) <= threshold;
+          })
+          .sort(function(a, b) {
+            return new Date(a.t.replace(' ', 'T')).getTime() - new Date(b.t.replace(' ', 'T')).getTime();
+          });
+      }
+
+      async function fetchStation(station, startDate, days, threshold) {
+        var predictions = [];
+
+        for (var offset = 0; offset < days; offset += 30) {
+          var chunkDays = Math.min(30, days - offset);
+          var chunkStart = addDays(startDate, offset);
+          var beginDate = toYyyymmdd(chunkStart);
+          var rangeHours = chunkDays * 24;
+
+          var response = await fetch(buildUrl(station.id, beginDate, rangeHours));
+          var payload = await response.json();
+          if (!response.ok || payload.error) {
+            var message = payload && payload.error ? payload.error.message : 'Unknown NOAA API error';
+            throw new Error(station.name + ': ' + message);
+          }
+
+          if (Array.isArray(payload.predictions)) {
+            predictions = predictions.concat(payload.predictions);
+          }
+        }
+
+        return {
+          station: station,
+          lows: parseLows(predictions, threshold),
+        };
+      }
+
+      async function refresh() {
+        var startDate = startDateInput.value;
+        var days = Number(dayRangeInput.value);
+        var threshold = Number(thresholdInput.value);
+
+        if (!startDate || !Number.isFinite(days) || days <= 0 || !Number.isFinite(threshold)) {
+          statusEl.textContent = 'Please provide a valid date, day range, and threshold.';
+          return;
+        }
+
+        statusEl.textContent = 'Loading NOAA predictions...';
+        resultsEl.innerHTML = '';
+
+        try {
+          var groups = await Promise.all(
+            STATIONS.map(function(station) {
+              return fetchStation(station, startDate, days, threshold);
+            })
+          );
+
+          var totalLows = groups.reduce(function(sum, group) {
+            return sum + group.lows.length;
+          }, 0);
+
+          resultsEl.innerHTML = groups.map(function(group) {
+            return renderStation(group.station, group.lows, threshold);
+          }).join('');
+
+          statusEl.textContent = 'Found ' + totalLows + ' qualifying low tide(s) across ' + STATIONS.length + ' NOAA stations.';
+        } catch (error) {
+          resultsEl.innerHTML = '';
+          statusEl.textContent = 'Could not load NOAA predictions right now. ' + (error && error.message ? error.message : 'Please try again.');
+        }
+      }
+
+      var today = new Date();
+      startDateInput.value = today.toISOString().slice(0, 10);
+
+      refreshButton.addEventListener('click', refresh);
+      refresh();
+    })();
+  </script>
+</Page>
+
+<style is:global>
+  .tide-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.9rem;
+    align-items: end;
+    margin: 1rem 0 1.25rem;
+  }
+
+  .tide-controls label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-weight: 600;
+    color: var(--body-text, #d6e0ea);
+  }
+
+  .tide-controls input,
+  .tide-controls select {
+    border: 1px solid var(--section-border, #35506a);
+    border-radius: 0.5rem;
+    padding: 0.55rem 0.6rem;
+    background: var(--surface, #122231);
+    color: inherit;
+  }
+
+  .tide-status {
+    margin: 0.25rem 0 1rem;
+    font-weight: 600;
+    color: var(--section-title, #7db6ff);
+  }
+
+  .tide-results {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .tide-card {
+    border: 1px solid var(--section-border, #35506a);
+    border-radius: 0.75rem;
+    padding: 0.95rem;
+    background: linear-gradient(170deg, rgba(21, 43, 63, 0.82), rgba(12, 27, 41, 0.82));
+  }
+
+  .tide-card h3 {
+    margin: 0;
+  }
+
+  .tide-area {
+    margin: 0.3rem 0 0.75rem;
+    opacity: 0.9;
+    font-size: 0.95rem;
+  }
+
+  .tide-count {
+    margin: 0 0 0.6rem;
+    font-weight: 600;
+    color: var(--link-color, #8ecbff);
+  }
+
+  .tide-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.45rem;
+  }
+
+  .tide-list__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.4rem;
+    border-top: 1px dashed rgba(126, 172, 211, 0.35);
+    padding-top: 0.45rem;
+  }
+
+  .tide-list__time {
+    padding-right: 0.8rem;
+  }
+
+  .tide-list__value {
+    min-width: 5.25rem;
+    text-align: right;
+  }
+
+  .tide-list__item--very-low .tide-list__time,
+  .tide-list__item--very-low .tide-list__value {
+    color: var(--amber);
+    font-weight: 700;
+  }
+
+  .tide-empty {
+    margin: 0;
+    opacity: 0.92;
+  }
+
+  .tide-note {
+    margin-top: 1.1rem;
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+
+  @media (max-width: 640px) {
+    .tide-controls {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
