@@ -17,10 +17,9 @@ import Page from '../layouts/Page.astro';
     <label>
       Days
       <select id="day-range">
-        <option value="3">3</option>
-        <option value="7" selected>7</option>
-        <option value="10">10</option>
-        <option value="14">14</option>
+        <option value="60">60</option>
+        <option value="90" selected>90</option>
+        <option value="120">120</option>
       </select>
     </label>
     <label>
@@ -70,6 +69,12 @@ import Page from '../layouts/Page.astro';
         return (dateText || '').replace(/-/g, '');
       }
 
+      function addDays(dateText, days) {
+        var date = new Date(dateText + 'T00:00:00');
+        date.setDate(date.getDate() + days);
+        return date.toISOString().slice(0, 10);
+      }
+
       function formatFeet(value) {
         return Number(value).toFixed(2) + ' ft';
       }
@@ -98,7 +103,10 @@ import Page from '../layouts/Page.astro';
         if (!lows.length) return renderNoData(station);
 
         var rows = lows.map(function(item) {
-          return '<li><span>' + formatDateTime(item.t) + '</span><strong>' + formatFeet(item.v) + '</strong></li>';
+          var value = Number(item.v);
+          var isVeryLow = value <= -1.0;
+          var rowClass = isVeryLow ? ' class="tide-list__item tide-list__item--very-low"' : ' class="tide-list__item"';
+          return '<li' + rowClass + '><span class="tide-list__time">' + formatDateTime(item.t) + '</span><strong class="tide-list__value">' + formatFeet(value) + '</strong></li>';
         }).join('');
 
         return '<article class="tide-card">' +
@@ -136,16 +144,30 @@ import Page from '../layouts/Page.astro';
           });
       }
 
-      async function fetchStation(station, beginDate, rangeHours, threshold) {
-        var response = await fetch(buildUrl(station.id, beginDate, rangeHours));
-        var payload = await response.json();
-        if (!response.ok || payload.error) {
-          var message = payload && payload.error ? payload.error.message : 'Unknown NOAA API error';
-          throw new Error(station.name + ': ' + message);
+      async function fetchStation(station, startDate, days, threshold) {
+        var predictions = [];
+
+        for (var offset = 0; offset < days; offset += 30) {
+          var chunkDays = Math.min(30, days - offset);
+          var chunkStart = addDays(startDate, offset);
+          var beginDate = toYyyymmdd(chunkStart);
+          var rangeHours = chunkDays * 24;
+
+          var response = await fetch(buildUrl(station.id, beginDate, rangeHours));
+          var payload = await response.json();
+          if (!response.ok || payload.error) {
+            var message = payload && payload.error ? payload.error.message : 'Unknown NOAA API error';
+            throw new Error(station.name + ': ' + message);
+          }
+
+          if (Array.isArray(payload.predictions)) {
+            predictions = predictions.concat(payload.predictions);
+          }
         }
+
         return {
           station: station,
-          lows: parseLows(payload.predictions, threshold),
+          lows: parseLows(predictions, threshold),
         };
       }
 
@@ -159,16 +181,13 @@ import Page from '../layouts/Page.astro';
           return;
         }
 
-        var beginDate = toYyyymmdd(startDate);
-        var rangeHours = Math.min(days * 24, 720);
-
         statusEl.textContent = 'Loading NOAA predictions...';
         resultsEl.innerHTML = '';
 
         try {
           var groups = await Promise.all(
             STATIONS.map(function(station) {
-              return fetchStation(station, beginDate, rangeHours, threshold);
+              return fetchStation(station, startDate, days, threshold);
             })
           );
 
@@ -196,7 +215,7 @@ import Page from '../layouts/Page.astro';
   </script>
 </Page>
 
-<style>
+<style is:global>
   .tide-controls {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -265,12 +284,27 @@ import Page from '../layouts/Page.astro';
     gap: 0.45rem;
   }
 
-  .tide-list li {
+  .tide-list__item {
     display: flex;
     justify-content: space-between;
-    gap: 0.8rem;
+    gap: 1.4rem;
     border-top: 1px dashed rgba(126, 172, 211, 0.35);
     padding-top: 0.45rem;
+  }
+
+  .tide-list__time {
+    padding-right: 0.8rem;
+  }
+
+  .tide-list__value {
+    min-width: 5.25rem;
+    text-align: right;
+  }
+
+  .tide-list__item--very-low .tide-list__time,
+  .tide-list__item--very-low .tide-list__value {
+    color: var(--amber);
+    font-weight: 700;
   }
 
   .tide-empty {
