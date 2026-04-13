@@ -39,6 +39,6 @@ export default [
     "subtitle": "Exploring the world",
     "entriesHeader": "Trips",
     "entriesType": "trip",
-    "highlight": true
+    "highlight": false
   }
 ] as const;
