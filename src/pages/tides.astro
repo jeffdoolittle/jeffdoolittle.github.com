@@ -96,10 +96,7 @@ import Page from '../layouts/Page.astro';
       }
 
       function formatInputValue(value) {
-        var formatted = Number(value).toFixed(1).replace(/\.0$/, '');
-        formatted = formatted.replace(/^-0\./, '-.');
-        formatted = formatted.replace(/^0\./, '.');
-        return formatted;
+        return Number(value).toFixed(1).replace(/\.0$/, '');
       }
 
       function normalizeNumericText(value) {
