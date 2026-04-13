@@ -24,10 +24,17 @@ import Page from '../layouts/Page.astro';
     </label>
     <label>
       Threshold (ft)
-      <input id="threshold" type="number" step="0.1" value="-0.8" />
+      <input id="threshold" type="text" inputmode="decimal" value="-.8" />
+    </label>
+    <label>
+      Highlight cutoff (ft)
+      <input id="highlight-threshold" type="text" inputmode="decimal" value="-1" />
     </label>
     <button id="refresh-tides" class="btn btn-primary" type="button">Refresh</button>
+    <button id="refresh-live" class="btn" type="button">Refresh Live NOAA</button>
   </div>
+
+  <p id="validation-feedback" class="tide-feedback" aria-live="polite"></p>
 
   <p id="status" class="tide-status" aria-live="polite">Loading tide predictions...</p>
 
@@ -40,6 +47,12 @@ import Page from '../layouts/Page.astro';
 
   <script is:inline>
     (function() {
+      var THRESHOLD_MIN = -10;
+      var THRESHOLD_MAX = 10;
+      var CACHE_DB_NAME = 'noaa-tides-cache-v1';
+      var CACHE_STORE = 'noaaPredictions';
+      var CACHE_TTL_MS = 6 * 60 * 60 * 1000;
+
       var STATIONS = [
         {
           id: '9439011',
@@ -61,7 +74,10 @@ import Page from '../layouts/Page.astro';
       var startDateInput = document.getElementById('start-date');
       var dayRangeInput = document.getElementById('day-range');
       var thresholdInput = document.getElementById('threshold');
+      var highlightThresholdInput = document.getElementById('highlight-threshold');
       var refreshButton = document.getElementById('refresh-tides');
+      var refreshLiveButton = document.getElementById('refresh-live');
+      var validationFeedbackEl = document.getElementById('validation-feedback');
       var statusEl = document.getElementById('status');
       var resultsEl = document.getElementById('results');
 
@@ -77,6 +93,42 @@ import Page from '../layouts/Page.astro';
 
       function formatFeet(value) {
         return Number(value).toFixed(2) + ' ft';
+      }
+
+      function formatInputValue(value) {
+        var formatted = Number(value).toFixed(1).replace(/\.0$/, '');
+        formatted = formatted.replace(/^-0\./, '-.');
+        formatted = formatted.replace(/^0\./, '.');
+        return formatted;
+      }
+
+      function normalizeNumericText(value) {
+        var text = String(value || '').trim();
+        if (!text) return text;
+        if (text === '.') return '0.';
+        if (text === '-.') return '-0.';
+        if (text.charAt(0) === '.') return '0' + text;
+        if (text.indexOf('-.') === 0) return '-0' + text.slice(1);
+        return text;
+      }
+
+      function parseThresholdValue(value, label) {
+        var normalized = normalizeNumericText(value);
+        var parsed = Number(normalized);
+
+        if (!Number.isFinite(parsed)) {
+          return { ok: false, message: label + ' must be a number between ' + THRESHOLD_MIN + ' and ' + THRESHOLD_MAX + '.' };
+        }
+
+        if (parsed < THRESHOLD_MIN || parsed > THRESHOLD_MAX) {
+          return { ok: false, message: label + ' must be between ' + THRESHOLD_MIN + ' and ' + THRESHOLD_MAX + ' ft.' };
+        }
+
+        return { ok: true, value: parsed };
+      }
+
+      function setValidationFeedback(message) {
+        validationFeedbackEl.textContent = message || '';
       }
 
       function formatDateTime(localText) {
@@ -99,12 +151,12 @@ import Page from '../layouts/Page.astro';
           '</article>';
       }
 
-      function renderStation(station, lows, threshold) {
+      function renderStation(station, lows, threshold, highlightCutoff) {
         if (!lows.length) return renderNoData(station);
 
         var rows = lows.map(function(item) {
           var value = Number(item.v);
-          var isVeryLow = value <= -1.0;
+          var isVeryLow = value <= highlightCutoff;
           var rowClass = isVeryLow ? ' class="tide-list__item tide-list__item--very-low"' : ' class="tide-list__item"';
           return '<li' + rowClass + '><span class="tide-list__time">' + formatDateTime(item.t) + '</span><strong class="tide-list__value">' + formatFeet(value) + '</strong></li>';
         }).join('');
@@ -144,8 +196,112 @@ import Page from '../layouts/Page.astro';
           });
       }
 
-      async function fetchStation(station, startDate, days, threshold) {
+      function cacheKey(stationId, beginDate, rangeHours) {
+        return stationId + ':' + beginDate + ':' + rangeHours;
+      }
+
+      function openCacheDb() {
+        return new Promise(function(resolve, reject) {
+          if (!('indexedDB' in window)) {
+            resolve(null);
+            return;
+          }
+
+          var request = window.indexedDB.open(CACHE_DB_NAME, 1);
+          request.onupgradeneeded = function(event) {
+            var db = event.target.result;
+            if (!db.objectStoreNames.contains(CACHE_STORE)) {
+              db.createObjectStore(CACHE_STORE, { keyPath: 'key' });
+            }
+          };
+          request.onsuccess = function(event) {
+            resolve(event.target.result);
+          };
+          request.onerror = function() {
+            reject(request.error || new Error('IndexedDB unavailable'));
+          };
+        });
+      }
+
+      async function readCacheRecord(key) {
+        try {
+          var db = await openCacheDb();
+          if (!db) return null;
+
+          return await new Promise(function(resolve, reject) {
+            var tx = db.transaction(CACHE_STORE, 'readonly');
+            var store = tx.objectStore(CACHE_STORE);
+            var request = store.get(key);
+            request.onsuccess = function() { resolve(request.result || null); };
+            request.onerror = function() { reject(request.error || new Error('Cache read failed')); };
+          });
+        } catch (error) {
+          console.info('[tides-cache] unavailable for read', error);
+          return null;
+        }
+      }
+
+      async function writeCacheRecord(key, payload) {
+        try {
+          var db = await openCacheDb();
+          if (!db) return;
+
+          await new Promise(function(resolve, reject) {
+            var tx = db.transaction(CACHE_STORE, 'readwrite');
+            var store = tx.objectStore(CACHE_STORE);
+            var request = store.put({ key: key, savedAt: Date.now(), payload: payload });
+            request.onsuccess = function() { resolve(); };
+            request.onerror = function() { reject(request.error || new Error('Cache write failed')); };
+          });
+        } catch (error) {
+          console.info('[tides-cache] unavailable for write', error);
+        }
+      }
+
+      async function fetchChunkPredictions(stationId, beginDate, rangeHours, forceLive, stats) {
+        var key = cacheKey(stationId, beginDate, rangeHours);
+        var cachedRecord = await readCacheRecord(key);
+        var hasFreshCache = cachedRecord && (Date.now() - cachedRecord.savedAt) <= CACHE_TTL_MS;
+
+        if (!forceLive && hasFreshCache) {
+          stats.cacheHits += 1;
+          console.info('[tides-cache] hit', key);
+          return { predictions: cachedRecord.payload.predictions || [], fromStaleCache: false };
+        }
+
+        if (cachedRecord && !hasFreshCache) {
+          stats.staleSeen += 1;
+          console.info('[tides-cache] stale', key);
+        } else {
+          stats.cacheMisses += 1;
+          console.info('[tides-cache] miss', key);
+        }
+
+        try {
+          var response = await fetch(buildUrl(stationId, beginDate, rangeHours));
+          var payload = await response.json();
+          if (!response.ok || payload.error) {
+            var message = payload && payload.error ? payload.error.message : 'Unknown NOAA API error';
+            throw new Error(message);
+          }
+
+          await writeCacheRecord(key, payload);
+          stats.networkLoads += 1;
+          console.info('[tides-cache] stored', key);
+          return { predictions: payload.predictions || [], fromStaleCache: false };
+        } catch (error) {
+          if (cachedRecord && cachedRecord.payload && Array.isArray(cachedRecord.payload.predictions)) {
+            stats.staleFallbacks += 1;
+            console.info('[tides-cache] stale fallback', key);
+            return { predictions: cachedRecord.payload.predictions, fromStaleCache: true };
+          }
+          throw error;
+        }
+      }
+
+      async function fetchStation(station, startDate, days, threshold, forceLive, stats) {
         var predictions = [];
+        var usedStaleFallback = false;
 
         for (var offset = 0; offset < days; offset += 30) {
           var chunkDays = Math.min(30, days - offset);
@@ -153,41 +309,63 @@ import Page from '../layouts/Page.astro';
           var beginDate = toYyyymmdd(chunkStart);
           var rangeHours = chunkDays * 24;
 
-          var response = await fetch(buildUrl(station.id, beginDate, rangeHours));
-          var payload = await response.json();
-          if (!response.ok || payload.error) {
-            var message = payload && payload.error ? payload.error.message : 'Unknown NOAA API error';
-            throw new Error(station.name + ': ' + message);
-          }
-
-          if (Array.isArray(payload.predictions)) {
-            predictions = predictions.concat(payload.predictions);
-          }
+          var chunk = await fetchChunkPredictions(station.id, beginDate, rangeHours, forceLive, stats);
+          predictions = predictions.concat(chunk.predictions || []);
+          usedStaleFallback = usedStaleFallback || chunk.fromStaleCache;
         }
 
         return {
           station: station,
           lows: parseLows(predictions, threshold),
+          usedStaleFallback: usedStaleFallback,
         };
       }
 
-      async function refresh() {
+      async function refresh(forceLive) {
         var startDate = startDateInput.value;
         var days = Number(dayRangeInput.value);
-        var threshold = Number(thresholdInput.value);
+        var thresholdResult = parseThresholdValue(thresholdInput.value, 'Threshold');
+        var highlightResult = parseThresholdValue(highlightThresholdInput.value, 'Highlight cutoff');
 
-        if (!startDate || !Number.isFinite(days) || days <= 0 || !Number.isFinite(threshold)) {
+        if (!thresholdResult.ok) {
+          setValidationFeedback(thresholdResult.message);
+          statusEl.textContent = 'Please fix the threshold value and try again.';
+          return;
+        }
+
+        if (!highlightResult.ok) {
+          setValidationFeedback(highlightResult.message);
+          statusEl.textContent = 'Please fix the highlight cutoff and try again.';
+          return;
+        }
+
+        var threshold = thresholdResult.value;
+        var highlightCutoff = highlightResult.value;
+
+        if (!startDate || !Number.isFinite(days) || days <= 0) {
           statusEl.textContent = 'Please provide a valid date, day range, and threshold.';
           return;
         }
 
-        statusEl.textContent = 'Loading NOAA predictions...';
+        thresholdInput.value = formatInputValue(threshold);
+        highlightThresholdInput.value = formatInputValue(highlightCutoff);
+        setValidationFeedback('');
+
+        statusEl.textContent = forceLive ? 'Loading NOAA predictions (live refresh)...' : 'Loading NOAA predictions...';
         resultsEl.innerHTML = '';
+
+        var stats = {
+          cacheHits: 0,
+          cacheMisses: 0,
+          staleSeen: 0,
+          staleFallbacks: 0,
+          networkLoads: 0,
+        };
 
         try {
           var groups = await Promise.all(
             STATIONS.map(function(station) {
-              return fetchStation(station, startDate, days, threshold);
+              return fetchStation(station, startDate, days, threshold, forceLive, stats);
             })
           );
 
@@ -195,11 +373,17 @@ import Page from '../layouts/Page.astro';
             return sum + group.lows.length;
           }, 0);
 
+          var staleUsed = groups.some(function(group) {
+            return group.usedStaleFallback;
+          });
+
           resultsEl.innerHTML = groups.map(function(group) {
-            return renderStation(group.station, group.lows, threshold);
+            return renderStation(group.station, group.lows, threshold, highlightCutoff);
           }).join('');
 
-          statusEl.textContent = 'Found ' + totalLows + ' qualifying low tide(s) across ' + STATIONS.length + ' NOAA stations.';
+          var suffix = staleUsed ? ' Some entries used stale cached data due to network/API issues.' : '';
+          statusEl.textContent = 'Found ' + totalLows + ' qualifying low tide(s) across ' + STATIONS.length + ' NOAA stations.' + suffix;
+          console.info('[tides-cache] stats', stats);
         } catch (error) {
           resultsEl.innerHTML = '';
           statusEl.textContent = 'Could not load NOAA predictions right now. ' + (error && error.message ? error.message : 'Please try again.');
@@ -209,8 +393,28 @@ import Page from '../layouts/Page.astro';
       var today = new Date();
       startDateInput.value = today.toISOString().slice(0, 10);
 
-      refreshButton.addEventListener('click', refresh);
-      refresh();
+      refreshButton.addEventListener('click', function() { refresh(false); });
+      refreshLiveButton.addEventListener('click', function() { refresh(true); });
+      thresholdInput.addEventListener('blur', function() {
+        var thresholdResult = parseThresholdValue(thresholdInput.value, 'Threshold');
+        if (thresholdResult.ok) {
+          thresholdInput.value = formatInputValue(thresholdResult.value);
+          setValidationFeedback('');
+        } else {
+          setValidationFeedback(thresholdResult.message);
+        }
+      });
+      highlightThresholdInput.addEventListener('blur', function() {
+        var highlightResult = parseThresholdValue(highlightThresholdInput.value, 'Highlight cutoff');
+        if (highlightResult.ok) {
+          highlightThresholdInput.value = formatInputValue(highlightResult.value);
+          setValidationFeedback('');
+        } else {
+          setValidationFeedback(highlightResult.message);
+        }
+      });
+
+      refresh(false);
     })();
   </script>
 </Page>
@@ -239,6 +443,17 @@ import Page from '../layouts/Page.astro';
     padding: 0.55rem 0.6rem;
     background: var(--surface, #122231);
     color: inherit;
+  }
+
+  .tide-controls .btn {
+    width: 100%;
+  }
+
+  .tide-feedback {
+    margin: 0.1rem 0 0.35rem;
+    color: var(--amber);
+    min-height: 1.2em;
+    font-weight: 600;
   }
 
   .tide-status {
